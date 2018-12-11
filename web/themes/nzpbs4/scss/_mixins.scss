@@ -1,0 +1,91 @@
+//Custom Mixins//
+
+@mixin date($color, $weight) {
+  text-decoration: none;
+  font-size:1.1em;
+  padding:0.5em 0;
+  color: $color;
+  font-weight: $weight;
+}
+
+
+@mixin flexify($height, $justify: center){
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+  height:$height;
+}
+
+
+@mixin scrollbar($thumb-color:#efefef, $scrollState: 'default'){
+
+     @if $scrollState == 'default' {
+      overflow-y: auto;
+     } 
+     @else if $scrollState ==  'hover' {
+      overflow-y: hidden;
+      &:hover {
+        overflow-y: auto;
+         }     
+     }
+
+  &::-webkit-scrollbar {
+    opacity: 1;
+    width: 3px;
+    transition: all 0.3s ease-in;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    width: 3px;
+    background: $thumb-color;
+  }
+}
+
+@mixin icon($icon, $position:":after") {
+  &:#{$position} {
+    @extend .fa;
+    @extend .fa-#{$icon}:before !optional;
+  }
+}
+
+@mixin linkhover($linkcolor:$secondary-color) {
+  &:hover {
+    text-decoration:none;
+    color: $linkcolor;
+    transition: all 0.3s ease;
+  }
+  &:focus {
+    text-decoration:none;
+  }
+}
+
+@mixin portrait-circle($size:125px) {
+  //rounded portrait//
+      width: $size;
+      height:$size;
+      overflow: hidden;
+      border-radius: $size;
+      img {
+        width:100%;
+        max-width:none;
+      }
+}
+
+@mixin ia-icon-circle($color, $size:2em) {
+  width:$size;
+  height:$size;
+  font-size:$size/2;
+  text-align: center;
+  display:inline-block;
+  line-height: $size;
+  color: $color;
+  cursor:pointer;
+  &:hover{
+    opacity:0.9;
+  }
+}

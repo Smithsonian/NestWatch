@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * LDSI Bootstrap 4 theme file.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function nzpbs4_form_system_theme_settings_alter(&$form, FormStateInterface $form_state, $form_id = NULL) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+
+  $options = [
+    'light' => 'light',
+    'dark' => 'dark',
+    'clear' => 'clear'
+  ];
+
+  $options_bg = [
+    'light' => 'light',
+    'dark' => 'dark',
+    'primary' => 'primary',
+    'secondary' => 'secondary',
+    'success' => 'success',
+    'clear' => 'clear',
+  ];
+
+  $form['b4_navbar_schema'] = [
+    '#type' => 'select',
+    '#title' => t('Navbar: '),
+    '#default_value' => theme_get_setting('b4_navbar_schema'),
+    '#description' => t("Color scheme of the navbar."),
+    '#options' => $options,
+  ];
+
+  $form['b4_navbar_bg_schema'] = [
+    '#type' => 'select',
+    '#title' => t('Navbar: background'),
+    '#default_value' => theme_get_setting('b4_navbar_bg_schema'),
+    '#description' => t("Background color scheme of the navbar."),
+    '#options' => $options_bg,
+  ];
+}
+
+/**
+ * Implements template_preprocess_page().
+ */
+function nzpbs4_preprocess_page(&$variables) {
+  $variables['b4_navbar_schema'] = theme_get_setting('b4_navbar_schema');
+  $variables['b4_navbar_bg_schema'] = theme_get_setting('b4_navbar_bg_schema');
+}

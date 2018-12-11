@@ -1,0 +1,7 @@
+# Schema for the configuration files of the Bootstrap4 theme.
+
+bootstrap4.settings:
+  type: theme_settings
+  label: 'Bootstrap 4 settings'
+  b4_navbar_schema: 'light'
+  b4_navbar_bg_schema: 'light'

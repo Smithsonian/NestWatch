@@ -1,0 +1,48 @@
+.btn-navbar {
+    width: 50px;
+    height:50px;
+    position: absolute;
+    right:0;
+    top:0;
+    padding: 10px;
+    span {
+        backface-visibility: hidden;
+        position: absolute;
+        left: 10%;
+        border-top: 3px solid white;
+        width: 80%;
+        transition: 0.55s;
+        &.toggle-top {
+            top: 10px;
+          }
+        &.toggle-middle {
+            top: 22.5px;
+          }
+         &.toggle-bottom {
+            top: 35px;
+          }
+    }
+    &.clicked {
+        z-index:1000;
+        span {
+            border-color: #ccc;
+            transition: all 0.3s ease;
+            width:65%;
+
+            &.toggle-top {
+                transform: rotate(360deg);
+                top:50%;
+            }
+            &.toggle-middle {
+                opacity: 0;
+                transition-delay: 0.2s;
+            }
+            &.toggle-bottom {
+                transform: rotate(-360deg);
+                top:50%;
+            }
+
+        }
+
+    }
+}

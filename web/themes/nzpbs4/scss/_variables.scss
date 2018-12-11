@@ -1,0 +1,191 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the ` ` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Voltaire|Poppins:400,600');
+
+
+//variable override from scss/vendor/font-awesome/_variables.scss
+$fa-font-path: '../fonts/font-awesome';
+
+
+
+//colors
+$primary-color:#0c95d4;
+$secondary-color: #dcac1a;
+$third-color: #153E69;
+$fourth-color:#E6E7E8;
+
+$primary-gradient: linear-gradient(to right, $primary-color, $third-color);
+
+$primary-color-transparent: rgba(25, 124, 191, 0.75);
+$third-color-transparent: rgba(21, 62, 106, 0.75);
+$primary-color-transparent-off-canvas: rgba(32, 23, 71, 0.5);
+
+$white: #fff;
+$black: #000;
+
+$brand-primary: #153E69;
+$brand-success: #aa2e28;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+
+
+//button Colors//
+$btn-default-color: white;
+$btn-default-bg: $secondary-color;
+$btn-default-border: $secondary-color;
+
+$btn-primary-color: white;
+$btn-primary-bg: $third-color;
+$btn-primary-border: $third-color;
+
+$btn-success-color: white;
+$btn-success-bg: #437d21;
+$btn-success-border: #437d21;
+
+$border-radius-base: 0px;
+$border-radius: 0rem;
+$border-radius-lg: .3rem;
+$border-radius-sm: .2rem;
+
+
+
+
+// Breadcrumbs
+
+$breadcrumb-padding-y: .75rem;
+$breadcrumb-padding-x: 1rem;
+$breadcrumb-item-padding: .5rem;
+
+$breadcrumb-margin-bottom: 1rem;
+
+$breadcrumb-bg: transparent;
+$breadcrumb-divider-color: white !important;
+$breadcrumb-active-color: white !important;
+$breadcrumb-divider: quote(" > ");
+
+$breadcrumb-border-radius: $border-radius;
+
+
+
+//Modal Vars//
+//** Padding applied to the modal body
+$modal-inner-padding: 15px;
+
+//** Padding applied to the modal title
+$modal-title-padding: 15px;
+//** Modal title line-height
+
+//** Background color of modal content area
+$modal-content-bg: transparent;
+//** Modal content border color
+$modal-content-border-color: transparent;
+//** Modal content border color **for IE8**
+$modal-content-fallback-border-color: #999;
+
+//** Modal backdrop background color
+$modal-backdrop-bg: #000;
+//** Modal backdrop opacity
+$modal-backdrop-opacity: .75;
+//** Modal header border color
+$modal-header-border-color: #e5e5e5;
+//** Modal footer border color
+$modal-footer-border-color: $modal-header-border-color;
+
+$modal-lg: 75%;
+$modal-md: 75%;
+$modal-sm: 100%;
+
+
+//fonts
+$poppins: 'Poppins',
+sans-serif;
+$open-sans: 'Open Sans',
+sans-serif;
+
+$font-family-base: $poppins;
+$headings-font-family: $poppins;
+$font-size-base: 1rem;
+
+//Font sizes
+
+$font-size-large: 1.25em;
+$font-size-small: 0.9em;
+
+$font-size-h1: 1.8em;
+$font-size-h2: 1.5em;
+$font-size-h3: 1.2em;
+$font-size-h4: 1.25em; // ~18px
+$font-size-h5: 1em;
+$font-size-h6: 0.85em; // ~12px
+
+
+//Wide Screen Size//
+$screen-wide: 1500px;
+$container-wide: ($screen-wide + 30px);
+
+
+//** Border color for inputs on focus
+$input-border-focus: transparent;
+
+//** Placeholder text color
+$input-color-placeholder: #444;
+
+
+$navbar-height: 50px;
+$navbar-border-radius: $border-radius-base;
+$navbar-collapse-max-height: 340px;
+
+$navbar-color: $primary-color;
+$navbar-bg: transparent;
+$navbar-border: none;
+
+
+// Navbar links
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $secondary-color;
+$navbar-dark-active-color: $secondary-color;
+$navbar-dark-disabled-color: rgba($white, .25);
+$navbar-dark-toggler-icon-bg: none;
+$navbar-dark-toggler-border-color: rgba($white, 0);
+
+$navbar-light-color: $primary-color;
+$navbar-light-hover-color: $secondary-color;
+$navbar-light-active-color: $secondary-color;
+$navbar-light-disabled-color: $fourth-color;
+$navbar-light-toggler-icon-bg: none;
+$navbar-light-toggler-border-color: rgba($black, 0);
+
+
+// Navbar brand label
+$navbar-brand-color: $navbar-light-color;
+$navbar-brand-hover-color: darken($navbar-brand-color, 10%);
+$navbar-brand-hover-bg: transparent;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg: #ddd;
+$navbar-default-toggle-icon-bar-bg: #888;
+$navbar-default-toggle-border-color: #ddd;
+
+//Popover Vars 
+$popover-bg: lighten(#000, 20%);
+$popover-border-color: white;
+$popover-text-color: white;
+$popover-fallback-border-color: white;
+
+//Off Canvas
+$off-canvas-menu-width: 350px;
+$off-canvas-width: 350px;

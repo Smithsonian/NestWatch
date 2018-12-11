@@ -1,0 +1,42 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    bootstrap/dist/js/bootstrap.bundle.js: {}
+    js/scripts.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - bootstrap/framework
+
+off-canvas:
+  js:
+   js/vendor/ResponsiveMultiLevelMenu/js/modernizr.custom.js: {}
+   js/vendor/ResponsiveMultiLevelMenu/js/jquery.dlmenu.js: {}
+   js/off-canvas.js: {}
+  css:
+    theme:
+      js/vendor/ResponsiveMultiLevelMenu/css/component.css: {}
+
+mmenu:
+  js:
+    js/vendor/mmenu/dist/jquery.mmenu.js: {}
+  css:
+    theme:
+      js/vendor/mmenu/dist/jquery.mmenu.css: {}
+
+
+carousel:
+  css:
+    theme:
+      js/vendor/slick/slick/slick.css: {}
+  js:
+    js/slider.js: {}
+    js/vendor/slick/slick/slick.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

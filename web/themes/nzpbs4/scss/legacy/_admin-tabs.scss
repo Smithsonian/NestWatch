@@ -1,0 +1,50 @@
+.tabs--primary {
+    position: relative;;
+    padding-left:60px;    
+    z-index: 2;
+    background:$fourth-color;
+    font-size: 0.9em;
+    margin:0px -15px;    
+    display:block;
+    border:none;
+    @include icon('cog', before);
+    &:before {
+        position:absolute;
+        left:0;
+        top:0px;
+        bottom:0;
+        width:60px;
+        background: #0f0f0f;
+        color: white;
+        font-size: 1.5em;
+        @include flexify(auto);
+    }
+        li {
+            display:inline-block;
+            border-bottom:none;
+            a {
+                font-weight:100;
+                font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
+                border:none;
+                @include flexify(100%);
+                @include linkhover($primary-color);
+                &:hover {
+                    border: none;
+                }
+            }
+            &.active {
+                a {
+                    background: none;
+                    border:none;
+                    margin:0;
+                    color: $primary-color;
+                    &:hover {
+                        border: none;
+                        background:none;
+                    }
+                }
+            }
+          
+
+        }
+}

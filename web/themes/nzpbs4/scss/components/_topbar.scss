@@ -1,0 +1,19 @@
+.topbar {
+  background: $primary-color;
+  padding: 1em;
+  height: $navbar-height;
+
+  a {
+    color: white;
+  }
+}
+
+.menu--social-media-links {
+  .icon-label {
+    display: none;
+  }
+}
+
+.navbar-toggler-icon {
+  @include icon('')
+}
