@@ -1,0 +1,23 @@
+uuid: 0477d02c-7391-407b-a760-bf9c38a1eb65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bird_mass
+    - node.type.bird
+id: node.bird.field_bird_mass
+field_name: field_bird_mass
+entity_type: node
+bundle: bird
+label: 'Bird Mass'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

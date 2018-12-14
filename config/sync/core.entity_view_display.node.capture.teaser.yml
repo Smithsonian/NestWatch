@@ -1,0 +1,30 @@
+uuid: d0e47012-098c-41a0-a3a7-6788c19756fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.capture.body
+    - node.type.capture
+  module:
+    - text
+    - user
+id: node.capture.teaser
+targetEntityType: node
+bundle: capture
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

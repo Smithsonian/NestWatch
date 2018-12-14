@@ -1,0 +1,21 @@
+uuid: 9c6ccc8e-9cdc-42b0-801d-3037e3d0197e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bird_fat
+    - node.type.bird
+  module:
+    - options
+id: node.bird.field_bird_fat
+field_name: field_bird_fat
+entity_type: node
+bundle: bird
+label: 'Bird Fat'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

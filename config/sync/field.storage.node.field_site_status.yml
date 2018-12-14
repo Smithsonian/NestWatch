@@ -1,0 +1,30 @@
+uuid: 4f9711ff-42a3-4f5c-af63-6bd147f1de73
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_site_status
+field_name: field_site_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: active
+      label: Active
+    -
+      value: resight-only
+      label: 'Resight Only'
+    -
+      value: discontinued
+      label: Discontinued
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

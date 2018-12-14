@@ -1,0 +1,20 @@
+uuid: bda27421-3ddd-4f43-b78d-1c4428fd2470
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_capture_user
+field_name: field_capture_user
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: b8a7f8ba-30aa-4c63-ad67-4c2aaac993b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bird
+id: node.bird.title
+field_name: title
+entity_type: node
+bundle: bird
+label: 'Bird ID'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

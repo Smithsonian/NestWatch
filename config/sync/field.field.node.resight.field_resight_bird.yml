@@ -1,0 +1,29 @@
+uuid: 877343b4-8419-4cc8-85a8-4186f355cd02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resight_bird
+    - node.type.resight
+    - taxonomy.vocabulary.bird_species
+id: node.resight.field_resight_bird
+field_name: field_resight_bird
+entity_type: node
+bundle: resight
+label: 'Resight Bird'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bird_species: bird_species
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

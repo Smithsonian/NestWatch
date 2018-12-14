@@ -1,0 +1,24 @@
+uuid: 33cbabc8-0eb7-405b-92f4-5749587b2572
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resight_date
+    - node.type.resight
+  module:
+    - datetime
+id: node.resight.field_resight_date
+field_name: field_resight_date
+entity_type: node
+bundle: resight
+label: 'Resight Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

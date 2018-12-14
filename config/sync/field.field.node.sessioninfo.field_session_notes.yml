@@ -1,0 +1,19 @@
+uuid: 8d27dadc-b60a-4142-9c84-5f51011b24fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_notes
+    - node.type.sessioninfo
+id: node.sessioninfo.field_session_notes
+field_name: field_session_notes
+entity_type: node
+bundle: sessioninfo
+label: 'Session Notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

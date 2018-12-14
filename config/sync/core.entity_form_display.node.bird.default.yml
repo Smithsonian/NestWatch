@@ -1,0 +1,159 @@
+uuid: 0f8cc773-cacf-4c79-85a3-2f1cf4067c58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bird.field_bird_age
+    - field.field.node.bird.field_bird_band_color_combo
+    - field.field.node.bird.field_bird_band_number
+    - field.field.node.bird.field_bird_cpbp
+    - field.field.node.bird.field_bird_fat
+    - field.field.node.bird.field_bird_id
+    - field.field.node.bird.field_bird_mass
+    - field.field.node.bird.field_bird_sex
+    - field.field.node.bird.field_bird_species
+    - field.field.node.bird.field_bird_tail_span
+    - field.field.node.bird.field_bird_wing_span
+    - node.type.bird
+  module:
+    - field_layout
+    - layout_discovery
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.bird.default
+targetEntityType: node
+bundle: bird
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bird_age:
+    weight: 129
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_bird_band_color_combo:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bird_band_number:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bird_cpbp:
+    weight: 131
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_bird_fat:
+    weight: 130
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_bird_id:
+    weight: 121
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bird_mass:
+    weight: 126
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_bird_sex:
+    weight: 125
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_bird_species:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_bird_tail_span:
+    weight: 128
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_bird_wing_span:
+    weight: 127
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

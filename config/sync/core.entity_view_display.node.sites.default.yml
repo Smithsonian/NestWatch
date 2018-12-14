@@ -1,0 +1,68 @@
+uuid: 9724ffae-9646-4620-a4f2-d58bc0392d62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sites.field_site_description
+    - field.field.node.sites.field_site_id
+    - field.field.node.sites.field_site_location
+    - field.field.node.sites.field_site_project
+    - field.field.node.sites.field_site_status
+    - node.type.sites
+  module:
+    - computed_field
+    - geofield
+    - options
+    - user
+id: node.sites.default
+targetEntityType: node
+bundle: sites
+mode: default
+content:
+  field_site_description:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_site_id:
+    weight: 106
+    label: above
+    settings:
+      sanitized: true
+      cache_unit: -1
+      cache_duration: 1
+    third_party_settings: {  }
+    type: computed_string
+    region: content
+  field_site_location:
+    weight: 104
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    type: geofield_default
+    region: content
+  field_site_project:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_site_status:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

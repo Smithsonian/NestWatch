@@ -1,0 +1,30 @@
+uuid: d691b378-0c64-4d3e-b03f-2e0f332aee10
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_bird_cpbp
+field_name: field_bird_cpbp
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: U
+      label: U
+    -
+      value: CP
+      label: CP
+    -
+      value: BP
+      label: BP
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

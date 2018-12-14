@@ -1,0 +1,23 @@
+uuid: 5d02530b-ab35-46ac-b71d-13057ad5c6ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_guests
+    - node.type.sessioninfo
+id: node.sessioninfo.field_session_guests
+field_name: field_session_guests
+entity_type: node
+bundle: sessioninfo
+label: 'Session Guests'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

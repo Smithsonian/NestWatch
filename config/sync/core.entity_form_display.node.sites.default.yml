@@ -1,0 +1,100 @@
+uuid: 08d5e99d-c703-4154-b823-59e4c93803ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sites.field_site_description
+    - field.field.node.sites.field_site_id
+    - field.field.node.sites.field_site_location
+    - field.field.node.sites.field_site_project
+    - field.field.node.sites.field_site_status
+    - node.type.sites
+  module:
+    - computed_field
+    - field_layout
+    - geofield
+    - layout_discovery
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.sites.default
+targetEntityType: node
+bundle: sites
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_site_description:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_site_id:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: computed_string_widget
+    region: content
+  field_site_location:
+    weight: 7
+    settings:
+      html5_geolocation: true
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
+  field_site_project:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_site_status:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

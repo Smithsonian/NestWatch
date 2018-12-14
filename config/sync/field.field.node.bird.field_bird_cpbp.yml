@@ -1,0 +1,21 @@
+uuid: a5311efc-b8d5-4bb3-b024-ee6977ae4173
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bird_cpbp
+    - node.type.bird
+  module:
+    - options
+id: node.bird.field_bird_cpbp
+field_name: field_bird_cpbp
+entity_type: node
+bundle: bird
+label: 'Bird cpBp'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

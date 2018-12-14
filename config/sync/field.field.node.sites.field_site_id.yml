@@ -1,0 +1,24 @@
+uuid: 96eb193d-d936-4063-bfba-30f9f8586c1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_site_id
+    - node.type.sites
+  module:
+    - computed_field
+id: node.sites.field_site_id
+field_name: field_site_id
+entity_type: node
+bundle: sites
+label: 'Site ID'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings:
+  code: '$value = '''';'
+field_type: computed_string

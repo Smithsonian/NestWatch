@@ -1,0 +1,19 @@
+uuid: d607572c-588e-4b4b-873b-fb9c7190245c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_resight_notes
+field_name: field_resight_notes
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

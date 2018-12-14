@@ -1,0 +1,20 @@
+uuid: e4de3c0a-f6e9-434c-afaf-76c836019c0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_bird_mass
+field_name: field_bird_mass
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,162 @@
+uuid: 8829fd4b-d036-4164-979f-3be590d5a38e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.capture.body
+    - field.field.node.capture.field_capture_bird
+    - field.field.node.capture.field_capture_bird_age
+    - field.field.node.capture.field_capture_bird_cpbp
+    - field.field.node.capture.field_capture_bird_fat
+    - field.field.node.capture.field_capture_bird_mass
+    - field.field.node.capture.field_capture_bird_tail_span
+    - field.field.node.capture.field_capture_bird_wing_span
+    - field.field.node.capture.field_capture_date_time
+    - field.field.node.capture.field_capture_date_time_release
+    - field.field.node.capture.field_capture_encounter_type
+    - field.field.node.capture.field_capture_id
+    - field.field.node.capture.field_capture_notes
+    - field.field.node.capture.field_capture_session
+    - field.field.node.capture.field_capture_user
+    - node.type.capture
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.capture.default
+targetEntityType: node
+bundle: capture
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_capture_bird:
+    weight: 117
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_capture_bird_age:
+    weight: 122
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_capture_bird_cpbp:
+    weight: 124
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_capture_bird_fat:
+    weight: 123
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_capture_bird_mass:
+    weight: 119
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_capture_bird_tail_span:
+    weight: 121
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_capture_bird_wing_span:
+    weight: 120
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_capture_date_time:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_capture_date_time_release:
+    weight: 106
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_capture_encounter_type:
+    weight: 116
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_capture_id:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_capture_notes:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_capture_session:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_capture_user:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

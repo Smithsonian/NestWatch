@@ -1,0 +1,28 @@
+uuid: 6654b5ec-7764-4888-95c5-e49b564bca1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capture_bird
+    - node.type.bird
+    - node.type.capture
+id: node.capture.field_capture_bird
+field_name: field_capture_bird
+entity_type: node
+bundle: capture
+label: 'Capture Bird'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      bird: bird
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

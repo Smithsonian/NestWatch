@@ -1,0 +1,14 @@
+uuid: c3008425-b24a-4cab-b12e-2baa40f99b62
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.technician
+  module:
+    - user
+id: user_add_role_action.technician
+label: 'Add the Technician role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: technician

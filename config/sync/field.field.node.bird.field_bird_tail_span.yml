@@ -1,0 +1,23 @@
+uuid: 8ff78b28-3db6-4bb5-86db-96ec858f3777
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bird_tail_span
+    - node.type.bird
+id: node.bird.field_bird_tail_span
+field_name: field_bird_tail_span
+entity_type: node
+bundle: bird
+label: 'Bird Tail Span'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

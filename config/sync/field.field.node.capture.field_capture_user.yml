@@ -1,0 +1,28 @@
+uuid: 535356c8-493a-4183-8c22-3c86dcd8f08c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capture_user
+    - node.type.capture
+id: node.capture.field_capture_user
+field_name: field_capture_user
+entity_type: node
+bundle: capture
+label: 'Capture User'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
