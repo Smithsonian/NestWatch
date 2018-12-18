@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "14c999aacd72be5f8d70e94a3cb02c1a",
+    "content-hash": "3865b81dc595d9360537318f963ae20e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1728,7 +1728,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/authorization"
             },
-            "time": "2018-09-18T18:07:38+00:00"
+            "time": "2018-09-18 18:07:38"
         },
         {
             "name": "drupal/auto_entitylabel",
@@ -2267,6 +2267,69 @@
             "homepage": "https://www.drupal.org/project/computed_field",
             "support": {
                 "source": "http://cgit.drupalcode.org/computed_field"
+            }
+        },
+        {
+            "name": "drupal/conditional_fields",
+            "version": "1.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/conditional_fields",
+                "reference": "8.x-1.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/conditional_fields-8.x-1.0-alpha4.zip",
+                "reference": "8.x-1.0-alpha4",
+                "shasum": "5e13204d5296c63958eacc0028cdb6c7a4d2e3d3"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1511555675",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Adyax",
+                    "homepage": "https://www.adyax.com/"
+                },
+                {
+                    "name": "axel.rutz",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "itsekhmistro",
+                    "homepage": "https://www.drupal.org/user/928152"
+                },
+                {
+                    "name": "peterpoe",
+                    "homepage": "https://www.drupal.org/user/55674"
+                }
+            ],
+            "description": "Conditional fields",
+            "homepage": "https://www.drupal.org/project/conditional_fields",
+            "support": {
+                "source": "http://cgit.drupalcode.org/conditional_fields"
             }
         },
         {
@@ -3777,7 +3840,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
             },
-            "time": "2018-11-26T18:27:09+00:00"
+            "time": "2018-11-26 18:27:09"
         },
         {
             "name": "drupal/geocoder",
@@ -5261,6 +5324,54 @@
             "homepage": "https://www.drupal.org/project/svg_image",
             "support": {
                 "source": "http://cgit.drupalcode.org/svg_image"
+            }
+        },
+        {
+            "name": "drupal/table_field_group",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/table_field_group",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/table_field_group-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "7e7277382a10f82ccbeb8ddbdf1436a3bde15e86"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/field_group": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1520063284",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jerome legendre",
+                    "homepage": "https://www.drupal.org/user/121479"
+                }
+            ],
+            "description": "Adds a new field group option \"Table\" which put it s children as columns of a simple table.",
+            "homepage": "https://www.drupal.org/project/table_field_group",
+            "support": {
+                "source": "http://cgit.drupalcode.org/table_field_group"
             }
         },
         {
@@ -9295,7 +9406,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2018-06-24T20:08:51+00:00"
+            "time": "2018-06-24 20:08:51"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -9467,7 +9578,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-10T12:39:06+00:00"
+            "time": "2018-10-10 12:39:06"
         },
         {
             "name": "doctrine/instantiator",
@@ -10969,6 +11080,17 @@
         {
             "name": "webflo/drupal-core-require-dev",
             "version": "8.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webflo/drupal-core-require-dev.git",
+                "reference": "c3b99d2add865e7308c109ef1735a39a9575ce57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/c3b99d2add865e7308c109ef1735a39a9575ce57",
+                "reference": "c3b99d2add865e7308c109ef1735a39a9575ce57",
+                "shasum": ""
+            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",
@@ -10997,6 +11119,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/coffee": 10,
+        "drupal/conditional_fields": 15,
         "drupal/entity_embed": 10,
         "drupal/entity_usage": 15,
         "drupal/facets": 10,

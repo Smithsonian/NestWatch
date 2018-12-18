@@ -2,6 +2,7 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      css/vendor/chosen/chosen.css: {}
   js:
     bootstrap/dist/js/bootstrap.bundle.js: {}
     js/scripts.js: {}
