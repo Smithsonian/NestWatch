@@ -61,6 +61,11 @@ module:
   media_entity_video: 0
   menu_block: 0
   menu_ui: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_source_csv: 0
+  migrate_tools: 0
+  nestwatch_migrate: 0
   node: 0
   options: 0
   page_cache: 0

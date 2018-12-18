@@ -1,19 +1,18 @@
-uuid: 372e009d-69da-4cef-b8cd-e2269f302659
+uuid: 2e8c426f-0a9e-4a27-ad57-8f876ab47922
 langcode: en
 status: true
 dependencies:
   module:
-    - computed_field
     - node
 id: node.field_site_id
 field_name: field_site_id
 entity_type: node
-type: computed_string
+type: string
 settings:
-  max_length: '255'
+  max_length: 255
   is_ascii: false
   case_sensitive: false
-module: computed_field
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.sites.field_site_status
     - node.type.sites
   module:
-    - computed_field
     - field_layout
     - geofield
     - layout_discovery
@@ -39,10 +38,12 @@ content:
     type: string_textarea
     region: content
   field_site_id:
-    weight: 9
-    settings: {  }
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: computed_string_widget
+    type: string_textfield
     region: content
   field_site_location:
     weight: 7

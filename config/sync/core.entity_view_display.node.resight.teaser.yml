@@ -26,5 +26,6 @@ hidden:
   field_resight_bird: true
   field_resight_date: true
   field_resight_location: true
+  field_resight_notes: true
   field_resight_observer: true
   field_resight_type: true

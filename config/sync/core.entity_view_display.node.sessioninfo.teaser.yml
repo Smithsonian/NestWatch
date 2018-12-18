@@ -30,5 +30,7 @@ hidden:
   field_session_guests: true
   field_session_id: true
   field_session_net_hours: true
+  field_session_notes: true
   field_session_participant: true
+  field_session_type: true
   field_session_user: true

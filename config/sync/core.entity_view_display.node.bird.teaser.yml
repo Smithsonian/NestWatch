@@ -17,4 +17,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_bird_age: true
+  field_bird_band_color_combo: true
+  field_bird_band_number: true
+  field_bird_cpbp: true
+  field_bird_fat: true
+  field_bird_id: true
+  field_bird_mass: true
+  field_bird_sex: true
+  field_bird_species: true
+  field_bird_tail_span: true
+  field_bird_wing_span: true

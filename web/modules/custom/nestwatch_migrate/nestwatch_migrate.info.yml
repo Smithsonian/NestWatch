@@ -1,0 +1,10 @@
+name: 'NestWatch Migrate'
+type: module
+description: 'Module for housing all NestWatch related migrations'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - migrate
+  - migrate_tools
+  - migrate_plus
+  - migrate_source_csv

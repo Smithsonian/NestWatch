@@ -1,0 +1,13 @@
+uuid: 3706f2d8-6f4a-4e51-b397-55732d73e1c7
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate
+id: nestwatch
+label: 'Nest Watch'
+description: 'Nest Watch Data Migrations.'
+source_type: CSV
+module: null
+shared_configuration: null

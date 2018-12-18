@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.sites.field_site_status
     - node.type.sites
   module:
-    - computed_field
     - geofield
     - options
     - user
@@ -27,14 +26,12 @@ content:
     type: basic_string
     region: content
   field_site_id:
-    weight: 106
+    weight: 108
     label: above
     settings:
-      sanitized: true
-      cache_unit: -1
-      cache_duration: 1
+      link_to_entity: false
     third_party_settings: {  }
-    type: computed_string
+    type: string
     region: content
   field_site_location:
     weight: 104

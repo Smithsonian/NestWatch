@@ -1,0 +1,41 @@
+uuid: 3ffb2d5b-ad03-40a1-9590-4d3b230a41e3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate
+id: sites_data
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'nestwatch migrate'
+migration_group: nestwatch
+label: 'Importing NW Sites'
+source:
+  plugin: csv
+  path: 'public://import/sites_reduced_backup.csv'
+  header_row_count: 1
+  keys:
+    - siteID
+  fields:
+    siteID: SiteID
+    region: Region
+    status: Status
+    long: long
+    lat: lat
+process:
+  title: siteID
+  field_site_id: siteID
+  field_site_location:
+    plugin: geofield_latlon
+    source:
+      - lat
+      - long
+  field_site_project: region
+  field_site_status: status
+destination:
+  plugin: 'entity:node'
+  default_bundle: sites
+migration_dependencies: null

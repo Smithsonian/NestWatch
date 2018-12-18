@@ -1,0 +1,65 @@
+dbTable,shinyTable,project,column_order,in_shinyTable,derived_shiny,inDb,dbName,shinyName,colClass_R,colClass_hot,precision,get_fieldDef,shiny_width,get_derived,get_derived_db
+techRs,techRs,Neighborhood Nestwatch,10,TRUE,FALSE,TRUE,lat,<b>latitude (dd.dddd)</b>,numeric,numeric,"""0.00000""",NULL,125,NA,NA
+techRs,techRs,Neighborhood Nestwatch,11,TRUE,FALSE,TRUE,type,<b>resight type</b>,character,dropdown,NA,"getDropdown('choice_resight', fieldOptions)",100,NA,NA
+techRs,techRs,Neighborhood Nestwatch,12,TRUE,FALSE,TRUE,notes,<b>notes</b>,character,NA,NA,NULL,300,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,1,FALSE,FALSE,TRUE,siteID,NA,character,NA,NA,NULL,NA,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,2,TRUE,FALSE,TRUE,observer,<b>observer</b>,character,NA,NA,NULL,100,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,3,FALSE,FALSE,TRUE,date,NA,character,NA,NA,NULL,NA,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,4,TRUE,FALSE,TRUE,startTime,<b>Start time</b>,character,NA,NA,NULL,100,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,5,TRUE,FALSE,TRUE,interval,<b>interval</b>,character,dropdown,NA,eval(parse(text = '1:3')),100,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,6,TRUE,FALSE,TRUE,spp,<b>species</b>,character,dropdown,NA,eval(parse(text = 'aou'))$Alpha,100,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,7,TRUE,FALSE,TRUE,d10,<b>dist < 10</b>,integer,numeric,NA,NULL,100,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,8,TRUE,FALSE,TRUE,d20,<b>dist 10-20</b>,integer,numeric,NA,NULL,100,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,9,TRUE,FALSE,TRUE,d30,<b>dist 20-30</b>,integer,numeric,NA,NULL,100,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,10,TRUE,FALSE,TRUE,d40,<b>dist 30-40</b>,integer,numeric,NA,NULL,100,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,11,TRUE,FALSE,TRUE,d50,<b>dist 40-50</b>,integer,numeric,NA,NULL,100,NA,NA
+pointCounts,pointCounts,Neighborhood Nestwatch,12,TRUE,FALSE,TRUE,detection,<b>detection</b>,character,dropdown,NA,"getDropdown('choice_detection', fieldOptions)",100,NA,NA
+visits,visits,Neighborhood Nestwatch,1,FALSE,FALSE,TRUE,siteID,NA,character,NA,NA,NULL,NA,NA,NA
+visits,visits,Neighborhood Nestwatch,2,FALSE,FALSE,TRUE,date,NA,character,NA,NA,NULL,NA,NA,NA
+captures,captures,Neighborhood Nestwatch,1,FALSE,FALSE,TRUE,siteID,NA,character,NA,NA,NULL,NA,NA,NA
+visits,visits,Neighborhood Nestwatch,3,FALSE,FALSE,TRUE,observer,<b>observer</b>,character,NA,NA,NULL,NA,NA,NA
+visits,visits,Neighborhood Nestwatch,4,FALSE,FALSE,TRUE,participantEngagement,<b>engagement</b>,character,dropdown,NA,"getDropdown('choice_engagement', fieldOptions)",NA,NA,NA
+visits,visits,Neighborhood Nestwatch,5,FALSE,FALSE,TRUE,encounteredBirds,<b>encountered birds</b>,character,dropdown,NA,"getDropdown('choice_encounteredBirds', fieldOptions)",NA,NA,NA
+visits,visits,Neighborhood Nestwatch,6,FALSE,FALSE,TRUE,netHours,<b>net hours</b>,numeric,NA,"""0.000""",NULL,NA,NA,NA
+visits,visits,Neighborhood Nestwatch,7,FALSE,FALSE,TRUE,notes,<b>notes</b>,character,NA,NA,NULL,NA,NA,NA
+captures,captures,Neighborhood Nestwatch,2,FALSE,FALSE,TRUE,date,NA,character,NA,NA,NULL,NA,NA,NA
+captures,captures,Neighborhood Nestwatch,3,TRUE,FALSE,TRUE,time,<b>time</b>,character,autocomplete,NA,timeOfDay,50,NA,NA
+captures,captures,Neighborhood Nestwatch,4,TRUE,FALSE,TRUE,obs,<b>obs</b>,character,NA,NA,NULL,40,NA,NA
+captures,captures,Neighborhood Nestwatch,5,TRUE,FALSE,TRUE,enc,<b>enc</b>,character,dropdown,NA,"getDropdown('choice_encounter', fieldOptions)",40,NA,NA
+captures,captures,Neighborhood Nestwatch,6,TRUE,FALSE,TRUE,spp,<b>spp</b>,character,dropdown,NA,eval(parse(text = 'aou'))$Alpha,65,NA,NA
+captures,captures,Neighborhood Nestwatch,7,TRUE,FALSE,TRUE,bandNumber,NA,character,NA,NA,NULL,NA,"separate(bandNumber, into = c('prefix', 'suffix'), by = ',')","bandNumber = paste(prefix, suffix, collapse = '-')"
+captures,captures,Neighborhood Nestwatch,8,TRUE,TRUE,FALSE,prefix,<b>prefix</b>,character,NA,NA,NULL,50,NA,NA
+captures,captures,Neighborhood Nestwatch,9,TRUE,TRUE,FALSE,suffix,<b>suffix</b>,character,NA,NA,NULL,65,NA,NA
+captures,captures,Neighborhood Nestwatch,10,TRUE,FALSE,TRUE,colorCombo,NA,character,NA,NA,NULL,NA,"separate(colorCombo, into = c('left', 'right'), by = ',')","colorCombo = paste(left, right, collapse = ',')"
+captures,captures,Neighborhood Nestwatch,11,TRUE,TRUE,FALSE,left,<b>left</b>,character,dropdown,NA,getColorCombo(colorVector),40,NA,NA
+captures,captures,Neighborhood Nestwatch,12,TRUE,TRUE,FALSE,right,<b>right</b>,character,dropdown,NA,getColorCombo(colorVector),40,NA,NA
+captures,captures,Neighborhood Nestwatch,13,TRUE,FALSE,TRUE,mass,<b>mass</b>,numeric,numeric,"""0.0""",NULL,50,NA,NA
+captures,captures,Neighborhood Nestwatch,14,TRUE,FALSE,TRUE,wing,<b>wing</b>,numeric,numeric,"""0.0""",NULL,50,NA,NA
+captures,captures,Neighborhood Nestwatch,15,TRUE,FALSE,TRUE,tl,<b>tail</b>,numeric,numeric,"""0.0""",NULL,50,NA,NA
+captures,captures,Neighborhood Nestwatch,16,TRUE,FALSE,TRUE,age,<b>age</b>,character,dropdown,NA,"getDropdown('choice_age', fieldOptions)",50,NA,NA
+captures,captures,Neighborhood Nestwatch,17,TRUE,FALSE,TRUE,sex,<b>sex</b>,character,dropdown,NA,"getDropdown('choice_sex', fieldOptions)",50,NA,NA
+captures,captures,Neighborhood Nestwatch,18,TRUE,FALSE,TRUE,cpBp,<b>cp/bp</b>,character,dropdown,NA,"getDropdown('choice_cpBp', fieldOptions)",50,NA,NA
+captures,captures,Neighborhood Nestwatch,19,TRUE,FALSE,TRUE,fat,<b>fat</b>,character,dropdown,NA,"getDropdown('choice_fat', fieldOptions)",50,NA,NA
+captures,captures,Neighborhood Nestwatch,20,TRUE,FALSE,TRUE,featherID,<b>featherID</b>,character,NA,NA,NULL,80,NA,NA
+captures,captures,Neighborhood Nestwatch,21,TRUE,FALSE,TRUE,bloodID,<b>bloodID</b>,character,NA,NA,NULL,80,NA,NA
+captures,captures,Neighborhood Nestwatch,22,TRUE,FALSE,TRUE,notes,<b>notes</b>,character,NA,NA,NULL,100,NA,NA
+foray,foray,Neighborhood Nestwatch,1,FALSE,FALSE,TRUE,siteID,NA,character,NA,NA,NULL,NA,NA,NA
+foray,foray,Neighborhood Nestwatch,2,FALSE,FALSE,TRUE,date,NA,character,NA,NA,NULL,NA,NA,NA
+foray,foray,Neighborhood Nestwatch,3,TRUE,FALSE,TRUE,observer,<b>observer</b>,character,NA,NA,NULL,100,NA,NA
+foray,foray,Neighborhood Nestwatch,4,TRUE,FALSE,TRUE,forayNumber,<b>foray #</b>,integer,numeric,NA,NULL,100,NA,NA
+foray,foray,Neighborhood Nestwatch,5,TRUE,FALSE,TRUE,startTime,<b>start time</b>,character,autocomplete,NA,timeOfDay,100,NA,NA
+foray,foray,Neighborhood Nestwatch,6,TRUE,FALSE,TRUE,endTime,<b>end time</b>,character,autocomplete,NA,timeOfDay,100,NA,NA
+foray,foray,Neighborhood Nestwatch,7,TRUE,FALSE,TRUE,pathDist,<b>path dist</b>,integer,numeric,NA,NULL,100,NA,NA
+forayCountUnbanded,forayCountUnbanded,Neighborhood Nestwatch,1,FALSE,FALSE,TRUE,siteID,NA,character,NA,NA,NULL,NA,NA,NA
+forayCountUnbanded,forayCountUnbanded,Neighborhood Nestwatch,2,FALSE,FALSE,TRUE,date,NA,character,NA,NA,NULL,NA,NA,NA
+forayCountUnbanded,forayCountUnbanded,Neighborhood Nestwatch,3,TRUE,FALSE,TRUE,spp,<b>species</b>,character,dropdown,NA,eval(parse(text = 'aou'))$Alpha,75,NA,NA
+forayCountUnbanded,forayCountUnbanded,Neighborhood Nestwatch,4,TRUE,FALSE,TRUE,count,<b>count</b>,integer,numeric,NA,NULL,75,NA,NA
+techRs,techRs,Neighborhood Nestwatch,1,FALSE,FALSE,FALSE,siteID,NA,character,NA,NA,NULL,NA,NA,NA
+techRs,techRs,Neighborhood Nestwatch,2,FALSE,FALSE,FALSE,date,NA,character,NA,NA,NULL,NA,NA,NA
+techRs,techRs,Neighborhood Nestwatch,3,TRUE,FALSE,TRUE,observer,<b>observer</b>,character,NA,NA,NULL,75,NA,NA
+techRs,techRs,Neighborhood Nestwatch,4,TRUE,FALSE,TRUE,time,<b>time</b>,character,autocomplete,NA,timeOfDay,75,NA,NA
+techRs,techRs,Neighborhood Nestwatch,5,TRUE,FALSE,TRUE,forayNumber,<b>foray #</b>,integer,numeric,NA,NULL,75,NA,NA
+techRs,techRs,Neighborhood Nestwatch,6,TRUE,FALSE,TRUE,bandNumber,NA,character,NA,NA,NULL,NA,"separate(bandNumber, into = c('prefix', 'suffix'), by = ',')",NA
+techRs,techRs,Neighborhood Nestwatch,7,TRUE,TRUE,FALSE,prefix,<b>prefix</b>,character,NA,NA,NULL,50,NA,NA
+techRs,techRs,Neighborhood Nestwatch,8,TRUE,TRUE,FALSE,suffix,<b>suffix</b>,character,NA,NA,NULL,75,NA,NA
+techRs,techRs,Neighborhood Nestwatch,9,TRUE,FALSE,TRUE,long,<b>longitude (dd.dddd)</b>,numeric,numeric,"""0.00000""",NULL,125,NA,NA
