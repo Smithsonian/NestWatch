@@ -8,6 +8,7 @@ module:
   big_pipe: 0
   block: 0
   block_content: 0
+  block_field: 0
   breakpoint: 0
   chosen: 0
   chosen_field: 0
@@ -17,6 +18,7 @@ module:
   color: 0
   comment: 0
   computed_field: 0
+  conditional_fields: 0
   config: 0
   contact: 0
   contextual: 0
@@ -27,8 +29,6 @@ module:
   dblog: 0
   devel: 0
   devel_generate: 0
-  ds_devel: 0
-  ds_switch_view_mode: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
@@ -44,6 +44,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  formblock: 0
   geocoder: 0
   geocoder_field: 0
   geocoder_geofield: 0
@@ -59,6 +60,7 @@ module:
   media_entity_audio: 0
   media_entity_browser: 0
   media_entity_video: 0
+  memcache: 0
   menu_block: 0
   menu_ui: 0
   migrate: 0
@@ -76,6 +78,8 @@ module:
   shortcut: 0
   svg_image: 0
   system: 0
+  table_field_group: 0
+  tablefield: 0
   taxonomy: 0
   text: 0
   token: 0

@@ -1,35 +1,22 @@
-uuid: 0c13e30e-f025-4e6a-88c1-0a1175f24af2
+uuid: 7233a970-78a8-4cbd-a76b-a0743cd14863
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.page.body
     - field.field.node.page.field_component
     - node.type.page
   module:
-    - ds
     - entity_reference_revisions
     - text
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
-      disable_css: false
-      entity_classes: all_classes
-      settings: {  }
-    regions:
-      content:
-        - body
-        - field_component
-        - links
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
-id: node.page.default
+id: node.page.full
 targetEntityType: node
 bundle: page
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -41,18 +28,15 @@ content:
   field_component:
     type: entity_reference_revisions_entity_view
     weight: 1
-    label: above
+    region: content
+    label: visually_hidden
     settings:
       view_mode: default
       link: ''
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    region: content
+    third_party_settings: {  }
   links:
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  layout_builder__layout: true
+hidden: {  }

@@ -2,9 +2,12 @@ uuid: 45496439-a415-48f3-8b39-1c65b28f3941
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_agree_with_eula
   module:
     - field_layout
     - layout_discovery
+    - path
     - user
 third_party_settings:
   field_layout:
@@ -22,6 +25,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_agree_with_eula:
+    weight: 31
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   path:
     type: path
     weight: 30

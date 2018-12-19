@@ -1,0 +1,24 @@
+uuid: 97283d86-4f00-4ec3-ba7b-d2c04041e0e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_agree_with_eula
+  module:
+    - user
+id: user.user.field_agree_with_eula
+field_name: field_agree_with_eula
+entity_type: user
+bundle: user
+label: 'Agree with EULA'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -16,39 +16,8 @@ dependencies:
     - field.field.node.bird.field_bird_wing_span
     - node.type.bird
   module:
-    - ds
     - options
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_reset
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      ds_content:
-        - links
-        - field_bird_id
-        - field_bird_band_number
-        - field_bird_species
-        - field_bird_band_color_combo
-        - field_bird_sex
-        - field_bird_mass
-        - field_bird_wing_span
-        - field_bird_tail_span
-        - field_bird_age
-        - field_bird_fat
-        - field_bird_cpbp
 id: node.bird.default
 targetEntityType: node
 bundle: bird

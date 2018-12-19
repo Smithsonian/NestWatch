@@ -1,0 +1,9 @@
+uuid: 6ddf0ab1-5a14-43ae-b72e-b9fc7a5acc9b
+langcode: en
+status: true
+dependencies: {  }
+id: block_reference
+label: 'Block Reference'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
