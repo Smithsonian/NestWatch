@@ -4,7 +4,7 @@ description: 'NZP Theme based on the Bootstrap 4 Library'
 # core: 8.x
 libraries:
   - nzpbs4/global-styling
-base theme: classy
+base theme: stable
 regions:
   off_canvas: 'Off-Canvas Menu'
   jumbotron: 'Jumbotron'
