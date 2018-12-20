@@ -1,0 +1,7 @@
+status: '3'
+pattern: 'session[node:field_session_date_range:end_date:html_year][node:field_session_type]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - node.type.sessioninfo

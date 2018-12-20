@@ -14,4 +14,5 @@ bundle: user
 mode: compact
 content: {  }
 hidden:
+  field_agree_with_eula: true
   member_for: true

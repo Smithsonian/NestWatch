@@ -1,18 +1,17 @@
-uuid: 51453862-5888-4dfc-b9e1-d1621072cb6a
+uuid: 24dd7c0e-96d1-43f1-aa64-057b2f450e0e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_session_id
     - node.type.sessioninfo
-id: node.sessioninfo.field_session_id
-field_name: field_session_id
+id: node.sessioninfo.title
+field_name: title
 entity_type: node
 bundle: sessioninfo
 label: 'Session ID'
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

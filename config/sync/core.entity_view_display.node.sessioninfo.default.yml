@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.sessioninfo.field_session_birds_encountered
     - field.field.node.sessioninfo.field_session_date_range
     - field.field.node.sessioninfo.field_session_guests
-    - field.field.node.sessioninfo.field_session_id
     - field.field.node.sessioninfo.field_session_net_hours
     - field.field.node.sessioninfo.field_session_notes
     - field.field.node.sessioninfo.field_session_participant
@@ -50,14 +49,6 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
-    region: content
-  field_session_id:
-    weight: 102
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_session_net_hours:
     weight: 108

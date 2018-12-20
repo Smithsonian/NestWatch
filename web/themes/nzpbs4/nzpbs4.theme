@@ -55,3 +55,9 @@ function nzpbs4_preprocess_page(&$variables) {
   $variables['b4_navbar_schema'] = theme_get_setting('b4_navbar_schema');
   $variables['b4_navbar_bg_schema'] = theme_get_setting('b4_navbar_bg_schema');
 }
+
+
+
+function nzpbs4_form_node_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  unset($form['advanced']);
+}

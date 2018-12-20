@@ -7,9 +7,10 @@ dependencies:
     - field.field.node.sessioninfo.field_session_birds_encountered
     - field.field.node.sessioninfo.field_session_date_range
     - field.field.node.sessioninfo.field_session_guests
-    - field.field.node.sessioninfo.field_session_id
     - field.field.node.sessioninfo.field_session_net_hours
+    - field.field.node.sessioninfo.field_session_notes
     - field.field.node.sessioninfo.field_session_participant
+    - field.field.node.sessioninfo.field_session_type
     - field.field.node.sessioninfo.field_session_user
     - node.type.sessioninfo
   module:
@@ -28,7 +29,6 @@ hidden:
   field_session_birds_encountered: true
   field_session_date_range: true
   field_session_guests: true
-  field_session_id: true
   field_session_net_hours: true
   field_session_notes: true
   field_session_participant: true
