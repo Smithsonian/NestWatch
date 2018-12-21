@@ -1,15 +1,15 @@
-uuid: 535356c8-493a-4183-8c22-3c86dcd8f08c
+uuid: ee7e4b01-a806-43a8-b4e7-8fa9fa786587
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_capture_user
+    - field.storage.node.field_capture_site_id
     - node.type.capture
-id: node.capture.field_capture_user
-field_name: field_capture_user
+id: node.capture.field_capture_site_id
+field_name: field_capture_site_id
 entity_type: node
 bundle: capture
-label: 'Capture User'
+label: 'Capture Site ID'
 description: ''
 required: false
 translatable: false
@@ -18,7 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:user'
   handler_settings:
-    include_anonymous: true
+    include_anonymous: false
     filter:
       type: _none
     target_bundles: null

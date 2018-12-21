@@ -1,14 +1,17 @@
-uuid: cf5c8d1e-95c7-40a3-8314-273b66e6b22a
+uuid: b91c53b9-8804-457d-be43-5b84e2f1ed05
 langcode: en
 status: true
 dependencies:
   module:
     - user
-id: user.field_agree_with_eula
-field_name: field_agree_with_eula
+id: user.field_user_site_region
+field_name: field_user_site_region
 entity_type: user
-type: boolean
-settings: {  }
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

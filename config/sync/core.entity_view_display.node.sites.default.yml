@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.sites.field_site_description
     - field.field.node.sites.field_site_id
     - field.field.node.sites.field_site_location
+    - field.field.node.sites.field_site_location_test
     - field.field.node.sites.field_site_project
     - field.field.node.sites.field_site_status
     - node.type.sites
   module:
     - geocoder_geofield
+    - geofield
     - options
     - user
 id: node.sites.default
@@ -101,6 +103,15 @@ content:
       dumper: wkt
     third_party_settings: {  }
     type: geocoder_geofield_reverse_geocode
+    region: content
+  field_site_location_test:
+    weight: 109
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    type: geofield_default
     region: content
   field_site_project:
     weight: 105

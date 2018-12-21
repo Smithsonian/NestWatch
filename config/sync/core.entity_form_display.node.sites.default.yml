@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.sites.field_site_description
     - field.field.node.sites.field_site_id
     - field.field.node.sites.field_site_location
+    - field.field.node.sites.field_site_location_test
     - field.field.node.sites.field_site_project
     - field.field.node.sites.field_site_status
     - node.type.sites
@@ -49,6 +50,13 @@ content:
     weight: 7
     settings:
       html5_geolocation: true
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
+  field_site_location_test:
+    weight: 28
+    settings:
+      html5_geolocation: false
     third_party_settings: {  }
     type: geofield_latlon
     region: content

@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_agree_with_eula
+    - field.field.user.user.field_user_site_location
+    - field.field.user.user.field_user_site_region
+    - field.field.user.user.field_user_site_status
   module:
     - field_layout
+    - geofield
     - layout_discovery
-    - path
     - user
 third_party_settings:
   field_layout:
@@ -25,20 +27,29 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_agree_with_eula:
-    weight: 31
+  field_user_site_location:
+    weight: 2
     settings:
-      display_label: true
+      html5_geolocation: false
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: geofield_latlon
     region: content
-  path:
-    type: path
-    weight: 30
+  field_user_site_region:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
+  field_user_site_status:
+    weight: 4
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
 hidden:
   contact: true
   language: true
+  path: true
   timezone: true

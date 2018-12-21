@@ -1,12 +1,12 @@
-uuid: bda27421-3ddd-4f43-b78d-1c4428fd2470
+uuid: f5f5c25c-d271-4794-832a-4f1a89728cc0
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - user
-id: node.field_capture_user
-field_name: field_capture_user
+id: node.field_capture_site_id
+field_name: field_capture_site_id
 entity_type: node
 type: entity_reference
 settings:

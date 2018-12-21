@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "157aaadcdb7d6815ebaa1ee04ef9ae66",
+    "content-hash": "becee68ec1b7e0db79119f5b196bb5a2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11495,6 +11495,7 @@
         "drupal/formblock": 20,
         "drupal/geocoder": 10,
         "drupal/ldap": 10,
+        "drupal/masquerade": 10,
         "drupal/rabbit_hole": 10,
         "drupal/tablefield": 20,
         "drupal/webform": 5,

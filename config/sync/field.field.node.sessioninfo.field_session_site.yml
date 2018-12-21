@@ -1,0 +1,28 @@
+uuid: 39283a6a-577e-4b8d-bd10-78fffd0e49de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_site
+    - node.type.sessioninfo
+    - node.type.sites
+id: node.sessioninfo.field_session_site
+field_name: field_session_site
+entity_type: node
+bundle: sessioninfo
+label: 'Session Site'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sites: sites
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
