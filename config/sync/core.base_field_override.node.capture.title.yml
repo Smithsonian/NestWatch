@@ -1,18 +1,17 @@
-uuid: 374d8d1e-66d3-42ea-a41b-345f28458a10
+uuid: fbb71f13-815a-4023-965f-42f154002e3e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_capture_id
     - node.type.capture
-id: node.capture.field_capture_id
-field_name: field_capture_id
+id: node.capture.title
+field_name: title
 entity_type: node
 bundle: capture
 label: 'Capture ID'
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

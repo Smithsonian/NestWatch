@@ -1,0 +1,19 @@
+uuid: 2321c957-cb39-4d19-96f6-669f85b48096
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_species_sppcode
+    - taxonomy.vocabulary.bird_species
+id: taxonomy_term.bird_species.field_species_sppcode
+field_name: field_species_sppcode
+entity_type: taxonomy_term
+bundle: bird_species
+label: 'Species sppCode'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

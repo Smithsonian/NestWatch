@@ -15,4 +15,7 @@ mode: compact
 content: {  }
 hidden:
   field_agree_with_eula: true
+  field_user_site_location: true
+  field_user_site_region: true
+  field_user_site_status: true
   member_for: true

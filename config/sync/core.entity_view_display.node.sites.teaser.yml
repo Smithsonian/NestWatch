@@ -25,5 +25,6 @@ hidden:
   field_site_description: true
   field_site_id: true
   field_site_location: true
+  field_site_location_test: true
   field_site_project: true
   field_site_status: true

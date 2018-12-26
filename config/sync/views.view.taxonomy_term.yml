@@ -2,8 +2,6 @@ uuid: 5308f153-57b3-4bd6-bf22-55b47fe6b673
 langcode: en
 status: true
 dependencies:
-  config:
-    - core.entity_view_mode.node.teaser
   module:
     - node
     - taxonomy
@@ -223,7 +221,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: default
       header:
         entity_taxonomy_term:
           id: entity_taxonomy_term

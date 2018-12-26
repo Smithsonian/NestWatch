@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.capture.field_capture_date_time
     - field.field.node.capture.field_capture_date_time_release
     - field.field.node.capture.field_capture_encounter_type
-    - field.field.node.capture.field_capture_id
     - field.field.node.capture.field_capture_notes
     - field.field.node.capture.field_capture_session
     - field.field.node.capture.field_capture_site_id
@@ -129,14 +128,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_capture_id:
-    weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_capture_notes:
     weight: 8

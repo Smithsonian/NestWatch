@@ -1,18 +1,17 @@
-uuid: 68c975b1-5d48-4b2a-b012-fbbd5251806e
+uuid: 8f445930-9b54-4470-aa79-53acaa62e99b
 langcode: en
 status: true
 dependencies:
   module:
+    - datetime
     - node
-id: node.field_bird_id
-field_name: field_bird_id
+id: node.field_bird_date_captured
+field_name: field_bird_date_captured
 entity_type: node
-type: string
+type: datetime
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  datetime_type: datetime
+module: datetime
 locked: false
 cardinality: 1
 translatable: true

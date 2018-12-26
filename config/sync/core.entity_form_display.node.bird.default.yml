@@ -7,8 +7,8 @@ dependencies:
     - field.field.node.bird.field_bird_band_color_combo
     - field.field.node.bird.field_bird_band_number
     - field.field.node.bird.field_bird_cpbp
+    - field.field.node.bird.field_bird_date_captured
     - field.field.node.bird.field_bird_fat
-    - field.field.node.bird.field_bird_id
     - field.field.node.bird.field_bird_mass
     - field.field.node.bird.field_bird_sex
     - field.field.node.bird.field_bird_species
@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.bird.field_bird_wing_span
     - node.type.bird
   module:
+    - datetime
     - field_layout
     - layout_discovery
     - path
@@ -62,19 +63,17 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_bird_date_captured:
+    weight: 132
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   field_bird_fat:
     weight: 130
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_bird_id:
-    weight: 121
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_bird_mass:
     weight: 126

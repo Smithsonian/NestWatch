@@ -8,7 +8,7 @@ id: node.resight.title
 field_name: title
 entity_type: node
 bundle: resight
-label: title
+label: 'Resight ID'
 description: ''
 required: true
 translatable: true

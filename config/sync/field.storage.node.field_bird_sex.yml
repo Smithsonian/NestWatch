@@ -17,6 +17,9 @@ settings:
     -
       value: f
       label: F
+    -
+      value: u
+      label: U
   allowed_values_function: ''
 module: options
 locked: false
