@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.bird.field_bird_age
     - field.field.node.bird.field_bird_band_color_combo
     - field.field.node.bird.field_bird_band_number
+    - field.field.node.bird.field_bird_captures
     - field.field.node.bird.field_bird_cpbp
     - field.field.node.bird.field_bird_date_captured
     - field.field.node.bird.field_bird_fat
@@ -16,8 +17,10 @@ dependencies:
     - field.field.node.bird.field_bird_wing_span
     - node.type.bird
   module:
+    - conditional_fields
     - datetime
     - field_layout
+    - inline_entity_form
     - layout_discovery
     - path
 third_party_settings:
@@ -38,7 +41,23 @@ content:
   field_bird_age:
     weight: 129
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        d5f5cb3b-4d38-4334-a3e8-a0f5f2d77742:
+          dependee: field_bird_captures
+          settings:
+            state: '!empty'
+            condition: '!empty'
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form: {  }
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: bird
     type: options_select
     region: content
   field_bird_band_color_combo:
@@ -56,6 +75,19 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_bird_captures:
+    weight: 133
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Capture
+      label_plural: Captures
+      collapsible: true
+      collapsed: false
+    third_party_settings:
+      conditional_fields: {  }
+    type: inline_entity_form_simple
     region: content
   field_bird_cpbp:
     weight: 131

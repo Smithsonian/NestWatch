@@ -7,7 +7,7 @@ migration_tags:
   - nestwatch migrate birds
 source:
   plugin: csv
-  path: 'public://import/captures_backup_formatted.csv'
+  path: 'public://import/captures_backup.csv'
   header_row_count: 1
   keys:
     - bandNumber

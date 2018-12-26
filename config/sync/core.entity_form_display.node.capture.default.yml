@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.capture.body
-    - field.field.node.capture.field_capture_bird
     - field.field.node.capture.field_capture_bird_age
     - field.field.node.capture.field_capture_bird_cpbp
     - field.field.node.capture.field_capture_bird_fat
+    - field.field.node.capture.field_capture_bird_id
     - field.field.node.capture.field_capture_bird_mass
     - field.field.node.capture.field_capture_bird_tail_span
     - field.field.node.capture.field_capture_bird_wing_span
@@ -28,15 +28,15 @@ third_party_settings:
   field_group:
     group_capture_bird_details:
       children:
-        - field_capture_bird
-        - field_capture_bird_mass
-        - field_capture_bird_wing_span
-        - field_capture_bird_tail_span
+        - field_capture_bird_id
         - field_capture_bird_age
-        - field_capture_bird_fat
         - field_capture_bird_cpbp
+        - field_capture_bird_fat
+        - field_capture_bird_mass
+        - field_capture_bird_tail_span
+        - field_capture_bird_wing_span
       parent_name: ''
-      weight: 10
+      weight: 7
       format_type: html_element
       format_settings:
         label: 'Capture Bird Details'
@@ -60,77 +60,71 @@ targetEntityType: node
 bundle: capture
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 2
+  field_capture_bird_age:
+    type: options_select
+    weight: 27
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_capture_bird:
-    weight: 9
+  field_capture_bird_cpbp:
+    type: options_select
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_capture_bird_fat:
+    type: options_select
+    weight: 29
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_capture_bird_id:
+    weight: 26
     settings: {  }
     third_party_settings: {  }
     type: chosen_select
     region: content
-  field_capture_bird_age:
-    weight: 13
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_capture_bird_cpbp:
-    weight: 15
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_capture_bird_fat:
-    weight: 14
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_capture_bird_mass:
-    weight: 10
+    type: number
+    weight: 30
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_capture_bird_tail_span:
-    weight: 12
+    type: number
+    weight: 31
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_capture_bird_wing_span:
-    weight: 11
+    type: number
+    weight: 32
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_capture_date_time:
-    weight: 6
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_capture_date_time_release:
-    weight: 7
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_capture_encounter_type:
-    weight: 5
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_capture_notes:
-    weight: 8
+    weight: 6
     settings:
       rows: 5
       placeholder: ''
@@ -147,13 +141,10 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_capture_site_id:
-    weight: 26
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    weight: 1
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: chosen_select
     region: content
   title:
     type: string_textfield
@@ -163,18 +154,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
 hidden:
   body: true
+  created: true
   path: true
   promote: true
   status: true
   sticky: true
+  uid: true

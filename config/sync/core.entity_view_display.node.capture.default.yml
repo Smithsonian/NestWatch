@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.capture.body
-    - field.field.node.capture.field_capture_bird
     - field.field.node.capture.field_capture_bird_age
     - field.field.node.capture.field_capture_bird_cpbp
     - field.field.node.capture.field_capture_bird_fat
+    - field.field.node.capture.field_capture_bird_id
     - field.field.node.capture.field_capture_bird_mass
     - field.field.node.capture.field_capture_bird_tail_span
     - field.field.node.capture.field_capture_bird_wing_span
@@ -35,14 +35,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_capture_bird:
-    weight: 117
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_capture_bird_age:
     weight: 122
     label: above
@@ -63,6 +55,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_capture_bird_id:
+    weight: 126
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_capture_bird_mass:
     weight: 119

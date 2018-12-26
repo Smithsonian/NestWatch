@@ -12,16 +12,16 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: band
+      value: B
       label: Band
     -
-      value: recap
-      label: recap
+      value: R
+      label: Recapture
     -
-      value: bandLost
+      value: L
       label: 'Lost Band'
     -
-      value: reband
+      value: Re
       label: Reband
   allowed_values_function: ''
 module: options

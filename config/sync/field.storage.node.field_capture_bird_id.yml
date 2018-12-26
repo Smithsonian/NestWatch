@@ -1,11 +1,11 @@
-uuid: 5e8a6e5b-c7e4-4f58-98f5-e27aef0ac051
+uuid: a643aaac-5b0f-4bdd-b08b-380051131e16
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_capture_bird
-field_name: field_capture_bird
+id: node.field_capture_bird_id
+field_name: field_capture_bird_id
 entity_type: node
 type: entity_reference
 settings:
