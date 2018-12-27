@@ -39,7 +39,6 @@
         "drupal/ds": "^3.2",
         "drupal/easy_breadcrumb": "^1.8",
         "drupal/entity_embed": "^1.0@beta",
-        "drupal/entity_hierarchy": "^2.0",
         "drupal/entity_usage": "^2.0@alpha",
         "drupal/facets": "^1.0@beta",
         "drupal/field_group": "3.x-dev",
