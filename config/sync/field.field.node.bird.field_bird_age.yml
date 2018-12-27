@@ -1,4 +1,4 @@
-uuid: ca1fd0bd-b7bb-4a93-b24a-83f020369a36
+uuid: bd04d248-e5fc-447e-a812-aecfac0977c3
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_bird_age
     - node.type.bird
   module:
-    - options
+    - field_token_value
 id: node.bird.field_bird_age
 field_name: field_bird_age
 entity_type: node
@@ -15,7 +15,11 @@ label: 'Bird Age'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: ''
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  field_value: '[node:field_bird_captures:0:entity:field_capture_bird_age]'
+  remove_empty: 1
+field_type: field_token_value

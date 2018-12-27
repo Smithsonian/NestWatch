@@ -1,10 +1,12 @@
-uuid: 0477d02c-7391-407b-a760-bf9c38a1eb65
+uuid: 3654e2e1-c075-4198-b963-5878574cc5eb
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_bird_mass
     - node.type.bird
+  module:
+    - field_token_value
 id: node.bird.field_bird_mass
 field_name: field_bird_mass
 entity_type: node
@@ -13,11 +15,11 @@ label: 'Bird Mass'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: ''
 default_value_callback: ''
 settings:
-  min: null
-  max: null
-  prefix: ''
-  suffix: ''
-field_type: decimal
+  field_value: '[node:field_bird_captures:0:entity:field_capture_bird_mass]'
+  remove_empty: 1
+field_type: field_token_value

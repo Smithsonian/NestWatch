@@ -1,27 +1,16 @@
-uuid: d691b378-0c64-4d3e-b03f-2e0f332aee10
+uuid: 00fba8d1-945d-4f87-baa7-f84636b6b630
 langcode: en
 status: true
 dependencies:
   module:
+    - field_token_value
     - node
-    - options
 id: node.field_bird_cpbp
 field_name: field_bird_cpbp
 entity_type: node
-type: list_string
-settings:
-  allowed_values:
-    -
-      value: U
-      label: U
-    -
-      value: CP
-      label: CP
-    -
-      value: BP
-      label: BP
-  allowed_values_function: ''
-module: options
+type: field_token_value
+settings: {  }
+module: field_token_value
 locked: false
 cardinality: 1
 translatable: true

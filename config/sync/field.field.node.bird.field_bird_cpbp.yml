@@ -1,4 +1,4 @@
-uuid: a5311efc-b8d5-4bb3-b024-ee6977ae4173
+uuid: 5b80769a-edbe-4708-845a-dc3d179e7fcc
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_bird_cpbp
     - node.type.bird
   module:
-    - options
+    - field_token_value
 id: node.bird.field_bird_cpbp
 field_name: field_bird_cpbp
 entity_type: node
@@ -15,7 +15,11 @@ label: 'Bird cpBp'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: ''
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  field_value: '[node:field_bird_captures:0:entity:field_capture_bird_cpbp]'
+  remove_empty: 1
+field_type: field_token_value

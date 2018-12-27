@@ -1,42 +1,16 @@
-uuid: 262254d8-6df2-4a99-972c-5720bee7e5af
+uuid: f17d81ce-fa24-492b-b157-a5ad916b198d
 langcode: en
 status: true
 dependencies:
   module:
+    - field_token_value
     - node
-    - options
 id: node.field_bird_age
 field_name: field_bird_age
 entity_type: node
-type: list_string
-settings:
-  allowed_values:
-    -
-      value: U
-      label: U
-    -
-      value: L
-      label: L
-    -
-      value: HY
-      label: HY
-    -
-      value: SY
-      label: SY
-    -
-      value: AHY
-      label: AHY
-    -
-      value: ASY
-      label: ASY
-    -
-      value: TY
-      label: TY
-    -
-      value: ATY
-      label: ATY
-  allowed_values_function: ''
-module: options
+type: field_token_value
+settings: {  }
+module: field_token_value
 locked: false
 cardinality: 1
 translatable: true

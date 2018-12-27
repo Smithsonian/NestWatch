@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.bird.field_bird_date_captured
     - field.field.node.bird.field_bird_fat
     - field.field.node.bird.field_bird_mass
-    - field.field.node.bird.field_bird_sex
+    - field.field.node.bird.field_bird_resights
     - field.field.node.bird.field_bird_species
     - field.field.node.bird.field_bird_tail_span
     - field.field.node.bird.field_bird_wing_span
@@ -20,7 +20,7 @@ dependencies:
     - datetime
     - ds
     - field_group
-    - options
+    - field_token_value
     - user
 third_party_settings:
   field_group:
@@ -29,14 +29,13 @@ third_party_settings:
         - field_bird_date_captured
         - field_bird_band_number
         - field_bird_band_color_combo
-        - field_bird_sex
         - field_bird_species
-        - field_bird_age
-        - field_bird_cpbp
-        - field_bird_fat
         - field_bird_mass
         - field_bird_tail_span
         - field_bird_wing_span
+        - field_bird_fat
+        - field_bird_age
+        - field_bird_cpbp
       parent_name: ''
       weight: 0
       format_type: html_element
@@ -75,19 +74,19 @@ third_party_settings:
         - field_bird_band_number
         - 'dynamic_block_field:node-capture_info_block'
         - field_bird_band_color_combo
-        - field_bird_sex
+        - field_bird_resights
         - field_bird_species
-        - field_bird_age
-        - field_bird_cpbp
-        - field_bird_fat
         - field_bird_mass
         - field_bird_tail_span
         - field_bird_wing_span
+        - field_bird_fat
+        - field_bird_age
+        - field_bird_cpbp
     fields:
       'dynamic_block_field:node-capture_info_block':
         plugin_id: 'dynamic_block_field:node-capture_info_block'
-        weight: 1
-        label: above
+        weight: 2
+        label: hidden
         formatter: default
 id: node.bird.default
 targetEntityType: node
@@ -95,12 +94,13 @@ bundle: bird
 mode: default
 content:
   field_bird_age:
-    type: list_default
-    weight: 5
-    region: ds_content
+    weight: 10
     label: above
-    settings: {  }
+    settings:
+      wrapper: ''
     third_party_settings: {  }
+    type: field_token_value_text
+    region: ds_content
   field_bird_band_color_combo:
     type: string
     weight: 2
@@ -118,12 +118,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
   field_bird_cpbp:
-    type: list_default
-    weight: 6
-    region: ds_content
+    weight: 11
     label: above
-    settings: {  }
+    settings:
+      wrapper: ''
     third_party_settings: {  }
+    type: field_token_value_text
+    region: ds_content
   field_bird_date_captured:
     weight: 0
     label: above
@@ -134,30 +135,29 @@ content:
     type: datetime_default
     region: ds_content
   field_bird_fat:
-    type: list_default
-    weight: 7
-    region: ds_content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_bird_mass:
-    type: number_decimal
-    weight: 8
-    region: ds_content
+    weight: 9
     label: above
     settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
+      wrapper: ''
     third_party_settings: {  }
-  field_bird_sex:
-    type: list_default
-    weight: 3
+    type: field_token_value_text
     region: ds_content
+  field_bird_mass:
+    weight: 6
     label: above
-    settings: {  }
+    settings:
+      wrapper: ''
     third_party_settings: {  }
+    type: field_token_value_text
+    region: ds_content
+  field_bird_resights:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
   field_bird_species:
     type: entity_reference_label
     weight: 4
@@ -167,27 +167,21 @@ content:
       link: true
     third_party_settings: {  }
   field_bird_tail_span:
-    type: number_decimal
-    weight: 9
-    region: ds_content
+    weight: 7
     label: above
     settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
+      wrapper: ''
     third_party_settings: {  }
+    type: field_token_value_text
+    region: ds_content
   field_bird_wing_span:
-    type: number_decimal
-    weight: 10
-    region: ds_content
+    weight: 8
     label: above
     settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
+      wrapper: ''
     third_party_settings: {  }
+    type: field_token_value_text
+    region: ds_content
 hidden:
   field_bird_captures: true
   links: true

@@ -1,17 +1,16 @@
-uuid: 7725ff8b-95c0-4853-a5dd-311a940d95c2
+uuid: b618a015-586e-4531-8f6f-555bd26111e5
 langcode: en
 status: true
 dependencies:
   module:
+    - field_token_value
     - node
 id: node.field_bird_tail_span
 field_name: field_bird_tail_span
 entity_type: node
-type: decimal
-settings:
-  precision: 10
-  scale: 1
-module: core
+type: field_token_value
+settings: {  }
+module: field_token_value
 locked: false
 cardinality: 1
 translatable: true

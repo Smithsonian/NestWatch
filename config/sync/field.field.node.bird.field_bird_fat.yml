@@ -1,4 +1,4 @@
-uuid: 9c6ccc8e-9cdc-42b0-801d-3037e3d0197e
+uuid: bde7c3c0-6bfb-4a43-9789-49cd557f150a
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_bird_fat
     - node.type.bird
   module:
-    - options
+    - field_token_value
 id: node.bird.field_bird_fat
 field_name: field_bird_fat
 entity_type: node
@@ -15,7 +15,11 @@ label: 'Bird Fat'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: ''
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  field_value: '[node:field_bird_captures:0:entity:field_capture_bird_fat]'
+  remove_empty: 1
+field_type: field_token_value

@@ -1,17 +1,16 @@
-uuid: e4de3c0a-f6e9-434c-afaf-76c836019c0d
+uuid: 1b987cce-62a5-407c-8485-90338e8fa047
 langcode: en
 status: true
 dependencies:
   module:
+    - field_token_value
     - node
 id: node.field_bird_mass
 field_name: field_bird_mass
 entity_type: node
-type: decimal
-settings:
-  precision: 10
-  scale: 2
-module: core
+type: field_token_value
+settings: {  }
+module: field_token_value
 locked: false
 cardinality: 1
 translatable: true
