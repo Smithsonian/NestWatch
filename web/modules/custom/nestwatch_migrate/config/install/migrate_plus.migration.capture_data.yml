@@ -1,7 +1,7 @@
 # Migration configuration for NW Birds Data. 
 
-id: birds_data
-label: Importing birds data. 
+id: capture_data
+label: Importing capture data. 
 migration_group: nestwatch
 migration_tags:
   - nestwatch migrate birds
@@ -10,13 +10,16 @@ source:
   path: 'public://import/captures_backup.csv'
   header_row_count: 1
   keys:
-    - bandNumber
+    - captureID
   fields:
+    captureID: captureID
+    siteID: siteID
     spp : spp
     bandNumber : bandNumber
     colorCombo : colorCombo
     date: date
     time: time
+    enc: enc
     mass : mass
     wing : wing
     tl : tl
@@ -26,22 +29,20 @@ source:
     cpBp : cpBp
     featherID : featherID
     bloodID : bloodID
+    notes: notes
 
 destination:
   plugin: 'entity:node'
-  default_bundle: bird
+  default_bundle: capture
 
 process:
-  title: bandNumber
-  field_bird_age : age
-  field_bird_band_color_combo : colorCombo
-  field_bird_band_number : bandNumber
-  field_bird_cpbp : cpBp
-
+  title: captureID
+  field_capture_bird_age : age
+  field_capture_bird_cpbp : cpBp
   # We will use concat plugin to combine the date and time columns into one entry 
   # and the format_date plugin to format the concated entry into a date readable by drupal
 
-  field_bird_date_captured :
+  field_capture_date_time :
     -
       plugin: concat
       source: 
@@ -53,23 +54,28 @@ process:
       from_format: 'Y-m-d Hi'
       to_format: 'Y-m-d\TH:i:s'
   
-  field_bird_fat : fat
-  field_bird_mass : mass
-  field_bird_sex : sex
+  field_capture_bird_fat : fat
+  field_capture_bird_mass : mass
+  field_capture_encounter_type : enc
+  field_capture_bird_tail_span : tl
+  field_capture_bird_wing_span : wing
 
-  # Use the entity lookup plugin to look for referenced species by the field_specis_sppcode. 
-
-  field_bird_species : 
+  # Use the entity lookup plugin to look for referenced sites
+  field_capture_site_id : 
     plugin: entity_lookup
-    source: spp
-    value_key: field_species_sppcode
-    bundle_key: vid
-    bundle: bird_species
-    entity_type: taxonomy_term
+    source: siteID
+    value_key: name
+    entity_type: user
     ignore_case: true
-
-  field_bird_tail_span : tl
-  field_bird_wing_span : wing
+  
+  # Use the entity lookup plugin to look for referenced birds
+  field_capture_bird_id : 
+    plugin: entity_lookup
+    source: bandNumber
+    value_key: title
+    entity_type: node
+    bundle: bird
+    ignore_case: true
 
 
 dependencies:
