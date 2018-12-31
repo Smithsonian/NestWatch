@@ -37,6 +37,7 @@
         "drupal/crop": "~2.0",
         "drupal/devel": "^1.2",
         "drupal/ds": "^3.2",
+        "drupal/dynamic_entity_reference": "^1.6",
         "drupal/easy_breadcrumb": "^1.8",
         "drupal/entity_embed": "^1.0@beta",
         "drupal/entity_usage": "^2.0@alpha",
