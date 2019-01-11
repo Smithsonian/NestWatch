@@ -58,6 +58,7 @@ process:
   field_capture_encounter_type: enc
   field_capture_bird_tail_span: tl
   field_capture_bird_wing_span: wing
+  field_capture_notes: notes
   field_capture_site_id:
     plugin: entity_lookup
     source: siteID

@@ -59,7 +59,8 @@ process:
   field_capture_encounter_type : enc
   field_capture_bird_tail_span : tl
   field_capture_bird_wing_span : wing
-
+  field_capture_notes: notes
+  
   # Use the entity lookup plugin to look for referenced sites
   field_capture_site_id : 
     plugin: entity_lookup
@@ -67,6 +68,7 @@ process:
     value_key: name
     entity_type: user
     ignore_case: true
+  
   
   # Use the entity lookup plugin to look for referenced birds
   field_capture_bird_id : 

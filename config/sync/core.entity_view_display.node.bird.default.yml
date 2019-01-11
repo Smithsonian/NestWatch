@@ -86,7 +86,7 @@ third_party_settings:
       'dynamic_block_field:node-capture_info_block':
         plugin_id: 'dynamic_block_field:node-capture_info_block'
         weight: 2
-        label: hidden
+        label: above
         formatter: default
 id: node.bird.default
 targetEntityType: node

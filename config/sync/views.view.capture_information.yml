@@ -93,10 +93,112 @@ display:
           summary: ''
           description: ''
           columns:
+            field_capture_site_id: field_capture_site_id
             title: title
+            field_capture_bird_age: field_capture_bird_age
+            field_capture_bird_cpbp: field_capture_bird_cpbp
+            field_capture_bird_fat: field_capture_bird_fat
+            field_capture_bird_id: field_capture_bird_id
+            field_capture_bird_mass: field_capture_bird_mass
+            field_capture_bird_tail_span: field_capture_bird_tail_span
+            field_capture_bird_wing_span: field_capture_bird_wing_span
+            field_capture_date_time: field_capture_date_time
+            field_capture_encounter_type: field_capture_encounter_type
+            field_capture_notes: field_capture_notes
+            edit_node: edit_node
+            delete_node: delete_node
           info:
+            field_capture_site_id:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             title:
-              sortable: false
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_bird_age:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_bird_cpbp:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_bird_fat:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_bird_id:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_bird_mass:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_bird_tail_span:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_bird_wing_span:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_date_time:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_encounter_type:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_capture_notes:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            edit_node:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            delete_node:
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
@@ -1928,6 +2030,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:

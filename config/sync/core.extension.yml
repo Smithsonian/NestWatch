@@ -10,6 +10,7 @@ module:
   block_content: 0
   block_field: 0
   breakpoint: 0
+  business_rules: 0
   chosen: 0
   chosen_field: 0
   chosen_lib: 0
@@ -27,6 +28,7 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
+  dbug: 0
   devel: 0
   devel_generate: 0
   dynamic_entity_reference: 0
