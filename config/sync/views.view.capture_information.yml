@@ -1215,6 +1215,7 @@ display:
         arguments: false
         pager: false
         fields: false
+        sorts: false
       pager:
         type: none
         options:
@@ -2024,6 +2025,20 @@ display:
           absolute: false
           entity_type: node
           plugin_id: entity_link_delete
+      sorts:
+        field_capture_date_time_value:
+          id: field_capture_date_time_value
+          table: node__field_capture_date_time
+          field: field_capture_date_time_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          plugin_id: datetime
     cache_metadata:
       max-age: -1
       contexts:

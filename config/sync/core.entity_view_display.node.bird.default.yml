@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.bird.field_bird_date_captured
     - field.field.node.bird.field_bird_fat
     - field.field.node.bird.field_bird_mass
+    - field.field.node.bird.field_bird_notes
     - field.field.node.bird.field_bird_resights
     - field.field.node.bird.field_bird_species
     - field.field.node.bird.field_bird_tail_span
@@ -71,11 +72,13 @@ third_party_settings:
       ds_content:
         - group_table
         - field_bird_date_captured
-        - field_bird_band_number
         - 'dynamic_block_field:node-capture_info_block'
-        - field_bird_band_color_combo
+        - field_bird_band_number
         - field_bird_resights
+        - field_bird_band_color_combo
+        - field_bird_notes
         - field_bird_species
+        - field_bird_captures
         - field_bird_mass
         - field_bird_tail_span
         - field_bird_wing_span
@@ -85,7 +88,7 @@ third_party_settings:
     fields:
       'dynamic_block_field:node-capture_info_block':
         plugin_id: 'dynamic_block_field:node-capture_info_block'
-        weight: 2
+        weight: 1
         label: above
         formatter: default
 id: node.bird.default
@@ -117,6 +120,16 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_bird_captures:
+    type: entity_reference_label
+    weight: 4
+    region: ds_content
+    label: above
+    settings:
+      link: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
   field_bird_cpbp:
     weight: 11
     label: above
@@ -150,8 +163,15 @@ content:
     third_party_settings: {  }
     type: field_token_value_text
     region: ds_content
-  field_bird_resights:
+  field_bird_notes:
     weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: ds_content
+  field_bird_resights:
+    weight: 2
     label: above
     settings:
       link: true
@@ -183,5 +203,4 @@ content:
     type: field_token_value_text
     region: ds_content
 hidden:
-  field_bird_captures: true
   links: true

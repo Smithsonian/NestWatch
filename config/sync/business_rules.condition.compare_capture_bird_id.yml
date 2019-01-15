@@ -1,0 +1,19 @@
+uuid: 70ec881d-29b5-4064-ba2a-2770d799121b
+langcode: en
+status: true
+dependencies: {  }
+id: compare_capture_bird_id
+label: 'Compare Capture Bird ID'
+type: data_comparison
+reverse: false
+description: 'Compare Capture Bird ID to Parent Bird ID'
+target_entity_type: node
+target_bundle: capture
+success_items: {  }
+fail_items: {  }
+tags: {  }
+settings:
+  field: field_capture_bird_id
+  data_to_compare: current_data
+  operator: '=='
+  value_to_compare: '[node:field_capture_bird_id:entity:title]'

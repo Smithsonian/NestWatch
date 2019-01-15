@@ -1,0 +1,14 @@
+uuid: 02e9b3af-457b-47a5-9b2f-16e36244aca1
+langcode: en
+status: true
+dependencies: {  }
+id: reference_capture_to_bird_parent
+label: 'Reference Capture to Bird Parent'
+description: 'Reference Capture to Bird Parent'
+type: set_field_value
+target_entity_type: node
+target_bundle: bird
+tags: {  }
+settings:
+  field: field_bird_captures
+  value: '[node:title]'

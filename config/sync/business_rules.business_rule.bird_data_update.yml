@@ -1,0 +1,20 @@
+uuid: cb5bc37f-a4a8-4e8a-bae2-90cf35b51808
+langcode: en
+status: false
+dependencies: {  }
+id: bird_data_update
+label: 'Update Bird Data from Latest Capture'
+description: 'A ruleset for updating data on the parent bird node from its attached captures. '
+reacts_on: entity_update
+target_entity_type: node
+target_bundle: bird
+items:
+  capture_exists:
+    id: capture_exists
+    type: condition
+    weight: -9
+  capture_data_maps:
+    id: capture_data_maps
+    type: action
+    weight: -8
+tags: {  }

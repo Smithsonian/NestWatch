@@ -27,6 +27,7 @@
         "drupal/better_exposed_filters": "^3.0",
         "drupal/block_field": "^1.0",
         "drupal/business_rules": "^1.0@beta",
+        "drupal/cer": "^4.0",
         "drupal/chosen": "^2.5",
         "drupal/coffee": "^1.0@beta",
         "drupal/components": "^1.0",

@@ -1,0 +1,14 @@
+uuid: 1abe5bc8-7b9e-4bea-b6a7-b9191bc985f5
+langcode: en
+status: true
+dependencies: {  }
+id: publish_captures
+label: 'publish captures'
+description: 'publish captures'
+type: publish_entity
+target_entity_type: node
+target_bundle: capture
+tags: {  }
+settings:
+  field: revision_default
+  value: '1'

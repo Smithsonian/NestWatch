@@ -1,0 +1,13 @@
+uuid: 459ada4f-cc9d-4b40-9f56-443c5156f9f8
+langcode: en
+status: true
+dependencies: {  }
+id: capture_data_to_bird_parent_node
+label: 'Capture Data to Bird Parent Node'
+enabled: true
+first_field: field_capture_bird_id
+second_field: field_bird_captures
+bundles:
+  node:
+    - bird
+    - capture
