@@ -1,0 +1,14 @@
+uuid: 963833aa-84c5-4daf-83d6-ab62503f8ede
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.technician
+  module:
+    - user
+id: user_remove_role_action.technician
+label: 'Remove the Technician role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: technician

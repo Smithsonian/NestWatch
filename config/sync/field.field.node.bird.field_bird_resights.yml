@@ -1,0 +1,28 @@
+uuid: e44654e1-75e9-45b9-ba72-d0a78c93c810
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bird_resights
+    - node.type.bird
+    - node.type.resight
+id: node.bird.field_bird_resights
+field_name: field_bird_resights
+entity_type: node
+bundle: bird
+label: 'Bird Resights'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      resight: resight
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

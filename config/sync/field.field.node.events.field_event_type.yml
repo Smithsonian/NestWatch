@@ -1,0 +1,21 @@
+uuid: 82c971ec-c174-4283-a339-2c5d8d86aa01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.events
+  module:
+    - options
+id: node.events.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: events
+label: 'Event Type'
+description: 'Will need to outline visibility and conditions.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

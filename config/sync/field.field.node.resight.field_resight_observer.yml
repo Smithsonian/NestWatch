@@ -1,0 +1,28 @@
+uuid: 58a112e7-15bb-4ac5-8cd2-5fb9beac92d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resight_observer
+    - node.type.resight
+id: node.resight.field_resight_observer
+field_name: field_resight_observer
+entity_type: node
+bundle: resight
+label: 'Resight Observer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

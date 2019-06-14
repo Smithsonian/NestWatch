@@ -1,0 +1,20 @@
+uuid: 53a25cc6-1a23-47d9-842f-b10f9bb30b20
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nestwatch
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: nestwatch_page_title
+theme: nestwatch
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

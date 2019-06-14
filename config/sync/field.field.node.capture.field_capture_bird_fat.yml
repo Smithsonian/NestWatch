@@ -1,0 +1,21 @@
+uuid: 46dd5de4-ab26-4e64-b024-342bca54c464
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capture_bird_fat
+    - node.type.capture
+  module:
+    - options
+id: node.capture.field_capture_bird_fat
+field_name: field_capture_bird_fat
+entity_type: node
+bundle: capture
+label: 'Capture Bird Fat'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+uuid: 15a05710-78d8-42c2-80f9-ec77a47d4ce4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'bse sites'
+type: bse_sites
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

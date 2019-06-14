@@ -1,0 +1,101 @@
+uuid: b61f0429-f336-455e-97a9-3ef696cfcfee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bse_sites.field_address_city
+    - field.field.node.bse_sites.field_address_state
+    - field.field.node.bse_sites.field_address_street
+    - field.field.node.bse_sites.field_address_zip_code
+    - field.field.node.bse_sites.field_house_number
+    - field.field.node.bse_sites.field_longlat
+    - field.field.node.bse_sites.field_region
+    - field.field.node.bse_sites.field_siteid
+    - field.field.node.bse_sites.field_status
+    - node.type.bse_sites
+  module:
+    - geofield
+    - options
+    - user
+id: node.bse_sites.default
+targetEntityType: node
+bundle: bse_sites
+mode: default
+content:
+  field_address_city:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_state:
+    weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_street:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_zip_code:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_house_number:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_longlat:
+    weight: 105
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    type: geofield_default
+    region: content
+  field_region:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_siteid:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_status:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

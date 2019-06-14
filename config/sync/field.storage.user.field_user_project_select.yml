@@ -1,0 +1,27 @@
+uuid: 7f1bfdcc-fbde-4e81-876d-f97b8b4a3950
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_user_project_select
+field_name: field_user_project_select
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: nn
+      label: 'Neighborhood Nestwatch'
+    -
+      value: feederCam
+      label: 'Project feederCam'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

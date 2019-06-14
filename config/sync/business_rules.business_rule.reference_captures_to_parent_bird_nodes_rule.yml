@@ -1,0 +1,12 @@
+uuid: a078be0f-ca02-40ba-b18a-675e6cded956
+langcode: en
+status: false
+dependencies: {  }
+id: reference_captures_to_parent_bird_nodes_rule
+label: 'Reference Captures to Parent Bird Nodes Rule'
+description: 'Reference Captures to Parent Bird Nodes'
+reacts_on: entity_update
+target_entity_type: node
+target_bundle: capture
+items: {  }
+tags: {  }

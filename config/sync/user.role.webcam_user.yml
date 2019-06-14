@@ -1,0 +1,9 @@
+uuid: 7517aa5d-f912-4c76-b4b1-077a0924adfa
+langcode: en
+status: true
+dependencies: {  }
+id: webcam_user
+label: 'Webcam User'
+weight: 4
+is_admin: null
+permissions: {  }

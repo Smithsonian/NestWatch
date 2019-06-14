@@ -1,0 +1,58 @@
+uuid: 52b10b5a-f2dd-4400-a036-6d746684789f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.bird_species.field_species_sppcode
+    - taxonomy.vocabulary.bird_species
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - taxonomy_term_title
+        - field_species_sppcode
+        - description
+    fields:
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 0
+        label: hidden
+        formatter: default
+id: taxonomy_term.bird_species.default
+targetEntityType: taxonomy_term
+bundle: bird_species
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 2
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  field_species_sppcode:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden: {  }

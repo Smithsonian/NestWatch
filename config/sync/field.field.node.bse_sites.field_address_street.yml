@@ -1,0 +1,19 @@
+uuid: 45448368-4cea-4c74-ac84-d38c77446d95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address_street
+    - node.type.bse_sites
+id: node.bse_sites.field_address_street
+field_name: field_address_street
+entity_type: node
+bundle: bse_sites
+label: 'Address - Street'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

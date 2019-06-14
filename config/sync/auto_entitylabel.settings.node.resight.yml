@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[node:field_resight_type:value] - [node:field_resight_bird:entity] - [node:field_resight_date]'
+php: 0
+escape: 1
+dependencies:
+  config:
+    - node.type.resight

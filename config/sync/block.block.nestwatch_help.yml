@@ -1,0 +1,22 @@
+uuid: 3f4e8807-fe3f-43a4-8a46-f69b5df4b26e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nestwatch
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: nestwatch_help
+theme: nestwatch
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

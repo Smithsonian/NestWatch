@@ -1,0 +1,17 @@
+uuid: 38d9b432-addd-431f-9fa2-5a948ac12bd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Events
+type: events
+description: 'For tracking bird observation and capture sessions'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

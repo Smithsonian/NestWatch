@@ -1,0 +1,19 @@
+uuid: 1c5145da-b7e2-4887-8a2c-a2577d9d6ac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capture_notes
+    - node.type.capture
+id: node.capture.field_capture_notes
+field_name: field_capture_notes
+entity_type: node
+bundle: capture
+label: 'Capture Notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

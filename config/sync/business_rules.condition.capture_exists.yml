@@ -1,0 +1,19 @@
+uuid: 6e9de43a-e6f5-47d4-b961-d0a677b34d90
+langcode: en
+status: true
+dependencies: {  }
+id: capture_exists
+label: 'Capture Exists'
+type: data_comparison
+reverse: true
+description: 'If capture exists on the parent bird node'
+target_entity_type: node
+target_bundle: bird
+success_items: {  }
+fail_items: {  }
+tags: {  }
+settings:
+  field: field_bird_captures
+  data_to_compare: current_data
+  operator: empty
+  value_to_compare: ''

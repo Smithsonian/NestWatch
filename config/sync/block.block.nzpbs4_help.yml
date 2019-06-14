@@ -1,0 +1,22 @@
+uuid: 3e25f063-5582-466d-9fe6-464cf9b9f0b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nzpbs4
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: nzpbs4_help
+theme: nzpbs4
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

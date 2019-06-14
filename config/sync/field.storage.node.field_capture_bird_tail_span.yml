@@ -1,0 +1,20 @@
+uuid: 6cf77f3e-d0fa-4502-9463-cbe1cdd69dc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_capture_bird_tail_span
+field_name: field_capture_bird_tail_span
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 1
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

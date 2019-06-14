@@ -1,0 +1,34 @@
+uuid: e1225576-3c63-447a-a9d6-02b53aa6509d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.block_reference.field_block_reference_block
+    - paragraphs.paragraphs_type.block_reference
+  module:
+    - block_field
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_block_reference_block
+id: paragraph.block_reference.default
+targetEntityType: paragraph
+bundle: block_reference
+mode: default
+content:
+  field_block_reference_block:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+hidden: {  }

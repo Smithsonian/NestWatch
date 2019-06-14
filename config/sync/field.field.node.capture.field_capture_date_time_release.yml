@@ -1,0 +1,21 @@
+uuid: 61597d31-c49c-4e38-b8e1-c284a54fb86d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capture_date_time_release
+    - node.type.capture
+  module:
+    - datetime
+id: node.capture.field_capture_date_time_release
+field_name: field_capture_date_time_release
+entity_type: node
+bundle: capture
+label: 'Capture Date Time Release'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

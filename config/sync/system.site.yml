@@ -1,0 +1,14 @@
+uuid: 4b4d68e7-2567-495a-a333-2bbd1ae6de41
+name: 'Neighborhood Nest Watch'
+mail: elkhatibm@si.edu
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

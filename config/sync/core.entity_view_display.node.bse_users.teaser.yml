@@ -1,0 +1,22 @@
+uuid: d8f8c709-688d-47f1-b81d-77d5b9558bd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bse_users.field_userid
+    - node.type.bse_users
+  module:
+    - user
+id: node.bse_users.teaser
+targetEntityType: node
+bundle: bse_users
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_userid: true

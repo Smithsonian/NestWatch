@@ -1,0 +1,77 @@
+uuid: 42b4fea4-96e9-4b91-807e-dcc20ad913ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_user_project_select
+    - field.field.user.user.field_user_site_location
+    - field.field.user.user.field_user_site_region
+    - field.field.user.user.field_user_site_status
+    - field.field.user.user.field_user_year
+  module:
+    - ds
+    - field_layout
+    - geofield
+    - user
+third_party_settings:
+  field_layout:
+    id: ds_1col
+    settings:
+      wrappers:
+        ds_content: div
+      outer_wrapper: div
+      attributes: ''
+      link_attribute: ''
+      link_custom: ''
+      classes:
+        layout_class: {  }
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 0
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 4
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  field_user_project_select:
+    type: options_select
+    weight: 5
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  field_user_site_location:
+    weight: 1
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: ds_content
+  field_user_site_region:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: ds_content
+  field_user_site_status:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: ds_content
+hidden:
+  field_user_year: true
+  language: true
+  path: true
+  timezone: true

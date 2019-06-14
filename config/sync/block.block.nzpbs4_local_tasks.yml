@@ -1,0 +1,22 @@
+uuid: 50d67de0-c8a5-4442-aa10-d5e92da30b45
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nzpbs4
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: nzpbs4_local_tasks
+theme: nzpbs4
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

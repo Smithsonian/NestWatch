@@ -1,0 +1,18 @@
+uuid: d72bcf05-6a35-4216-a55d-629b24eec1fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bse_sites
+id: node.bse_sites.title
+field_name: title
+entity_type: node
+bundle: bse_sites
+label: 'bse sites'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

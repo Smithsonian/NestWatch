@@ -1,0 +1,9 @@
+uuid: 07b5a736-acb8-46ba-8ba5-2f505a08e252
+langcode: en
+status: true
+dependencies: {  }
+id: technician
+label: Technician
+weight: 3
+is_admin: null
+permissions: {  }

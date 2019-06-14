@@ -1,0 +1,18 @@
+uuid: 13b3ea9d-a306-4490-ae06-fdb276ee1eef
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'bse users'
+type: bse_users
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

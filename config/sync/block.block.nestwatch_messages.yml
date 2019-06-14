@@ -1,0 +1,22 @@
+uuid: 2dac8aeb-2c98-4366-87b8-9b976b7111c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nestwatch
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: nestwatch_messages
+theme: nestwatch
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

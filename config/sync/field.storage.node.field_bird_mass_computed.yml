@@ -1,0 +1,22 @@
+uuid: 182d1b01-31ee-4fc2-b65e-c1c51b13f45d
+langcode: en
+status: true
+dependencies:
+  module:
+    - computed_field
+    - node
+id: node.field_bird_mass_computed
+field_name: field_bird_mass_computed
+entity_type: node
+type: computed_string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: computed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 0faa5641-4cde-42ba-b563-e500007a62b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_capture_date_time_release
+field_name: field_capture_date_time_release
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

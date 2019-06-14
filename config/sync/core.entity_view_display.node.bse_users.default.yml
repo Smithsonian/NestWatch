@@ -1,0 +1,37 @@
+uuid: ecaf730e-800b-4406-97a3-9a4185cf4c71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bse_users.field_role
+    - field.field.node.bse_users.field_userid
+    - node.type.bse_users
+  module:
+    - options
+    - text
+    - user
+id: node.bse_users.default
+targetEntityType: node
+bundle: bse_users
+mode: default
+content:
+  field_role:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_userid:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

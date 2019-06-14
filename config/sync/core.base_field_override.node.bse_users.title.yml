@@ -1,0 +1,18 @@
+uuid: 34752824-6e71-4102-8a8d-9c48e5260fd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bse_users
+id: node.bse_users.title
+field_name: title
+entity_type: node
+bundle: bse_users
+label: 'User table'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

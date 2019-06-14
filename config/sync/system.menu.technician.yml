@@ -1,0 +1,8 @@
+uuid: a006150a-c06d-4c98-8b02-881605ca72f6
+langcode: en
+status: true
+dependencies: {  }
+id: technician
+label: Technician
+description: 'Links for the technician data portal'
+locked: false

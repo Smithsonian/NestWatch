@@ -1,0 +1,19 @@
+uuid: 4f436233-66a1-45b7-8d36-3d8d4bd2927e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_bird_notes
+field_name: field_bird_notes
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

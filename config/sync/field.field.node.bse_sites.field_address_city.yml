@@ -1,0 +1,19 @@
+uuid: 8de68eca-33cd-4bff-9915-e08084b04fe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address_city
+    - node.type.bse_sites
+id: node.bse_sites.field_address_city
+field_name: field_address_city
+entity_type: node
+bundle: bse_sites
+label: 'Address - City'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

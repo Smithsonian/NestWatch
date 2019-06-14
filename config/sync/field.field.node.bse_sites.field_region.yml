@@ -1,0 +1,23 @@
+uuid: da83bca8-d268-4a48-91c5-58ab598bcad2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region
+    - node.type.bse_sites
+  module:
+    - options
+id: node.bse_sites.field_region
+field_name: field_region
+entity_type: node
+bundle: bse_sites
+label: Region
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Atlanta
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: 0613313a-5d9f-4c11-8582-4e2c6a7ef6df
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_bird_captures
+field_name: field_bird_captures
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: d3f9c1a5-5cd1-40d0-969d-54cf928036de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capture_bird_tail_span
+    - node.type.capture
+id: node.capture.field_capture_bird_tail_span
+field_name: field_capture_bird_tail_span
+entity_type: node
+bundle: capture
+label: 'Capture Bird Tail Span'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

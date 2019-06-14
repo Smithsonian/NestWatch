@@ -1,0 +1,19 @@
+uuid: b618a015-586e-4531-8f6f-555bd26111e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_token_value
+    - node
+id: node.field_bird_tail_span
+field_name: field_bird_tail_span
+entity_type: node
+type: field_token_value
+settings: {  }
+module: field_token_value
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

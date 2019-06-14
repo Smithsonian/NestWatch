@@ -1,0 +1,7 @@
+status: '1'
+pattern: '[node:field_bird_band_number]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - node.type.bird

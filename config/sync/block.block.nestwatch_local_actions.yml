@@ -1,0 +1,20 @@
+uuid: 7807c105-c3b8-4828-ac35-8cd85b100115
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nestwatch
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: nestwatch_local_actions
+theme: nestwatch
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

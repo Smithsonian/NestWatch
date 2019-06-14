@@ -1,0 +1,45 @@
+uuid: a43d76d8-499a-453a-92d6-e3ddf229cba7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_type
+field_name: field_event_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bandingDemo
+      label: bandingDemo
+    -
+      value: foray
+      label: foray
+    -
+      value: nnParticipant_session
+      label: nnParticipant_session
+    -
+      value: visit-banding
+      label: visit-banding
+    -
+      value: visit-resightOnly
+      label: visit-resightOnly
+    -
+      value: visit-urbanBirds
+      label: visit-urbanBirds
+    -
+      value: visit-urbanNestwatch
+      label: visit-urbanNestwatch
+    -
+      value: webcam
+      label: webcam
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

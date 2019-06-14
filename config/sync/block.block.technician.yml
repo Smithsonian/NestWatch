@@ -1,0 +1,33 @@
+uuid: ccfdbf27-67b9-4758-9274-e2411ed62387
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.technician
+  module:
+    - menu_block
+    - system
+  theme:
+    - nestwatch
+id: technician
+theme: nestwatch
+region: header
+weight: 0
+provider: null
+plugin: 'menu_block:technician'
+settings:
+  id: 'menu_block:technician'
+  label: Technician
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'technician:'
+  suggestion: technician
+visibility:
+  request_path:
+    id: request_path
+    pages: '/technician-*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,33 @@
+uuid: 968f77a3-a610-4412-b9d0-f39eaa38a636
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.participant
+  module:
+    - menu_block
+    - system
+  theme:
+    - nestwatch
+id: participant
+theme: nestwatch
+region: header
+weight: 0
+provider: null
+plugin: 'menu_block:participant'
+settings:
+  id: 'menu_block:participant'
+  label: Participant
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'participant:'
+  suggestion: participant
+visibility:
+  request_path:
+    id: request_path
+    pages: '/participant-*'
+    negate: false
+    context_mapping: {  }

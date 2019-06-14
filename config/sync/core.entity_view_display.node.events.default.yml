@@ -1,0 +1,46 @@
+uuid: 4ad7a3b8-e539-4087-894a-39adfc70bf0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.events.field_event_capture
+    - field.field.node.events.field_event_id
+    - field.field.node.events.field_event_type
+    - node.type.events
+  module:
+    - options
+    - user
+id: node.events.default
+targetEntityType: node
+bundle: events
+mode: default
+content:
+  field_event_capture:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_event_id:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_event_type:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

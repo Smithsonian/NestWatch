@@ -1,0 +1,21 @@
+uuid: 591eb666-e2a2-4ac4-932b-ad0e01689938
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.edan_record
+  module:
+    - text
+id: taxonomy_term.edan_record.default
+targetEntityType: taxonomy_term
+bundle: edan_record
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

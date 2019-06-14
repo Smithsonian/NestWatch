@@ -1,0 +1,16 @@
+uuid: 9e915d7a-dd10-49af-b37c-4b25cbc3fcdd
+langcode: en
+status: true
+dependencies: {  }
+id: content_type_is_capture
+label: 'Content Type is Capture'
+type: data_comparison
+reverse: null
+description: 'Content Type is Capture'
+target_entity_type: node
+target_bundle: capture
+success_items: {  }
+fail_items: {  }
+tags: {  }
+settings:
+  field: revision_default

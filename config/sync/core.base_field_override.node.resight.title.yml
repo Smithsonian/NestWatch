@@ -1,0 +1,18 @@
+uuid: 542813e3-583a-4247-a93e-63923496f838
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.resight
+id: node.resight.title
+field_name: title
+entity_type: node
+bundle: resight
+label: 'Resight ID'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

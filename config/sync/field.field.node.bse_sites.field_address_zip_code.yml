@@ -1,0 +1,19 @@
+uuid: b74c2af6-c4a3-4887-9a6c-7ae3cb070fd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address_zip_code
+    - node.type.bse_sites
+id: node.bse_sites.field_address_zip_code
+field_name: field_address_zip_code
+entity_type: node
+bundle: bse_sites
+label: 'Address - Zip Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
