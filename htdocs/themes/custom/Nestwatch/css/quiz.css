@@ -1,0 +1,42 @@
+.reveal {
+  background-color: #fff;
+  border: 1px solid #d0d7de;
+  margin: 19%;
+  padding: 1rem 0;
+  opacity: 0;
+  transition: opacity 350ms; }
+
+.quiz {
+  color: #fff;
+  background-color: #f0515a;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  float: right;
+  margin: .5rem .5rem 0 0; }
+
+.quiz div {
+  align-self: center; }
+
+.quiz:hover {
+  cursor: help; }
+
+.quiz:hover + .reveal {
+  opacity: .9; }
+
+#pic1, #pic2, #pic3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#pic1 {
+  background-image: url(/sites/default/files/2019-03/wtsp-color-banded.jpg); }
+
+#pic2 {
+  background-image: url(https://nationalzoo.si.edu/scbi/migratorybirds/featured_photo/images/bigpic/eaph35.jpg); }
+
+#pic3 {
+  background-image: url(https://nationalzoo.si.edu/scbi/migratorybirds/featured_photo/images/bigpic/eust92.jpg); }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvcXVpei5zY3NzIiwiLi4vc2Fzcy9jb2xvcnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLHVCQ0tRO0VESlIsMEJDU2E7RURSYixZQUFXO0VBQ1gsZ0JBQWU7RUFDZixXQUFVO0VBQ1YsMEJBQXlCLEVBQzFCOztBQUNEO0VBQ0UsWUNIUTtFRElSLDBCQ0VXO0VERFgsWUFBVztFQUNYLGFBQVk7RUFDWixtQkFBa0I7RUFDbEIsY0FBYTtFQUNiLHdCQUF1QjtFQUN2QixhQUFZO0VBQ1osd0JBQXVCLEVBQ3hCOztBQUNEO0VBQ0UsbUJBQWtCLEVBQ25COztBQUNEO0VBQ0UsYUFBWSxFQUNiOztBQUNEO0VBQ0UsWUFBVyxFQUNaOztBQUNEO0VBQ0ksNkJBQTRCO0VBQzVCLHVCQUFzQjtFQUN0QixtQ0FBa0MsRUFDckM7O0FBQ0Q7RUFDRSwwRUFBeUUsRUFDMUU7O0FBQ0Q7RUFDRSw4R0FBNkcsRUFDOUc7O0FBQ0Q7RUFDRSw4R0FBNkcsRUFDOUciLCJmaWxlIjoicXVpei5jc3MifQ== */

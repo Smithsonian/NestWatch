@@ -1,0 +1,117 @@
+//header search block//
+header {
+  #search-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(sm)  {
+      height:0;
+      overflow:hidden;
+      opacity:0;
+      transition: all 0.2s ease;
+      transition-delay: 0.1s;
+    }
+    &.expanded {
+      height:100px;
+      opacity: 1;
+      transition: all 0.2s ease;
+      transition-delay:0.1s;
+    }
+  }
+  .block-search {
+    border-left:1px solid $primary-color;
+    padding:5px 15px;
+    .form-group {
+      margin-bottom:0;
+    }
+    .form-control {
+      border-color: transparent;
+      background:none;
+      box-shadow:none;
+    }
+    input{
+      font-size:1.2em;
+      padding:0;
+      &::placeholder {
+        color: $primary-color;
+      }
+  
+    }
+    button {
+      border:none;
+      background: none !important;
+      color: $primary-color;
+      @include linkhover($secondary-color);
+
+    }
+    @include media-breakpoint-down(sm){
+        border: none;
+        padding: 15px 0px;
+        margin:15px 0;
+
+    
+    form {
+        width: 90%;
+        margin: auto;
+        border:1px solid $fourth-color;
+        padding:5px 15px;
+    }
+    }
+  
+  }
+}
+
+.sidebar {
+  .search-block-form {
+    .form-item {
+      background: #ccc;
+      margin-bottom:0px;
+      padding:5px;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      input {
+        background:none;
+        box-shadow:none;
+        &::placeholder {
+          color: #666;
+        }
+      }
+    }
+    button {
+      border:none;
+      background: none !important;
+      color: #666;
+    }
+  }
+
+}
+
+
+
+//Hide description/tooltip
+
+.search-block-form {
+  .description {
+    display: none;
+  }
+}
+
+
+
+//Search Toggle
+
+.search-toggle {
+  display:none;
+  position: absolute;
+  margin-top: -45px;
+  right: 80px;
+  font-size: 20px;
+  a {
+    color: white;
+  }
+
+  @include media-breakpoint-down(sm)  {
+    display:block;
+  }
+}

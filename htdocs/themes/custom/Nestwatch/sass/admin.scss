@@ -1,0 +1,33 @@
+/* styling for Drupal's admin messages, menus, and such */
+
+@import "colors";
+
+/* error messages */
+div[role=contentinfo] {
+    background-color: $palegray;
+    padding: 1rem;
+}
+
+/* page edit menu */
+#block-nestwatch-local-tasks {
+    ul:not([class]), ul[class=""] {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        padding: 1rem;
+        li {
+            margin-left: 1.5rem;
+            background-color: $ashgray;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+            &:hover {
+                background-color: $palegray;
+            }
+            a {
+                color: $black;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,226 @@
+
+  .nav-tabs {
+    margin: 0;
+    padding: 15px;
+    border-bottom: none;
+    background: $fourth-color;
+    display:flex;
+    flex-wrap:wrap;
+    li {
+      flex: 1;
+      a {
+        width:100%;
+        font-size: $dynamic-font-size-xs;
+        line-height: normal;
+        @include flexify(100%);
+        &:hover {
+          line-height: normal;
+        }
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      & > li {
+        flex:0 0 49%;
+      }
+    }
+  }
+
+  //nav pills
+  .nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    padding:15px 5px;
+    li {
+      padding:10px 5px;
+      overflow:hidden;
+      a {
+        @include flexify(50px);
+        @extend .no-wrap;
+        overflow:hidden;
+        border: 2px solid $primary-color;
+        position: relative;
+        border-radius: 30px;
+        padding: 0px 25px 0px 0px;
+        color: $third-color;
+        font-weight: 800;
+        outline: none;
+        &:after {
+          content: " ";
+          width: 20px;
+          height: 20px;
+          border: 2px solid $primary-color;
+          border-radius: 50%;
+          position: relative;
+          transition: all 0.3s ease-in;
+          position:absolute;
+          right:10px;
+          top:13px;
+        }
+      }
+      &.active {
+        a {
+          background: $third-color;
+          color: white;
+          font-weight: 800 !important;
+          border: 2px solid $third-color !important;
+          &:after {
+            background: $primary-color;
+          }
+        }
+      }
+      &:hover {
+        a {
+          border: none;
+          background: none;
+          color: white;
+          background: $third-color;
+          font-weight: 800;
+          border: 2px solid $third-color;
+        }
+      }
+    }
+  }
+  //nav buttons
+  .nav-buttons {
+    padding:0;
+    border-left: 1px solid $fourth-color;
+    border-top: 5px solid $primary-color;
+    
+    li {
+      border:none;
+
+      a {
+        padding: 10px;
+        border:none;
+      }
+      &.active {
+        border-top: 5px solid #ccc;
+        background: #ccc;
+        margin-top:-5px;
+        a {
+          border: none;
+          margin:0;
+        }
+      }
+    }
+  }
+
+
+
+
+  //tab content
+  .tab-content {
+    font-size: 0.9em;
+    padding: 15px;
+    background: #efefef;
+    .component-title {
+      margin-bottom: 30px;
+      text-align: center;
+      border-left: none;
+      padding-left: 0;
+      margin-left:0;
+    }
+  }
+
+
+  //knockout
+
+  .knockout {
+    .paragraph-tabs-group {
+      .nav-tabs{
+        background: $third-color;
+        border:none;
+        li{
+          a {
+            color: white;
+            &:hover {
+              border-color: #2196f3;
+            }
+          }
+          &.active {
+            border-color: white;
+            a {
+              opacity: 1;
+             background: #2196f3;
+              color:white;
+              &:after {
+                background: $third-color;
+              }
+            }
+          }
+        
+        }
+      }
+      .tab-content {
+        border:none;
+        background: #2196f3;
+      }
+    }
+    
+  }
+
+//Exposed Filters//
+
+.view-filters {
+  display: block;
+  width: 100%;
+  .form-type-select {
+    float: none !important;
+    display: block;
+  }
+  .form-radios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    .form-item{
+      display: flex;
+      flex:1;
+      padding: 5px;
+      @include media-breakpoint-down(sm) {
+        margin:0;
+        flex:0 0 50%;
+      }
+      label {
+        width: 100%;
+        padding: 15px;
+        background: white;
+        color: $third-color;
+        text-align: center;
+        font-weight: 600;
+        border: 1px solid $primary-color;
+        text-transform: uppercase;
+        @include icon('angle-right', after);
+        &:after {
+            padding-left:10px;
+        }
+        &:hover {
+          transition: all 0.3s ease;
+          background: $third-color;
+          color: $fourth-color;
+          &:after {
+            padding-left:20px;
+            transition-delay: 0.2s;
+            transition: padding-left 0.3s ease;
+
+          }
+        }
+        &.checked {
+          animation: background 0.5s ease 0s forwards;
+         
+        }
+        //hide the radio button
+        input.form-radio {
+          display: none;
+        }
+     
+      }
+ 
+
+      input {
+        opacity: 0;
+      }
+    }
+ 
+  }
+}

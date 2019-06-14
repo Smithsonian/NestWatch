@@ -1,0 +1,60 @@
+
+
+//Top Bar Styling//
+.top-bar {
+  position: relative;
+  background: $primary-color;
+ 
+  .top-bar-block {
+    // transform: translate(100%);
+    // animation:slideInFromRight 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1) forwards 0.2s;
+    background: $third-color;
+    margin-right:-15px;
+    padding-right:15px;
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0 100%, 25% 0);
+    @include media-breakpoint-down(sm) {
+      clip-path: none;
+    }
+    @include flexify(auto, center);
+    flex-wrap:wrap;
+    flex-direction: column;
+    & > .component {
+      margin:10px 0;
+    }
+
+    .menu--social-media-links {
+      padding-left:0;
+      margin-left:0;
+      li  a {
+        border:none;
+        font-size:1em;
+
+      }
+    }
+    @include media-breakpoint-down(sm){
+      display: flex;
+      background:$third-color;
+      margin-right: -15px;
+      margin-left: -15px;
+      padding: 0;
+      flex-wrap: wrap;
+      flex-direction: row;
+      & > .component {
+        display: flex;
+        margin: 10px 0;
+        padding:10px;
+        overflow: hidden;
+        flex-basis:49%;
+        height: 60px;
+        align-items: center;
+        justify-content: flex-start;
+        &:last-child {
+          flex-basis: 100%;
+          background:$primary-color;
+          margin:0;
+        }
+        }
+        
+    }
+  }
+}

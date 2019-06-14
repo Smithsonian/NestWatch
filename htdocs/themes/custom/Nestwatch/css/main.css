@@ -1,0 +1,33 @@
+main {
+  width: 80%;
+  max-width: 1500px;
+  margin: 1rem auto;
+  /* 
+        the multicolumn class lets you create a multicolumn layout
+        - apply it to a wrapper (e.g. a div) and all immediate children will be equal width columns.
+        minimum column width is 320 pixels and it is responsive 
+    */ }
+  main p, main ul {
+    max-width: 80ch; }
+  main .multicolumn {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem; }
+  main img {
+    width: auto;
+    height: auto;
+    max-width: 100%; }
+  main figure {
+    margin-bottom: 2rem; }
+    main figure figcaption {
+      text-align: right;
+      font-style: italic;
+      color: #75787b; }
+  main .float-left {
+    float: left; }
+  main a {
+    text-decoration: none;
+    color: #009cde; }
+    main a:hover {
+      text-decoration: underline; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vc2Fzcy9jb2xvcnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLFdBQVU7RUFDVixrQkFBaUI7RUFDakIsa0JBQWlCO0VBSWpCOzs7O01BSUUsRUE2Qkw7RUF4Q0Q7SUFLUSxnQkFBZSxFQUNsQjtFQU5MO0lBYVEsY0FBYTtJQUNiLDREQUEyRDtJQUMzRCxlQUFjLEVBQ2pCO0VBaEJMO0lBa0JRLFlBQVc7SUFDWCxhQUFZO0lBQ1osZ0JBQWUsRUFDbEI7RUFyQkw7SUF1QlEsb0JBQW1CLEVBTXRCO0lBN0JMO01BeUJZLGtCQUFpQjtNQUNqQixtQkFBa0I7TUFDbEIsZUNuQlEsRURvQlg7RUE1QlQ7SUErQlEsWUFBVyxFQUNkO0VBaENMO0lBa0NRLHNCQUFxQjtJQUNyQixlQ3BDTSxFRHdDVDtJQXZDTDtNQXFDWSwyQkFBMEIsRUFDN0IiLCJmaWxlIjoibWFpbi5jc3MifQ== */

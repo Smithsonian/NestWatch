@@ -1,0 +1,7 @@
+name: Nestwatch
+description: Drupal 8 Custom Theme
+type: theme
+core: 8.x
+libraries:
+  - nestwatch/global-css
+  - nestwatch/global-js

@@ -1,0 +1,24 @@
+name: nzpbs4
+type: theme
+description: 'NZP Theme based on the Bootstrap 4 Library'
+# core: 8.x
+libraries:
+  - nzpbs4/global-styling
+base theme: stable
+regions:
+  off_canvas: 'Off-Canvas Menu'
+  jumbotron: 'Jumbotron'
+  topbar: Top Bar
+  branding: Branding
+  navigation: 'Header navigation'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+
+# Information added by Drupal.org packaging script on 2018-08-02
+version: '8.x-1.0'
+core: '8.x'
+project: 'nzpbs4'
+

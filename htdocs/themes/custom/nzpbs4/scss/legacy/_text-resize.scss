@@ -1,0 +1,13 @@
+.text-resize {
+    color: white;
+    font-size:15px !important;
+    a {
+        color: white !important;
+        opacity: 1;
+        padding:0 2.5px;
+        &.selected {
+            color: $secondary-color !important;
+        }
+    }
+
+}

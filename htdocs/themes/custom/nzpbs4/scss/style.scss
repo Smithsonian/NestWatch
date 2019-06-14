@@ -1,0 +1,72 @@
+
+//Globals 
+@import 'variables';
+
+//import bootstrap scss components from bootstrap.scss. To override, uncomment any libraries you don't want to include in that file. 
+@import 'bootstrap/scss/bootstrap.scss';
+
+//font-awesome  
+@import "vendor/font-awesome/scss/font-awesome";
+
+
+@import 'overrides_bootstrap';  
+@import 'overrides_drupal';
+@import 'mixins';
+@import 'typography';
+
+
+//import third party vendors here. 
+
+
+//Components
+@import 'components/offcanvas';
+@import 'components/topbar';
+@import 'components/header';
+@import 'components/cards';
+@import 'components/page-banner';
+@import 'components/navigation';
+@import 'components/main';
+@import 'components/media-slider';
+@import 'components/nav-toggle';
+@import 'components/media-slider';
+@import 'components/forms';
+@import 'components/tabs';
+// @import 'components/accordion';
+// @import 'components/admin-tabs';
+// @import 'components/articles';
+// @import 'components/animations';
+// @import 'components/buttons';
+// @import 'components/calendar';
+// @import 'components/cards';
+// @import 'components/carousel';
+// @import 'components/events';
+// @import 'components/footer';
+// @import 'components/forms';
+// @import 'components/field-groups';
+// @import 'components/gallery';
+// @import 'components/header';
+// @import 'components/icons';
+// @import 'components/labels';
+// @import 'components/ipe';
+// @import 'components/logo';
+// @import 'components/popovers';
+// @import 'components/tables';
+// @import 'components/media';
+// @import 'components/issues';
+// @import 'components/media-slider';
+// @import 'components/media-text-callout';
+// @import 'components/modal';
+
+// @import 'components/pagination';
+// @import 'components/paragraph-container';
+// @import 'components/search';
+// @import 'components/section-banner';
+// @import 'components/services';
+// @import 'components/sidebar';
+// @import 'components/staff';
+// @import 'components/statistics';
+// @import 'components/sticky-nav';
+// @import 'components/tabs';
+// @import 'components/text-resize';
+// @import 'components/topbar';
+// @import 'components/timeline';

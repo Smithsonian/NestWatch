@@ -1,0 +1,62 @@
+@import "colors";
+
+header {
+    background-color: $black;
+    color: $white;
+    padding: 1rem 10%;
+    img {
+        max-width: 300px;
+    }
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            li {
+                a {
+                    color: $blue;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                ul /* dropdown menu */{
+                    position: absolute;
+                    z-index: 2;
+                    display: none;
+                }
+            }
+            .is-active {
+                color: $mediumgray;
+            }
+            li:hover {
+                ul {
+                    display: block;
+                    background-color: $black;
+                    padding: 1rem;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    a {
+                        color: $coral;
+                    }
+                    .is-active {
+                        color: $mediumgray;
+                    }
+                }
+            }
+        }
+    }
+    > div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        div {
+            grid-row: 1 / 2;
+        }
+        nav {
+            grid-row: 2 / 3;
+        }
+    }
+}

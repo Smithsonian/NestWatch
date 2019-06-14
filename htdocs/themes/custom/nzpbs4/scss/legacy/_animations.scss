@@ -1,0 +1,51 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes background {
+    0%{
+        border-right:0px solid $third-color;
+
+    }
+    100% {
+        color: white;
+        background: $primary-color;
+        border-color:$third-color;
+        border-right:7px solid $third-color;
+        
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(300%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+  

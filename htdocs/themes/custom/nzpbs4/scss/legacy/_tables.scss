@@ -1,0 +1,14 @@
+//Views tables//
+
+table.views-table {
+  tr {
+    td, th {
+      padding: 15px 10px;
+      font-size:14px;
+      a {
+        @include linkhover($secondary-color);
+      }
+    }
+
+  }
+}

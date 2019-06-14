@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Montserrat:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Montserrat:400,400i,700");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Crimson Text", serif; }
+
+header {
+  background-color: #101820;
+  color: #fff;
+  padding: 1rem 10%; }
+  header img {
+    max-width: 300px; }
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+    header nav ul li a {
+      color: #009cde;
+      text-decoration: none; }
+      header nav ul li a:hover {
+        text-decoration: underline; }
+    header nav ul li ul {
+      position: absolute;
+      z-index: 2;
+      display: none; }
+    header nav ul .is-active {
+      color: #75787b; }
+    header nav ul li:hover ul {
+      display: block;
+      background-color: #101820;
+      padding: 1rem;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px; }
+      header nav ul li:hover ul a {
+        color: #f0515a; }
+      header nav ul li:hover ul .is-active {
+        color: #75787b; }
+  header > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+    header > div div {
+      grid-row: 1 / 2; }
+    header > div nav {
+      grid-row: 2 / 3; }
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid #75787b;
+  padding: 1rem; }
+  footer small {
+    display: flex;
+    justify-content: center;
+    font-size: .875rem; }
+    footer small a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 1rem;
+      color: #009cde; }
+    footer small a:hover {
+      text-decoration: underline; }
+
+main {
+  width: 80%;
+  max-width: 1500px;
+  margin: 1rem auto;
+  /* 
+        the multicolumn class lets you create a multicolumn layout
+        - apply it to a wrapper (e.g. a div) and all immediate children will be equal width columns.
+        minimum column width is 320 pixels and it is responsive 
+    */ }
+  main p, main ul {
+    max-width: 80ch; }
+  main .multicolumn {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem; }
+  main img {
+    width: auto;
+    height: auto;
+    max-width: 100%; }
+  main figure {
+    margin-bottom: 2rem; }
+    main figure figcaption {
+      text-align: right;
+      font-style: italic;
+      color: #75787b; }
+  main .float-left {
+    float: left; }
+  main a {
+    text-decoration: none;
+    color: #009cde; }
+    main a:hover {
+      text-decoration: underline; }
+
+/* styling for Drupal's admin messages, menus, and such */
+/* error messages */
+div[role=contentinfo] {
+  background-color: #e2e8ec;
+  padding: 1rem; }
+
+/* page edit menu */
+#block-nestwatch-local-tasks ul:not([class]), #block-nestwatch-local-tasks ul[class=""] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding: 1rem; }
+  #block-nestwatch-local-tasks ul:not([class]) li, #block-nestwatch-local-tasks ul[class=""] li {
+    margin-left: 1.5rem;
+    background-color: #d0d7de;
+    padding: .5rem 1rem;
+    border-radius: 5px; }
+    #block-nestwatch-local-tasks ul:not([class]) li:hover, #block-nestwatch-local-tasks ul[class=""] li:hover {
+      background-color: #e2e8ec; }
+    #block-nestwatch-local-tasks ul:not([class]) li a, #block-nestwatch-local-tasks ul[class=""] li a {
+      color: #101820;
+      text-decoration: none; }
+
+details {
+  max-width: 80ch;
+  box-shadow: 0 0 3px #d0d7de;
+  margin: 0 0 1rem 0; }
+  details[open] summary {
+    color: #f0515a;
+    border-bottom: 1px dotted #d0d7de; }
+    details[open] summary:after {
+      content: '\00d7';
+      color: #f0515a; }
+    details[open] summary:hover {
+      color: #f0515a; }
+  details summary {
+    list-style: none;
+    padding: 1rem;
+    cursor: pointer; }
+    details summary:after {
+      content: '+';
+      text-align: right;
+      float: right; }
+    details summary:hover {
+      color: #009cde; }
+    details summary:focus {
+      outline: none; }
+    details summary::-webkit-details-marker {
+      display: none; }
+  details p {
+    padding: 0 1rem; }
+  details p:last-child, details li:last-child, details figure:last-child {
+    padding-bottom: 1rem; }
+
+.reveal {
+  background-color: #fff;
+  border: 1px solid #d0d7de;
+  margin: 19%;
+  padding: 1rem 0;
+  opacity: 0;
+  transition: opacity 350ms; }
+
+.quiz {
+  color: #fff;
+  background-color: #f0515a;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  float: right;
+  margin: .5rem .5rem 0 0; }
+
+.quiz div {
+  align-self: center; }
+
+.quiz:hover {
+  cursor: help; }
+
+.quiz:hover + .reveal {
+  opacity: .9; }
+
+#pic1, #pic2, #pic3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#pic1 {
+  background-image: url(/sites/default/files/2019-03/wtsp-color-banded.jpg); }
+
+#pic2 {
+  background-image: url(https://nationalzoo.si.edu/scbi/migratorybirds/featured_photo/images/bigpic/eaph35.jpg); }
+
+#pic3 {
+  background-image: url(https://nationalzoo.si.edu/scbi/migratorybirds/featured_photo/images/bigpic/eust92.jpg); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Crimson Text", serif; }
+
+table {
+  border-collapse: collapse; }
+
+th {
+  border-bottom: 1px solid #333f48;
+  padding: .5rem 1rem;
+  text-align: center;
+  font-family: "Crimson Text", serif; }
+
+td {
+  border-bottom: 1px solid #d0d7de;
+  margin: 0;
+  padding: .5rem 1rem; }
+
+tr:nth-child(odd) td {
+  background-color: #efefef; }
+
+tr:last-child td {
+  border-bottom: 1px solid #333f48; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdHlwb2dyYXBoeS5zY3NzIiwiLi4vc2Fzcy9oZWFkZXIuc2NzcyIsIi4uL3Nhc3MvY29sb3JzLnNjc3MiLCIuLi9zYXNzL2Zvb3Rlci5zY3NzIiwiLi4vc2Fzcy9tYWluLnNjc3MiLCIuLi9zYXNzL2FkbWluLnNjc3MiLCIuLi9zYXNzL2RldGFpbHMuc2NzcyIsIi4uL3Nhc3MvcXVpei5zY3NzIiwiLi4vc2Fzcy90YWJsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG9HQUFZO0FBQVosb0dBQVk7QUFNWjtFQUNFLFVBQVM7RUFDVCxXQUFVO0VBQ1YsZ0JBTGM7RUFNZCxzQ0FSMkM7RUFTM0MsaUJBQWdCLEVBQ2pCOztBQUVDO0VBQ0UsbUNBWndDLEVBYXpDOztBQ2RIO0VBQ0ksMEJDRFc7RURFWCxZQ0lRO0VESFIsa0JBQWlCLEVBd0RwQjtFQTNERDtJQUtRLGlCQUFnQixFQUNuQjtFQU5MO0lBU1ksY0FBYTtJQUNiLDhCQUE2QjtJQUM3QixzQkFBcUI7SUFDckIsa0JBQWlCO0lBQ2pCLGlCQUFnQixFQWlDbkI7SUE5Q1Q7TUFnQm9CLGVDakJOO01Ea0JNLHNCQUFxQixFQUl4QjtNQXJCakI7UUFtQndCLDJCQUEwQixFQUM3QjtJQXBCckI7TUF1Qm9CLG1CQUFrQjtNQUNsQixXQUFVO01BQ1YsY0FBYSxFQUNoQjtJQTFCakI7TUE2QmdCLGVDckJJLEVEc0JQO0lBOUJiO01BaUNvQixlQUFjO01BQ2QsMEJDbENMO01EbUNLLGNBQWE7TUFDYixnQ0FBK0I7TUFDL0IsK0JBQThCLEVBT2pDO01BNUNqQjtRQXVDd0IsZUMzQlQsRUQ0Qk07TUF4Q3JCO1FBMEN3QixlQ2xDSixFRG1DQztFQTNDckI7SUFpRFEsY0FBYTtJQUNiLDJCQUEwQjtJQUMxQix5QkFBd0IsRUFPM0I7SUExREw7TUFxRFksZ0JBQWUsRUFDbEI7SUF0RFQ7TUF3RFksZ0JBQWUsRUFDbEI7O0FFekRUO0VBQ0ksbUJBQWtCO0VBQ2xCLGlCQUFnQjtFQUNoQiw4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 */

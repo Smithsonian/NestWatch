@@ -1,0 +1,27 @@
+@import "colors";
+@import "typography";
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid $darkgray;
+    padding: .5rem 1rem;
+    text-align: center;
+    font-family: $secondary-font-stack;
+}
+
+td {
+    border-bottom: 1px solid $ashgray;
+    margin: 0;
+    padding: .5rem 1rem;
+}
+
+tr:nth-child(odd) td {
+    background-color: $lightgray;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid $darkgray;
+}

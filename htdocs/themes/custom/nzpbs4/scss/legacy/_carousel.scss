@@ -1,0 +1,15 @@
+.flexslider {
+  background: none;
+  border:none;
+  border-radius:0;
+  margin-bottom:40px;
+}
+
+.flex-control-paging {
+  a {
+    background: white !important;
+    &.flex-active {
+      background: $secondary-color !important;
+    }
+  }
+}

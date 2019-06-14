@@ -1,0 +1,44 @@
+@import "colors";
+
+.reveal {
+    background-color: $white;
+    border: 1px solid $ashgray;
+    margin: 19%;
+    padding: 1rem 0;
+    opacity: 0;
+    transition: opacity 350ms;  
+  }
+  .quiz {
+    color: $white;
+    background-color: $coral;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    float: right;
+    margin: .5rem .5rem 0 0;
+  }
+  .quiz div {
+    align-self: center;
+  }
+  .quiz:hover {
+    cursor: help;
+  }
+  .quiz:hover + .reveal {
+    opacity: .9;
+  }
+  #pic1, #pic2, #pic3 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+  }
+  #pic1 {
+    background-image: url(/sites/default/files/2019-03/wtsp-color-banded.jpg);
+  }
+  #pic2 {
+    background-image: url(https://nationalzoo.si.edu/scbi/migratorybirds/featured_photo/images/bigpic/eaph35.jpg);
+  }
+  #pic3 {
+    background-image: url(https://nationalzoo.si.edu/scbi/migratorybirds/featured_photo/images/bigpic/eust92.jpg);  
+  }

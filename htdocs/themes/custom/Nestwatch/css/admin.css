@@ -1,0 +1,24 @@
+/* styling for Drupal's admin messages, menus, and such */
+/* error messages */
+div[role=contentinfo] {
+  background-color: #e2e8ec;
+  padding: 1rem; }
+
+/* page edit menu */
+#block-nestwatch-local-tasks ul:not([class]), #block-nestwatch-local-tasks ul[class=""] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding: 1rem; }
+  #block-nestwatch-local-tasks ul:not([class]) li, #block-nestwatch-local-tasks ul[class=""] li {
+    margin-left: 1.5rem;
+    background-color: #d0d7de;
+    padding: .5rem 1rem;
+    border-radius: 5px; }
+    #block-nestwatch-local-tasks ul:not([class]) li:hover, #block-nestwatch-local-tasks ul[class=""] li:hover {
+      background-color: #e2e8ec; }
+    #block-nestwatch-local-tasks ul:not([class]) li a, #block-nestwatch-local-tasks ul[class=""] li a {
+      color: #101820;
+      text-decoration: none; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvYWRtaW4uc2NzcyIsIi4uL3Nhc3MvY29sb3JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMERBQTBEO0FBSTFELG9CQUFvQjtBQUNwQjtFQUNJLDBCQ01jO0VETGQsY0FBYSxFQUNoQjs7QUFFRCxvQkFBb0I7QUFDcEI7RUFFUSxjQUFhO0VBQ2Isb0JBQW1CO0VBQ25CLHdCQUF1QjtFQUN2QixzQkFBcUI7RUFDckIsY0FBYSxFQWNoQjtFQXBCTDtJQVFZLG9CQUFtQjtJQUNuQiwwQkNQSztJRFFMLG9CQUFtQjtJQUNuQixtQkFBa0IsRUFRckI7SUFuQlQ7TUFhZ0IsMEJDWkUsRURhTDtJQWRiO01BZ0JnQixlQ3pCRDtNRDBCQyxzQkFBcUIsRUFDeEIiLCJmaWxlIjoiYWRtaW4uY3NzIn0= */
