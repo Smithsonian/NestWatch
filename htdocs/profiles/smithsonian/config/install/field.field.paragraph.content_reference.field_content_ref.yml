@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_ref
+    - paragraphs.paragraphs_type.content_reference
+id: paragraph.content_reference.field_content_ref
+field_name: field_content_ref
+entity_type: paragraph
+bundle: content_reference
+label: 'Content Reference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_reference
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

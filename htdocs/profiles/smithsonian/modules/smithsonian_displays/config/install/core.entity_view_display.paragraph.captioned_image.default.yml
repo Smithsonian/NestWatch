@@ -1,0 +1,72 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.captioned_image.field_bg
+    - field.field.paragraph.captioned_image.field_image
+    - field.field.paragraph.captioned_image.field_layout
+    - field.field.paragraph.captioned_image.field_spacing
+    - field.field.paragraph.captioned_image.field_text
+    - field.field.paragraph.captioned_image.field_title
+    - field.field.paragraph.captioned_image.field_url
+    - image.style.grid
+    - paragraphs.paragraphs_type.captioned_image
+  module:
+    - field_layout
+    - image
+    - link
+    - si_content
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_teaser
+    settings:
+      extra_classes: ''
+      teaser_type: teaser-featured
+id: paragraph.captioned_image.default
+targetEntityType: paragraph
+bundle: captioned_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: grid
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: media
+  field_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link: field_url
+      wrapper: span
+      class: h3
+    third_party_settings: {  }
+    type: text_title
+    region: title
+  field_url:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: link
+hidden:
+  field_bg: true
+  field_layout: true
+  field_spacing: true

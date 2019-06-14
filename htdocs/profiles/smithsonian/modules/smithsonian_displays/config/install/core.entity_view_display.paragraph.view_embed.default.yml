@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.view_embed.field_bg
+    - field.field.paragraph.view_embed.field_class
+    - field.field.paragraph.view_embed.field_layout
+    - field.field.paragraph.view_embed.field_spacing
+    - field.field.paragraph.view_embed.field_title
+    - field.field.paragraph.view_embed.field_view
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - field_layout
+    - layout_discovery
+    - si_content
+    - viewsreference
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.view_embed.default
+targetEntityType: paragraph
+bundle: view_embed
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link: none
+      wrapper: h2
+      class: section-title
+    third_party_settings: {  }
+    type: text_title
+    region: content
+  field_view:
+    weight: 1
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden:
+  field_bg: true
+  field_class: true
+  field_layout: true
+  field_spacing: true

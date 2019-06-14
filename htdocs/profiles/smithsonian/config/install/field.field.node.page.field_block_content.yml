@@ -1,0 +1,84 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block_content
+    - node.type.page
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.content_reference
+    - paragraphs.paragraphs_type.grid_layout
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.two_column_equal
+    - paragraphs.paragraphs_type.two_column_left
+    - paragraphs.paragraphs_type.two_column_right
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - entity_reference_revisions
+id: node.page.field_block_content
+field_name: field_block_content
+entity_type: node
+bundle: page
+label: 'Block Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      grid_layout: grid_layout
+      slideshow: slideshow
+      text_block: text_block
+      content_reference: content_reference
+      two_column_left: two_column_left
+      two_column_right: two_column_right
+      two_column_equal: two_column_equal
+      view_embed: view_embed
+      video: video
+    target_bundles_drag_drop:
+      captioned_image:
+        enabled: true
+        weight: -27
+      grid_layout:
+        enabled: true
+        weight: -27
+      slide:
+        weight: -27
+        enabled: false
+      slideshow:
+        enabled: true
+        weight: -26
+      text_block:
+        enabled: true
+        weight: -25
+      three_column_equal:
+        weight: -24
+        enabled: false
+      content_reference:
+        enabled: true
+        weight: -27
+      two_column_left:
+        enabled: true
+        weight: -23
+      three_column_25_50_25:
+        weight: -22
+        enabled: false
+      two_column_right:
+        enabled: true
+        weight: -21
+      two_column_equal:
+        enabled: true
+        weight: -19
+      view_embed:
+        enabled: true
+        weight: -27
+      video:
+        enabled: true
+        weight: -17
+field_type: entity_reference_revisions

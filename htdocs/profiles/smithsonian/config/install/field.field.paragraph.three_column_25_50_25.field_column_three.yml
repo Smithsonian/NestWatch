@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_three
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.three_column_25_50_25
+  module:
+    - entity_reference_revisions
+id: paragraph.three_column_25_50_25.field_column_three
+field_name: field_column_three
+entity_type: paragraph
+bundle: three_column_25_50_25
+label: 'Column Three'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      text_block: text_block
+    target_bundles_drag_drop:
+      captioned_image:
+        enabled: true
+        weight: 11
+      grid_layout:
+        weight: 12
+        enabled: false
+      slide:
+        weight: 13
+        enabled: false
+      slideshow:
+        weight: 14
+        enabled: false
+      text_block:
+        enabled: true
+        weight: 15
+      three_column_25_50_25:
+        weight: 16
+        enabled: false
+      three_column_equal:
+        weight: 17
+        enabled: false
+      two_column_left:
+        weight: 18
+        enabled: false
+      two_column_right:
+        weight: 19
+        enabled: false
+      view_embed:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

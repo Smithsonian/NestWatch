@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_block.field_bg
+    - field.field.paragraph.text_block.field_class
+    - field.field.paragraph.text_block.field_layout
+    - field.field.paragraph.text_block.field_spacing
+    - field.field.paragraph.text_block.field_text_block
+    - field.field.paragraph.text_block.field_title
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - field_layout
+    - layout_discovery
+    - si_content
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.text_block.default
+targetEntityType: paragraph
+bundle: text_block
+mode: default
+content:
+  field_text_block:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link: none
+      wrapper: h2
+      class: section-title
+    third_party_settings: {  }
+    type: text_title
+    region: content
+hidden:
+  field_bg: true
+  field_class: true
+  field_layout: true
+  field_spacing: true

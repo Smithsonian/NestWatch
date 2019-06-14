@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_two
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.grid_layout
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.two_column_left
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column_left.field_column_two
+field_name: field_column_two
+entity_type: paragraph
+bundle: two_column_left
+label: 'Column Two'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      grid_layout: grid_layout
+      slideshow: slideshow
+      text_block: text_block
+    target_bundles_drag_drop:
+      captioned_image:
+        enabled: true
+        weight: 7
+      grid_layout:
+        enabled: true
+        weight: 8
+      slide:
+        weight: 9
+        enabled: false
+      slideshow:
+        enabled: true
+        weight: 10
+      text_block:
+        enabled: true
+        weight: 11
+      two_column_left:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

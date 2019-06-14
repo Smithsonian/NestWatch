@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.captioned_image
+  module:
+    - options
+id: paragraph.captioned_image.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: captioned_image
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

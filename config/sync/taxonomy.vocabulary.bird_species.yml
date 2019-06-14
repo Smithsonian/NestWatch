@@ -1,9 +1,0 @@
-uuid: 62470213-9949-4a97-b426-dfcf0b333a12
-langcode: en
-status: true
-dependencies: {  }
-name: 'Bird Species'
-vid: bird_species
-description: ''
-hierarchy: 0
-weight: 0

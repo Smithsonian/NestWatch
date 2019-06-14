@@ -1,0 +1,73 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_bg_image
+    - field.field.node.page.field_block_content
+    - field.field.node.page.field_image
+    - field.field.node.page.field_inc_menu
+    - field.field.node.page.field_share
+    - field.field.node.page.field_sidebar
+    - field.field.node.page.field_teaser
+    - node.type.page
+  module:
+    - field_layout
+    - image
+    - manage_display
+    - si_content
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_teaser
+    settings:
+      extra_classes: ''
+      teaser_type: teaser-featured
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: media
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_teaser:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  node_link:
+    weight: 3
+    region: link
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: title
+    weight: 1
+    region: title
+    label: hidden
+    settings:
+      tag: h2
+      linked: false
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  content_moderation_control: true
+  created: true
+  field_bg_image: true
+  field_block_content: true
+  field_inc_menu: true
+  field_share: true
+  field_sidebar: true
+  links: true
+  uid: true

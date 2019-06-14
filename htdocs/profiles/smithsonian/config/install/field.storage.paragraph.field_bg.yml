@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_bg
+field_name: field_bg
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bg-blue
+      label: Blue
+    -
+      value: bg-burgundy
+      label: Burgundy
+    -
+      value: bg-gray-dark
+      label: 'Gray Dark'
+    -
+      value: bg-gray-light
+      label: 'Gray Light'
+    -
+      value: bg-gray-lightest
+      label: 'Gray Lightest'
+    -
+      value: bg-orange
+      label: Orange
+    -
+      value: bg-purple
+      label: Purple
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

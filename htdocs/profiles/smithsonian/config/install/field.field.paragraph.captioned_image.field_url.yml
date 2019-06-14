@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_url
+    - paragraphs.paragraphs_type.captioned_image
+  module:
+    - link
+id: paragraph.captioned_image.field_url
+field_name: field_url
+entity_type: paragraph
+bundle: captioned_image
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

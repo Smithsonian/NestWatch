@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.full_width_large
+  module:
+    - crop
+name: full_width_large
+label: 'Full Width Large'
+effects:
+  300c7e55-a2e7-4a91-8d3c-77a5b0e60e2d:
+    uuid: 300c7e55-a2e7-4a91-8d3c-77a5b0e60e2d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: full_width_large
+  49c72ff0-426a-40ee-9de5-6eeb796ce533:
+    uuid: 49c72ff0-426a-40ee-9de5-6eeb796ce533
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 2560
+      height: 850
+      anchor: center-center

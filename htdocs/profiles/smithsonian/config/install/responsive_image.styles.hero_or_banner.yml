@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.full_width_default
+    - image.style.full_width_large
+    - image.style.full_width_mobile
+    - image.style.full_width_tab
+  theme:
+    - si_basetheme
+id: hero_or_banner
+label: 'Hero or Banner'
+image_style_mappings:
+  -
+    breakpoint_id: si_basetheme.tv
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_width_large
+  -
+    breakpoint_id: si_basetheme.standard
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_width_default
+  -
+    breakpoint_id: si_basetheme.tab
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_width_tab
+  -
+    breakpoint_id: si_basetheme.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_width_mobile
+breakpoint_group: si_basetheme
+fallback_image_style: full_width_default

@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_right.field_class
+    - field.field.paragraph.two_column_right.field_column_one
+    - field.field.paragraph.two_column_right.field_column_two
+    - field.field.paragraph.two_column_right.field_spacing
+    - field.field.paragraph.two_column_right.field_title
+    - paragraphs.paragraphs_type.two_column_right
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - si_content
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_twocol_right
+    settings:
+      extra_classes: ''
+id: paragraph.two_column_right.default
+targetEntityType: paragraph
+bundle: two_column_right
+mode: default
+content:
+  field_column_one:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_column_two:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: sidebar
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: aside
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: top
+hidden:
+  field_class: true
+  field_spacing: true

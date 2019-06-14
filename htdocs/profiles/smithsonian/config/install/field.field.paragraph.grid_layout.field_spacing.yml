@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.grid_layout
+  module:
+    - options
+id: paragraph.grid_layout.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: grid_layout
+label: Spacing
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: spacing-bottom
+default_value_callback: ''
+settings: {  }
+field_type: list_string

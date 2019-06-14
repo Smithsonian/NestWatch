@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_column
+field_name: field_column
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: col-2
+      label: '2 Columns'
+    -
+      value: col-3
+      label: '3 Columns'
+    -
+      value: col-4
+      label: '4 Columns'
+    -
+      value: col-6
+      label: '6 Columns'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

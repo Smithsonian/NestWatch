@@ -1,4 +1,0 @@
-name: nestwatch
-recipe: drupal8
-config:
-  webroot: web

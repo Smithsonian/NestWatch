@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.node_title
+  module:
+    - ctools
+    - views
+  theme:
+    - si_basetheme
+id: views_block__node_title_block_1
+theme: si_basetheme
+region: highlighted
+weight: -5
+provider: null
+plugin: 'views_block:node_title-block_1'
+settings:
+  id: 'views_block:node_title-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

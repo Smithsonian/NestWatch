@@ -3,7 +3,7 @@
 /vendor/
 /htdocs/core/
 /htdocs/modules
-/htdocs/themes/contrib
+/htdocs/themes
 /htdocs/profiles/contrib/
 /htdocs/libraries/superfish
 
@@ -41,3 +41,7 @@ node_modules
 
 # Ignore .env files as they are personal
 /.env
+
+
+# Ignore Aquia Dev Desktop Files 
+/htdocs/sites/*.dd

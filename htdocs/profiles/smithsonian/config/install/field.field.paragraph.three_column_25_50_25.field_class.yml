@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class
+    - paragraphs.paragraphs_type.three_column_25_50_25
+id: paragraph.three_column_25_50_25.field_class
+field_name: field_class
+entity_type: paragraph
+bundle: three_column_25_50_25
+label: 'Custom Class'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

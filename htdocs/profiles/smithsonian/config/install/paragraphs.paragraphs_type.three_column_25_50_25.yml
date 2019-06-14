@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: three_column_25_50_25
+label: 'Three Column 25/50/25'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

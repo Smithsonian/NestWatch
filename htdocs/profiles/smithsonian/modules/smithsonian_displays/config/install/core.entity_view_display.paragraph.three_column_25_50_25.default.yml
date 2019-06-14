@@ -1,0 +1,69 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_column_25_50_25.field_bg
+    - field.field.paragraph.three_column_25_50_25.field_class
+    - field.field.paragraph.three_column_25_50_25.field_column_one
+    - field.field.paragraph.three_column_25_50_25.field_column_three
+    - field.field.paragraph.three_column_25_50_25.field_column_two
+    - field.field.paragraph.three_column_25_50_25.field_layout
+    - field.field.paragraph.three_column_25_50_25.field_spacing
+    - field.field.paragraph.three_column_25_50_25.field_title
+    - paragraphs.paragraphs_type.three_column_25_50_25
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+    - si_content
+third_party_settings:
+  field_layout:
+    id: layout_threecol_25_50_25
+    settings: {  }
+id: paragraph.three_column_25_50_25.default
+targetEntityType: paragraph
+bundle: three_column_25_50_25
+mode: default
+content:
+  field_column_one:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: sidebar
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: second
+  field_column_three:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: sidebar
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: third
+  field_column_two:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: first
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link: none
+      wrapper: h2
+      class: ''
+    third_party_settings: {  }
+    type: text_title
+    region: top
+hidden:
+  field_bg: true
+  field_class: true
+  field_layout: true
+  field_spacing: true

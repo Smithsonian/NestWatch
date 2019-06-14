@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: Grid
+id: grid
+description: ''
+aspect_ratio: '4:3'
+soft_limit_width: 460
+soft_limit_height: 345
+hard_limit_width: null
+hard_limit_height: null

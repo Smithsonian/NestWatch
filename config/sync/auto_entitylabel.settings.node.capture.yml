@@ -1,7 +1,0 @@
-status: '1'
-pattern: '[node:field_capture_encounter_type:value]-[node:field_capture_bird_id:entity:field_bird_band_number]-[node:field_capture_date_time:value]'
-php: 0
-escape: 0
-dependencies:
-  config:
-    - node.type.capture

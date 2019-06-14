@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_layout
+    - field.field.paragraph.video.field_spacing
+    - field.field.paragraph.video.field_title
+    - field.field.paragraph.video.field_video_embed
+    - paragraphs.paragraphs_type.video
+  module:
+    - field_layout
+    - layout_discovery
+    - si_content
+    - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link: none
+      wrapper: h2
+      class: ''
+    third_party_settings: {  }
+    type: text_title
+    region: content
+  field_video_embed:
+    weight: 1
+    label: hidden
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden:
+  field_layout: true
+  field_spacing: true

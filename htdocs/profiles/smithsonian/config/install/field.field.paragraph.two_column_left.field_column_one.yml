@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_one
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.two_column_left
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column_left.field_column_one
+field_name: field_column_one
+entity_type: paragraph
+bundle: two_column_left
+label: 'Column One'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      text_block: text_block
+      video: video
+    target_bundles_drag_drop:
+      captioned_image:
+        enabled: true
+        weight: 7
+      grid_layout:
+        weight: 8
+        enabled: false
+      slide:
+        weight: 9
+        enabled: false
+      slideshow:
+        weight: 10
+        enabled: false
+      text_block:
+        enabled: true
+        weight: 11
+      two_column_left:
+        weight: 12
+        enabled: false
+      three_column_25_50_25:
+        weight: 17
+        enabled: false
+      three_column_equal:
+        weight: 18
+        enabled: false
+      two_column_right:
+        weight: 20
+        enabled: false
+      video:
+        enabled: true
+        weight: 21
+      view_embed:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

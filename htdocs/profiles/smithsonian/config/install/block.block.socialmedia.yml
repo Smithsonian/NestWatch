@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social_media
+  module:
+    - system
+  theme:
+    - si_basetheme
+id: socialmedia
+theme: si_basetheme
+region: footer_bottom_left
+weight: -14
+provider: null
+plugin: 'system_menu_block:social_media'
+settings:
+  id: 'system_menu_block:social_media'
+  label: 'Social Media'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

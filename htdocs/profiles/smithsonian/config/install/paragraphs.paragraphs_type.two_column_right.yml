@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: two_column_right
+label: 'Two Column 60/40'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,7 +1,0 @@
-status: '2'
-pattern: '[node:field_site_id]'
-php: 0
-escape: 0
-dependencies:
-  config:
-    - node.type.sites

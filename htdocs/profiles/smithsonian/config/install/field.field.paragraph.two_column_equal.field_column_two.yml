@@ -1,0 +1,71 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_two
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.two_column_equal
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column_equal.field_column_two
+field_name: field_column_two
+entity_type: paragraph
+bundle: two_column_equal
+label: 'Column Two'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      slideshow: slideshow
+      text_block: text_block
+      video: video
+      view_embed: view_embed
+    target_bundles_drag_drop:
+      captioned_image:
+        enabled: true
+        weight: 13
+      grid_layout:
+        weight: 14
+        enabled: false
+      slide:
+        weight: 15
+        enabled: false
+      slideshow:
+        enabled: true
+        weight: 16
+      text_block:
+        enabled: true
+        weight: 17
+      three_column_25_50_25:
+        weight: 18
+        enabled: false
+      three_column_equal:
+        weight: 19
+        enabled: false
+      two_column_equal:
+        weight: 20
+        enabled: false
+      two_column_left:
+        weight: 21
+        enabled: false
+      two_column_right:
+        weight: 22
+        enabled: false
+      video:
+        enabled: true
+        weight: 23
+      view_embed:
+        enabled: true
+        weight: 24
+field_type: entity_reference_revisions

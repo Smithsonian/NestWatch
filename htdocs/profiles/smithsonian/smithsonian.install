@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the smithsonian installation profile.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\user\RoleInterface;
+//use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
+//use Drupal\Core\Entity\EntityTypeManagerInterface;
+//use Drupal\Core\Extension\ModuleHandlerInterface;
+//use Drupal\Core\Path\AliasManagerInterface;
+//use Drupal\Core\State\StateInterface;
+//use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Component\Utility\Html;
+use Drupal\block\Entity\Block;
+use Drupal\block_content\Entity\BlockContent;
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function smithsonian_install() {
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->roles[] = 'administrator';
+  $user->save();
+
+  // We install some menu links, so we have to rebuild the router, to ensure the
+  // menu links are valid.
+  \Drupal::service('router.builder')->rebuildIfNeeded();
+
+	// Allow all users to use search.
+	user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('search content'));
+	user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('search content'));
+
+	// Enable the Contact link in the footer menu.
+	/** @var \Drupal\Core\Menu\MenuLinkManagerInterface $menu_link_manager */
+	$menu_link_manager = \Drupal::service('plugin.manager.menu.link');
+	$menu_link_manager->updateDefinition('contact.site_page', ['enabled' => TRUE]);
+
+	// Enable the admin theme.
+	\Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
+
+	//save custom block
+	$block = BlockContent::create([
+		'info' => 'SI Logo',
+		'type' => 'basic',
+		'body' => [
+			'value' => '
+					<div class="wrapper-logo"><a href="https://si.edu" target="_blank"><img alt="si-logo-white.png" height="36" src="/themes/custom/si_basetheme/images/si-logo-white.png" width="138" /><span class="sr-only">Smithsonian main website</span></a></div>',
+			'format' => 'full_html',
+		],
+	]);
+
+	$block->save();
+	$uuid = $block->uuid();
+	$blockContent =  \Drupal\block\Entity\Block::create([
+		'id' => 'prefacelogo',
+		'plugin' => 'block_content:' . $uuid,
+		'region' => 'header_preface_left',
+		'theme' => \Drupal::config('system.theme')->get('default'),
+		'visibility' => array(),
+	]);
+	$blockContent->save();
+
+	$blockContent2 =  \Drupal\block\Entity\Block::create([
+		'id' => 'footerlogo',
+		'plugin' => 'block_content:' . $uuid,
+		'region' => 'footer_top_left',
+		'theme' => \Drupal::config('system.theme')->get('default'),
+		'visibility' => array(),
+	]);
+	$blockContent2->save();
+
+	// Enable the Smithsonian Displays module. This can't be specified as a dependency
+  // in the smithsonian.info.yml file, as it requires the manage_display module which can't be enabled during installation.
+  \Drupal::service('module_installer')->install(['smithsonian_displays'], TRUE);
+}
+

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.full_width_mobile
+    - image.style.full_width_tab
+    - image.style.slideshow_constrain
+  theme:
+    - si_basetheme
+id: slideshow_constrain
+label: 'Slideshow Constrain'
+image_style_mappings:
+  -
+    breakpoint_id: si_basetheme.standard
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: slideshow_constrain
+  -
+    breakpoint_id: si_basetheme.tab
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_width_tab
+  -
+    breakpoint_id: si_basetheme.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_width_mobile
+breakpoint_group: si_basetheme
+fallback_image_style: slideshow_constrain

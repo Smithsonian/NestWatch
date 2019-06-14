@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.slideshow_constrain
+  module:
+    - crop
+name: slideshow_constrain
+label: 'Slideshow Constrain'
+effects:
+  687f8d31-a07c-49f2-9da6-6fa81d5a011e:
+    uuid: 687f8d31-a07c-49f2-9da6-6fa81d5a011e
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: slideshow_constrain
+  3cd6b346-0ed3-4315-8fcf-1080410839a4:
+    uuid: 3cd6b346-0ed3-4315-8fcf-1080410839a4
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1280
+      height: 548
+      anchor: center-center

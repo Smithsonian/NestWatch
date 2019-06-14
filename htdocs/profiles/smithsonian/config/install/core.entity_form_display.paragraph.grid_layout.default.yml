@@ -1,0 +1,108 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grid_layout.field_class
+    - field.field.paragraph.grid_layout.field_column
+    - field.field.paragraph.grid_layout.field_grid_content
+    - field.field.paragraph.grid_layout.field_layout
+    - field.field.paragraph.grid_layout.field_spacing
+    - field.field.paragraph.grid_layout.field_title
+    - paragraphs.paragraphs_type.grid_layout
+  module:
+    - field_group
+    - field_layout
+    - layout_discovery
+    - paragraphs
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_theme:
+      children:
+        - field_spacing
+        - field_layout
+        - field_class
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Theme
+      region: content
+    group_grid_content:
+      children:
+        - field_title
+        - field_grid_content
+        - field_column
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        description: ''
+        open: true
+        required_fields: true
+        id: ''
+        classes: grid-wrapper
+      label: 'Grid Content'
+      region: content
+id: paragraph.grid_layout.default
+targetEntityType: paragraph
+bundle: grid_layout
+mode: default
+content:
+  field_class:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_column:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_grid_content:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_layout:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_spacing:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

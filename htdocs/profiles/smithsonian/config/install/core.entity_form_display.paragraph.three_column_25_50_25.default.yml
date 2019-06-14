@@ -1,0 +1,136 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_column_25_50_25.field_bg
+    - field.field.paragraph.three_column_25_50_25.field_class
+    - field.field.paragraph.three_column_25_50_25.field_column_one
+    - field.field.paragraph.three_column_25_50_25.field_column_three
+    - field.field.paragraph.three_column_25_50_25.field_column_two
+    - field.field.paragraph.three_column_25_50_25.field_layout
+    - field.field.paragraph.three_column_25_50_25.field_spacing
+    - field.field.paragraph.three_column_25_50_25.field_title
+    - paragraphs.paragraphs_type.three_column_25_50_25
+  module:
+    - field_group
+    - field_layout
+    - layout_discovery
+    - paragraphs
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_theme:
+      children:
+        - field_spacing
+        - field_layout
+        - field_bg
+        - field_class
+      parent_name: ''
+      weight: 5
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Theme
+      region: content
+    group_three_column_25_50_25:
+      children:
+        - field_title
+        - field_column_one
+        - field_column_two
+        - field_column_three
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        description: ''
+        open: true
+        required_fields: true
+        id: ''
+        classes: alt-theme-bundle
+      label: 'Three Column (25-50-25)'
+      region: content
+id: paragraph.three_column_25_50_25.default
+targetEntityType: paragraph
+bundle: three_column_25_50_25
+mode: default
+content:
+  field_bg:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_class:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_column_one:
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_column_three:
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_column_two:
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_layout:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_spacing:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

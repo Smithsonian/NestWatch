@@ -1,0 +1,87 @@
+name: Smithsonain
+description: 'Baseline installation profile'
+type: profile
+core: 8.x
+dependencies:
+  - node
+  - history
+  - big_pipe
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - media
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - search
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - automated_cron
+  - responsive_image
+  - content_moderation
+  - workflows
+  - inline_form_errors
+  - layout_discovery
+  - imce
+  - link
+  - allowed_formats
+  - field_layout
+  - ctools
+  - pathauto
+  - field_group
+  - entity_reference_revisions
+  - paragraphs
+  - maxlength
+  - menu_link_attributes
+  - superfish
+  - conditional_fields
+  - crop
+  - image_widget_crop
+  - entity_browser
+  - blazy
+  - blazy_ui
+  - slick
+  - slick_ui
+  - slick_entityreference
+  - responsive_image
+  - responsive_bg_image_formatter
+  - addtoany
+  - autologout
+  - metatag
+  - metatag_favicons
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - metatag_views
+  - noreqnewpass
+  - video_embed_field
+  - video_embed_media
+  - viewsreference
+  - admin_toolbar
+  - admin_toolbar_tools
+  - transliterate_filenames
+  - manage_display
+  - manage_display_fix_title
+  - si_content
+
+themes:
+  # Custom themes.
+  - si_basetheme
+  - si_admin

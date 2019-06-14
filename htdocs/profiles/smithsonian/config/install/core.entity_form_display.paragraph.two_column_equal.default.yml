@@ -1,0 +1,123 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_equal.field_bg
+    - field.field.paragraph.two_column_equal.field_class
+    - field.field.paragraph.two_column_equal.field_column_one
+    - field.field.paragraph.two_column_equal.field_column_two
+    - field.field.paragraph.two_column_equal.field_layout
+    - field.field.paragraph.two_column_equal.field_spacing
+    - field.field.paragraph.two_column_equal.field_title
+    - paragraphs.paragraphs_type.two_column_equal
+  module:
+    - field_group
+    - field_layout
+    - layout_discovery
+    - paragraphs
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_two_column_equal:
+      children:
+        - field_title
+        - field_column_one
+        - field_column_two
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: alt-theme-bundle
+        description: ''
+        open: true
+        required_fields: true
+      label: 'Two Column Equal'
+      region: content
+    group_theme:
+      children:
+        - field_bg
+        - field_layout
+        - field_spacing
+        - field_class
+      parent_name: ''
+      weight: 5
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Theme
+      region: content
+id: paragraph.two_column_equal.default
+targetEntityType: paragraph
+bundle: two_column_equal
+mode: default
+content:
+  field_bg:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_class:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_column_one:
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_column_two:
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_layout:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_spacing:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

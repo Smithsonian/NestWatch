@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slideshow
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_slideshow
+field_name: field_slideshow
+entity_type: node
+bundle: landing_page
+label: Slideshow
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slideshow: slideshow
+    target_bundles_drag_drop:
+      slide:
+        weight: 3
+        enabled: false
+      slideshow:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

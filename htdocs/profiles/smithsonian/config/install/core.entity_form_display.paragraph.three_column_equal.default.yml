@@ -1,0 +1,120 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_column_equal.field_class
+    - field.field.paragraph.three_column_equal.field_column_one
+    - field.field.paragraph.three_column_equal.field_column_three
+    - field.field.paragraph.three_column_equal.field_column_two
+    - field.field.paragraph.three_column_equal.field_layout
+    - field.field.paragraph.three_column_equal.field_spacing
+    - field.field.paragraph.three_column_equal.field_title
+    - paragraphs.paragraphs_type.three_column_equal
+  module:
+    - field_group
+    - field_layout
+    - layout_discovery
+    - paragraphs
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_threecol_33_34_33
+    settings: {  }
+  field_group:
+    group_theme:
+      children: {  }
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Theme
+      region: content
+id: paragraph.three_column_equal.default
+targetEntityType: paragraph
+bundle: three_column_equal
+mode: default
+content:
+  field_class:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: bottom
+  field_column_one:
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+    third_party_settings: {  }
+    type: paragraphs
+    region: first
+  field_column_three:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: third
+  field_column_two:
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+    third_party_settings: {  }
+    type: paragraphs
+    region: second
+  field_layout:
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: first
+  field_spacing:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: bottom
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: top
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,68 @@
+standard.front_page:
+  title: 'Home'
+  route_name: '<front>'
+  menu_name: main
+social_media.facebook:
+  title: 'Facebook'
+  menu_name: 'social_media'
+  url: 'https://www.facebook.com/Smithsonian'
+  options:
+      attributes:
+        target: _blank
+        class:
+          - fa
+          - fa-facebook
+social_media.twitter:
+  title: 'Twitter'
+  menu_name: 'social_media'
+  url: 'https://twitter.com/smithsonian'
+  options:
+      attributes:
+        target: _blank
+        class:
+          - fa
+          - fa-twitter
+social_media.twitter:
+  title: 'Twitter'
+  menu_name: 'social_media'
+  url: 'https://twitter.com/smithsonian'
+  options:
+      attributes:
+        target: _blank
+        class:
+          - fa
+          - fa-twitter
+social_media.instagram:
+  title: 'Instagram'
+  menu_name: 'social_media'
+  url: 'https://instagram.com/smithsonian'
+  options:
+      attributes:
+        target: _blank
+        class:
+          - fa
+          - fa-instagram
+social_media.pinterest:
+  title: 'Pinterest'
+  menu_name: 'social_media'
+  url: 'https://www.pinterest.com/smithsonian/'
+  options:
+      attributes:
+        target: _blank
+        class:
+          - fa
+          - fa-pinterest
+footer.privacy:
+  title: 'Privacy'
+  menu_name: 'footer'
+  url: 'https://www.si.edu/privacy'
+  options:
+      attributes:
+        target: _blank
+footer.terms:
+  title: 'Terms of Use'
+  menu_name: 'footer'
+  url: 'http://si.edu/Termsofuse'
+  options:
+      attributes:
+        target: _blank

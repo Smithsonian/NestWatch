@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column
+    - paragraphs.paragraphs_type.grid_layout
+  module:
+    - options
+id: paragraph.grid_layout.field_column
+field_name: field_column
+entity_type: paragraph
+bundle: grid_layout
+label: Column
+description: 'Indicate the max number of columns.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

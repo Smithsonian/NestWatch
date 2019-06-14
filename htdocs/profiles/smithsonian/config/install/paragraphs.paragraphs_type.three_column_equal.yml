@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: three_column_equal
+label: 'Three Column Equal'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

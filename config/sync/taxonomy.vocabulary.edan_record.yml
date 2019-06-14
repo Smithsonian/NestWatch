@@ -1,9 +1,0 @@
-uuid: d462cb37-d4ec-4030-94d4-1a890e7cded6
-langcode: en
-status: true
-dependencies: {  }
-name: 'Edan Record'
-vid: edan_record
-description: 'Testing out EDAN record'
-hierarchy: 0
-weight: 0

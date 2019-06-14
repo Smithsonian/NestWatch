@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: 'Slideshow Constrain'
+id: slideshow_constrain
+description: ''
+aspect_ratio: '21:9'
+soft_limit_width: 1280
+soft_limit_height: 448
+hard_limit_width: null
+hard_limit_height: null

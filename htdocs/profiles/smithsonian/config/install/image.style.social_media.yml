@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: social_media
+label: 'Social Media'
+effects:
+  9de7e01a-03b9-49a8-adc6-8e5280af19b8:
+    uuid: 9de7e01a-03b9-49a8-adc6-8e5280af19b8
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: 630
+      upscale: false

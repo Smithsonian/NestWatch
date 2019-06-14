@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: 'Full Width Large'
+id: full_width_large
+description: ''
+aspect_ratio: '21:7'
+soft_limit_width: 2560
+soft_limit_height: 850
+hard_limit_width: null
+hard_limit_height: null

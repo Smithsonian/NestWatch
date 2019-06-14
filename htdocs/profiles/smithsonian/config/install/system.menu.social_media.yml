@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: social_media
+label: 'Social Media'
+description: 'Site social media links'
+locked: false
