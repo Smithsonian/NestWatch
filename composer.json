@@ -69,10 +69,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
-    "sort-packages": true,
-    "github-oauth": {
-      "github.com": "334a703d8e899f3448a20b642650d8f6cfccdc08"
-    }
+    "sort-packages": true
   },
   "autoload": {
     "classmap": [
