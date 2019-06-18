@@ -71,7 +71,7 @@
   "config": {
     "sort-packages": true,
     "github-oauth": {
-      "github.com": "3cb0b06d973bb0f77ce032abce6e21744c40e11e"
+      "github.com": "454d49eac3350f8173f395806ad9db7333bc215f"
     }
   },
   "autoload": {
