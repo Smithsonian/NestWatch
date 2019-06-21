@@ -53,6 +53,9 @@
     "drupal/video_embed_field": "^2.0",
     "drupal/viewsreference": "^1.2",
     "drush/drush": "^9.0.0",
+    "smithsonian/si_admin": "dev-master",
+    "smithsonian/si_basetheme": "dev-master",
+    "smithsonian/si_content": "dev-master",
     "vlucas/phpdotenv": "^2.4",
     "webflo/drupal-finder": "^1.0.0",
     "webmozart/path-util": "^2.3"
