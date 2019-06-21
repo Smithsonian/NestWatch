@@ -77,8 +77,6 @@ dependencies:
   - admin_toolbar
   - admin_toolbar_tools
   - transliterate_filenames
-  - manage_display
-  - manage_display_fix_title
   - si_content
 
 themes:

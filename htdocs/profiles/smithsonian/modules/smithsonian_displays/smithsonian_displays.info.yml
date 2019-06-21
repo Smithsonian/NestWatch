@@ -11,6 +11,8 @@ dependencies:
   - image
   - layout_discovery
   - link
+  - manage_display
+  - manage_display_fix_title
   - node
   - options
   - responsive_bg_image_formatter
