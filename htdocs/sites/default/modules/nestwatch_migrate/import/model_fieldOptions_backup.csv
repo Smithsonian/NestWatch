@@ -1,0 +1,58 @@
+project,options_name,optionOrder,optionValue_name,optionValue
+all,choice_age,5,AHY,AHY
+all,choice_age,6,ASY,ASY
+all,choice_sex,1,F,F
+all,choice_sex,2,M,M
+all,choice_sex,3,U,U
+all,choice_cpBp,1,BP,BP
+all,choice_cpBp,2,CP,CP
+all,choice_cpBp,3,-,-
+all,choice_fat,1,0,0
+all,choice_fat,2,T,T
+all,choice_fat,3,1,1
+all,choice_fat,4,2,2
+all,choice_fat,5,3,3
+all,choice_fat,6,4,4
+all,choice_fat,7,5,5
+all,choice_detection,1,Aural,A
+all,choice_detection,2,Visual,V
+all,choice_detection,3,Both,B
+all,choice_resight,1,Foray,F
+all,choice_resight,2,Incidental,I
+all,choice_resight,3,Participant,P
+all,choice_resight,4,Neighbor,N
+all,choice_resight,5,Found dead,D
+all,choice_siteType,1,Neighborhood Nestwatch,Neighborhood Nestwatch
+all,choice_siteType,2,Urban Nestwatch,urbanNestwatch
+all,choice_siteType,3,Catbirds,grca
+all,choice_siteType,4,Robin GPS,amro
+all,choice_siteType,5,Zoo banding,nzpBanding
+all,choice_siteType,6,Chickadees,cach
+all,choice_siteType,7,Cardinals,noca
+all,choice_regions,1,Atlanta,Atlanta
+all,choice_regions,2,Colorado,Colorado
+all,choice_regions,3,DC,DC
+all,choice_regions,4,Gainesville,Gainesville
+all,choice_regions,5,Pittsburgh,Pittsburgh
+all,choice_regions,6,Raleigh,Raleigh
+all,choice_regions,7,Springfield,Springfield
+all,choice_encounteredBirds,1,Captures,Captures
+all,choice_encounteredBirds,2,Resights,Resights
+all,choice_encounteredBirds,3,Captures and resights,Captures and resights
+all,choice_encounteredBirds,4,None,None
+Neighborhood Nestwatch,choice_engagement,1,Does not apply,Does not apply
+Neighborhood Nestwatch,choice_engagement,2,0: Participant should be avoided in the future,0: Participant should be avoided in the future
+Neighborhood Nestwatch,choice_engagement,3,1: Participant was not present or showed no interest during visit activities,1: Participant was not present or showed no interest during visit activities
+Neighborhood Nestwatch,choice_engagement,4,2: Participant showed only slight interest during visit activities,2: Participant showed only slight interest during visit activities
+Neighborhood Nestwatch,choice_engagement,5,"3: Participant contributed during one of the visit activities (e.g., banding)","3: Participant contributed during one of the visit activities (e.g., banding)"
+Neighborhood Nestwatch,choice_engagement,6,"4: Participant contributed during two-three of visit activities (e.g., banding and resight foray)","4: Participant contributed during two-three of visit activities (e.g., banding and resight foray)"
+Neighborhood Nestwatch,choice_engagement,7,5: Participant contributed during all visit activities,5: Participant contributed during all visit activities
+all,choice_encounter,1,B,B
+all,choice_encounter,2,R,R
+all,choice_encounter,3,L,L
+all,choice_encounter,4,RX,RX
+all,choice_encounter,5,RC,RC
+all,choice_age,1,U,U
+all,choice_age,2,L,L
+all,choice_age,3,HY,HY
+all,choice_age,4,SY,SY

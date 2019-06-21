@@ -1,0 +1,39 @@
+# Migration configuration for NW Sites Data. We've described most of what goes
+# into migration configuration in migrate_plus.migration.beer_term.yml, so won't
+# repeat that here.
+id: sites_data
+label: Importing NW Sites
+migration_group: nestwatch
+migration_tags:
+  - nestwatch migrate
+source:
+  plugin: csv
+  path: 'public://import/sites_reduced_backup.csv'
+  header_row_count: 1
+  keys:
+    - siteID
+  fields:
+    siteID: SiteID
+    region: Region
+    status: Status
+    long: long
+    lat: lat
+destination:
+  plugin: 'entity:node'
+  default_bundle: sites
+
+process:
+  title: siteID
+  field_site_id: siteID
+  field_site_location:
+    plugin: geofield_latlon
+    source:
+      - lat
+      - long
+  field_site_project: region
+  field_site_status: status
+
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate
