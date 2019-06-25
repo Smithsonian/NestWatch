@@ -1,0 +1,33 @@
+nav.tabs {
+  background: $gray-lighter;
+}
+
+ul.tabs.primary {
+  @include set_layout($max-width);
+  margin-top: 0;
+  @extend %clearfix;
+  border: none;
+  li {
+    text-align: center;
+    border: none;
+    background: none;
+    display: block;
+    float: left;
+    padding: 0;
+  }
+  a {
+    display: block;
+    padding: $pad-half;
+    @include link-colors($gray-light, $link-hover, $link-hover, $gray-light, $gray-light);
+    border: none;
+
+    &:hover,
+    &.is-active {
+      background: white;
+      color: $text-color;
+      border: none;
+      border-top: 3px solid $blue;
+      margin-top: -3px;
+    }
+  }
+}

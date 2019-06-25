@@ -1,0 +1,22 @@
+.node--type-page {
+	.content-wrapper > .inner{
+		@include set_layout(1080px);
+	}
+	.has-sidebar-first,
+	.has-sidebar-second{
+		.content-wrapper > .inner{
+			@include set_layout($max-width);
+		}
+	}
+}
+
+//.node--type-landing-page {
+//  .node__content {
+//	> .paragraph--type--text-block {
+//	  @include breakpoint($wide) {
+//		@include rem(font-size, $font-size-large);
+//		line-height: $line-height-large;
+//	  }
+//	}
+//  }
+//}

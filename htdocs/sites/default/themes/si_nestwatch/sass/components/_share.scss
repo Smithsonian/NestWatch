@@ -1,0 +1,101 @@
+.block-addtoany {
+	position: relative;
+	@include rem(margin-bottom, $space-and-half);
+  .node--type-landing-page & {
+	@include set_layout($max-width);
+	@include rem(margin-top, $space);
+	@include rem(margin-bottom, $space-and-half);
+  }
+}
+
+.share-btn  {
+	padding: 0 4px;
+	margin-right: 2px;
+	display: inline-block;
+	border: 1px solid transparent;
+	position: relative;
+	background: white;
+	z-index: 20;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	background: {
+		repeat: no-repeat;
+		position:  50%;
+		color: white;
+		size: 65%;
+	}
+	@include svg-background('share');
+
+
+	&:hover,
+	&.active{
+		// border: 1px solid $gray;
+		@include svg-background('share-burgundy');
+		svg path {
+			// fill: $burgundy !important;
+			// stroke: $burgundy !important;
+		}
+		.icon {
+			@include svg-background('share-burgundy');
+
+		}
+
+	}
+	&.active {
+		&,
+		&:hover {
+			border-bottom: none;
+		}
+	}
+
+}
+
+.addtoany_list {
+	display: block;
+	text-align: right;
+	// margin-top: rem($space);
+	position: relative;
+	a {
+		@include link-colors($burgundy, $blue, $blue, $burgundy, $burgundy);
+	}
+	a:hover {
+		// border: 1px solid $gray;
+		svg path {
+			fill: $burgundy !important;
+			stroke: $burgundy !important;
+		}
+		span {
+			opacity: 1;
+		}
+	}
+	.fa:before {
+		@include rem(font-size, 24px);
+	}
+}
+.social-media {
+	position: absolute;
+	top: -999px;
+	right: 0;
+	display: none;
+	min-width: 180px;
+	z-index: 10;
+	opacity: 0;
+	border: 1px solid $gray;
+	background: white;
+	text-align: center;
+	@include clearfix;
+	a {
+		padding: 8px 5px;
+		line-height: 1;
+		&:hover {
+			border: none;
+		}
+	}
+	transition: opacity 400ms ease-in-out;
+	&.active {
+		top: 32px;
+		opacity:1;
+		display: block;
+	}
+}

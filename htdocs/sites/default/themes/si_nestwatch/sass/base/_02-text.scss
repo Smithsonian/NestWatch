@@ -1,0 +1,114 @@
+
+/* Blockquote */
+blockquote {
+  font-style: italic;
+  border-left: 1px solid $gray;
+  color: $gray;
+  @include rem(padding-left, $pad);
+  @include rem(margin-bottom, $space);
+  @include rem(font-size, $font-size-h5 );
+}
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 2px;
+  background: $gray-lighter;
+  @include rem(margin, $space 0);
+}
+abbr {
+  border-bottom: 1px dotted $gray;
+  cursor: help;
+}
+h1, h2, h3, h4, h5, h6 {
+  a {
+    @include link-colors($header-color, $link-hover, $link-hover, $header-color, $header-color);
+  }
+}
+/* Headings */
+/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1, .alpha, h2.alpha, .h1 {
+  font-family: $font-secondary;
+  @include rem(font-size, $font-size-h1);
+  //font-size: em($font-size-h1);
+  line-height: $line-height-h1;
+  //color: $header-color;
+  font-weight: 700;
+  color: $header-color;
+  .content-wrapper & {
+    @include rem(margin, $space-and-half 0);
+  }
+  .content-wrapper .page-title & {
+    margin: 0;
+  }
+}
+
+
+h2, .beta, .h2 {
+  //font-family: $font-secondary;
+  //@include font-smoothing();
+  font-weight: 600;
+  //font-size: em($font-size-h2);
+  @include rem(font-size, $font-size-h2);
+  line-height: $line-height-h2;
+  // color: $blue-darkest;
+  //margin-bottom: em($space, $font-size-h2);
+  @include rem(margin-bottom, $space-half);
+  //color: $header-color;
+  color: $header-color;
+  a {
+    @include link-colors($blue-darkest, $link-hover, $link-hover, $blue-darkest, $blue-darkest);
+  }
+}
+
+h3, .gamma, .h3 {
+  //font-family: $font;
+  // font-family: $font-secondary;
+  //font-size: em($font-size-h3);
+  @include rem(font-size, $font-size-h3);
+  @include rem(margin-bottom, $space);
+  line-height: $line-height-h3;
+  //margin-bottom: em($space, $font-size-h3);
+  font-weight: 600;
+  color: $header-color;
+}
+
+h4, .delta, .h4 {
+  //font-size: em($font-size-h4);
+  font-weight: 600;
+  //font-family: $font-secondary;
+  @include rem(font-size, $font-size-h4);
+  line-height: $line-height-h4;
+  @include rem(margin-bottom, $space);
+  color: $header-color;
+}
+
+h5, .epsilon, .h5 {
+  //font-size: em($font-size-h5);
+  @include rem(font-size, $font-size-h5);
+  @include rem(margin-bottom, $space-half);
+  line-height: $line-height-h5;
+  font-weight: 600;
+  color: $header-color;
+}
+h6, .zeta, .h6 {
+  @include rem(font-size, $font-size-h6);
+  @include rem(margin-bottom, $space);
+  line-height: $line-height-h6;
+  font-weight: bold;
+  color: $header-color;
+}
+
+h3, .h3, .gamma,
+h4, .h4, .delta,
+h5, .h5, .epsilon,
+h6, .h6, .zeta{
+  &.regular {
+    font-weight: normal;
+  }
+}
+
+/* Text-Related Elements */
+p {
+  @include rem(margin, 0 0 $space);
+}
+

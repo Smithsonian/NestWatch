@@ -1,0 +1,61 @@
+//Pagination
+.pager,
+.pagination{
+  @extend %reset-list;
+  overflow: hidden;
+  @include rem(margin, $space 0 0);
+  li.pager__item,
+  li {
+    float: left;
+    list-style: none;
+    @include rem(margin, 0 $pad/8);
+    padding: 0;
+    text-align: center;
+    color: white;
+    @include rem(margin-bottom, $space);
+    &.pager__item-current,
+    &.active {
+      @include rem(padding, $space-quarter $pad-half);
+      @include rem(min-width, 50px);
+      background: $blue;
+    }
+    &.pager__item-ellipsis {
+      @include rem(padding, $space-quarter $pad-half);
+      @include rem(min-width, 50px);
+      color: $text-color;
+    }
+    a {
+      display: block;
+      @include rem(padding, $space-quarter $pad-half);
+      @include rem(min-width, 50px);
+      background: $gray;
+      @include link-colors(white, white, white, white, white);
+      &:hover {
+        background: $blue;
+      }
+    }
+  }
+
+}
+
+.pagination li.active {
+  padding: 0;
+  a {
+    background: $blue;
+  }
+}
+.js .search-results-container .pager {
+  @include rem(margin, $space-and-half 0 auto);
+  li.pager__item {
+    float: none;
+    display: none;
+  }
+  li.pager__item-next {
+    display: inline-block !important;
+    a {
+      @include button($gray-lighter, $gray-dark, darken($gray-lighter, 10%));
+      @include rem(padding, $space $pad);
+      text-transform: capitalize;
+    }
+  }
+}

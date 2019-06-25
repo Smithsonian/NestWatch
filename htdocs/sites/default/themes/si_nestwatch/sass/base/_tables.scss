@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    $Table
+\*------------------------------------*/
+table {
+	border-collapse: collapse; 
+	border-spacing: 0; 
+	border: 1px solid darken($gray-lighter, 5%);
+	width: 100%;
+}
+th {
+	text-align: left;
+	border: 1px solid darken($gray-lighter, 5%);
+	border-width: 0 0 1px;
+  @include rem(padding, $space/3 $pad-half);
+	background: $gray-lighter;
+    a.active {
+      color: $blue-dark;
+    }
+	&.active {
+		background: $blue;
+		a.active  {
+			color:	$white;
+		}
+	}
+}
+td {
+  border: none;
+  @include rem(padding, $space/3 $pad-half);
+}
+
+table tr.odd td.active,
+table td.active {
+	background: transparent;
+}
+
+tr.odd {
+  background: $white;
+}
+
+tr.even {
+  background: $gray-lightest;
+}
+
+a.tabledrag-handle .handle {
+	width: 24px;
+	height: 24px;
+}

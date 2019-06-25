@@ -1,0 +1,14 @@
+// set layout for site.
+
+@mixin set_layout($container-width) {
+  //@include container;
+    width: 96%;
+    max-width: $container-width;
+    margin:auto;
+  //@include breakpoint ('all' $container-width){
+  //  max-width: 100%;
+  //}
+  //  @include breakpoint('all' 1010px) {
+  //
+  //  }
+}

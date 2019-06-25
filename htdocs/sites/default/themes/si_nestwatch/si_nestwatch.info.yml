@@ -1,0 +1,42 @@
+core: 8.x
+type: theme
+name: 'Nestwatch Theme'
+description: 'Base Theme for NestWatch D8'
+engine: twig
+base theme: stable
+
+
+regions:
+  header_preface_left: 'Header Preface Left'
+  header_preface_right: 'Header Preface Right'
+  branding: 'Branding'
+  header: 'Header'
+  main_menu: 'Primary menu'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Sidebar Left'
+  sidebar_second: 'Sidebar Right'
+  footer_top_left: 'Footer Top Left'
+  footer_top_right: 'Footer Top Right'
+  footer_bottom_left: 'Footer Bottom Left'
+  footer_bottom_right: 'Footer Bottom Right'
+
+libraries:
+  - si_basetheme/base
+
+libraries-override:
+  superfish/superfish_smallscreen:
+    js:
+      /libraries/superfish/sfsmallscreen.js: js/sfsmallscreen.js
+
+
+features:
+  name: true
+  slogan: true
+  favicon: true
+  main_menu: true
+  secondary_menu: true
+
+version: '8.x-1.10'
+project: 'si_basetheme'

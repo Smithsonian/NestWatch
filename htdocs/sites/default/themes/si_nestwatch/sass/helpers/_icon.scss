@@ -1,0 +1,84 @@
+//@mixin font-icon($icon, $color: $text-color, $font-size: $font-size-base, $padding: $font-size, $top:0, $pos:0, $after: false) {
+// position: relative;
+// display: inline-block;
+//
+// @if $after {
+// @include rem(padding-right, $padding);
+//  &:after {
+//    content: $icon;
+//    font-family: FontAwesome;
+//    font-style: normal;
+//    font-weight: normal;
+//    text-decoration: inherit;
+//    color: $color;
+//    position: absolute;
+//    @include rem(font-size, ($font-size);
+//   top: em($top);
+//   right: em($pos);
+//   }
+// }
+// @else {
+// @include rem(padding-left, $padding);
+//  &:before {
+//    content: $icon;
+//    font-family: FontAwesome;
+//    font-style: normal;
+//    font-weight: normal;
+//    text-decoration: inherit;
+//    color: $color;
+//    position: absolute;
+//    @include rem(font-size, ($font-size);
+//   top: em($top);
+//   left: em($pos);
+//   }
+// }
+//
+//}
+
+
+@mixin font-icon($icon, $padding: $font-size-base, $top:0, $pos:0, $font-size: $font-size-base, $color: inherit, $hover-color: $link-hover, $after: false, $inline: true) {
+  position: relative;
+  @if $inline {
+    display: inline-block;
+  }
+  @else {
+    display: block;
+  }
+
+  @if $after {
+    @include rem(padding-right,$padding);
+    &:after {
+      content: $icon;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      color: $color;
+      position: absolute;
+      @include rem(font-size, $font-size);
+      @include rem(top, $top);
+      @include rem(right, $pos);
+    }
+    &:hover:after {
+      color: $hover-color;
+    }
+  }
+  @else {
+    @include rem(padding-left, $padding);
+    &:before {
+      content: $icon;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      color: $color;
+      position: absolute;
+      @include rem(font-size, $font-size);
+      @include rem(top,$top);
+      @include rem(left,$pos);
+    }
+    &:hover:before {
+      color: $hover-color;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      css/font-awesome.css: {}
+      css/si_styles.css: {}
+      css/styles.override.css: {}
+      css/print.css: {}
+  js:
+    js/plugins.min.js: {}
+    js/functions.behaviors.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupal.ajax
+    - core/drupalSettings

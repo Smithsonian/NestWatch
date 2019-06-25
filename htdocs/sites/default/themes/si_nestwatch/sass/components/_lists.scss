@@ -1,0 +1,51 @@
+.inline-list {
+	li{
+		display: inline-block;
+	}
+  &.reset {
+    @extend %reset-list;
+  }
+}
+
+.float-list {
+	@include clearfix;
+	@extend %reset-list;
+	li {
+		display: block;
+		float: left;
+	}
+}
+
+/* Text List */
+.reset-list {
+	@extend %reset-list;
+	//margin: 0 0 $space);
+	li {
+		@include rem(margin-bottom, $space);
+		&.spacing-half {
+			@include rem(margin-bottom, $space-half);
+		}
+		&.spacing {
+			@include rem(margin, $space 0);
+		}
+		&.no-spacing {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.split-list {
+	@extend %clearfix;
+	.sub-list {
+		@extend %reset-list;
+	}
+	&.col-2 {
+		.sub-list {
+			@include span(6);
+			&.list-1 {
+				@include last;
+			}
+		}
+	}
+}

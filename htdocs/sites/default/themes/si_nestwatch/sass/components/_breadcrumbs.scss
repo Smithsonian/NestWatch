@@ -1,0 +1,39 @@
+
+  .block-system-breadcrumb-block {
+    @include rem(font-size, $font-size-small);
+    line-height: $line-height-small;
+
+    @include set_layout($max-width);
+    @include rem(padding, $space 0 0);
+    .node--type--landing-page & {
+      @include rem(padding, $space 0);
+    }
+    ol, ul {
+      @include float-list(inline-block);
+    }
+    li {
+      &:after {
+        content: ' / ';
+        color: #778288;
+      }
+      span {
+        display: inline-block;
+
+        @include rem(margin, 0 $pad-quarter);
+        color: #778288;
+      }
+
+      a {
+        @include link-colors($link-color, $link-hover, $link-hover, $link-color, $link-color);
+
+      }
+      &.active {
+          color: #778288;
+      }
+      &:last-child {
+        &:after {
+          content: '';
+        }
+      }
+    }
+  }

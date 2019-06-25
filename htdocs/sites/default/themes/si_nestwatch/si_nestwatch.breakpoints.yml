@@ -1,0 +1,40 @@
+si_basetheme.tv:
+  label: tv
+  mediaQuery: 'only screen and (min-width: 1920px)'
+  weight: 4
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: si_basetheme
+
+si_basetheme.standard:
+  label: standard
+  mediaQuery: 'all and (min-width: 1180px)'
+  weight: 3
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: si_basetheme
+
+si_basetheme.tab:
+  label: tab
+  mediaQuery: 'all and (min-width: 680px)'
+  weight: 1
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: si_basetheme
+
+si_basetheme.mobile:
+  label: mobile
+  mediaQuery: 'all and (min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: si_basetheme
+

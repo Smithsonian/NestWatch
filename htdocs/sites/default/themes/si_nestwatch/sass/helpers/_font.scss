@@ -1,0 +1,64 @@
+
+///
+/// @component font-family
+///
+
+// @variables
+
+
+
+// @param $src
+// @type: string;
+// @default null;
+@mixin append-url($font-files) {
+  $url: ();
+  $enable-formats: ( woff: 'woff', woff2: 'woff2', otf: 'opentype', ttf: 'truetype', svg: 'svg');
+  $formats: (eot,woff, woff2, otf, ttf, svg);
+  @each $format in  $formats {
+    @if map-has-key($font-files, $format) {
+      $src: map-get($font-files, $format);
+
+     // @warn'"src is #{$src}"';
+      @if($format == eot) {
+        // special case for "eot" format,
+        // if eot is defined in $font-format array, should set resource
+        src: url('#{$font-path}/#{$src}?#iefix') format('embedded-opentype');
+      }
+      @else {
+        $append: url('#{$font-path}/#{$src}') format(quote(map_get($enable-formats, $format)));
+        $url: append($url, $append, comma);
+      }
+
+
+
+    }
+    //$index  : str-index($file, ':');
+    //$format : str-slice($file, 1, $index - 1);
+    //$leng   : str-length($file);
+    //$src    : str-slice($file, $index + 1, $leng);
+
+
+  }
+
+  src: $url;
+}
+
+@mixin font-face($font-family, $font-files, $font-weight:normal, $font-style:normal) {
+    @if($font-style !=normal and $font-style !=italic and $font-style !=oblique) {
+      @warn '"#{$font-style}" is not property value for "font-style"';
+    }
+
+
+      @if(($font-weight !=normal) and (type-of($font-weight) !=number)) {
+        @warn '"#{$font-weight}" is not valid font-weight'
+      }
+
+      @font-face {
+        font-family: $font-family;
+        font-weight: $font-weight;
+        font-style: $font-style;
+
+       @include append-url($font-files);
+      }
+}
+

@@ -1,0 +1,23 @@
+ol, ul {
+  @include rem(margin, $space 0 $space $pad-and-half);
+  padding: 0;
+}
+
+/* Definition Lists */
+dl {
+	overflow: hidden;
+  @include rem(margin, 0 0 $space);
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 0;
+}
+
+ul ul {
+	list-style-type: circle;
+}
+

@@ -1,0 +1,58 @@
+.field__label {
+  font-weight: bold;
+}
+@include breakpoint($tab){
+  .field--label-inline {
+    @include clearfix;
+    margin-left: 175px;
+    .field__label {
+      float: left;
+      //margin-right: $pad/2;
+      width: 175px;
+      margin-left: -175px;
+    }
+    .field__item {
+    
+    }
+  }
+  
+}
+
+.field-type-image {
+  line-height: 0;
+}
+
+.tagline {
+  font-style: italic;
+  @include rem(font-size, $font-size-tagline);
+  line-height: $line-height-tagline;
+  color: $header-color;
+}
+
+.inline-block {
+  > div {
+    display: inline-block;
+  }
+}
+
+.date-block {
+  &.same-date {
+    .date.start {
+      display: block;
+    }
+  }
+}
+
+.file-download-link,
+.file{
+  a {
+    @include font-icon("\f019", 25px, 2px, 0, $font-size-base, $link-color, $link-hover);
+  }
+  .file-size {
+    display: block;
+    //@include rem(font-size, $font-size-small);
+    font-size: 81.25%;
+    color: $gray-dark;
+    @include rem(padding-left, 25px);
+  }
+}

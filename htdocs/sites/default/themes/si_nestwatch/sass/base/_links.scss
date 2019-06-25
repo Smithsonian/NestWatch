@@ -1,0 +1,18 @@
+/* Links */
+a {
+	//link-colors($normal, $hover, $active, $visited, $focus)
+	@include link-colors($link-color, $link-hover, $link-hover, $link-color, $link-hover);
+	text-decoration: none;
+	outline: 0;
+	&.active {
+		color: $link-hover;
+	}
+	&:focus,
+	&:hover,
+	&:active {
+		text-decoration: none;
+		cursor: hand;
+		cursor: pointer;
+		border-bottom: 1px dotted;
+	}
+}

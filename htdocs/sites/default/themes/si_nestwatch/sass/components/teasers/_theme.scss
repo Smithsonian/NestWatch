@@ -1,0 +1,105 @@
+
+.layout--teaser{
+	.preface {
+		font-family: $font-secondary;
+	}
+	.masonry-grid & {
+		display: block;
+	}
+	.container {
+		display: block;
+	}
+	.preface {
+		@include rem(font-size, $font-size-small);
+	}
+	h3,
+	h2,
+	.h3,
+	.h2,
+	h4,
+	.h4{
+		font-family: $font;
+	}
+	.node-title {
+		@include rem(font-size, $font-size-h3);
+		line-height: $line-height-h3;
+	}
+
+	&.bg-blue {
+		.inner {
+			background: $blue;
+			border: 1px solid darken($blue, 2%);
+		}
+	}
+
+	&.bg-burgundy {
+		.inner {
+			background: $burgundy;
+			border: 1px solid darken($burgundy, 2%);
+		}
+	}
+	&.bg-gray-dark {
+		.inner {
+			background: $gray-dark;
+			border: 1px solid darken($gray-dark, 2%);
+		}
+	}
+	&.bg-gray-light {
+		.inner {
+			background: $gray-lighter;
+			border: 1px solid darken($gray-lighter, 2%);
+		}
+	}
+	&.bg-green {
+		.inner {
+			background: $green;
+			border: 1px solid darken($green, 2%);
+		}
+	}
+	&.bg-orange {
+		.inner {
+			background: $orange;
+			border: 1px solid darken($orange, 2%);
+		}
+	}
+
+	&.bg-purple {
+		.inner {
+			background: $purple;
+			border: 1px solid darken($purple, 2%);
+		}
+	}
+} // end teaser
+
+
+
+.teaser-long.border .inner{
+	background: none;
+}
+
+@include breakpoint($tab) {
+	.teaser-long {
+		.h2,
+		h2 {
+			@include rem(font-size, $font-size-h3);
+			line-height: $line-height-h3;
+		}
+		.h3,
+		h3 {
+			@include rem(font-size, $font-size-h4);
+			line-height: $line-height-h4;
+		}
+		.teaser-link {
+			transition: background .4s;
+			&:hover {
+				background: rgba(0,0,0, .1);
+			}
+		}
+	}
+	.teaser-featured.bg {
+		.b-text-wrapper {
+			@include rem(padding, $space-half $pad*.75);
+		}
+	}
+
+}

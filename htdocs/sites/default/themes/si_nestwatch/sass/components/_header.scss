@@ -1,0 +1,164 @@
+.header {
+	position: relative;
+	background: $header-bg;
+	p {
+		margin: 0;
+	}
+}
+
+.header_preface {
+	background: $preface-bg;
+	@include rem(padding, 3px 0);
+	> .container {
+		display: flex;
+		align-items: center;
+	}
+	.block-title {
+		@extend %hide-text;
+	}
+	.wrapper-logo {
+		a {
+			display: block;
+			width: 123px;
+		}
+		padding-left: 10px;
+	}
+	* {
+		color: white;
+	}
+
+	.region--header-preface-right {
+		float: right;
+	}
+	.has-preface-left.has-preface-right & {
+		.region--header-preface-left,
+		.region--header-preface-right {
+			width: span(6);
+		}
+		.region--header-preface-left {
+			float: left;
+			margin-right: gutter();
+		}
+	}
+}
+
+header {
+	position: relative;
+	.block-superfish {
+		position: absolute;
+		right: 2%;
+		@include rem(top, 43px + 16px);
+	}
+}
+
+.region--branding {
+	@include span(10);
+	@include rem(padding, $space/3 0);
+
+	.branding-wrapper,
+	.site-slogan {
+		color: white;
+		a {
+			@include link-colors(white, white, white, white, white);
+		}
+	}
+	.branding-wrapper {
+		@extend %clearfix;
+		font-family: $font-secondary;
+		font-weight: normal;
+		margin: 0;
+		span {
+			display: block;
+			@include rem(padding-left, 62px);
+		}
+	}
+	.site-slogan {
+		@include rem(padding-left, 62px);
+		font-style: italic;
+	}
+	.logo-icon {
+		width: 52px;
+		float: left;
+	}
+	.si-name {
+		@include rem(font-size, 28px);
+		line-height: 1;
+		@include rem(padding-top, 4px);
+	}
+	.site-name {
+		@include rem(font-size, 18px);
+		line-height: 1.125;
+		font-style: italic;
+	}
+}
+
+// end l-branding
+
+@include breakpoint($tab) {
+	.header-inner {
+		z-index: 100;
+		background: $header-bg;
+		display: flex;
+		align-items: flex-end;
+		align-content: flex-end;
+	}
+	.header_preface {
+		.wrapper-logo {
+			a {
+				display: block;
+				width: 132px;
+			}
+			padding-left: 20px;
+		}
+	}
+	.region--branding {
+		@include rem(padding, $space-half 0);
+		@include span(8);
+		.logo-icon {
+			width: 80px;
+		}
+		.branding-wrapper span,
+		.site-slogan {
+			@include rem(padding-left, 90px);
+		}
+		.si-name {
+			@include rem(font-size, 42px);
+		}
+		.site-name {
+			@include rem(font-size, 25px);
+		}
+
+	}
+}
+
+@include breakpoint($desk) {
+	header {
+		.block-superfish {
+			position: relative;
+			width: 100%;
+			top: auto;
+			right: auto;
+		}
+
+	}
+	.region--branding {
+		@include span(5);
+	}
+	.region--header {
+		//position: static;
+		//right: auto;
+		//top: auto;
+		@include span(7 last);
+	}
+}
+
+//@include breakpoint('all' 1010px) {
+//  .region-header-preface-right {
+//    .inner > .block{
+//      width: 110px;
+//    }
+//    .inner > .block-search{
+//      width: 250px;
+//    }
+//  }
+//}

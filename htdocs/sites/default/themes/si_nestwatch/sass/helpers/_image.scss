@@ -1,0 +1,43 @@
+// Image Mixins
+
+//@function image-url($path) {
+//  @return url($image-url + $path);
+//}
+// - Responsive image
+// - Retina image
+
+// Responsive image
+//
+// Keep images from scaling beyond the width of their parents.
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}
+
+
+@mixin clip-path($clip) {
+  -webkit-clip-path: $clip;
+  -moz-clip-path: $clip;
+  -ms-clip-path: $clip;
+  clip-path: $clip;
+}
+
+//
+//@mixin encoded-svg-background(@svg) {
+//  @url: `encodeURIComponent(@{svg})`;
+//  background-image: url("data:image/svg+xml;charset=utf-8,@{url}");
+//}
+
+
+@mixin svg-background($image-name, $color: white) {
+ // background-image: image-url("bg/" + $image-name + ".png", false, false);
+  background-image: url("../images/bg/" + $image-name + ".png");
+  background-image: inline-svg($image-name, $color);
+}
+
+@mixin svgz-background($image-name) {
+  background-image: image-url("bg/" + $image-name + ".png", false, false);
+  background-image: -webkit-linear-gradient(transparent, transparent), image-url("bg/" + $image-name + ".svgz");
+  background-image: linear-gradient(transparent, transparent), image-url("bg/" + $image-name + ".svgz");
+}

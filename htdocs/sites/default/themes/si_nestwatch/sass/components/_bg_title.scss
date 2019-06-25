@@ -1,0 +1,49 @@
+.bg-title {
+  position: relative;
+  .overlay {
+
+    //  @include background-image(linear-gradient(transparent, rgba(black,0.75)));
+    .cssgradients & {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+70,000000+100&0+0,0.4+70,0.98+100 */
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.98) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.98) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.98) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#fa000000',GradientType=0 ); /* IE6-9 */
+      height: 50%;
+    }
+  }
+  
+  .container {
+    position: relative;
+    height: 300px;
+    height: 75vw;
+    max-height: 300px;
+    h1 {
+      position: absolute;
+      @include rem(bottom, $space);
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 100;
+      color: #FFF;
+      text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+    }
+    @include breakpoint($small){
+      height: 480px;
+      height: 60vw;
+      max-height: 480px;
+
+    }
+    @include breakpoint($wide){
+      h1 {
+        @include rem(font-size, $font-size-h1-alt);
+        line-height: $line-height-h1-alt;
+        @include rem(bottom, $space-and-half);
+      }
+    }
+  }
+}

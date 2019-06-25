@@ -1,0 +1,131 @@
+.region--sidebar-second,
+.region--sidebar-first {
+	nav {
+		@include rem(margin-bottom, $space-and-half);
+		@extend %clearfix
+	}
+	.sf-sub-indicator {
+		display: none;
+	}
+	ul.sf-menu {
+		width: 100%;
+		background-color: $gray-lightest;
+		//@include rem(margin-bottom, $space-and-half);
+		border: 1px solid $gray-lighter;
+		border-width: 0 1px 1px;
+		a {
+			@include rem(padding, $space-half 10px);
+			background-color: $gray-lightest;
+			@include link-colors($text-color, $link-hover, $link-hover, $text-color, $link-hover);
+			transition: all .5s ease-in;
+			&:hover {
+				background-color: darken($gray-lightest, 5%);
+			}
+			&.is-active {
+				color: $burgundy;
+				background-color: darken($gray-lightest, 5%);
+			}
+		}
+		> .sf-depth-1 {
+			display: none;
+			&.active-trail {
+				display: block;
+				> ul {
+					display: block !important;
+					&.sf-hidden,
+					&,
+					ul {
+						position: static !important;
+						left: auto !important;
+						right: auto !important;
+						top: auto !important;
+						height: auto !important;
+						clip: auto;
+						transition: min-height .4s ease;
+					}
+					ul.sf-hidden {
+						position: absolute !important;
+						//left: auto !important;
+						top: -9999px !important;
+						min-height: 0;
+					}
+					> li {
+						border-top: 1px solid $gray-lighter;
+					}
+					li {
+						&.sfHover {
+							> a {
+								@include font-icon("\f077", 24px, 12px, 6px, 14px, $text-color, $burgundy, true);
+								display: block;
+							}
+							//&.active-trail.sfHover,
+							//&.active-trail {
+							//	> a:after {
+							//		content: "";
+							//	}
+							//	> ul,
+							//	> ul.sf-hidden {
+							//		max-height: 9999px;
+							//		opacity: 1;
+							//		min-height: 48px;
+							//		position: static !important;
+							//		left: auto !important;
+							//		right: auto !important;
+							//		top: auto !important;
+							//		height: auto !important;
+							//
+							//	}
+							//}
+						}
+						&.sfHover,
+						&.active-trail,
+						&.sfHover.active-trail {
+							> ul {
+								max-height: 9999px;
+								opacity: 1;
+								min-height: 48px;
+								position: static !important;
+								left: auto !important;
+								right: auto !important;
+								top: auto !important;
+								height: auto !important;
+							}
+						}
+						&.sfHover.active-trail,
+						&.active-trail {
+							> a:after {
+								content: "";
+							}
+						}
+					}
+					li li {
+						a {
+							@include rem(padding-left, 25px);
+						}
+						// level 3
+						li {
+							a {
+								@include rem(padding-left, 35px);
+							}
+							// level 4
+						}
+					}
+				}
+				//end second level
+			}
+
+		}
+		//end sf-depth 1
+
+		ul {
+			@extend %reset-list;
+			width: 100% !important;
+			a.menuparent {
+				@include font-icon("\f078", 24px, 14px, 6px, 14px, $text-color, $burgundy, true, false);
+			}
+		}
+	}
+	//end .sf-menu
+}
+
+//end side-nav

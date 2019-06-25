@@ -1,0 +1,67 @@
+// Legacy support.
+$legacy-support-for-ie6 : false;
+$legacy-support-for-ie7 : true;
+$legacy-support-for-ie8 : true;
+
+
+// Color Settings
+$blue-darkest           : #002554;//#004A6E;//#0a3055;
+$blue-dark              : #0047A0;// #1860AA; //#00567F;
+$blue                   : #165C7D; //#0177A8;
+$blue-brand				: #007582;//#008bac;//#027F90;//#0f7d8c; // SI Logo - Blue
+$blue-alt               : #137ABC;
+$blue-bright            : #009CDE;
+$blue-muted             : #74D1EA;
+$blue-light             : #8DC1D5;
+$blue-lighter           : #d5ebf3;
+$burgundy               : #9f3050;//#912d4a;
+$green                  : #298732;//#188916; ///#298732;
+$green-bright           : #42a920;
+$orange                 : #E87722; //#CB4D0B;
+$orange-alt             : #f89406;
+$gray-darkest           : #101820; //#2e343c;//#3b444c;
+$gray-darker            : #333F48; //#333F48;// #3F4249;//#354146;//#303b40; //#323E43;//#3a4148;
+$gray-dark              : #41505c; //#435259;//#4F5A65; //475561
+//$gray-alt               : #505a65;
+$gray                   : #6c7a89;
+$gray-light             : #75787B; //#7f8e9b;
+$gray-light2            : #9ca7b1;
+$gray-lighter           : #D0D7DE; //#D6DDE2;
+$gray-lightest          : #E2E8EC; //#EFF3F4; //#f4f6f7;//#eaedf0;//#f4f6f7;//#F5F6FC; //#F1F5F8; //#edf1f5; //#F7F8F9;
+//$navy                   : #182957;
+$purple                 : #394299;//#535BA3;
+$plum                   : #692c7a;
+$red                    : #BE1512; //#F0515A; //#BE1512;
+$red-dark               : #78070e;
+$yellow                 : #F0B323; //#f5b333;
+$yellow-brand		      	: #ffd400; // SI Logo - Yellow
+$white                  : #fff;
+
+$back-to-top-bg         :$burgundy;
+$nav-sub-bg							: $yellow-brand;
+
+$header-bg              : $gray-darker;
+$preface-bg             : $gray-darkest; //#202023; //#27292e;
+$footer-bg              : $gray-darkest;
+//** Background color for `<body>`.
+$body-bg                : $footer-bg;
+$content-bg             : #FFF;
+$mobile-nav-btn          : $blue;
+$mobile-menu            : darken($header-bg, 12%);
+$valid                  : $green;
+$error                  : $red;
+$warning                : $red-dark;
+$information            : $blue-dark;
+
+
+//** Global text color on `<body>`.
+//$text-color             : $gray-dar
+// kest;
+$text-color             : $gray-darker; //#41505c; //#575A5E; //#585B5E;//#48484B;
+$header-color           : #101820;
+//** Text muted color
+$text-muted             : $gray;
+
+$link-hover             : $burgundy;
+$link-color             : $blue-alt;
+$link-color-alt         : $yellow-brand;

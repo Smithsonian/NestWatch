@@ -1,0 +1,117 @@
+@media print {
+  /* line 5, sass/print.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    text-shadow: none !important; }
+  /* line 14, sass/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+  /* line 19, sass/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /* line 25, sass/print.scss */
+  thead {
+    display: table-header-group; }
+  /* line 29, sass/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+  /* line 34, sass/print.scss */
+  img {
+    max-width: 100% !important; }
+  /* line 38, sass/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  /* line 45, sass/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; }
+  /* line 54, sass/print.scss */
+  select {
+    background: #fff !important; }
+  /* line 59, sass/print.scss */
+  .navbar,
+  .side-nav,
+  footer {
+    display: none; }
+  /* line 64, sass/print.scss */
+  header {
+    background: white; }
+  /* line 67, sass/print.scss */
+  .branding .site-name a {
+    background-image: url("../images/logos/logo.png"); }
+  /* line 72, sass/print.scss */
+  .btn > .caret,
+  .dropup > .btn > .caret {
+    border-top-color: #000 !important; }
+  /* line 76, sass/print.scss */
+  .label {
+    border: 1px solid #000; }
+  /* line 80, sass/print.scss */
+  .table {
+    border-collapse: collapse !important; }
+    /* line 83, sass/print.scss */
+    .table td,
+    .table th {
+      background-color: #fff !important; }
+  /* line 89, sass/print.scss */
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important; }
+  /* line 97, sass/print.scss */
+  .masonry-grid {
+    height: auto !important;
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    /* line 99, sass/print.scss */
+    .masonry-grid:before, .masonry-grid:after {
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+  /* line 108, sass/print.scss */
+  .grid-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    border: 1px solid #8e97a0 !important;
+    margin-bottom: 2%;
+    padding: 12px;
+    float: left;
+    width: 32%;
+    margin-left: 2%; }
+    /* line 119, sass/print.scss */
+    .grid-item:nth-child(3n+1) {
+      margin-left: 0;
+      clear: left; }
+    /* line 123, sass/print.scss */
+    .grid-item img {
+      width: 25% !important;
+      height: auto !important;
+      float: left;
+      margin-right: 5%; }
+    /* line 129, sass/print.scss */
+    .grid-item .b-text-wrapper {
+      padding: 0;
+      width: 70%;
+      float: right; } }
+
+/*# sourceMappingURL=maps/print.css.map */

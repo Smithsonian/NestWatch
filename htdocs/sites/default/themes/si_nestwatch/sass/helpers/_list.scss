@@ -1,0 +1,78 @@
+// List Groups
+
+@mixin list-group-item-variant($state, $background, $color) {
+  .list-group-item-#{$state} {
+    color: $color;
+    background-color: $background;
+
+    // [converter] extracted a& to a.list-group-item-#{$state}
+  }
+
+  a.list-group-item-#{$state} {
+    color: $color;
+
+    .list-group-item-heading {
+      color: inherit;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color;
+      background-color: darken($background, 5%);
+    }
+    &.active,
+    &.active:hover,
+    &.active:focus {
+      color: #fff;
+      background-color: $color;
+      border-color: $color;
+    }
+  }
+}
+
+// float a list left
+@mixin float-list ($display: block) {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    > li{
+        list-style-type: none;
+        list-style-image: none;
+        @if $display == block {
+            display: block;
+            float: left;
+        }
+        @else {
+            display: inline-block;
+        }
+        &:last-child{
+           margin-right:0px;
+        }
+    }
+}
+
+// removes margins, paddings and bullets from list
+%reset-list {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    > li{
+        list-style-type: none;
+        list-style-image: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@mixin reset-list {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    > li{
+        list-style-type: none;
+        list-style-image: none;
+        padding: 0;
+        margin: 0;
+    }
+}

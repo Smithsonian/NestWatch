@@ -1,0 +1,27 @@
+
+
+@mixin hide-text(){
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+
+%hide-text {
+  @include hide-text;
+}
+
+@mixin restore-hide() {
+  position: static;
+  left:auto;
+  width: auto;
+  height: auto;
+  clip: auto;
+}

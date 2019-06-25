@@ -1,0 +1,137 @@
+// creates a button style
+//@mixin button($color: white, $background: $blue, $border) {
+//@mixin button() {
+//  display: inline-block;
+//  *display: inline;
+//  *zoom: 1;
+//  margin-bottom: 0; // For input.btn
+//  font-weight: $btn-font-weight;
+//  text-align: center;
+//  vertical-align: middle;
+//  touch-action: manipulation;
+//  cursor: pointer;
+//  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+//  border: 1px solid transparent;
+//  white-space: nowrap;
+//  // @if $shadow {
+//  //   @include box-shadow(rgba(white, 0.1) 0 1px 0 inset, rgba(white, .075) 0 1px 0);
+//  //   @include text-shadow(rgba(black, .25) 0 -1px 0);
+//  // }
+//}
+
+%button {
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font;
+  //margin: 0 0 rhythm(1);
+  //padding: .25em 1.25em;
+  *display: inline;
+  *zoom: 1;
+ // margin-bottom: 0; // For input.btn
+  font-weight: $btn-font-weight;
+  text-align: center;
+  touch-action: manipulation;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  text-decoration: none;
+ // text-transform: capitalize;
+  vertical-align: baseline;
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+
+}
+
+
+@mixin button--large {
+  // @include adjust-font-size-to($font-size-normal);
+  @include rem(font-size, $font-size-h4);
+  @include rem(padding, $space-half $pad-half);
+  @include rem(margin-bottom, $space);
+  &.active {
+    // margin: em($space, $font-size-h4) auto;
+    @include rem(font-size, $font-size-h4);
+    @include rem(padding, $space-half $pad-half);
+  }
+}
+
+
+@mixin button($bg-color: $btn-bg-color, $btn-txt-color: $btn-default-color, $hover-bg: $btn-hover, $border: true, $shadow: false, $font-size: $btn-font-size) {
+  @extend %button;
+  @include rem(font-size, $font-size);
+  transition:background-color 300ms ease-out, border-color 320ms ease-out;
+  background-color: $bg-color;
+  color: $btn-txt-color;
+  @if $border {
+    border: 1px solid desaturate(darken($bg-color, 5%), 5%);
+   // border: 1px solid darken($bg-color, 5%);
+
+  }
+
+  position: relative;
+  z-index: 1;
+  @if $shadow {
+    //box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.12), 1px 0 2px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+   box-shadow: rgba(0, 0, 0, 0.12) -1px 0 2px 0, rgba(0, 0, 0, 0.12) 1px 0 2px 0, rgba(0, 0, 0, 0.24) 0 1px 1px 0;
+  }
+  &:focus,
+  &:hover,
+  &:active  {
+    color: $btn-txt-color;
+    background-color: $hover-bg;
+    border-color: desaturate(lighten($hover-bg, 25%), 5%);
+    outline: 0;
+    text-decoration: none;
+    @if $shadow {
+      box-shadow: rgba(0, 0, 0, 0.16) -2px 0 2px 0, rgba(0, 0, 0, 0.16) 2px 0 2px 0, rgba(0, 0, 0, 0.32) 0 2px 2px 0;
+    }
+  }
+}
+
+
+@mixin button--large {
+  // @include adjust-font-size-to($font-size-normal);
+  @include rem(font-size, $font-size-h4);
+  @include rem(padding, $space-half);
+  //&.active {
+  //  // margin: em($space, $font-size-h4) auto;
+  //  @include rem(font-size, $font-size-h4);
+  //  @include rem(padding, $space-half);
+  //}
+}
+
+// Button Image
+@mixin button-image($width, $height, $icon-url, $bg: false) {
+  width: $width;
+  height: $height;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: {
+    image: image-url($icon-url);
+    repeat: no-repeat;
+    position:  50% 50%;
+    size: contain;
+  }
+  @if $bg {
+    background-color: $bg;
+  }
+  @else {
+    background-color: transparent;
+  }
+  text-indent: -1000em;
+  cursor: pointer; /* hand-shaped cursor */
+  cursor: hand; /* for IE 5.x */
+  opacity:.8;
+  &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      opacity: 1;
+    }
+}

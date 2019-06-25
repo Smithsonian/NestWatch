@@ -1,0 +1,83 @@
+/**
+ * $BASE-TYPOGRAPHY
+ */
+
+/*
+$fontbase = 16
+$line-height-base = 26
+*/
+
+
+html{
+  font-size: 62.5%;
+  @include breakpoint('all' 1010px) {
+	//	font-size: 74.21875%; //increase font to 19px
+	//font-size: 70.3125%; // increase font to 18px
+    font-size: 74.22%;
+  }
+  
+}
+body {
+  background: $footer-bg;
+  font-family: $font;
+  @include rem(font-size, $font-size-base);
+  -webkit-text-size-adjust: 100%;
+  color: $text-color;
+  line-height: $baseLineHeight;
+}
+.cf {
+  @extend %clearfix;
+}
+.content-wrapper {
+  background: #FFF;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  width: 100%;
+	min-height: 100%;
+  min-height: 70vh;
+
+}
+
+.wrapper--page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper--ckeditor {
+  padding: 1em;
+}
+
+#page-wrapper {
+  min-height: 100%;
+  height: 100%;
+}
+
+footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
+
+.region--content {
+  @include rem(padding, $space-and-half 0 $space-double);
+}
+
+//.sidebar {
+//  //p {
+//	//margin: 0 0 1em !important;
+//  //}
+//
+//  //.field--name-field-title {
+//	//
+//	//font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//	//font-size: 1.4375em;
+//	//line-height: 1.5652173913;
+//	//margin-bottom: 10px;
+//	//color: #2e343c;
+//	//font-weight: bold;
+//  //}
+//
+//  .views-field-title {
+//	font-weight: bold;
+//	font-size: 1.4rem;
+//
+//  }
+//}

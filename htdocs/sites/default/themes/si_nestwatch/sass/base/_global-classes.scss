@@ -1,0 +1,286 @@
+/*------------------------------------*\
+    $GLOBAL CLASSES
+\*------------------------------------*/
+
+/* Clearfix */
+.cf {
+  @extend %clearfix;
+}
+
+/* Completely remove from the flow and screen readers. */
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Completely remove from the flow but leave available to screen readers. */
+.sr-only,
+.element-invisible {
+  @extend %hide-text;
+}
+
+/* Text-Align */
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+/* Display Classes */
+.hide {
+  display: none !important;
+}
+.hide-small {
+  @media all and (max-width: $bp-med) {
+    display: none;
+  }
+}
+
+.hide-med {
+  @include breakpoint($bp-med $bp-large) {
+    display: none;
+  }
+}
+
+.hide-large {
+  @media all and (min-width: $bp-large) {
+    display: none;
+  }
+}
+
+//States
+.valid {
+  color: $valid;
+}
+
+.error {
+  color: $error;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.warning {
+  color: $warning;
+}
+
+.information {
+  color: $information;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+.font-primary {
+  font-family: $font;
+}
+
+.clear-l {
+  clear: left;
+}
+
+.clear-r {
+  clear: right;
+}
+
+.clear-all {
+  clear: both;
+}
+.border-gray-light {
+  border: 1px solid $gray-lighter;
+  .content {
+    @include rem(padding, $space-half $pad*.75);
+  }
+}
+
+.bg {
+  @include rem(padding, $space $pad);
+  &.paragraph--type--captioned-image,
+  &.layout--teaser {
+    padding: 0;
+  }
+}
+
+.bg-blue {
+  background: $blue;
+}
+
+.bg-burgundy {
+  background: $burgundy;
+}
+.bg-gray-dark {
+  background: $gray-dark;
+  &.border {
+    border: 1px solid darken($gray-dark, 2%);
+  }
+}
+.bg-gray-light {
+  background: $gray-lighter;
+  &.border {
+    border: 1px solid darken($gray-lighter, 2%);
+  }
+}
+.bg-gray-lightest {
+  background: $gray-lightest;
+  &.border {
+    border: 1px solid darken($gray-lightest, 2%);
+  }
+  &.paragraphs-item-grid-layout {
+    background: none;
+  }
+}
+.bg-green {
+  background: $green;
+  &.border {
+    border: 1px solid darken($green, 2%);
+  }
+}
+.bg-orange {
+  background: $orange;
+}
+
+.bg-purple {
+  background: $purple;
+  &.border {
+    border: 1px solid darken($purple, 2%);
+  }
+}
+
+.bg-green,
+.bg-gray-dark,
+.bg-blue,
+.bg-burgundy,
+.bg-orange,
+.bg-purple {
+  * {
+    color: white;
+  }
+  a {
+    @include link-colors(white, white, white, white, white);
+  }
+  &.paragraphs-item-grid-layout {
+    background: none;
+    * {
+      color: inherit;
+    }
+  }
+}
+.layout {
+  &.bg-blue,
+  &.bg-burgundy,
+  &.bg-gray-dark,
+  &.bg-gray-light,
+  &.bg-gray-lightest,
+  &.bg-orange,
+  &.bg-purple {
+    background: none;
+  }
+
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-green {
+  color: $green;
+}
+
+
+.sr-only {
+  @extend %hide-text;
+}
+.preface {
+  font-family: $font-secondary;
+}
+.preface, .small {
+  @include rem(font-size, $font-size-small);
+  line-height:$line-height-small;
+}
+.large {
+  font-size: 120%;
+}
+/* Floats */
+.left,
+.right {
+  display: block;
+ // &.width-30 {
+    width: 30%;
+ // }
+  &.width-40 {
+    width: 40%;
+  }
+  &.width-50 {
+    width: 50%;
+  }
+  &.width-60 {
+    width: 60%;
+  }
+
+  img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+.center {
+  text-align: center;
+}
+img.center {
+  display: block;
+  @include rem(margin, $space auto);
+}
+
+[style*="float: left"]
+[style*="float:left"],
+figure[style*="float:left"],
+.left {
+  float: left;
+  margin-right: gutter();
+  @include rem(margin-bottom, $space);
+}
+[style*="float: right"],
+[style*="float:right"],
+figure[style*="float:right"],
+.right {
+  float: right;
+  margin-left: gutter();
+  @include rem(margin-bottom, $space);
+}
+
+.constrain-text {
+  max-width: 1000px;
+}
+
+
+@include breakpoint($tab) {
+  /* Floats */
+
+  .right-search {
+    float: right;
+    @include rem(padding, 0 0 $pad 0);
+  }
+
+}
+
+@include breakpoint('screen' max-width 979px) {
+  .bp-desk {
+    display: none;
+  }
+}
+
+@include breakpoint($desk) {
+  .bp-desk {
+    display: block;
+  }
+  .bp-mobile {
+    display: none;
+  }
+}

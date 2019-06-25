@@ -1,0 +1,52 @@
+.form-item-field-address-0-address-country-code, .admin-wrapper, .form-item-property-location,
+.webform-details-toggle-state-wrapper, .webform-submission-information, .requester-info, .webform-submission-property-workflow-form #edit-status--wrapper,
+.webform-submission-approval-form-form #edit-status--wrapper, .apo-wrapper, .webform-submission-pager{
+	display: none;
+}
+.page--default .webform-submission-property-workflow-form .requester-info,
+.page-node-type-property.si-admin .webform-submission-property-workflow-form .requester-info{
+	display: block;
+}
+
+.page--default.status-0 .webform-submission-property-workflow-form {
+	display: none;
+}
+.user-logged-in , .page--apo {
+	.admin-wrapper.property-info {
+		display: block;
+	}
+}
+
+.admin-wrapper.approval-wrapper {
+	.page--apo.apo_approve & {
+		display: block;
+	}
+}
+
+.admin-wrapper.transfer-wrapper {
+	.page--apo.transfer & {
+		display: block;
+	}
+}
+
+.admin-wrapper.extension-wrapper {
+	.page--apo.extension & {
+		display: block;
+	}
+}
+.admin-wrapper.property-status-wrapper {
+	.page--apo.received & {
+		display: block;
+	}
+}
+.webform-submission-edit-form {
+	.apo-wrapper  {
+		display: block;
+	}
+	.admin-wrapper {
+		.user-logged-in & {
+			display: block;
+		}
+	}
+}
+

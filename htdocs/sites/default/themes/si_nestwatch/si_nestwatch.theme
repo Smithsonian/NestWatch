@@ -1,0 +1,178 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SI Basetheme theme.
+ */
+
+use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\Xss;
+use Drupal\Core\Datetime\Entity\DateFormat;
+
+///**
+// * Implements template_preprocess_links().
+// */
+//function si_basetheme_preprocess_links(&$vars) {
+//  // @deprecated in Drupal 8.0.x and will be removed before 9.0.0. This feature
+//  // of adding a class based on the associative key can cause CSS class name
+//  // conflicts.
+//  if (!empty($vars['links'])) {
+//    foreach ($vars['links'] as $key => $value) {
+//      if (!is_numeric($key)) {
+//        $class = Html::getClass($key);
+//        $vars['links'][$key]['attributes']->addClass($class);
+//      }
+//    }
+//  }
+//}
+
+/**
+ * Implements template_preprocess_paragraphs().
+ * @param array $vars
+ */
+function si_basetheme_preprocess_paragraph(&$vars) {
+	$paragraph = $vars['paragraph'];
+	$vars['attributes']['id'] = Html::getClass('paragraph--'. $paragraph->id());
+}
+/**
+ * Implements template_preprocess_paragraphs().
+ * @param array $vars
+ */
+function si_basetheme_preprocess_paragraph__grid_layout(&$vars) {
+	$paragraph = $vars['paragraph'];
+	$columns = $paragraph->field_column->value;
+	$vars['attributes']['class'][] = Html::getClass($columns);
+	if (isset($vars['content']['_field_layout']) && isset($vars['content']['_field_layout']['content']['field_title'])) {
+//						kint($vars);
+
+		$vars['block_title'] = $vars['content']['_field_layout']['content']['field_title'];
+		$vars['content']['_field_layout']['content']['field_title'] = array();
+//			kint($vars);
+	}
+	elseif (isset($vars['content']['field_title'])) {
+		$vars['block_title'] = $vars['content']['field_title'];
+		$vars['content']['field_title'] = array();
+	}
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ */
+function si_basetheme_preprocess_block(&$vars) {
+  switch ($vars['base_plugin_id']) {
+	  case 'system_branding_block':
+		  $vars['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+			$logo = theme_get_setting('logo');
+		  $path = drupal_get_path('theme', 'si_basetheme');
+		  $vars['logo_icon'] = '';
+		  if ($logo['use_default'] == TRUE) {
+			  $filename =  $path . '/logo-sun.svg';
+			  $vars['logo_icon'] = file_create_url($filename);
+			  $vars['#attached']['library'][] = 'si_basetheme/base';
+			  $vars['#attached']['drupalSettings']['siBasetheme']['png_logo'] = file_create_url($path . '/logo-sun.png');
+		  }
+		  break;
+	  case 'search_form_block':
+		  $vars['attributes']['id'] = 'block--si-basetheme-search';
+		  break;
+  }
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function si_basetheme_preprocess_field(&$vars) {
+	$field_type = $vars['element']['#field_type'];
+	if ($field_type == 'daterange' || $field_type == 'datetime' ) {
+		$field_name =   $vars['element']['#field_name'];
+		$view_mode =$vars['element']['#view_mode'] == 'full' ? 'default' : $vars['element']['#view_mode'];
+		$settings = \Drupal::service('entity_type.manager')
+			->getStorage('entity_view_display')
+			->load($vars['element']['#entity_type'] . '.' . $vars['element']['#bundle'] . '.' . $view_mode)
+			->getRenderer($field_name)
+			->getSetting('format_type');
+
+		$date_format = DateFormat::load($settings)->getPattern();
+		$pos = strpos($date_format, ':');
+		$new_date_format = substr($date_format,0, $pos-1);
+		$time_format = substr($date_format, $pos-1);
+
+		foreach($vars['element']['#object']->{$field_name} as $delta => $item) {
+			$start = $field_type == 'datetime' ? $item->date : $item->start_date;
+			$timestamp = $start->getTimestamp();
+			$start_time = \Drupal::service('date.formatter')->format($timestamp, 'custom', 'G:i');
+
+			$start_time = $start_time == '0:00' ? NULL : \Drupal::service('date.formatter')->format($timestamp,'custom', $time_format);
+			$start_date = '<span class="date start">'. \Drupal::service('date.formatter')->format($timestamp, 'custom', $new_date_format).'</span>';
+
+			if (isset($vars['items'][$delta]['content']['start_date'])) {
+				$vars['items'][$delta]['content']['start_date']['#text'] = $start_date . $start_time;
+			}
+			elseif(isset($vars['items'][$delta]['content']['#text'])) {
+				$vars['items'][$delta]['content']['#text'] = $start_date . $start_time;
+			}
+			$vars['items'][$delta]['content']['start_date']['#html'] = 'true';
+			if (isset($vars['items'][$delta]['content']['end_date'])) {
+				$end_timestamp = $item->end_date->getTimestamp();
+				$start_date = \Drupal::service('date.formatter')->format($timestamp, 'custom', 'Y-m-d');
+				$end_date = \Drupal::service('date.formatter')->format($end_timestamp, 'custom', 'Y-m-d');
+				$class = $start_date == $end_date ? 'sr-only date end' : 'date end';
+				$attribute = $start_date == $end_date ? 'same-date date-block' : 'date-block';
+				$end_date = '<span class="'. $class .'">'.
+					\Drupal::service('date.formatter')->format($end_timestamp, 'custom', $new_date_format) .'</span>';
+				$end_time = \Drupal::service('date.formatter')->format($end_timestamp, 'custom', 'G:i');
+				$end_time = $end_time == '0:00' ? NULL : \Drupal::service('date.formatter')->format($end_timestamp, 'custom', $time_format);
+				$vars['items'][$delta]['content']['end_date']['#text'] = $end_date . $end_time;
+				$vars['attributes']['class'][] = $attribute;
+			}
+		}
+	}
+}
+
+
+
+/**
+ * Implements template_preprocess_region().
+ * @param array $vars
+ */
+function si_basetheme_preprocess_region(&$vars) {
+//	kint(array_keys($vars['elements']));
+  $vars['attributes']['class'][] = 'region';
+  if (isset($vars['region']) && !empty($vars['region'])) {
+    $vars['attributes']['class'][] = 'region--' . str_replace('_', '-', $vars['region']);
+  }
+}
+
+function  si_basetheme_theme_suggestions_field_alter(array &$suggestions, array $vars) {
+	$element = $vars['element'];
+	//kint($element);
+	$suggestions[] = 'field__'. $element['#entity_type'] .'__'. $element['#field_type'];
+	$suggestions[] = 'field__'. $element['#entity_type'] .'__'. $element['#bundle'] .'__'. $element['#field_type'];
+	$suggestions[] = 'field__'. $element['#entity_type'] .'__'. $element['#bundle'] .'__'. $element['#field_name'] .'__'. $element['#view_mode'];
+}
+
+/**
+ * Implements hook_preprocess_page()
+ */
+function si_basetheme_preprocess_page(&$vars) {
+	$attributes = $vars['attributes'];
+	$attributes['id'] = 'page-wrapper';
+	$classes = isset($attributes['class']) ? $attributes['class'] : array();
+	$classes[] = empty($vars['page']['header_preface_left']) ? NULL : 'has-preface-left';
+	$classes[] = empty($vars['page']['header_preface_right']) ? NULL : 'has-preface-right';
+	$classes[] = empty($vars['page']['sidebar_first']) ? NULL : 'has-sidebar-first';
+	$classes[] = empty($vars['page']['sidebar_second']) ? NULL : 'has-sidebar-second';
+	$attributes['class'] = array_filter($classes);
+	$vars['attributes'] = $attributes;
+}
+
+//function si_bastheme_preprocess_page_title(&$vars) {
+////	if ($node = \Drupal::routeMatch()->getParameter('node')) {
+////		if ( (isset($node->field_image)) && ($node->bundle() == 'article') ) {
+////			$variables['page_title_image'] = $node->get('field_image')->view('full');
+////		}
+////	}
+//
+//}
+

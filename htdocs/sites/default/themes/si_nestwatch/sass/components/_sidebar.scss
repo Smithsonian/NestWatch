@@ -1,0 +1,43 @@
+.region--sidebar-second,
+.region--sidebar-first {
+	@include rem(margin-top, $space-and-half);
+	.bg {
+		@include rem(padding, $space-half $pad*.75);
+		.block-title {
+			background: $blue-darkest;
+			color: white;
+			@include rem(padding, $space-half $pad*.75);
+			@include rem(margin-left, -($pad*.75));
+			@include rem(margin-right, -($pad*.75));
+			@include rem(margin-top, -$space-half);
+		}
+		.b-text-wrapper {
+			padding: 0;
+		}
+	}
+
+	h2, .h2 {
+		@include rem(font-size, $font-size-h3);
+		line-height: $line-height-h3;
+		@include rem(margin-bottom, $space-half);
+	}
+
+	h3, .gamma {
+		@include rem(font-size, $font-size-h4);
+		line-height: $line-height-h4;
+		@include rem(margin-bottom, $space-half);
+	}
+	h4, .epsilon {
+		@include rem(font-size, $font-size-h5);
+		line-height: $line-height-h5;
+		margin-bottom: 0;
+	}
+	> div {
+		@include rem(margin-bottom, $space-and-half);
+
+	}
+
+	@include breakpoint($tab){
+		margin-top: 0;
+	}
+}

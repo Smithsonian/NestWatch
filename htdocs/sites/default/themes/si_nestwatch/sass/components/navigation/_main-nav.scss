@@ -1,0 +1,307 @@
+$button-size: 24px;
+$transition: .3s; // increase this to see the transformations in slow-motion
+$color: white;
+
+@mixin line {
+	background: $color;
+	border-radius: 2px;
+	display: block;
+	height: 3px;
+	transition: transform .3s ease-out, transform .3s ease-out, top .3s ease-out;
+	width: $button-size;
+}
+
+.lines-button {
+	background: $mobile-nav-btn;
+	border: 0;
+	position: relative;
+	// box-shadow: -1px 0 2px 0 rgba(0,0,0,0.24) , 1px 0 2px 0 rgba(0,0,0,0.24) , 0 1px 1px 0 rgba(0,0,0,0.34);
+	cursor: pointer;
+	display: inline-block;
+	@include rem(padding, $space*.75 $pad-half);
+	//padding: 20px 12px 26px;
+	user-select: none;
+	border-radius: 0;
+	@include rem(margin, 9px 0 0);
+	&:hover {
+		opacity: 1;
+	}
+
+	&:active {
+		background: rgba(0, 0, 0, .1);
+		transition: none;
+	}
+	.text {
+		@extend %hide-text;
+		//bottom: 1px;
+		//display: block;
+		//@include rem(font-size,$font-size-small);
+		//left: 0;
+		//position: absolute;
+		//text-align: center;
+		//width: 100%;
+
+	}
+}
+
+.lines {
+	//create middle line
+	@include line;
+	position: relative;
+	top: -.13em;
+
+	/*create the upper and lower lines as pseudo-elements of the middle line*/
+	&:before, &:after {
+
+		@include line;
+		position: absolute;
+		left: 0;
+		content: '';
+		transform-origin: 1.71429px center;
+	}
+	&:before {
+		top: $button-size/3;
+	}
+	&:after {
+		top: -$button-size/3;
+	}
+}
+
+.sf-expanded.lines-button {
+	//.text {
+	//  opacity: 0;
+	//}
+	.lines {
+		background: transparent;
+		top: .4em;
+		&:before, &:after {
+			transform-origin: 50% 50%;
+			top: -4px;
+		}
+		&:before {
+			transform: rotate3d(0, 0, 1, 45deg);
+		}
+		&:after {
+			transform: rotate3d(0, 0, 1, -45deg);
+		}
+	}
+}
+
+.region--main-menu,
+.region--header {
+	.lines-button {
+		position: absolute;
+		right: 0;
+	}
+	.sf-menu,
+	.menu {
+		line-height: $baseLineHeight;
+		margin: 0;
+		padding: 0;
+		background: $mobile-nav-btn;
+		width: 100%;
+		max-width: 30em;
+		&.sf-accordion.sf-expanded {
+			//  top: -19px !important;
+			top: 48px !important;
+		}
+		&.sf-navbar {
+			width: 100%;
+		}
+		ul {
+			padding-left: 0;
+		}
+		li {
+			a {
+				font-size: em($font-size-base);
+				font-family: $font;
+				letter-spacing: 1px;
+				//text-transform: uppercase;
+				// font-weight: 500;
+				@include link-colors(white, white, white, white, white);
+				@include rem(padding, $space/3 $space-half);
+			}
+			ul {
+				background: $mobile-menu;
+				@include rem(padding-left, $pad*1.5);
+			}
+
+		}
+		//top-level
+		> li {
+			> a {
+				@include rem(padding-left, $pad);
+				@include rem(margin-left, $pad-half);
+				&.btn {
+					display: inline-block;
+				}
+			}
+		}
+	}
+	//end mobile .sf-menu
+
+	@include breakpoint($desk) {
+
+		.sf-accordion-toggle {
+			display: none;
+		}
+		background: $header-bg;
+
+		.sf-menu.sf-style-none {
+			background: $header-bg;
+			box-shadow: none;
+			max-width: 100%;
+
+			display: flex !important;
+			align-items: center;
+			justify-content: flex-end;
+			.no-flexbox & {
+				@include clearfix;
+				float: right;
+			}
+			li {
+				a {
+					//  @include font-smoothing;
+					@include link-colors($gray-darkest, $gray-darkest, $gray-darkest, $gray-darkest, $gray-darkest);
+					&:focus,
+					&:hover,
+					&:active {
+						border-bottom: none;
+					}
+				}
+				ul {
+					background: $nav-sub-bg;
+				}
+				&.sf-depth-3 {
+					ul {
+						display: none !important;
+					}
+				}
+			}			//end li
+			//only allow 3 menu levels
+			.sf-depth-3 {
+				ul {
+					display: none !important;
+				}
+			}
+			a > .sf-sub-indicator, span.nolink > .sf-sub-indicator {
+				top: .8em;
+				right: .5em;
+			}
+			> li {
+				flex: 0 0 auto;
+				//&.sfHover {
+				//
+				//}
+				> a {
+					border: none;
+					// border-top: 3px solid transparent;
+					background: transparent;
+					display: block;
+					margin-left: 0;
+					transition: all ease-in .4ms;
+					@include rem(font-size, $font-size-h5);
+					@include link-colors(white, $link-color-alt, $link-color-alt, white, $link-color-alt);
+					line-height: $line-height-h5;
+					//@include link-colors($blue-darkest, $nav-sub-bg, $nav-sub-bg, $blue-darkest, $nav-sub-bg);
+					@include transition(all .4s cubic-bezier(.55, .085, 0, .99));
+					text-align: center;
+					@include rem(padding, $space/3 $space-half $space-half);
+
+				}
+				&.sfHover > a,
+				> a.active,
+				> a:hover,
+				&.active-trail > a {
+					color: $nav-sub-bg;
+					&:after {
+						bottom: 0;
+						left: 50%;
+						border: solid transparent;
+						content: " ";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+						border-color: $nav-sub-bg, 0;
+						border-bottom-color: $nav-sub-bg;
+						border-width: 10px;
+						margin-left: -10px;
+						opacity: 1;
+						animation: menuArrow .7s cubic-bezier(.55, .085, 0, .99) forwards
+					}
+				}
+
+				> ul {
+					padding-left: 0;
+					// @include box-shadow(rgba(black, .2) 0 5px 5px);
+					@include box-shadow(rgba(black, .3) 1px 1px 2px);
+					// box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+					border-bottom: none;
+					min-width: 3em;
+				}
+				&.sfHover {
+					> ul {
+						top: 44px !important;
+						top: 4.4rem !important;
+						left: 0 !important;
+					}
+					&.last {
+						> ul {
+							left: auto !important;
+							right: 0 !important;
+						}
+					}
+					.sf-depth-2 {
+						> ul {
+							display: block !important;
+							position: static !important;
+							left: auto !important;
+							width: auto !important;
+							height: auto !important;
+							clip: auto !important;
+							padding: 0;
+							> li {
+								float: none;
+								> a {
+									@include font-icon('\f111', $pad-double, 16px, 24px, 6px);
+									// @include rem(padding-left, $pad-double);
+								}
+							}
+						}
+					}
+				}
+				ul {
+					> li:hover,
+					> .sfHover {
+						background: $blue-light;
+					}
+					> .active-trail {
+						background: $yellow;
+					}
+				}
+
+			}
+			// end top-level li
+		}
+		//end sf-menu.sf-style-none
+
+	}
+	// end breakpoint($desk)
+	@include breakpoint('all' 1680px) {
+		.sf-menu.sf-style-none {
+			> li.sf-depth-1.last.sfHover {
+				> ul {
+					// top: 5.125em !important;
+					left: 0 !important;
+					right: auto !important;
+
+				}
+			}
+		}
+
+	}
+}
+
+//end l-navigation
+

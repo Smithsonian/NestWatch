@@ -1,0 +1,7 @@
+.path-user .content-wrapper {
+  padding: $space-double $pad;
+  .region-content,
+  .messages{
+    @include set_layout($max-width);
+  }
+}

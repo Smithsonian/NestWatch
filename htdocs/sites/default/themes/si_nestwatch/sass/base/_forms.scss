@@ -1,0 +1,343 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+form ol, form ul {
+  list-style: none;
+  margin-left: 0;
+}
+form {
+
+  .form-wrapper {
+    h4 {
+      @include rem(font-size, $font-size-base);
+      line-height: $line-height-base;
+      @include rem(margin-bottom, $space-half);
+    }
+  }
+
+}
+.form-composite > .fieldset-wrapper > .description,
+.form-item .description {
+  @include rem(font-size, $font-size-small);
+  line-height: $line-height-small;
+  @include rem(margin-top, $space-quarter);
+}
+fieldset {
+  border: solid 1px #d9d9d9;
+  border-top: 3px solid $blue-brand;
+  @include rem(padding, $space-half $pad-half);
+  @include rem(margin-top, $space);
+  @include rem(margin-bottom, $space);
+  min-width: 0;
+  legend {
+    color: $header-color;
+    @include rem(padding, 0 $pad/4);
+    background: #fff;
+  }
+}
+.fieldset-title,
+.fieldset-legend{
+  font-weight: bold;
+  @include rem(font-size, $font-size-h4);
+  @include link-colors($text-color, $link-hover, $link-hover, $text-color, $text-color);
+  .form-composite & {
+    @include rem(font-size, $font-size-base);
+    line-height: $baseLineHeight;
+  }
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  //@include rem(font-size, 14px);
+  //line-height: $line-height-base/14px;
+  .js-form-type-radio &, .form-type-radio & {
+    display: inline-block;
+  }
+  &.option {
+    font-weight: normal;
+    display: inline-block;
+  }
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0 1px 0;
+  max-width: 100%;
+}
+
+input, textarea, select {
+  border: 1px solid #d1d1d1;
+  @include rem(padding, 4px 5px);
+  @include rem(font-size, 14px);
+  line-height: ($line-height-base*.75)/14px;
+}
+
+input[type=text], input[type=search], input[type=url], input[type=number], textarea, input[type="submit"], select {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+select {
+  border-radius: 0;
+  @include rem(padding, 4px 12px 4px 8px);
+  background: url(../images/caret-down.svg) no-repeat 98% 64% #fff;
+  &:focus,
+  &:hover {
+    background: url(../images/caret-down.svg) no-repeat 98% 64% #fff;
+  }
+  &:focus {
+    border-color: #68A3CF;
+    outline: 2px solid #C1E0FF;
+    outline-offset: 0px;
+  }
+}
+
+.form-text, textarea, .form-email {
+  width: 90%;
+}
+.form-text {
+  &.hasDatepicker {
+    width: auto;
+  }
+}
+.form-item, .field--widget-datetime-default {
+  @include rem(margin, $space-half 0);
+}
+.form-item.js-form-type-radio {
+  @include rem(margin-top, $space-quarter);
+}
+.form-item.js-form-type-date {
+  margin: 0
+}
+
+form button, form input[type="submit"] {
+  @include button($gray-lighter, $text-color, darken($gray-lighter, 10%));
+  cursor: pointer;
+  width: auto;
+  margin: 0;
+  @include rem(margin-right, $pad-half);
+  &:last-child {
+    margin-right: 0;
+  }
+  line-height: $line-height-base/14px;
+  &.button--primary {
+    @include button($blue, white, darken($blue, 10%));
+    color:white;
+    //@include link-colors(white, white, white, white, white);
+    margin: 0;
+    @include rem(margin-right, $pad-half);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.filter-wrapper {
+  display: none;
+}
+.button, .image-button {
+  margin: 1em;
+  &:first-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.form-type-checkbox,
+.form-type-radio {
+  @include rem(padding-left, $pad *.75);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  @include rem(margin, -2px $pad-half 0 0);
+}
+.checkbox {
+  text-align: left;
+}
+
+
+//Form Field Container
+.field-container {
+  @include rem(margin-bottom, $space);
+}
+
+.inline-form {
+  fieldset, .inline-container {
+    position: relative;
+  }
+  .main & {
+    input[type=submit], button, .btn {
+      @include rem(font-size, $font-size-base);
+      @include rem(padding, $space-quarter $pad*.75);
+      background: $gray-dark;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: auto;
+
+      &:hover, &:focus {
+        background: $gray;
+        color: white;
+      }
+    }
+  }
+
+}
+
+/* Validation */
+.has-error {
+  border-color: $error;
+}
+.is-valid {
+  border-color: $valid;
+}
+
+.form-required:after {
+  content: '';
+  vertical-align: super;
+  display: inline-block;
+  background-image: url(../images/svg/required.svg);
+  background-repeat: no-repeat;
+  background-size: 6px 6px;
+  width: 6px;
+  height: 6px;
+  margin: 0 0.3em;
+}
+
+
+.form-composite > legend, .label {
+  display: inline;
+  font-size: inherit;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.tabledrag-toggle-weight {
+  @include rem(margin-bottom, $space-half);
+}
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+
+/* Search Form */
+.search-field {
+  @include rem(padding-right, $pad-and-half);
+}
+.inline-form .search-submit {
+  background: none;
+  @include rem(padding, $space-half $pad-half);
+  border: 0;
+  border-left: 1px solid $gray;
+  color: $gray;
+}
+
+/*------------------------------------*\
+    $IMAGE WIDGET
+\*------------------------------------*/
+
+.image-preview {
+  float: left; /* LTR */
+  padding: 0 10px 10px 0; /* LTR */
+}
+[dir="rtl"] .image-preview {
+  float: right;
+  padding: 0 0 10px 10px;
+}
+.image-widget-data {
+  float: left; /* LTR */
+  .file, .file-size {
+    @include rem(font-size, $font-size-small);
+    line-height: $line-height-small;
+    @include rem(margin-top, $space-quarter);
+
+  }
+}
+[dir="rtl"] .image-widget-data {
+  float: right;
+}
+.image-widget-data .text-field {
+  width: auto;
+}
+
+
+//#edit-unpublish-on-0-value .form-time {
+//  @include hide-text;
+//}
+//
+//form .vertical-tabs {
+//  display: none;
+//}
+
+/*------------------------------------*\
+    $details
+\*------------------------------------*/
+details {
+  @include rem(margin-top, $space);
+  @include rem(margin-bottom, $space);
+  background-color: #f8f8f8;
+  border: 1px solid #d1d1d1;
+  summary {
+    background-color: darken(#f8f8f8, 10%);
+    @include rem(padding, $space-half $pad-half);
+    border-bottom: 1px solid #d1d1d1;
+    cursor: pointer;
+    > a {
+      text-shadow: 0 1px 0 white;
+      @include link-colors($blue-darkest, $link-hover, $link-hover, $blue-darkest, $blue-darkest);
+      @include font-icon("\f077", 30px, 0, 5px, $font-size-base, $blue-darkest, $link-hover);
+      &:before {
+        transition: all .4s;
+      }
+    }
+    &[aria-expanded=false] {
+      > a:before {
+       // content: '\f078'
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  > .details-wrapper {
+    @include rem(padding, $space-half $pad-half);
+
+  }
+  //.seven-details__summary:hover,
+  //.seven-details__summary:focus,
+  //.seven-details[open] > .seven-details__summary {
+  //  color: #004f80;
+  //}
+  table {
+    border: none
+  }
+  tr.odd {
+    background: transparent;
+  }
+}
+
+.collapse-processed {
+  > summary:before {
+    background: none;
+    width: 0;
+    height: 0;
+  }
+  &:not([open]) {
+    > summary:before {
+      background: none;
+    }
+}
+}
+
+
+form.node-form details table thead,
+form.node-edit-form details table thead{
+  display: none;
+}
+

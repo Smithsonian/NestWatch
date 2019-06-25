@@ -1,0 +1,41 @@
+// Font Settings
+$font-path                : '../fonts/BrandFonts';
+$font                    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-secondary          : 'MinionPro', Georgia, Times, 'Times New Roman', serif;
+$font-serif              : Georgia,Times,'Times New Roman',sans-serif;
+$baseFontSize            : 10;
+$font-size-base          : 16px;
+//font sizes are based on minor third and perfect fifth
+$font-size-h1-alt        : 60px;
+//$font-size-h1            : round($font-size-base*3.157);
+$font-size-h1         		: 54px;
+$font-size-h2            : 36px;
+$font-size-h3            : 28px;
+$font-size-h4            : 23px;
+$font-size-h5            : 19px; // minor 3rd
+$font-size-tagline       : $font-size-h3;
+$font-size-h6            : $font-size-base; // 16x
+
+$font-size-small         : round($font-size-base*.75);
+$font-size-large         : 19px;
+
+$baseLineHeight          : 1.5;
+$line-height-base        : $font-size-base*$baseLineHeight;
+
+$line-height-h1-alt      : ($line-height-base*3)/$font-size-h1-alt;
+$line-height-h1      		 : ($line-height-base*2.5)/$font-size-h1;
+$line-height-h2          : ($line-height-base*2)/$font-size-h2;
+$line-height-h3          : ($line-height-base*1.5)/$font-size-h3;
+$line-height-h4          : $line-height-base/$font-size-h4;
+$line-height-h5          : $line-height-base/$font-size-h5;
+$line-height-tagline     :  $line-height-base/$font-size-h3;
+$line-height-h6          : $line-height-base/$font-size-h6;
+
+$line-height-small       : $line-height-base*.75/$font-size-small;
+$line-height-large       : ($line-height-base*1.25)/$font-size-large;
+
+
+// Font Weights
+$fw-normal: 400;
+$fw-bold: 700;

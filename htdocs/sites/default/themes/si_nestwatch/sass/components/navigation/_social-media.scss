@@ -1,0 +1,11 @@
+.block-menu-menu-social-media {
+  .menu {
+    @extend %reset-list;
+    li {
+      display: inline-block;
+    }
+  }
+  .menu-title {
+    @extend %hide-text;
+  }
+}

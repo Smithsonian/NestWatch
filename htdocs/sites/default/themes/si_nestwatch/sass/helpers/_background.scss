@@ -1,0 +1,14 @@
+// Contextual backgrounds
+
+//@mixin background($property, $values...) {
+//  @include each-gradient-prefix($values) {
+//    @if $current-prefix {
+//      #{$property}: prefix($current-prefix, $values);
+//    }
+//    @else {
+//      #{$property}: $values;
+//    }
+//    @content;
+//  }
+//}
+

@@ -1,0 +1,138 @@
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "../node_modules/susy/sass/susy";
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; // Black prints faster: h5bp.com/s
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; // h5bp.com/t
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  // Bootstrap specific changes start
+  //
+  // Chrome (OSX) fix for https://github.com/twbs/bootstrap/issues/11245
+  // Once fixed, we can just straight up remove this.
+  select {
+    background: #fff !important;
+  }
+
+  // Bootstrap components
+  .navbar,
+  .side-nav,
+  footer{
+    display: none;
+  }
+  header {
+    background: white;
+  }
+  .branding .site-name a {
+    background-image: url("../images/logos/logo.png");
+  }
+  .btn,
+  .dropup > .btn {
+    > .caret {
+      border-top-color: #000 !important;
+    }
+  }
+  .label {
+    border: 1px solid #000;
+  }
+
+  .table {
+    border-collapse: collapse !important;
+
+    td,
+    th {
+      background-color: #fff !important;
+    }
+  }
+  .table-bordered {
+    th,
+    td {
+      border: 1px solid #ddd !important;
+    }
+  }
+
+
+
+  .masonry-grid {
+    height: auto !important;
+    &:before,
+    &:after{
+      flex-basis:0;
+      order: 1;
+    }
+      display: flex; display: -webkit-flex; display: -ms-flexbox;
+      flex-wrap: wrap;
+
+  }
+  .grid-item {
+    flex: 1 0 auto;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    border: 1px solid #8e97a0 !important;
+    margin-bottom: 2%;
+    padding: 12px;
+    float: left;
+    width: 32%;
+    margin-left: 2%;
+    &:nth-child(3n+1) {
+      margin-left: 0;
+      clear:left;
+    }
+    img {
+      width: 25% !important;
+      height: auto !important;
+      float: left;
+      margin-right: 5%;
+    }
+    .b-text-wrapper {
+      padding: 0;
+      width: 70%;
+      float: right;
+    }
+  }
+
+}
+
+

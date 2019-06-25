@@ -1,0 +1,208 @@
+
+.search-block-form {
+  form {
+    position: relative;
+  }
+  input[type="submit"] {
+    background: {
+      repeat: no-repeat;
+      position:  50%;
+      size: 80%;
+      color: transparent;
+    }
+    @include svg-background('search');
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    text-indent: -99999px;
+    height: 34px;
+    width: 34px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+.sb-search-open {
+  input[type="submit"] {
+    @include button($orange-alt, white, darken($orange-alt, 10%), false, false);
+  }
+}
+
+.content-wrapper {
+  .search-form{
+      label {
+        display: none;
+      }
+      input.form-search {
+        display: inline-block;
+        width: 100%;
+        height: $space*2;
+        padding-right: $space*2;
+        border-radius: 0;
+        -webkit-appearance: none;
+        border: 1px solid darken($gray-lighter, 5);
+        padding-left: 10px;
+        &:placeholder-shown {
+          color: $gray-dark;
+          text-transform: uppercase;
+        }
+      }
+
+      input[type="submit"] {
+        @include button($green, white, darken($green, 10%), true, false);
+        background: {
+          repeat: no-repeat;
+          position:  50%;
+          size: 80%;
+        }
+        @include svg-background('search');
+        height: $space*2;
+        width: $space*2;
+        margin: 0;
+        //box-shadow: none;
+        text-indent: -99999px;
+        background: {
+          repeat: no-repeat;
+          position: 50%;
+          size: 70%;
+        }
+        position: absolute;
+        top: 0;
+        right: 0;
+
+      } // end submit
+    }
+
+}
+
+header .search-block-form{
+  *{
+    color: $text-color;
+  }
+  form{
+    position: relative;
+    width: 30px;
+    min-width: 30px;
+    height: auto;
+    min-height: 30px;
+    overflow: hidden;
+    float: right;
+    transition:min-width .4s ease;
+  } // end form
+  .js-form-type-search{
+      margin: 0;
+      display: block;
+      z-index: 0;
+      //    width: 0;
+      min-width: 0;
+      opacity: 0;
+      transition: all .4s ease;
+      input {
+        background: white;
+        //border-radius: 3px;
+      }
+    }
+
+    input.form-search {
+      -webkit-appearance: none;
+      // width: 143px);
+      height: 26px;
+      line-height: 26px;
+      padding-right: 40px;
+      //font-size: $font-size-small;
+      color: $text-color;
+      @include rem(padding, 0 5px);
+
+    }
+    input[type="submit"] {
+      background-color: $gray;
+      border: 1px solid $gray;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 28px;
+      display: block;
+      padding: 0;
+      margin: 0;
+      // line-height: 33px;
+      cursor: pointer;
+      z-index: 10;
+
+    }
+
+  -webkit-backface-visibility: hidden;
+  &.sb-search-open,
+  .no-js & {
+    form{
+      width: 100%;
+      height: auto;
+      min-width: 100%;
+
+    }
+    .js-form-type-search {
+      // right: 30px;
+      min-width: 100%;
+      opacity:1;
+      //@include transition(top .4s ease, visibility top .4s ease);
+      input {
+        width: 100%;
+      }
+    }
+    input[type="submit"] {
+      border-radius: 0;
+    }
+    .js-form-type-search {
+      min-width: 150px;
+    }
+  }
+  @include breakpoint($tab) {
+    form {
+      width: 34px;
+      min-width: 34px;
+      min-height: 34px;
+    }
+    input.form-search {
+      height: 30px;
+      line-height: 30px;
+    }
+    input[type="submit"] {
+      width: 34px;
+      height: 32px;
+    }
+    &.sb-search-open,
+    .no-js & {
+      form {
+        min-width: 250px;
+        width: 250px;
+      }
+    }
+
+  }
+} //end .header #block-search-form
+
+@include breakpoint($desk) {
+  .content-wrapper {
+    .search-form .container-inline {
+      input[type="text"] {
+        //height: 37px);
+        padding-right: 32%;
+        padding-left: 4px;
+        .page-landing & {
+          border: none;
+          text-align: right;
+        }
+      }
+
+      .form-text {
+        @include input-placeholder {
+          color: $gray;
+          text-transform: capitalize;
+
+        }
+      }
+    }
+  }
+
+} //end breakpoint
+
