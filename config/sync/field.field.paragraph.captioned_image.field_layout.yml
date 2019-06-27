@@ -1,0 +1,23 @@
+uuid: 1b5b68db-6d14-435d-b338-2231a721367b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.captioned_image
+  module:
+    - options
+_core:
+  default_config_hash: q_TZSnWNp25b5nLwbzm_7r8OIPnjsc7tK_BX0b1ntyk
+id: paragraph.captioned_image.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: captioned_image
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,35 @@
+uuid: d2e6ed50-bf0f-4ed4-8947-c58ab3730666
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.node_title
+  module:
+    - ctools
+    - views
+  theme:
+    - si_nestwatch
+_core:
+  default_config_hash: 3qerjFuMmLRWU2n5dEj0KC_6A4PEcmII9eqZfJJgKMQ
+id: si_nestwatch_views_block__node_title_block_3
+theme: si_nestwatch
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:node_title-block_3'
+settings:
+  id: 'views_block:node_title-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

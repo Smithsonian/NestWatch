@@ -1,0 +1,33 @@
+uuid: 24b081a1-8246-4c68-a70c-82ebd41c203c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.embedded_content
+  module:
+    - views
+_core:
+  default_config_hash: 5SEPTXSOrBMugVeeAGU2mhjp6yiqUYf_QgWASemLal0
+name: content
+label: Content
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  e48a15fa-2c9a-4943-90a8-34c85767318e:
+    settings:
+      view: embedded_content
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: e48a15fa-2c9a-4943-90a8-34c85767318e
+    weight: 1
+    label: view
+    id: view

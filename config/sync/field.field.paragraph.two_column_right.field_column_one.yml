@@ -1,0 +1,57 @@
+uuid: 3fef0e16-0932-4332-905e-acca1c1ed4d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_one
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.grid_layout
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.two_column_right
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 5-8CmSgXXbURps8DugByGwVt4p1dqn0TaOdaWyU4KTE
+id: paragraph.two_column_right.field_column_one
+field_name: field_column_one
+entity_type: paragraph
+bundle: two_column_right
+label: 'Column One'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      grid_layout: grid_layout
+      slideshow: slideshow
+      text_block: text_block
+    target_bundles_drag_drop:
+      captioned_image:
+        enabled: true
+        weight: 8
+      grid_layout:
+        enabled: true
+        weight: 9
+      slide:
+        weight: 10
+        enabled: false
+      slideshow:
+        enabled: true
+        weight: 11
+      text_block:
+        enabled: true
+        weight: 12
+      two_column_left:
+        weight: 13
+        enabled: false
+      two_column_right:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,23 @@
+uuid: 8450b341-624b-40a0-a95d-1ed63b477ae7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column
+    - paragraphs.paragraphs_type.grid_layout
+  module:
+    - options
+_core:
+  default_config_hash: cprzrwOuLVLc-z8doO3LZwBIL844aEwswOH267UFQzQ
+id: paragraph.grid_layout.field_column
+field_name: field_column
+entity_type: paragraph
+bundle: grid_layout
+label: Column
+description: 'Indicate the max number of columns.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

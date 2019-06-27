@@ -1,0 +1,20 @@
+uuid: 313de403-9754-45da-a8d3-79619fa1aa49
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: ciYlmTUGYLJ782EImsbe4VmYBvrAP34R5Nwc2fvpYsA
+name: 'Landing Page'
+type: landing_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

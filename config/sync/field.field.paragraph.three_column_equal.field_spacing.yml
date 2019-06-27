@@ -1,0 +1,25 @@
+uuid: a13f270e-1328-416e-a16a-752be83e2cd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.three_column_equal
+  module:
+    - options
+_core:
+  default_config_hash: 7jnRXKLqcW6gnjmMquM4V9oAs1WJswPAZb5c3WLxwrc
+id: paragraph.three_column_equal.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: three_column_equal
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: spacing
+default_value_callback: ''
+settings: {  }
+field_type: list_string

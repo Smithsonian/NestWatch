@@ -1,0 +1,19 @@
+uuid: dbe5aade-d8ec-417d-be5c-715da9ca8fbd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qrkKdzmunb5kAP9R1Hfet0n6OlClLgqdomXHChfpCok
+name: Title
+format: title
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<em> <sub> <sup> <i> <u> <s> <br> <strong>'
+      filter_html_help: true
+      filter_html_nofollow: false

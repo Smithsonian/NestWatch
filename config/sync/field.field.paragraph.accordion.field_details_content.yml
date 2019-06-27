@@ -1,0 +1,31 @@
+uuid: b9c9ddfa-e44c-4f75-a2e1-7c33ce7f1606
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_details_content
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    caption_text: '0'
+    raw_html_css_js: '0'
+    restricted_html: '0'
+    title: '0'
+    full_html: '0'
+    plain_text: '0'
+id: paragraph.accordion.field_details_content
+field_name: field_details_content
+entity_type: paragraph
+bundle: accordion
+label: 'Details Content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

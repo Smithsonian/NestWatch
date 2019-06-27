@@ -1,0 +1,27 @@
+uuid: c451f33c-b5ec-4b15-9046-f9aebf2cb05f
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.social_media
+  module:
+    - system
+  theme:
+    - si_basetheme
+_core:
+  default_config_hash: BiCXdgnzYgn4LIwkijmzHSpkVBoCtOLH7IzVTF9b084
+id: socialmedia
+theme: si_basetheme
+region: footer_bottom_left
+weight: -14
+provider: null
+plugin: 'system_menu_block:social_media'
+settings:
+  id: 'system_menu_block:social_media'
+  label: 'Social Media'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

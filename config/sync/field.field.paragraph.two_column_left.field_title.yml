@@ -1,0 +1,31 @@
+uuid: 0e500ab7-6a78-47b5-b24e-10303b822aa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.two_column_left
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    title: title
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: bIj1jJsMcuovWmJUmxQp4vP9oUUKCWjQwzcuhMhkGD8
+id: paragraph.two_column_left.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: two_column_left
+label: 'Section Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

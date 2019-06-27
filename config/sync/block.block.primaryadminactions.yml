@@ -1,0 +1,20 @@
+uuid: c357e286-0a01-4b52-924e-58cb490f4df4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - si_admin
+_core:
+  default_config_hash: SQBRPjj83m3IFQ0xnbwjsN2NORH7ttNIoKucVYfUGsY
+id: primaryadminactions
+theme: si_admin
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

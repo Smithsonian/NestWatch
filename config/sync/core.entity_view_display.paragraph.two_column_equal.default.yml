@@ -1,0 +1,123 @@
+uuid: 6d52f47d-312a-41e6-98e8-68226c0cb7c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_equal.field_bg
+    - field.field.paragraph.two_column_equal.field_class
+    - field.field.paragraph.two_column_equal.field_column_one
+    - field.field.paragraph.two_column_equal.field_column_two
+    - field.field.paragraph.two_column_equal.field_layout
+    - field.field.paragraph.two_column_equal.field_spacing
+    - field.field.paragraph.two_column_equal.field_title
+    - paragraphs.paragraphs_type.two_column_equal
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - si_content
+third_party_settings:
+  field_layout:
+    id: layout_twocol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol
+        layout_settings: {  }
+        components:
+          7af6afe2-9819-42ae-b086-78e970537776:
+            uuid: 7af6afe2-9819-42ae-b086-78e970537776
+            region: top
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_equal:field_title'
+              formatter:
+                label: hidden
+                settings:
+                  link: entity
+                  wrapper: h1
+                  class: section-title
+                third_party_settings: {  }
+                type: text_title
+            additional: {  }
+            weight: 0
+          34849b89-a463-4cf6-aca4-301a82789aaf:
+            uuid: 34849b89-a463-4cf6-aca4-301a82789aaf
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_equal:field_column_one'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 0
+          25b2b965-303e-46cd-861b-307a1cc1169f:
+            uuid: 25b2b965-303e-46cd-861b-307a1cc1169f
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_equal:field_column_two'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: 1ZVoTIDtXh98PwYUax8InjNzizTukl0JASnu_g8XrV8
+id: paragraph.two_column_equal.default
+targetEntityType: paragraph
+bundle: two_column_equal
+mode: default
+content:
+  field_column_one:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: first
+  field_column_two:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: second
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link: entity
+      wrapper: h1
+      class: section-title
+    third_party_settings: {  }
+    type: text_title
+    region: top
+hidden:
+  field_bg: true
+  field_class: true
+  field_layout: true
+  field_spacing: true

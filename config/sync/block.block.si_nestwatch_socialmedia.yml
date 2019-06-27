@@ -1,0 +1,27 @@
+uuid: dc16581a-3128-4461-a514-34238a8de136
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.social_media
+  module:
+    - system
+  theme:
+    - si_nestwatch
+_core:
+  default_config_hash: BiCXdgnzYgn4LIwkijmzHSpkVBoCtOLH7IzVTF9b084
+id: si_nestwatch_socialmedia
+theme: si_nestwatch
+region: footer_bottom_left
+weight: -14
+provider: null
+plugin: 'system_menu_block:social_media'
+settings:
+  id: 'system_menu_block:social_media'
+  label: 'Social Media'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

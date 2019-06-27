@@ -1,0 +1,79 @@
+uuid: 6444a86c-5225-4cad-a7dd-098ce80fa420
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_bg_image
+    - field.field.node.landing_page.field_block_content
+    - field.field.node.landing_page.field_hero_type
+    - field.field.node.landing_page.field_image
+    - field.field.node.landing_page.field_share
+    - field.field.node.landing_page.field_show_title
+    - field.field.node.landing_page.field_slideshow
+    - field.field.node.landing_page.field_tagline
+    - field.field.node.landing_page.field_teaser
+    - node.type.landing_page
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          b28a9b09-7de4-4332-ad72-7235d6b6ebe9:
+            uuid: b28a9b09-7de4-4332-ad72-7235d6b6ebe9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:landing_page:field_block_content'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: OyNPjRw17kXycZu6hXEImDU0O77quKEU0TvPqAA7tdw
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  field_block_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_bg_image: true
+  field_hero_type: true
+  field_image: true
+  field_share: true
+  field_show_title: true
+  field_slideshow: true
+  field_tagline: true
+  field_teaser: true
+  links: true
+  node_link: true
+  title: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: 7bc7282f-2d57-4a63-bf03-0359afc1df3d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - si_admin
+_core:
+  default_config_hash: qtidtLgBgwwJD0Fxf5WAXWTnRU2cfEayyX5Q75D6vTw
+id: si_admin_local_tasks
+theme: si_admin
+region: header
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

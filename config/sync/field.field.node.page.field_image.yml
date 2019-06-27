@@ -1,0 +1,40 @@
+uuid: d1c24ff2-1592-41b0-b95c-89e5f81ef7eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.page
+  module:
+    - image
+_core:
+  default_config_hash: vX8PjJsTRzWeEHYUVi2LW0N-PG22LKaoq1EJh0id21E
+id: node.page.field_image
+field_name: field_image
+entity_type: node
+bundle: page
+label: Image
+description: ' Image should be at least 600x315 pixels, but 1200x630 or larger is preferred (up to 5MB). Stay close to a 1.91:1 aspect ratio to avoid cropping.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: teaser
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

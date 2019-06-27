@@ -1,0 +1,22 @@
+uuid: ee22f90a-259c-47da-8923-720bbda289b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - si_admin
+_core:
+  default_config_hash: fkaqkpsKZ7Ou1NkFC5HHa5s_DoXqZ-1Dm21KawFcX5E
+id: si_admin_content
+theme: si_admin
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

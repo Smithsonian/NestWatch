@@ -1,0 +1,35 @@
+uuid: 47676e8b-5ed0-418a-9c13-8dd86507633b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 9mJZaHsZy4aLT9IuYowM8FL-H6CdzPFi0IIuttTT7Tc
+id: paragraph.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: spacing
+      label: 'Spacing Top-Bottom'
+    -
+      value: spacing-extra
+      label: 'Spacing Extra Top-Bottom'
+    -
+      value: spacing-top
+      label: 'Spacing Top Only'
+    -
+      value: spacing-bottom
+      label: 'Spacing Bottom Only'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

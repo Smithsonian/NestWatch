@@ -1,0 +1,101 @@
+uuid: a866b543-f559-467f-9dd2-e887e54bb587
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_image
+    - field.field.paragraph.slide.field_text
+    - field.field.paragraph.slide.field_title
+    - field.field.paragraph.slide.field_url
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slide
+  module:
+    - field_group
+    - field_layout
+    - image_widget_crop
+    - imce
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_slide:
+      children:
+        - field_title
+        - field_text
+        - field_url
+        - field_image
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: true
+      label: Slide
+      region: content
+_core:
+  default_config_hash: zkSKm1vKVL5-IacVJyDkrLlDwQ2NzuEkMXb8rS3kVmc
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_image:
+    weight: 5
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - full_width_default
+        - full_width_large
+        - full_width_mobile
+        - full_width_tab
+        - slideshow_constrain
+      crop_types_required:
+        - full_width_default
+        - full_width_large
+        - full_width_mobile
+        - full_width_tab
+        - slideshow_constrain
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_widget_crop
+    region: content
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_url:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

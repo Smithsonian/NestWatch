@@ -1,0 +1,111 @@
+uuid: 9575a9d3-1b12-46ba-b3a0-ada00306f0d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_block.field_bg
+    - field.field.paragraph.text_block.field_class
+    - field.field.paragraph.text_block.field_layout
+    - field.field.paragraph.text_block.field_spacing
+    - field.field.paragraph.text_block.field_text_block
+    - field.field.paragraph.text_block.field_title
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - ds
+    - field_layout
+    - layout_builder
+    - si_content
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          270428ec-11f5-4e5e-9ed7-67cc83add029:
+            uuid: 270428ec-11f5-4e5e-9ed7-67cc83add029
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:text_block:field_title'
+              formatter:
+                label: hidden
+                settings:
+                  link: none
+                  wrapper: h2
+                  class: section-title
+                third_party_settings: {  }
+                type: text_title
+            additional: {  }
+            weight: 0
+          08cfcc1c-69ba-4963-a982-0f40df4c06f7:
+            uuid: 08cfcc1c-69ba-4963-a982-0f40df4c06f7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:text_block:field_text_block'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_text_block
+        - field_title
+_core:
+  default_config_hash: RAok7nXBpZiiwU7uNRTDxFYk9sQoEBLQ4n_5kllacyY
+id: paragraph.text_block.default
+targetEntityType: paragraph
+bundle: text_block
+mode: default
+content:
+  field_text_block:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link: none
+      wrapper: h2
+      class: section-title
+    third_party_settings: {  }
+    type: text_title
+    region: ds_content
+hidden:
+  field_bg: true
+  field_class: true
+  field_layout: true
+  field_spacing: true

@@ -1,0 +1,35 @@
+uuid: ab1b0cd8-1b23-4d98-a293-51533154f47f
+langcode: en
+status: false
+dependencies:
+  module:
+    - ctools
+    - system
+  theme:
+    - si_basetheme
+_core:
+  default_config_hash: 2indT6i04HPToQ_Czd-yEMBqOROO8opqHSFzM9mMfEQ
+id: si_basetheme_breadcrumbs
+theme: si_basetheme
+region: highlighted
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

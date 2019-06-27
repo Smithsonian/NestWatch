@@ -1,0 +1,23 @@
+uuid: 7ece0d18-8ae9-4680-8c52-94c34e93c3ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg
+    - paragraphs.paragraphs_type.two_column_equal
+  module:
+    - options
+_core:
+  default_config_hash: sDWgZhfQhSFsSuxWvgtaeqYcQbfiDgUuKVu9IE-W3XA
+id: paragraph.two_column_equal.field_bg
+field_name: field_bg
+entity_type: paragraph
+bundle: two_column_equal
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 17d58b3b-a9e7-4a24-98d2-b8c10d1a2f8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class
+    - paragraphs.paragraphs_type.two_column_equal
+_core:
+  default_config_hash: xVMi4z7wqSBW5fGasEsyDcZFWzN0v9976YQXoTgNCvs
+id: paragraph.two_column_equal.field_class
+field_name: field_class
+entity_type: paragraph
+bundle: two_column_equal
+label: 'Custom Class'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

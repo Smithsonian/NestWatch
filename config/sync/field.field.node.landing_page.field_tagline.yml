@@ -1,0 +1,21 @@
+uuid: 9cf52dec-7610-4756-9a50-5a1b18d14a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tagline
+    - node.type.landing_page
+_core:
+  default_config_hash: qL3atxfIFP2ffDQL1RMb1MfrhL4TEp6y5o4MsbadjT4
+id: node.landing_page.field_tagline
+field_name: field_tagline
+entity_type: node
+bundle: landing_page
+label: Tagline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

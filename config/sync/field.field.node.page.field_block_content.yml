@@ -1,0 +1,92 @@
+uuid: a73059f3-5b1e-42e2-8417-b84677729a84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block_content
+    - node.type.page
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.content_reference
+    - paragraphs.paragraphs_type.grid_layout
+    - paragraphs.paragraphs_type.slideshow
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.two_column_equal
+    - paragraphs.paragraphs_type.two_column_left
+    - paragraphs.paragraphs_type.two_column_right
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: kAhBTysBK9smcsAzD0E5PKyZ2zwskYuPxjITR_HP6uU
+id: node.page.field_block_content
+field_name: field_block_content
+entity_type: node
+bundle: page
+label: 'Block Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+      captioned_image: captioned_image
+      content_reference: content_reference
+      grid_layout: grid_layout
+      view_embed: view_embed
+      slideshow: slideshow
+      text_block: text_block
+      two_column_left: two_column_left
+      two_column_right: two_column_right
+      two_column_equal: two_column_equal
+      video: video
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: -29
+      captioned_image:
+        enabled: true
+        weight: -28
+      content_reference:
+        enabled: true
+        weight: -27
+      grid_layout:
+        enabled: true
+        weight: -26
+      slide:
+        weight: -25
+        enabled: false
+      view_embed:
+        enabled: true
+        weight: -24
+      slideshow:
+        enabled: true
+        weight: -23
+      text_block:
+        enabled: true
+        weight: -22
+      three_column_equal:
+        weight: -21
+        enabled: false
+      two_column_left:
+        enabled: true
+        weight: -20
+      three_column_25_50_25:
+        weight: -19
+        enabled: false
+      two_column_right:
+        enabled: true
+        weight: -18
+      two_column_equal:
+        enabled: true
+        weight: -17
+      video:
+        enabled: true
+        weight: -16
+field_type: entity_reference_revisions

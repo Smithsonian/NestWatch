@@ -1,0 +1,77 @@
+uuid: 89d1f925-318f-459c-ad4b-615cb62f153f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sidebar
+    - node.type.page
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.content_reference
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: bIXw66kXjRMUUqLCe0y5j2a7EhBzGdtUU4AG4m9fAL8
+id: node.page.field_sidebar
+field_name: field_sidebar
+entity_type: node
+bundle: page
+label: Sidebar
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      content_reference: content_reference
+      text_block: text_block
+      video: video
+      view_embed: view_embed
+    target_bundles_drag_drop:
+      captioned_image:
+        enabled: true
+        weight: 14
+      content_reference:
+        enabled: true
+        weight: 15
+      grid_layout:
+        weight: 16
+        enabled: false
+      slide:
+        weight: 17
+        enabled: false
+      slideshow:
+        weight: 18
+        enabled: false
+      text_block:
+        enabled: true
+        weight: 19
+      three_column_25_50_25:
+        weight: 20
+        enabled: false
+      three_column_equal:
+        weight: 21
+        enabled: false
+      two_column_equal:
+        weight: 22
+        enabled: false
+      two_column_left:
+        weight: 23
+        enabled: false
+      two_column_right:
+        weight: 24
+        enabled: false
+      video:
+        enabled: true
+        weight: 25
+      view_embed:
+        enabled: true
+        weight: 26
+field_type: entity_reference_revisions

@@ -1,0 +1,23 @@
+uuid: 105c6ae1-3019-45b0-a4a7-6fe406994169
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - options
+_core:
+  default_config_hash: Uyv5SdqVCx0-J332AnKUETOglbKIOVUy7HBOLrUUuh4
+id: paragraph.view_embed.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: view_embed
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

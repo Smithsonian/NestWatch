@@ -1,0 +1,22 @@
+uuid: 32e01a13-7834-4e13-8e3c-abcdb264f2e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - si_nestwatch
+_core:
+  default_config_hash: FfHFArhHSMppUSb_-c0lDGzgkXWKjfotTJODxtzK6HA
+id: si_nestwatch_help
+theme: si_nestwatch
+region: highlighted
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

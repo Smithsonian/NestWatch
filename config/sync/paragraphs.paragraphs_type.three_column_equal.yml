@@ -1,0 +1,11 @@
+uuid: 93e7c6f6-25f5-49e2-a082-2132769f1ee6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0FhGXhjYPltAdPVaCMqCxWbPWTSIoF4mKk9Blv5XFdk
+id: three_column_equal
+label: 'Three Column Equal'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

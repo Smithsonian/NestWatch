@@ -1,0 +1,29 @@
+uuid: dacdddc3-f782-40dd-a3d1-d3bbd9720f15
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: AWNERBhIAde0Zb-IYJZwZ7rdK06IHJLcf2M1XvsKMlM
+id: node.field_hero_type
+field_name: field_hero_type
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: Image
+    -
+      value: 2
+      label: Slideshow
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

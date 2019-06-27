@@ -1,0 +1,22 @@
+uuid: d416eba9-f811-4ea0-8e8e-6e74b0a695bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - si_nestwatch
+_core:
+  default_config_hash: AlYFCgmOmGOho0B0ryko6K6c-_lLu97RNF9KazSz71U
+id: si_nestwatch_messages
+theme: si_nestwatch
+region: highlighted
+weight: -11
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

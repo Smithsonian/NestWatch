@@ -1,0 +1,22 @@
+uuid: eac9ae92-e7b1-4157-b9a2-fe5f25eb7329
+langcode: en
+status: true
+dependencies:
+  theme:
+    - si_nestwatch
+_core:
+  default_config_hash: tpl62csf_0khGzfP5qCgHRXtgMG9aFBCQT0ldIU5GNw
+id: si_nestwatch_local_tasks
+theme: si_nestwatch
+region: highlighted
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 4d26472f-4e95-445b-ae48-f0e50b517ba7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - options
+_core:
+  default_config_hash: PNNZ4z-DApjU26GegUiSCikduJiFHl0WfqzAyC7dUVA
+id: paragraph.slideshow.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: slideshow
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

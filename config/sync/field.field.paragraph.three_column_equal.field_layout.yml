@@ -1,0 +1,23 @@
+uuid: 0a2be6f1-6c8d-45d1-8d5e-823d7687ab5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.three_column_equal
+  module:
+    - options
+_core:
+  default_config_hash: 086zNKZyuu3kPSt9vZe6xRr-RM6vmjFcnH7M5GSVcD0
+id: paragraph.three_column_equal.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: three_column_equal
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

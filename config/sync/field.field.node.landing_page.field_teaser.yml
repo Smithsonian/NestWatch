@@ -1,0 +1,32 @@
+uuid: 9c4eda2f-d272-4ef8-8e5a-6925284419aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.landing_page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    restricted_html: restricted_html
+    basic_html: '0'
+    caption_text: '0'
+    title: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: drjbDmf6AyI4aaAEnzHkh9v-CDCkd_qREI0fiUgcJfA
+id: node.landing_page.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: landing_page
+label: Teaser
+description: 'A description that concisely summarizes the content. You should not re-use the title as the description or use this field to describe the general services provided by the website. [Maximum 200 characters.]'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

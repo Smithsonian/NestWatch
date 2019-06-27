@@ -1,0 +1,96 @@
+uuid: 039cf0fe-a9be-4444-9f6f-3ddbf6c0b987
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_layout
+    - field.field.paragraph.video.field_spacing
+    - field.field.paragraph.video.field_title
+    - field.field.paragraph.video.field_video_embed
+    - paragraphs.paragraphs_type.video
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - si_content
+    - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          0f5804c4-099c-4b14-8935-3f0bc31ac604:
+            uuid: 0f5804c4-099c-4b14-8935-3f0bc31ac604
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:video:field_title'
+              formatter:
+                label: hidden
+                settings:
+                  link: none
+                  wrapper: h2
+                  class: ''
+                third_party_settings: {  }
+                type: text_title
+            additional: {  }
+            weight: 0
+          e80010d4-430c-4cfd-b898-d54732430ebd:
+            uuid: e80010d4-430c-4cfd-b898-d54732430ebd
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:video:field_video_embed'
+              formatter:
+                label: hidden
+                settings:
+                  autoplay: true
+                  responsive: true
+                  width: 854
+                  height: 480
+                third_party_settings: {  }
+                type: video_embed_field_video
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: LBP5R5I_q7Lu3kQkBu9pTjapcxJNdJtzIuPmWsJ7Egk
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link: none
+      wrapper: h2
+      class: ''
+    third_party_settings: {  }
+    type: text_title
+    region: content
+  field_video_embed:
+    weight: 1
+    label: hidden
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden:
+  field_layout: true
+  field_spacing: true

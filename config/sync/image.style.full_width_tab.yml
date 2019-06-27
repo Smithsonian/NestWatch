@@ -1,0 +1,27 @@
+uuid: 1e5d99bb-3670-40d3-a303-8e47cb992bdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.full_width_tab
+  module:
+    - crop
+_core:
+  default_config_hash: z5BBYgSodeGaP1XZTsVUCwxvOpHsMF7dSqvlc5lIjfg
+name: full_width_tab
+label: 'Full Width Tab'
+effects:
+  abcf7dc2-b23a-4720-b227-dcef01fc6192:
+    uuid: abcf7dc2-b23a-4720-b227-dcef01fc6192
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: full_width_tab
+  c01cc46b-34cf-4390-be61-19a6e1ca0a57:
+    uuid: c01cc46b-34cf-4390-be61-19a6e1ca0a57
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 800
+      height: 450
+      anchor: center-center

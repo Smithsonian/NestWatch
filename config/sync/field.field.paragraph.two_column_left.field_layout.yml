@@ -1,0 +1,23 @@
+uuid: a9b82334-06a2-4c77-b4d3-3ee3faa72aec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.two_column_left
+  module:
+    - options
+_core:
+  default_config_hash: k4D459xDd5TJmHD4hRb9V_siEZy4tbA2P5XTg8M_3go
+id: paragraph.two_column_left.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: two_column_left
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

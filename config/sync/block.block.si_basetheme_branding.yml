@@ -1,0 +1,25 @@
+uuid: ee1a6440-7b49-4d63-97fa-9581b79c279c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - si_basetheme
+_core:
+  default_config_hash: 8mLL1ftCg-jK0R8DTWROJkWI3Cx5tuaRnO5vmOkpGqE
+id: si_basetheme_branding
+theme: si_basetheme
+region: branding
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

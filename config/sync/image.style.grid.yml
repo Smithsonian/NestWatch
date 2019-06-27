@@ -1,0 +1,27 @@
+uuid: 0a5a6fb1-b410-4b58-8e62-d38098b518ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.grid
+  module:
+    - crop
+_core:
+  default_config_hash: CtbtoZN6hctWSZvARS278AyF0Jf7T_qMl-s5qsoNQ80
+name: grid
+label: Grid
+effects:
+  2a6eb7fa-6c00-4eb5-882e-ee7919b7745b:
+    uuid: 2a6eb7fa-6c00-4eb5-882e-ee7919b7745b
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: grid
+  2136fc20-301f-4979-9d6b-73b23b897b54:
+    uuid: 2136fc20-301f-4979-9d6b-73b23b897b54
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 460
+      height: 345
+      anchor: center-center

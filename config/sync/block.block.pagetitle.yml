@@ -1,0 +1,20 @@
+uuid: 67fabc9d-1d70-4216-b3b7-0eb454963c6e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - si_admin
+_core:
+  default_config_hash: KzmOFXUTIUNLc5KDOe2nrVj9PrtKEGJotEmJHrUGsTQ
+id: pagetitle
+theme: si_admin
+region: header
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

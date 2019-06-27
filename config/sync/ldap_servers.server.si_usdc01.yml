@@ -1,0 +1,42 @@
+uuid: 1d206f60-db1b-4779-acfd-ac01dc45fd9f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gzCRtNSLn0JJMN27YzL45hxbEXsVQkU8GCYW8vBvu5g
+id: si_usdc01
+label: SI-USDC01
+type: ad
+address: 'ldaps://SI-USDC01.US.SINET.SI.EDU'
+port: 636
+timeout: 10
+tls: false
+followrefs: null
+weight: null
+bind_method: service_account
+binddn: 'CN=Drupal\, OCIO,OU=Service Accounts,OU=Enterprise,DC=US,DC=SINET,DC=SI,DC=EDU'
+bindpw: drUp@1LD4Pbind
+basedn: 'OU=smithsonian,DC=us,DC=sinet,DC=si,DC=edu'
+user_attr: samaccountname
+account_name_attr: ''
+mail_attr: mail
+mail_template: ''
+picture_attr: ''
+unique_persistent_attr: samaccountname
+unique_persistent_attr_binary: false
+user_dn_expression: ''
+testing_drupal_username: ''
+testing_drupal_user_dn: ''
+grp_unused: false
+grp_object_cat: ''
+grp_nested: false
+grp_user_memb_attr_exists: false
+grp_user_memb_attr: ''
+grp_memb_attr: ''
+grp_memb_attr_match_user_attr: ''
+grp_derive_from_dn: '0'
+grp_derive_from_dn_attr: ''
+grp_test_grp_dn: ''
+grp_test_grp_dn_writeable: ''
+search_pagination: false
+search_page_size: null

@@ -1,0 +1,11 @@
+uuid: bc114124-ad76-4470-9423-08ffa3f94ed1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wxDINMjzfHzg5zMOX1eRnBLKwQCpE-XsF5YzULkzsyA
+id: two_column_equal
+label: 'Two Column Equal'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

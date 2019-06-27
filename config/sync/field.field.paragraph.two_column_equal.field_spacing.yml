@@ -1,0 +1,23 @@
+uuid: 18a40a63-808c-49d7-9425-9a31c1999b62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.two_column_equal
+  module:
+    - options
+_core:
+  default_config_hash: 9oOQx_ri8dvLK8r39joLmRrZ61ngghHhmKgDvANQ-2A
+id: paragraph.two_column_equal.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: two_column_equal
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

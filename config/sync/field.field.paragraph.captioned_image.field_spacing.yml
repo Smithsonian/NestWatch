@@ -1,0 +1,23 @@
+uuid: dd1736f6-6b86-405e-a85f-73e8e78b8282
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.captioned_image
+  module:
+    - options
+_core:
+  default_config_hash: 9YXxy5aePdNw0KfbcFUsOdPSjmRtJ-U_qDcoPl4ryuA
+id: paragraph.captioned_image.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: captioned_image
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

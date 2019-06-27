@@ -1,0 +1,25 @@
+uuid: f2b951d9-9564-4652-adfc-d7fb8d627d18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_share
+    - node.type.landing_page
+_core:
+  default_config_hash: wAq-oak7OgGAMEpKCR7mVvbVd10iqfnV9K1tYg_tTgE
+id: node.landing_page.field_share
+field_name: field_share
+entity_type: node
+bundle: landing_page
+label: 'Share Buttons'
+description: 'Add social media share buttons to the page.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

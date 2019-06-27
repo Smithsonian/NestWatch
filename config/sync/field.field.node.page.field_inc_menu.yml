@@ -1,0 +1,25 @@
+uuid: 9fddf8a7-3e52-432b-b01c-3de76e6e6e3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inc_menu
+    - node.type.page
+_core:
+  default_config_hash: 3GJIPNlnt9dgL-XqFSk62nNjtcvfbbKXs7CQO3tW17o
+id: node.page.field_inc_menu
+field_name: field_inc_menu
+entity_type: node
+bundle: page
+label: 'Include Side Menu'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

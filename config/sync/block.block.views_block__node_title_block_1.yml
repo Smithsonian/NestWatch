@@ -1,0 +1,35 @@
+uuid: 3f4b14f0-b534-4f99-9198-b2293d98702b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.node_title
+  module:
+    - ctools
+    - views
+  theme:
+    - si_basetheme
+_core:
+  default_config_hash: jGnRgyWSV-AX8au-kItJYMI7NB7a1-ONjVVIWmzgMaU
+id: views_block__node_title_block_1
+theme: si_basetheme
+region: highlighted
+weight: -5
+provider: null
+plugin: 'views_block:node_title-block_1'
+settings:
+  id: 'views_block:node_title-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

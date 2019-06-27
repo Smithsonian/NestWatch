@@ -1,0 +1,23 @@
+uuid: a0a67f55-d2b1-46e7-9219-680ff393fc70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - options
+_core:
+  default_config_hash: X6deHUY2N8X93KaY4gJ78CTvxZ_I6RhvOmCG9ohErH4
+id: paragraph.slideshow.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: slideshow
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

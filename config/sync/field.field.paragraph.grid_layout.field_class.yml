@@ -1,0 +1,21 @@
+uuid: 412bdbe9-b7c1-4d45-a77d-f4b6c175ba46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class
+    - paragraphs.paragraphs_type.grid_layout
+_core:
+  default_config_hash: q4yRLuG7-xkemxpqzThTzrJ8-NOQtlJoSQ5T525OWVo
+id: paragraph.grid_layout.field_class
+field_name: field_class
+entity_type: paragraph
+bundle: grid_layout
+label: 'Custom Class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

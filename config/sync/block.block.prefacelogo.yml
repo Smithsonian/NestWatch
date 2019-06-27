@@ -1,0 +1,25 @@
+uuid: 992aa4b3-760c-4856-9043-de4ff00b834a
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:5ae5f830-ef7a-4c20-98e2-49ab5563fa90'
+  module:
+    - block_content
+  theme:
+    - si_basetheme
+id: prefacelogo
+theme: si_basetheme
+region: header_preface_left
+weight: -10
+provider: null
+plugin: 'block_content:5ae5f830-ef7a-4c20-98e2-49ab5563fa90'
+settings:
+  id: 'block_content:5ae5f830-ef7a-4c20-98e2-49ab5563fa90'
+  label: ''
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

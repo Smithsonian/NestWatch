@@ -1,0 +1,27 @@
+uuid: f4106fe7-77b6-4c04-a57a-3b5a53b00920
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_media
+  module:
+    - views
+  theme:
+    - si_basetheme
+_core:
+  default_config_hash: FtZ-8zuF2FnBMvISvTSRvKyrTyD_HHIjVu9nGP1St_0
+id: views_block__hero_media_block_1
+theme: si_basetheme
+region: highlighted
+weight: -8
+provider: null
+plugin: 'views_block:hero_media-block_1'
+settings:
+  id: 'views_block:hero_media-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

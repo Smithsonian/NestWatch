@@ -1,0 +1,48 @@
+uuid: ef8f16a5-5332-4a7f-98ea-af27da37bb30
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          ae5eeec5-7754-40f8-a0fc-43930454b858:
+            uuid: ae5eeec5-7754-40f8-a0fc-43930454b858
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:user:user:user_mail'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: YaXn99Kp2yunP2U_k1q1L4U0-9IrTXwIwsm40H2x8C0
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_mail:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  member_for: true
+  name: true

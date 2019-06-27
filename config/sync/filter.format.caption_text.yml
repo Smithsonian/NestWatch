@@ -1,0 +1,19 @@
+uuid: fc75f3a4-fc9d-47a6-bf2a-fe1c142ed320
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 41n8g1j1s93NmvhCkT7m46L8jI4h9oSa7dXO_AwIMbM
+name: 'Caption Text'
+format: caption_text
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <b> <i> <sup> <sub> <u> <strike> <br>'
+      filter_html_help: true
+      filter_html_nofollow: false

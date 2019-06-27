@@ -1,0 +1,25 @@
+uuid: 99923813-e9d5-467e-8a92-1fff13ae0bf0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5ae5f830-ef7a-4c20-98e2-49ab5563fa90'
+  module:
+    - block_content
+  theme:
+    - si_nestwatch
+id: si_nestwatch_prefacelogo
+theme: si_nestwatch
+region: header_preface_left
+weight: -10
+provider: null
+plugin: 'block_content:5ae5f830-ef7a-4c20-98e2-49ab5563fa90'
+settings:
+  id: 'block_content:5ae5f830-ef7a-4c20-98e2-49ab5563fa90'
+  label: ''
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

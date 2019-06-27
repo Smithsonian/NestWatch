@@ -1,0 +1,306 @@
+uuid: e61f13d6-3812-4bb2-8944-a2f707e0b8a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_bg_image
+    - field.field.node.landing_page.field_block_content
+    - field.field.node.landing_page.field_hero_type
+    - field.field.node.landing_page.field_image
+    - field.field.node.landing_page.field_share
+    - field.field.node.landing_page.field_show_title
+    - field.field.node.landing_page.field_slideshow
+    - field.field.node.landing_page.field_tagline
+    - field.field.node.landing_page.field_teaser
+    - image.style.thumbnail
+    - node.type.landing_page
+  module:
+    - allowed_formats
+    - conditional_fields
+    - field_group
+    - field_layout
+    - image
+    - imce
+    - layout_discovery
+    - maxlength
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_wrapper:
+      children:
+        - group_main_content
+        - group_header
+        - group_teaser
+      parent_name: ''
+      weight: 14
+      format_type: tabs
+      format_settings:
+        label: Wrapper
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Wrapper
+      region: content
+    group_header:
+      children:
+        - field_show_title
+        - field_hero_type
+        - field_slideshow
+        - field_bg_image
+      parent_name: group_wrapper
+      weight: 7
+      format_type: tab
+      format_settings:
+        label: Header
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+        description: ''
+      label: Header
+      region: content
+    group_main_content:
+      children:
+        - title
+        - field_tagline
+        - field_share
+        - field_block_content
+      parent_name: group_wrapper
+      weight: 6
+      format_type: tab
+      format_settings:
+        label: 'Main Content'
+        formatter: closed
+        required_fields: true
+        id: ''
+        classes: ''
+        description: ''
+      label: 'Main Content'
+      region: content
+    group_teaser:
+      children:
+        - field_image
+        - field_teaser
+      parent_name: group_wrapper
+      weight: 8
+      format_type: tab
+      format_settings:
+        label: Teaser
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Teaser
+      region: content
+_core:
+  default_config_hash: tkmz0GONgkIsaKzi5Z9e7RJUdJNCSSU35nyeReL560A
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bg_image:
+    weight: 11
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      conditional_fields:
+        b4fe09a9-36c8-4c6b-b62a-dc790527de64:
+          dependee: field_hero_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '1'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_block_content:
+    type: entity_reference_paragraphs
+    weight: 10
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_hero_type:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_image:
+    weight: 9
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_share:
+    weight: 9
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_show_title:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings:
+      conditional_fields:
+        46dba281-0c61-4633-a2f8-d975c4af47ac:
+          dependee: field_hero_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '2'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+    type: boolean_checkbox
+    region: content
+  field_slideshow:
+    type: entity_reference_paragraphs
+    weight: 10
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: slideshow
+    third_party_settings:
+      conditional_fields:
+        89f0a72c-9b3e-4c8f-b406-f4d1d9c21c74:
+          dependee: field_hero_type
+          settings:
+            state: visible
+            condition: value
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '2'
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: landing_page
+    region: content
+  field_tagline:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_teaser:
+    weight: 10
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 200
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: true
+        maxlength_js_truncate_html: true
+      allowed_formats:
+        hide_help: '0'
+        hide_guidelines: '0'
+    type: text_textarea
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 8
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 12
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

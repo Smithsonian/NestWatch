@@ -1,0 +1,148 @@
+uuid: 2c5eeb9b-ac60-4340-b367-a41f656a65b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_bg_image
+    - field.field.node.landing_page.field_block_content
+    - field.field.node.landing_page.field_hero_type
+    - field.field.node.landing_page.field_image
+    - field.field.node.landing_page.field_share
+    - field.field.node.landing_page.field_show_title
+    - field.field.node.landing_page.field_slideshow
+    - field.field.node.landing_page.field_tagline
+    - field.field.node.landing_page.field_teaser
+    - node.type.landing_page
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - manage_display
+    - si_content
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_teaser
+    settings:
+      extra_classes: ''
+      teaser_type: teaser-featured
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_teaser
+        layout_settings:
+          extra_classes: ''
+          teaser_type: teaser-featured
+        components:
+          4707c5c0-85d8-4383-b914-c5bce0a72a33:
+            uuid: 4707c5c0-85d8-4383-b914-c5bce0a72a33
+            region: media
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:landing_page:field_image'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          17ce3a75-9c28-44d9-911e-254697380dff:
+            uuid: 17ce3a75-9c28-44d9-911e-254697380dff
+            region: title
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:landing_page:title'
+              formatter:
+                type: title
+                label: hidden
+                settings:
+                  tag: h2
+                  linked: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          51e42a5d-cd66-4954-9abc-8dc2d3509df9:
+            uuid: 51e42a5d-cd66-4954-9abc-8dc2d3509df9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:landing_page:field_teaser'
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 300
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          9e7615ba-739f-4e45-a709-8b7d0927cfc3:
+            uuid: 9e7615ba-739f-4e45-a709-8b7d0927cfc3
+            region: link
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:landing_page:node_link'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: VyRsVVkPm-xaPu9ltHHPJAMbb7LY6sHKyU-w4dH6gfA
+id: node.landing_page.teaser
+targetEntityType: node
+bundle: landing_page
+mode: teaser
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: media
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_teaser:
+    type: text_trimmed
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+  node_link:
+    weight: 3
+    region: link
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: title
+    weight: 1
+    region: title
+    label: hidden
+    settings:
+      tag: h2
+      linked: false
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_bg_image: true
+  field_block_content: true
+  field_hero_type: true
+  field_share: true
+  field_show_title: true
+  field_slideshow: true
+  field_tagline: true
+  links: true
+  uid: true

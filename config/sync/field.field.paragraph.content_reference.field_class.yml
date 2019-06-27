@@ -1,0 +1,21 @@
+uuid: f3ead53a-6e27-464e-affb-2e48d136f227
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class
+    - paragraphs.paragraphs_type.content_reference
+_core:
+  default_config_hash: l_9ZEsiNLmDd0c-Yonf2AwgOdTcC9fjMDrsk5BU1GYM
+id: paragraph.content_reference.field_class
+field_name: field_class
+entity_type: paragraph
+bundle: content_reference
+label: 'Custom Class'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

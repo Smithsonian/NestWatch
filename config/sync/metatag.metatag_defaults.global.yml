@@ -1,0 +1,24 @@
+uuid: 94d19683-7915-4794-a068-8c826df2cc65
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ThVn6YV8HpvY7QhDtWXq8Rjs-0X_ylidKRcTvVs_M-s
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | [site:name]'
+  canonical_url: '[current-page:url]'
+  apple_touch_icon: '[site:url]/themes/custom/si_basetheme/favicons/apple-touch-icon-60x60.png'
+  apple_touch_icon_76x76: '[site:url]/themes/custom/si_basetheme/favicons/apple-touch-icon-76x76.png'
+  apple_touch_icon_120x120: '[site:url]/themes/custom/si_basetheme/favicons/apple-touch-icon-120x120.png'
+  shortcut_icon: '[site:url]/themes/custom/si_basetheme/favicons/favicon.ico'
+  icon_96x96: '[site:url]/themes/custom/si_basetheme/favicons/favicon-96x96.png'
+  apple_touch_icon_152x152: '[site:url]/themes/custom/si_basetheme/favicons/apple-touch-icon-152x152.png'
+  mask-icon: '[site:url]/themes/custom/si_basetheme/favicons/safari-pinned-tab.svg'
+  apple_touch_icon_72x72: '[site:url]/themes/custom/si_basetheme/favicons/apple-touch-icon-72x72.png'
+  apple_touch_icon_180x180: '[site:url]/themes/custom/si_basetheme/favicons/apple-touch-icon-180x180.png'
+  icon_32x32: '[site:url]/themes/custom/si_basetheme/favicons/favicon-32x32.png'
+  apple_touch_icon_114x114: '[site:url]/themes/custom/si_basetheme/favicons/apple-touch-icon-114x114.png'
+  icon_16x16: '[site:url]/themes/custom/si_basetheme/favicons/favicon-16x16.png'
+  apple_touch_icon_144x144: '[site:url]/themes/custom/si_basetheme/favicons/apple-touch-icon-144x144.png'

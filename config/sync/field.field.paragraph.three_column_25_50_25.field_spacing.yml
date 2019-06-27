@@ -1,0 +1,25 @@
+uuid: 08858777-20b9-4602-83c8-71183893d0ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.three_column_25_50_25
+  module:
+    - options
+_core:
+  default_config_hash: WyRh3N4mZ5mfT92AtBoYhL6Hl5xjyx51HW6eRU9deuI
+id: paragraph.three_column_25_50_25.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: three_column_25_50_25
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: spacing
+default_value_callback: ''
+settings: {  }
+field_type: list_string

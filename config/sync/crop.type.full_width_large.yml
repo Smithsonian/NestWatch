@@ -1,0 +1,14 @@
+uuid: 2a8c1345-baa9-4623-b308-5632198983fc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: K3TUVzlcl-noc3EBmq7yn50wzvInqCqHHJ91OCYJhug
+label: 'Full Width Large'
+id: full_width_large
+description: ''
+aspect_ratio: '21:7'
+soft_limit_width: 2560
+soft_limit_height: 850
+hard_limit_width: null
+hard_limit_height: null

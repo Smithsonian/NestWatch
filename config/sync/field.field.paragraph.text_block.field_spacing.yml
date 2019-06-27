@@ -1,0 +1,25 @@
+uuid: b851351d-4304-4c2b-93f4-b641c4a1c9c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - options
+_core:
+  default_config_hash: B7jO15EbLwm-paqXH_F908ePkL5isuGRuAnT7rK4YMQ
+id: paragraph.text_block.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: text_block
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: spacing-bottom
+default_value_callback: ''
+settings: {  }
+field_type: list_string

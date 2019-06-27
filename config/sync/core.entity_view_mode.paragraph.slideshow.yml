@@ -1,0 +1,12 @@
+uuid: 01523bac-ebba-4152-9e14-18689e9c26c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: zBkAOjDl17gNEtUkd5COFQCg61TDIdSDpHcJnqkUzDc
+id: paragraph.slideshow
+label: Slideshow
+targetEntityType: paragraph
+cache: true

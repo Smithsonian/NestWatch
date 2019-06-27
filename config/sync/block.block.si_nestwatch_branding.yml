@@ -1,0 +1,25 @@
+uuid: e40d2d95-cbd4-449d-805f-8dc631e462d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - si_nestwatch
+_core:
+  default_config_hash: 8mLL1ftCg-jK0R8DTWROJkWI3Cx5tuaRnO5vmOkpGqE
+id: si_nestwatch_branding
+theme: si_nestwatch
+region: branding
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

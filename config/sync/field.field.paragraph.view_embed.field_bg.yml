@@ -1,0 +1,23 @@
+uuid: f15a6b4d-0b65-4e7a-81d9-c356ddb184f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - options
+_core:
+  default_config_hash: 4Mb2HGf17QsZPUgcO0_84r4DHtPrvfnzKhDckfDJxQU
+id: paragraph.view_embed.field_bg
+field_name: field_bg
+entity_type: paragraph
+bundle: view_embed
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

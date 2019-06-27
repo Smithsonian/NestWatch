@@ -1,0 +1,89 @@
+uuid: 53213652-ab0d-49b8-8a4f-8c4ad80792d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.content
+    - field.field.paragraph.content_reference.field_bg
+    - field.field.paragraph.content_reference.field_class
+    - field.field.paragraph.content_reference.field_content_ref
+    - field.field.paragraph.content_reference.field_layout
+    - field.field.paragraph.content_reference.field_spacing
+    - paragraphs.paragraphs_type.content_reference
+  module:
+    - entity_browser
+    - field_group
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_theme:
+      children:
+        - field_bg
+        - field_layout
+        - field_spacing
+        - field_class
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Theme
+      region: content
+_core:
+  default_config_hash: rgZL1N-gpvD2Fd6YHBowUaV9Jxqpl0cdvZNdIU-O5M8
+id: paragraph.content_reference.default
+targetEntityType: paragraph
+bundle: content_reference
+mode: default
+content:
+  field_bg:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_class:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_content_ref:
+    weight: 0
+    settings:
+      entity_browser: content
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_layout:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_spacing:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

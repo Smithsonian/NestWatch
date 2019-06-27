@@ -1,0 +1,47 @@
+uuid: 5de03c92-a9a6-4a21-b248-e45d764af3d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_content
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.grid_layout
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Xja9QnfQGBU-NaSyulASExK1Yf82cImtOWYpBij0ia8
+id: paragraph.grid_layout.field_grid_content
+field_name: field_grid_content
+entity_type: paragraph
+bundle: grid_layout
+label: 'Grid Content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      text_block: text_block
+    target_bundles_drag_drop:
+      grid_layout:
+        weight: 5
+        enabled: false
+      captioned_image:
+        enabled: true
+        weight: 6
+      slide:
+        weight: 6
+        enabled: false
+      slideshow:
+        weight: 7
+        enabled: false
+      text_block:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

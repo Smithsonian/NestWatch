@@ -1,0 +1,11 @@
+uuid: 1aef1ff2-f21b-4052-9a0b-573ea3634179
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UNxPpQXTvUDLdjV9Xs9X2PE1F9urzbciK5iBGWpxyZc
+id: captioned_image
+label: 'Captioned Image'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

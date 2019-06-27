@@ -1,0 +1,31 @@
+uuid: b5469777-9dc9-4a4f-a222-a73689c07ded
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.captioned_image
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    restricted_html: restricted_html
+    basic_html: '0'
+    title: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: D-vsOmvCYnnHlH5d-ATbmyWU3PBTp4mDATqs2GCMsro
+id: paragraph.captioned_image.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: captioned_image
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

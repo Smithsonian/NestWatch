@@ -1,0 +1,14 @@
+uuid: 5171baf0-e954-4085-b940-7be9561b1880
+name: Nestwatch
+mail: OCIO_Web_Admin@si.edu
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

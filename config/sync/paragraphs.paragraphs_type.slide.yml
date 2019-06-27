@@ -1,0 +1,11 @@
+uuid: 47caa9f0-878a-43e1-8aab-343cce0cb7c5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gBJlk0udRjSXODG_c6OT3A9fwKQVCD1cpAfxgaUKM6I
+id: slide
+label: Slide
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

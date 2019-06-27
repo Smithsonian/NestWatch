@@ -1,0 +1,21 @@
+uuid: b851d225-c601-49b6-a81b-1cc260b0dbb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class
+    - paragraphs.paragraphs_type.three_column_equal
+_core:
+  default_config_hash: EXWe8by6A7e4i3ZHrXJPOGNFXoqxF0A0WEGfjYLRClA
+id: paragraph.three_column_equal.field_class
+field_name: field_class
+entity_type: paragraph
+bundle: three_column_equal
+label: 'Custom Class'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

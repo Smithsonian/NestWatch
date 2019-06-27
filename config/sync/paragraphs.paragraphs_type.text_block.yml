@@ -1,0 +1,11 @@
+uuid: 849e9b48-f087-45c6-af2f-a001fda04db3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7753H3sgKcLIMVHalCSZZCj-ZyyKGGEpt-Wcte5XvWI
+id: text_block
+label: 'Text Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

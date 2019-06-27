@@ -1,0 +1,32 @@
+uuid: badc54c7-001f-4d39-8737-48c6e557d14f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.video
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    title: title
+    basic_html: '0'
+    caption_text: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: OQqeLe6abGBVW8R0Gxi3onbmAAkDPYU_1KGoDlVPSSk
+id: paragraph.video.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: video
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

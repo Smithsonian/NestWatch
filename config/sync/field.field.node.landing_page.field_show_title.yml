@@ -1,0 +1,25 @@
+uuid: 0c5ad5f1-cf4c-4440-80cd-bea5b5e0680d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_title
+    - node.type.landing_page
+_core:
+  default_config_hash: rzGyQDf6dsUue7UPMR0mVlcFpDlhzrto8bu9nvQ0p_Y
+id: node.landing_page.field_show_title
+field_name: field_show_title
+entity_type: node
+bundle: landing_page
+label: 'Show Title?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

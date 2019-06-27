@@ -1,0 +1,24 @@
+drupalAcctProvisionServer: si_usdc01
+ldapEntryProvisionServer: null
+drupalAcctProvisionTriggers:
+  drupal_on_login: drupal_on_login
+  drupal_on_update_create: drupal_on_update_create
+ldapEntryProvisionTriggers:
+  ldap_on_update_create: '0'
+  ldap_on_login: '0'
+  ldap_on_delete: '0'
+  drupal_on_manual_creation: '0'
+userUpdateCronQuery: none
+userUpdateCronInterval: monthly
+orphanedDrupalAcctBehavior: user_cancel_block
+orphanedCheckQty: 100
+orphanedAccountCheckInterval: weekly
+userConflictResolve: resolve
+manualAccountConflict: conflict_reject
+acctCreation: ldap_behaviour
+ldapUserSyncMappings:
+  drupal: {  }
+  ldap: {  }
+disableAdminPasswordField: false
+_core:
+  default_config_hash: fDEnfeYMXFRaZWfm2HOx40tpWLBDq7ZwyfrXEIejbvc

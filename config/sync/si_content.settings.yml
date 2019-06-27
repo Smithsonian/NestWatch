@@ -1,0 +1,10 @@
+paragraph_classes:
+  field_bg: field_bg
+  field_class: field_class
+  field_layout: field_layout
+  field_spacing: field_spacing
+  field_column: field_column
+bg_field: field_bg
+spacing_field: field_spacing
+_core:
+  default_config_hash: ThgNxPGAc5JO-t_O7HKf1B7izbBTlZlxI7-_r4rE7qg

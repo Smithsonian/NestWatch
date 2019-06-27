@@ -1,0 +1,11 @@
+uuid: 022b35bd-0d05-4528-a5ec-aa2f8cd0e43f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b0g8dZYJMHfB1FSRFwTXFeSL6DXRHnOqguRF93QfmVg
+id: three_column_25_50_25
+label: 'Three Column 25/50/25'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

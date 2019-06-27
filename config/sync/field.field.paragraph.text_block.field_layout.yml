@@ -1,0 +1,23 @@
+uuid: 15881e9e-d737-4a63-ba8f-22005d1ac871
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - options
+_core:
+  default_config_hash: 3OEFv0a0lWCEuYiBA2AI-SAiZmFNwF8t61dm-YU4K_0
+id: paragraph.text_block.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: text_block
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

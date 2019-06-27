@@ -1,0 +1,135 @@
+uuid: f1e66ce5-905d-43b6-8ab8-4bfb4e940d7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.captioned_image.field_bg
+    - field.field.paragraph.captioned_image.field_image
+    - field.field.paragraph.captioned_image.field_layout
+    - field.field.paragraph.captioned_image.field_spacing
+    - field.field.paragraph.captioned_image.field_text
+    - field.field.paragraph.captioned_image.field_title
+    - field.field.paragraph.captioned_image.field_url
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.captioned_image
+  module:
+    - allowed_formats
+    - field_group
+    - field_layout
+    - image_widget_crop
+    - imce
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_theme:
+      children:
+        - field_image
+        - field_title
+        - field_text
+        - field_url
+        - group_theme_caption_image_
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Captioned Image'
+      region: content
+    group_theme_caption_image_:
+      children:
+        - field_spacing
+        - field_bg
+        - field_layout
+      parent_name: group_theme
+      weight: 7
+      format_type: details
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: Theme
+      region: content
+_core:
+  default_config_hash: nrDRrY4V9QpVh6f-uR1JRKNGDYt6FWeu60CkmMXZ0mY
+id: paragraph.captioned_image.default
+targetEntityType: paragraph
+bundle: captioned_image
+mode: default
+content:
+  field_bg:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_image:
+    weight: 3
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - grid
+      crop_types_required:
+        - grid
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_widget_crop
+    region: content
+  field_layout:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_spacing:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_text:
+    weight: 5
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '0'
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_url:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

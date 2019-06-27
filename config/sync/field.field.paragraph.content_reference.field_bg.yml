@@ -1,0 +1,23 @@
+uuid: 752ef504-f23c-41fc-808b-3776e81667d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg
+    - paragraphs.paragraphs_type.content_reference
+  module:
+    - options
+_core:
+  default_config_hash: WMDc3YXZhcJl9L3KTPfwYBgdl46m6VcUrZjYlGPxxsU
+id: paragraph.content_reference.field_bg
+field_name: field_bg
+entity_type: paragraph
+bundle: content_reference
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

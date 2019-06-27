@@ -1,0 +1,22 @@
+uuid: 4504f35f-8858-48a0-becc-e24af48d6c8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - si_admin
+_core:
+  default_config_hash: Y_nuI7X0h928vbkjbFn7G9WJGgF1j84Xe8t2SYc8o9I
+id: si_admin_help
+theme: si_admin
+region: highlighted
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

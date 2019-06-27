@@ -1,0 +1,68 @@
+uuid: 24b4930c-f84b-4773-bfdf-2af303f1269e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_two
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.grid_layout
+    - paragraphs.paragraphs_type.slide
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.three_column_25_50_25
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: hZH7f5FXmGppKGNyX8hDDgKQDRicMALr_xIujswPqgc
+id: paragraph.three_column_25_50_25.field_column_two
+field_name: field_column_two
+entity_type: paragraph
+bundle: three_column_25_50_25
+label: 'Middle Column'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      grid_layout: grid_layout
+      slide: slide
+      text_block: text_block
+      view_embed: view_embed
+    target_bundles_drag_drop:
+      captioned_image:
+        enabled: true
+        weight: 11
+      grid_layout:
+        enabled: true
+        weight: 12
+      slide:
+        enabled: true
+        weight: 13
+      slideshow:
+        weight: 14
+        enabled: false
+      text_block:
+        enabled: true
+        weight: 15
+      three_column_25_50_25:
+        weight: 16
+        enabled: false
+      three_column_equal:
+        weight: 17
+        enabled: false
+      two_column_left:
+        weight: 18
+        enabled: false
+      two_column_right:
+        weight: 19
+        enabled: false
+      view_embed:
+        enabled: true
+        weight: 20
+field_type: entity_reference_revisions

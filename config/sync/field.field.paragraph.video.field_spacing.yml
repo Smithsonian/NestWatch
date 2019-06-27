@@ -1,0 +1,25 @@
+uuid: 79fded51-dfe4-4ca5-aee5-ad8576fdd2f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.video
+  module:
+    - options
+_core:
+  default_config_hash: O-fL-d_d4AYr4kHT9S7qswTApdI70z5SEVG4pLYPngE
+id: paragraph.video.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: video
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: spacing-bottom
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,56 @@
+uuid: 3e57f057-de67-4af4-ac77-b2ff6a627a82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_one
+    - paragraphs.paragraphs_type.captioned_image
+    - paragraphs.paragraphs_type.text_block
+    - paragraphs.paragraphs_type.three_column_equal
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: jRjiMyJZvaS0y6ODENyMH-F_9pfmGEyr-_NcBGU0d2Y
+id: paragraph.three_column_equal.field_column_one
+field_name: field_column_one
+entity_type: paragraph
+bundle: three_column_equal
+label: 'Column One'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      captioned_image: captioned_image
+      text_block: text_block
+    target_bundles_drag_drop:
+      captioned_image:
+        enabled: true
+        weight: 9
+      grid_layout:
+        weight: 10
+        enabled: false
+      slide:
+        weight: 11
+        enabled: false
+      slideshow:
+        weight: 12
+        enabled: false
+      text_block:
+        enabled: true
+        weight: 13
+      three_column_equal:
+        weight: 14
+        enabled: false
+      two_column_left:
+        weight: 15
+        enabled: false
+      two_column_right:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

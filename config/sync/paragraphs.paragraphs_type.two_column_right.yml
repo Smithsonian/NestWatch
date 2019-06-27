@@ -1,0 +1,11 @@
+uuid: b119bb21-0593-4d1c-8312-af0a1446b528
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NSwkwmMsq21lwf8cB9AvV8P_YcVG52aPzRH3HMAwV3Y
+id: two_column_right
+label: 'Two Column 60/40'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

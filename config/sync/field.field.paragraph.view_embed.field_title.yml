@@ -1,0 +1,31 @@
+uuid: d5312abd-42f1-4f8a-89b4-f094e02dc191
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    title: title
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: 3MLuIGQW2C-FW3aubkAj1SEs4d5wwXQmI7psn35f6h8
+id: paragraph.view_embed.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: view_embed
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

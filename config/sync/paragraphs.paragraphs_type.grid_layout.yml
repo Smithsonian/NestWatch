@@ -1,0 +1,11 @@
+uuid: ec798e9b-b4bc-4808-8612-6be2859d734b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lRzlNJDYa_8-QhBzu2DRbc7eeIUrXPhbYIG7IJhTTik
+id: grid_layout
+label: 'Grid Layout'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

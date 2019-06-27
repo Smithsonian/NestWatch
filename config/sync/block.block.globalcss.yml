@@ -1,0 +1,25 @@
+uuid: 87f03b06-87ee-4fb7-bb2a-135541e694bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:17e8fcdf-d60e-426f-a332-4f6eb2992433'
+  module:
+    - block_content
+  theme:
+    - si_basetheme
+id: globalcss
+theme: si_basetheme
+region: header_preface_left
+weight: 0
+provider: null
+plugin: 'block_content:17e8fcdf-d60e-426f-a332-4f6eb2992433'
+settings:
+  id: 'block_content:17e8fcdf-d60e-426f-a332-4f6eb2992433'
+  label: 'Global CSS'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

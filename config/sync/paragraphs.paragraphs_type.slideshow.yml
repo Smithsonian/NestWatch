@@ -1,0 +1,11 @@
+uuid: aad6a091-8ed9-49fb-825e-5dae449c116e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rsaKIAlsbXRAkSkgnFU8uuNuNc8VnaVc_WziTyoZNoo
+id: slideshow
+label: Slideshow
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

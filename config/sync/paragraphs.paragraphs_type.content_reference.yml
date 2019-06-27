@@ -1,0 +1,11 @@
+uuid: 402bd19e-e06b-43bf-baff-28a13c995342
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0xri-JdUZN8n7l18vbEBnyMVB-_1WX6lcaLD5TCzTTY
+id: content_reference
+label: 'Content Reference'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

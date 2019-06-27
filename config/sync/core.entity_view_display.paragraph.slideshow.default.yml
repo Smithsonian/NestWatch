@@ -1,0 +1,110 @@
+uuid: 6e9a07f7-6757-4c6d-827f-61b49feb73e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slideshow.field_class
+    - field.field.paragraph.slideshow.field_layout
+    - field.field.paragraph.slideshow.field_slide
+    - field.field.paragraph.slideshow.field_spacing
+    - field.field.paragraph.slideshow.field_title
+    - paragraphs.paragraphs_type.slideshow
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - si_content
+    - slick_entityreference
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          c5dbffa8-40cb-4f5e-bb26-f583f3f87b45:
+            uuid: c5dbffa8-40cb-4f5e-bb26-f583f3f87b45
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slideshow:field_title'
+              formatter:
+                label: hidden
+                settings:
+                  link: none
+                  wrapper: h2
+                  class: 'Section Title'
+                third_party_settings: {  }
+                type: text_title
+            additional: {  }
+            weight: 0
+          600c529a-5d13-4fcc-8a44-a3f653c496b5:
+            uuid: 600c529a-5d13-4fcc-8a44-a3f653c496b5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slideshow:field_slide'
+              formatter:
+                type: slick_entityreference_vanilla
+                label: hidden
+                settings:
+                  view_mode: default
+                  override: false
+                  overridables: {  }
+                  skin_arrows: ''
+                  skin_dots: ''
+                  cache: 0
+                  current_view_mode: ''
+                  optionset: default
+                  skin: ''
+                  style: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+_core:
+  default_config_hash: '-Cp488db8uIM-DWOpro6wqeX2feI3yhpm1ULk22sI_Y'
+id: paragraph.slideshow.default
+targetEntityType: paragraph
+bundle: slideshow
+mode: default
+content:
+  field_slide:
+    type: slick_entityreference_vanilla
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      override: false
+      overridables: {  }
+      skin_arrows: ''
+      skin_dots: ''
+      cache: 0
+      current_view_mode: ''
+      optionset: default
+      skin: ''
+      style: ''
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link: none
+      wrapper: h2
+      class: 'Section Title'
+    third_party_settings: {  }
+    type: text_title
+    region: content
+hidden:
+  field_class: true
+  field_layout: true
+  field_spacing: true

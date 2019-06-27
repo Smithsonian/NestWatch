@@ -1,0 +1,65 @@
+uuid: 6b677ba0-1981-482f-b70c-b715b0efa96c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_reference.field_bg
+    - field.field.paragraph.content_reference.field_class
+    - field.field.paragraph.content_reference.field_content_ref
+    - field.field.paragraph.content_reference.field_layout
+    - field.field.paragraph.content_reference.field_spacing
+    - paragraphs.paragraphs_type.content_reference
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          9c03bc3d-cab2-4b1d-9232-08221bae90fe:
+            uuid: 9c03bc3d-cab2-4b1d-9232-08221bae90fe
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:content_reference:field_content_ref'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: teaser
+                  link: false
+                third_party_settings: {  }
+                type: entity_reference_entity_view
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: e28P9nY5p9JUDqnVqOir29aimVUxAXUyJQbYYxUzRAg
+id: paragraph.content_reference.default
+targetEntityType: paragraph
+bundle: content_reference
+mode: default
+content:
+  field_content_ref:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_bg: true
+  field_class: true
+  field_layout: true
+  field_spacing: true

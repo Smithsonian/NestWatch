@@ -1,0 +1,23 @@
+uuid: f6217541-cfbf-45fe-ae33-a8dc815ce0c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.two_column_left
+  module:
+    - options
+_core:
+  default_config_hash: UBUIeEmuwvl8p7fROMw3re__ys4402WNbMevFvvL3hQ
+id: paragraph.two_column_left.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: two_column_left
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

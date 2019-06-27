@@ -1,0 +1,14 @@
+uuid: f6b86e7e-830f-4876-ac54-bfce14b0b287
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SYQJ0eZil1Ow4hnli6RU2W0_iNb8TcbtZP4Jb4rCp-A
+label: Grid
+id: grid
+description: ''
+aspect_ratio: '4:3'
+soft_limit_width: 460
+soft_limit_height: 345
+hard_limit_width: null
+hard_limit_height: null

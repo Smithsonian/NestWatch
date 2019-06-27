@@ -1,0 +1,40 @@
+uuid: c3f8f175-a014-4f2f-801b-73fdb4e191f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.title
+  module:
+    - ckeditor
+_core:
+  default_config_hash: XHj-m0X41X5_-4GCqV8oh50ykFcHm8gYCCw0Jaq84s0
+format: title
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+    linkit:
+      linkit_profile: ''
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

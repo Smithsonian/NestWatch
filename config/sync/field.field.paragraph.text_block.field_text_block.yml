@@ -1,0 +1,32 @@
+uuid: b5c35c08-59ca-4c49-b0e4-4d009a1ce6eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_block
+    - paragraphs.paragraphs_type.text_block
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    caption_text: '0'
+    restricted_html: '0'
+    title: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: gRUnfIeEM3xfO5kTK1L_50hmyiPDXza_YC3x8NfEi5A
+id: paragraph.text_block.field_text_block
+field_name: field_text_block
+entity_type: paragraph
+bundle: text_block
+label: 'Text Block'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

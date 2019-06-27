@@ -1,0 +1,32 @@
+uuid: 0b4a78ff-9caa-49d7-9488-07a7c03b6614
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.slide
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    caption_text: caption_text
+    basic_html: '0'
+    restricted_html: '0'
+    title: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: EajFLguzYbgcTP1slm40fekjawFlkrcq9pz75hJkPNA
+id: paragraph.slide.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: slide
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

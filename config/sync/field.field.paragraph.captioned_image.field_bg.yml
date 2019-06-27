@@ -1,0 +1,23 @@
+uuid: 169efa29-d773-4d00-8a8b-d6a8a4b923eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg
+    - paragraphs.paragraphs_type.captioned_image
+  module:
+    - options
+_core:
+  default_config_hash: yFwGjPLeR5FaaQAcYQEQRghWnx1oKR6Q5vtXCLYmK10
+id: paragraph.captioned_image.field_bg
+field_name: field_bg
+entity_type: paragraph
+bundle: captioned_image
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

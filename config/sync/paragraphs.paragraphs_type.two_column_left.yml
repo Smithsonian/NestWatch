@@ -1,0 +1,11 @@
+uuid: c9082993-206c-49e6-8b07-892e808af899
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7zyq1w6QaDb75uh6WirVcNIntkL1Rrj5Hko0Mv0ZlvY
+id: two_column_left
+label: 'Two Column 40/60'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

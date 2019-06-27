@@ -1,0 +1,22 @@
+uuid: 40574615-7545-4f23-ad6f-ea7bfec04ca0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - si_admin
+_core:
+  default_config_hash: 4LSYGed10cXi_K0189qm8aBsMegNCjEhznI3kw0HW0s
+id: si_admin_messages
+theme: si_admin
+region: highlighted
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 43ef317a-acba-4f09-99b8-5ef16242d46f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - si_basetheme
+_core:
+  default_config_hash: FfHFArhHSMppUSb_-c0lDGzgkXWKjfotTJODxtzK6HA
+id: si_basetheme_help
+theme: si_basetheme
+region: highlighted
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

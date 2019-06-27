@@ -1,0 +1,14 @@
+uuid: 75ed0e81-8e19-454b-9c0f-d90f1e4f1c2f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6gf9tP94d5Qlnecysgm9P0nHsMoVAQj5Kd1T4kxD544
+label: 'Full Width Tab'
+id: full_width_tab
+description: ''
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 800
+hard_limit_height: 450

@@ -1,0 +1,14 @@
+uuid: 9880ec77-0bf6-4fd0-a4c0-f983650e3451
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lxxh8u7cTb7HxXK65GyKaP7Vxw03_z9H617ioLxT_l0
+label: 'Full Width Mobile'
+id: full_width_mobile
+description: ''
+aspect_ratio: '4:3'
+soft_limit_width: 400
+soft_limit_height: 300
+hard_limit_width: null
+hard_limit_height: null

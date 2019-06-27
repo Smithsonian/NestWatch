@@ -1,0 +1,35 @@
+uuid: a21193a6-8586-4525-b702-524ffd8d41bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero_media
+  module:
+    - ctools
+    - views
+  theme:
+    - si_basetheme
+_core:
+  default_config_hash: p8hVDuFtKEJquwiURR2hSez1XPdFWPLJs9ZX9q6mshw
+id: views_block__hero_media_block_2
+theme: si_basetheme
+region: highlighted
+weight: -7
+provider: null
+plugin: 'views_block:hero_media-block_2'
+settings:
+  id: 'views_block:hero_media-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

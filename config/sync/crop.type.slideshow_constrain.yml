@@ -1,0 +1,14 @@
+uuid: 6cd0b12d-3149-498e-b0be-4763ad87ca72
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: g6tUXD5aPVqg5ApJB6PejSzWrwwE6BmH3h-nrG_0qlo
+label: 'Slideshow Constrain'
+id: slideshow_constrain
+description: ''
+aspect_ratio: '21:9'
+soft_limit_width: 1280
+soft_limit_height: 448
+hard_limit_width: null
+hard_limit_height: null

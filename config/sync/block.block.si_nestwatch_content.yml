@@ -1,0 +1,22 @@
+uuid: a6fae557-7476-4d40-99b3-d51e5ecbd0d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - si_nestwatch
+_core:
+  default_config_hash: WYcp60F26RYQxATwoiW86IRtp7SRZgv4fPztxJMyiMI
+id: si_nestwatch_content
+theme: si_nestwatch
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

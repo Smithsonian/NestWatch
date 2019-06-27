@@ -1,0 +1,12 @@
+uuid: 643f1c16-419e-47d2-999a-2e48bb171b60
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - evansbr@si.edu
+reply: ''
+weight: 0
+message: 'Thank you for sharing your thoughts!'
+redirect: ''

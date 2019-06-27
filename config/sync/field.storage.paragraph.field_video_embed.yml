@@ -1,0 +1,21 @@
+uuid: a971e30c-9897-4b26-ba27-35f51aaab62e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - video_embed_field
+_core:
+  default_config_hash: 7pnKv1o8OLIFTOvfreN2O4S13MgT8mqaaGDhUoC8z88
+id: paragraph.field_video_embed
+field_name: field_video_embed
+entity_type: paragraph
+type: video_embed_field
+settings: {  }
+module: video_embed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

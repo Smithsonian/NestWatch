@@ -1,0 +1,151 @@
+uuid: 06d46eb5-c45f-4a0b-b85b-a4886ff49ff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.slideshow
+    - field.field.paragraph.slide.field_image
+    - field.field.paragraph.slide.field_text
+    - field.field.paragraph.slide.field_title
+    - field.field.paragraph.slide.field_url
+    - paragraphs.paragraphs_type.slide
+    - responsive_image.styles.hero_or_banner
+  module:
+    - field_layout
+    - layout_builder
+    - link
+    - responsive_image
+    - si_content
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_teaser
+    settings:
+      extra_classes: full-width
+      teaser_type: teaser-long
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_teaser
+        layout_settings:
+          extra_classes: full-width
+          teaser_type: teaser-long
+        components:
+          9ba97598-ec76-4b30-9eac-3fd603f1ea22:
+            uuid: 9ba97598-ec76-4b30-9eac-3fd603f1ea22
+            region: media
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slide:field_image'
+              formatter:
+                label: hidden
+                settings:
+                  responsive_image_style: hero_or_banner
+                  image_link: ''
+                third_party_settings: {  }
+                type: responsive_image
+            additional: {  }
+            weight: 0
+          f2f03c47-1fc8-4ba4-a7db-0398c4018b2f:
+            uuid: f2f03c47-1fc8-4ba4-a7db-0398c4018b2f
+            region: title
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slide:field_title'
+              formatter:
+                type: text_title
+                label: hidden
+                settings:
+                  link: none
+                  wrapper: span
+                  class: h2
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          1ea5b628-4a87-4393-be08-f94e0da49301:
+            uuid: 1ea5b628-4a87-4393-be08-f94e0da49301
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slide:field_text'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          d162ae33-e661-42ce-8d05-58500f4155ed:
+            uuid: d162ae33-e661-42ce-8d05-58500f4155ed
+            region: link
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slide:field_url'
+              formatter:
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: D3E7qiJGZqsZEFXExAguedRculrOaR84cLv-vkrE3Yg
+id: paragraph.slide.slideshow
+targetEntityType: paragraph
+bundle: slide
+mode: slideshow
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: hero_or_banner
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: media
+  field_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    type: text_title
+    weight: 1
+    region: title
+    label: hidden
+    settings:
+      link: none
+      wrapper: span
+      class: h2
+    third_party_settings: {  }
+  field_url:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: link
+hidden: {  }

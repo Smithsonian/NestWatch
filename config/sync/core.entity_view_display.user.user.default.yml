@@ -1,0 +1,83 @@
+uuid: 4419dcd5-d943-455d-9ac6-d44c69880028
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          b3d8bed7-7c18-4b8c-b012-744e8479128a:
+            uuid: b3d8bed7-7c18-4b8c-b012-744e8479128a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:user:user:name'
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          7f2678ac-0221-407d-86fd-5c75e83f2041:
+            uuid: 7f2678ac-0221-407d-86fd-5c75e83f2041
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:user:user:member_for'
+            additional: {  }
+            weight: 1
+          ab65c526-dd6c-4da8-85a9-2f5000856f05:
+            uuid: ab65c526-dd6c-4da8-85a9-2f5000856f05
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:user:user:user_mail'
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+_core:
+  default_config_hash: k7QdXOvGL31S4lYwF7p9t8z4GzfeM9x2HHn-X4q1E-0
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_mail:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

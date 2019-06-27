@@ -1,0 +1,145 @@
+uuid: 34cfe0d2-d302-4d74-b149-b8888e118207
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_bg_image
+    - field.field.node.page.field_block_content
+    - field.field.node.page.field_image
+    - field.field.node.page.field_inc_menu
+    - field.field.node.page.field_share
+    - field.field.node.page.field_sidebar
+    - field.field.node.page.field_teaser
+    - node.type.page
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - manage_display
+    - si_content
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_teaser
+    settings:
+      extra_classes: ''
+      teaser_type: teaser-featured
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_teaser
+        layout_settings:
+          extra_classes: ''
+          teaser_type: teaser-featured
+        components:
+          1f7e7612-7d3a-4bf4-aa79-1188107fc33b:
+            uuid: 1f7e7612-7d3a-4bf4-aa79-1188107fc33b
+            region: media
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_image'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          ae1da15c-542e-4bf0-81f4-84d0cbcfc6b1:
+            uuid: ae1da15c-542e-4bf0-81f4-84d0cbcfc6b1
+            region: title
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:title'
+              formatter:
+                type: title
+                label: hidden
+                settings:
+                  tag: h2
+                  linked: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          1339ddcd-f5c5-4694-801a-8b138e0545d6:
+            uuid: 1339ddcd-f5c5-4694-801a-8b138e0545d6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_teaser'
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          810f714c-8093-4ec3-8000-d984b7b48ad7:
+            uuid: 810f714c-8093-4ec3-8000-d984b7b48ad7
+            region: link
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:page:node_link'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: zKEoI0RGRCG3xQBUa2V-Sz4fbImoNLDVM-EG0LMET6s
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: media
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_teaser:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  node_link:
+    weight: 3
+    region: link
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: title
+    weight: 1
+    region: title
+    label: hidden
+    settings:
+      tag: h2
+      linked: false
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  content_moderation_control: true
+  field_bg_image: true
+  field_block_content: true
+  field_inc_menu: true
+  field_share: true
+  field_sidebar: true
+  links: true
+  uid: true

@@ -1,0 +1,12 @@
+uuid: a38e3f6e-6096-4fb6-a3d1-eb2f78daa370
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: urmTJCfpY1QVW8j7CvhvnyYIdCUVSMqZ2sAfs06e4Io
+id: paragraph.sidebar
+label: Sidebar
+targetEntityType: paragraph
+cache: true

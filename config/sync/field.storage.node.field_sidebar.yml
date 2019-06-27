@@ -1,0 +1,23 @@
+uuid: 7e80d9e6-62e4-4a70-9ffe-6cf11d032681
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+_core:
+  default_config_hash: L6urlIislhDOceUIC3IF0ZjshSTltkSoNECI3kF26ZY
+id: node.field_sidebar
+field_name: field_sidebar
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

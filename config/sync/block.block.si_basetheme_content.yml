@@ -1,0 +1,22 @@
+uuid: f18ea7ec-12f1-4f24-8239-95fe3109209f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - si_basetheme
+_core:
+  default_config_hash: WYcp60F26RYQxATwoiW86IRtp7SRZgv4fPztxJMyiMI
+id: si_basetheme_content
+theme: si_basetheme
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

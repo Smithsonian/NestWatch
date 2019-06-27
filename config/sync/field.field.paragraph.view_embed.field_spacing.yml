@@ -1,0 +1,25 @@
+uuid: d0329cc1-4be7-4375-89db-f94f25241ffe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.view_embed
+  module:
+    - options
+_core:
+  default_config_hash: j5i6UO3_SX-LpLR6b2JZYLcLOh9j3SOZRdJTooZZs9o
+id: paragraph.view_embed.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: view_embed
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: spacing-bottom
+default_value_callback: ''
+settings: {  }
+field_type: list_string

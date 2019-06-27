@@ -1,0 +1,23 @@
+sids:
+  si_usdc01: si_usdc01
+authenticationMode: 2
+loginUIUsernameTxt: ''
+loginUIPasswordTxt: ''
+ldapUserHelpLinkUrl: ''
+ldapUserHelpLinkText: ''
+emailOption: 3
+emailUpdate: 1
+emailTemplateHandling: none
+emailTemplate: '@username@example.com'
+emailTemplateUsageResolveConflict: false
+emailTemplateUsageNeverUpdate: false
+emailTemplateUsagePromptUser: false
+emailTemplateUsageRedirectOnLogin: false
+emailTemplateUsagePromptRegex: '.*@example\\.com'
+passwordOption: 3
+allowOnlyIfTextInDn: {  }
+excludeIfTextInDn: {  }
+excludeIfNoAuthorizations: 0
+langcode: en
+_core:
+  default_config_hash: TOU317nqhhUZe1MO_DWw6VaiNgi9klV5Apn_Ly36uBc
