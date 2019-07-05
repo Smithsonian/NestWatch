@@ -1,0 +1,18 @@
+uuid: 64afdaef-6431-4d43-bc4d-64c9a56e73fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Foray
+type: foray
+description: 'Storing Foray Data'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

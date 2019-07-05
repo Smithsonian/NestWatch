@@ -26,85 +26,8 @@ third_party_settings:
       extra_classes: ''
       teaser_type: teaser-featured
   layout_builder:
-    enabled: true
-    sections:
-      -
-        layout_id: layout_teaser
-        layout_settings:
-          extra_classes: ''
-          teaser_type: teaser-featured
-        components:
-          b696b107-4ba3-4d2f-8e43-17f05302218f:
-            uuid: b696b107-4ba3-4d2f-8e43-17f05302218f
-            region: media
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:captioned_image:field_image'
-              formatter:
-                label: hidden
-                settings:
-                  image_style: grid
-                  image_link: ''
-                third_party_settings: {  }
-                type: image
-            additional: {  }
-            weight: 0
-          9348b97e-a6bd-4a1d-9bb4-070f0750a5e4:
-            uuid: 9348b97e-a6bd-4a1d-9bb4-070f0750a5e4
-            region: title
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:captioned_image:field_title'
-              formatter:
-                label: hidden
-                settings:
-                  link: field_url
-                  wrapper: span
-                  class: h3
-                third_party_settings: {  }
-                type: text_title
-            additional: {  }
-            weight: 0
-          ffcffe05-41d1-4970-a5f3-158df844e5b4:
-            uuid: ffcffe05-41d1-4970-a5f3-158df844e5b4
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:captioned_image:field_text'
-              formatter:
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-                type: text_default
-            additional: {  }
-            weight: 0
-          385d6ad1-4f23-40e9-9235-71bc2e5a1305:
-            uuid: 385d6ad1-4f23-40e9-9235-71bc2e5a1305
-            region: link
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:captioned_image:field_url'
-              formatter:
-                label: hidden
-                settings:
-                  trim_length: 80
-                  url_only: false
-                  url_plain: false
-                  rel: ''
-                  target: ''
-                third_party_settings: {  }
-                type: link
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: RAl4Yi_hUXId8O4zJSjkdF1QjdEtdz9w-SJjJ6EPrjw
 id: paragraph.captioned_image.default

@@ -1,0 +1,22 @@
+uuid: 997692bb-2c1a-4aa4-83b7-fe0646e5a2a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.foray
+  module:
+    - text
+id: node.foray.body
+field_name: body
+entity_type: node
+bundle: foray
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

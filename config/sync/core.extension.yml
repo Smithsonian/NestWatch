@@ -11,21 +11,27 @@ module:
   blazy: 0
   blazy_ui: 0
   block: 0
+  block_class: 0
   block_content: 0
   breakpoint: 0
   ckeditor: 0
   conditional_fields: 0
   config: 0
+  config_update: 0
+  config_update_ui: 0
   contact: 0
   content_moderation: 0
   contextual: 0
   crop: 0
   ctools: 0
+  ctools_block: 0
+  ctools_views: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
+  entity_browser_entity_form: 0
   entity_reference_revisions: 0
   externalauth: 0
   field: 0
@@ -39,6 +45,7 @@ module:
   image: 0
   image_widget_crop: 0
   imce: 0
+  inline_entity_form: 0
   inline_form_errors: 0
   layout_builder: 0
   layout_discovery: 0
@@ -86,11 +93,9 @@ module:
   views_ui: 0
   viewsreference: 0
   workflows: 0
-  ds: 1
   manage_display: 1
   menu_link_content: 1
   pathauto: 1
-  ds_extras: 2
   views: 10
   paragraphs: 11
   smithsonian: 1000
@@ -101,6 +106,7 @@ theme:
   si_admin: 0
   si_basetheme: 0
   si_nestwatch: 0
+  bartik: 0
 profile: smithsonian
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

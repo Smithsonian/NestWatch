@@ -1,0 +1,52 @@
+uuid: 24efa954-cb60-4fe8-bbab-e30cdf54af79
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media
+  module:
+    - views
+name: media_browser
+label: 'media browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  822b2c2e-2996-41df-9de3-38935bdf6d7c:
+    settings:
+      extensions: 'jpg jpeg png gif '
+      media_type: image
+      upload_location: 'public://'
+      multiple: 0
+      submit_text: Upload
+    uuid: 822b2c2e-2996-41df-9de3-38935bdf6d7c
+    weight: 1
+    label: 'Upload New Image'
+    id: media_image_upload
+  742bfe1d-61e7-4682-b572-8d48b6e3a5aa:
+    settings:
+      view: media
+      view_display: entity_browser_1
+      submit_text: 'Select Media to Add'
+      auto_select: true
+    uuid: 742bfe1d-61e7-4682-b572-8d48b6e3a5aa
+    weight: 2
+    label: 'Browse Media'
+    id: view
+  8b46a530-84d9-441c-9031-bf180a8da99a:
+    settings:
+      upload_location: 'public://'
+      multiple: false
+      submit_text: 'Select Video'
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp mp4 mov'
+    uuid: 8b46a530-84d9-441c-9031-bf180a8da99a
+    weight: 3
+    label: 'Add new Video'
+    id: upload

@@ -25,7 +25,7 @@
     "drupal/console": "^1.9",
     "drupal/core": "^8.6.0",
     "drupal/devel": "^2.0",
-    "drupal/ds": "^3.3",
+    "drupal/ds": "3.x-dev",
     "drupal/entity_browser": "^2.1",
     "drupal/fast_404": "^1.0@alpha",
     "drupal/features": "^3.8",
@@ -137,6 +137,9 @@
     "patches": {
       "drupal/paragraphs": {
         "Fix support for field_group module in combination with field_layout module patch": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch"
+      },
+      "drupal/ds": {
+        "Patch to address Value Conflict with Layout Builder": "https://www.drupal.org/files/issues/2018-08-17/2966959-14.patch"
       }
     }
   },

@@ -4,9 +4,9 @@ layout_page_wide_banner:
   category: 'NZP Layouts'
   default_region: content
   regions:
-    banner:
-      label: full width banner
-    content:
+    page_banner:
+      label: banner
+    page_content:
       label: content
 
 

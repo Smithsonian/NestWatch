@@ -1,0 +1,42 @@
+uuid: 862ecabc-9e97-4e02-9971-87b9d429530d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.foray.body
+    - node.type.foray
+  module:
+    - text
+    - user
+id: node.foray.default
+targetEntityType: node
+bundle: foray
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+  node_link:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: title
+    weight: -50
+    region: content
+    settings:
+      tag: h2
+      linked: true
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  uid: true

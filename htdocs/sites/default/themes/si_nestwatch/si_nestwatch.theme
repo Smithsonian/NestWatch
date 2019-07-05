@@ -152,20 +152,20 @@ function  si_nestwatch_theme_suggestions_field_alter(array &$suggestions, array 
 	$suggestions[] = 'field__'. $element['#entity_type'] .'__'. $element['#bundle'] .'__'. $element['#field_name'] .'__'. $element['#view_mode'];
 }
 
-/**
- * Implements hook_preprocess_page()
- */
-function si_nestwatch_preprocess_page(&$vars) {
-	$attributes = $vars['attributes'];
-	$attributes['id'] = 'page-wrapper';
-	$classes = isset($attributes['class']) ? $attributes['class'] : array();
-	$classes[] = empty($vars['page']['header_preface_left']) ? NULL : 'has-preface-left';
-	$classes[] = empty($vars['page']['header_preface_right']) ? NULL : 'has-preface-right';
-	$classes[] = empty($vars['page']['sidebar_first']) ? NULL : 'has-sidebar-first';
-	$classes[] = empty($vars['page']['sidebar_second']) ? NULL : 'has-sidebar-second';
-	$attributes['class'] = array_filter($classes);
-	$vars['attributes'] = $attributes;
-}
+// /**
+//  * Implements hook_preprocess_page()
+//  */
+// function si_nestwatch_preprocess_page(&$vars) {
+// 	$attributes = $vars['attributes'];
+// 	$attributes['id'] = 'page-wrapper';
+// 	$classes = isset($attributes['class']) ? $attributes['class'] : array();
+// 	$classes[] = empty($vars['page']['header_preface_left']) ? NULL : 'has-preface-left';
+// 	$classes[] = empty($vars['page']['header_preface_right']) ? NULL : 'has-preface-right';
+// 	$classes[] = empty($vars['page']['sidebar_first']) ? NULL : 'has-sidebar-first';
+// 	$classes[] = empty($vars['page']['sidebar_second']) ? NULL : 'has-sidebar-second';
+// 	$attributes['class'] = array_filter($classes);
+// 	$vars['attributes'] = $attributes;
+// }
 
 //function si_bastheme_preprocess_page_title(&$vars) {
 ////	if ($node = \Drupal::routeMatch()->getParameter('node')) {

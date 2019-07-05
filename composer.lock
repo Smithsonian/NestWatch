@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f42dd87ed2bec5d4b0e8dabbc2dd28c6",
+    "content-hash": "ff6f5a244319f0913a015b429b7cfa87",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3630,17 +3630,11 @@
         },
         {
             "name": "drupal/ds",
-            "version": "3.3.0",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ds.git",
-                "reference": "8.x-3.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.3.zip",
-                "reference": "8.x-3.3",
-                "shasum": "0f586997908d464c123b1ab8817cf13363666459"
+                "reference": "3ad3a1b1475562472fc3b37e2e4a966a295a1dfb"
             },
             "require": {
                 "drupal/core": "^8.6"
@@ -3655,11 +3649,11 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.3",
-                    "datestamp": "1551355085",
+                    "version": "8.x-3.3+13-dev",
+                    "datestamp": "1556524084",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -7344,12 +7338,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:Smithsonian/si_d8_content.git",
-                "reference": "6c33a6d08ac20ea51bc07a8edf93092b9b2e4442"
+                "reference": "35a56246cd35b7c9fbe77aaba761b7c8c34431ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Smithsonian/si_d8_content/zipball/6c33a6d08ac20ea51bc07a8edf93092b9b2e4442",
-                "reference": "6c33a6d08ac20ea51bc07a8edf93092b9b2e4442",
+                "url": "https://api.github.com/repos/Smithsonian/si_d8_content/zipball/35a56246cd35b7c9fbe77aaba761b7c8c34431ab",
+                "reference": "35a56246cd35b7c9fbe77aaba761b7c8c34431ab",
                 "shasum": ""
             },
             "type": "drupal-custom-module",
@@ -7358,7 +7352,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_content/tree/master",
                 "issues": "https://github.com/Smithsonian/si_d8_content/issues"
             },
-            "time": "2019-06-27 19:53:53"
+            "time": "2019-06-27 22:46:23"
         },
         {
             "name": "stack/builder",
@@ -11854,6 +11848,7 @@
     "stability-flags": {
         "drupal/captcha": 10,
         "drupal/conditional_fields": 15,
+        "drupal/ds": 20,
         "drupal/fast_404": 15,
         "drupal/field_group": 20,
         "drupal/inline_entity_form": 5,

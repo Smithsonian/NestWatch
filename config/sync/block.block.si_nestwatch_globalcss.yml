@@ -18,7 +18,7 @@ settings:
   id: 'block_content:17e8fcdf-d60e-426f-a332-4f6eb2992433'
   label: 'Global CSS'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

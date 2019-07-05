@@ -7,30 +7,12 @@ dependencies:
     - field.field.paragraph.accordion.field_details_summary
     - paragraphs.paragraphs_type.accordion
   module:
-    - ds
     - field_group
+    - layout_builder
     - text
+  theme:
+    - si_nestwatch
 third_party_settings:
-  ds:
-    layout:
-      id: ds_1col_wrapper
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      ds_content:
-        - group_details
-        - field_details_summary
-        - field_details_content
   field_group:
     group_details:
       children:
@@ -50,7 +32,49 @@ third_party_settings:
         effect: none
         speed: fast
       label: Details
-      region: hidden
+      region: content
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_accordion
+        layout_settings: {  }
+        components:
+          e2482d18-5253-415e-8279-5515e07c01a2:
+            uuid: e2482d18-5253-415e-8279-5515e07c01a2
+            region: summary
+            configuration:
+              id: 'field_block:paragraph:accordion:field_details_summary'
+              label: 'Details Summary'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          92b4f5a7-460b-4314-b3cd-6d7ce667a65d:
+            uuid: 92b4f5a7-460b-4314-b3cd-6d7ce667a65d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:accordion:field_details_content'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
 id: paragraph.accordion.default
 targetEntityType: paragraph
 bundle: accordion
@@ -62,41 +86,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: ds_content
+    region: content
   field_details_summary:
     weight: 1
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: summary
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
+    third_party_settings: {  }
     type: string
-    region: ds_content
+    region: content
 hidden: {  }

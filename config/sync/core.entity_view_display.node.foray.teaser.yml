@@ -1,0 +1,44 @@
+uuid: dad80014-d0e8-47c9-b2b6-f517dc850629
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.foray.body
+    - node.type.foray
+  module:
+    - text
+    - user
+id: node.foray.teaser
+targetEntityType: node
+bundle: foray
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+  node_link:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: title
+    weight: -50
+    region: content
+    settings:
+      tag: h2
+      linked: true
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  uid: true
