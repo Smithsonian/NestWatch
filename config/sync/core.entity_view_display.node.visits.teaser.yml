@@ -1,17 +1,27 @@
-uuid: bb4ed9c0-79e4-47f0-9627-351858d7f64e
+uuid: 5a063b6e-3c48-4ec4-89c6-89c6839dad69
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.sites
+    - field.field.node.visits.body
+    - node.type.visits
   module:
-    - manage_display
-id: node.sites.teaser
+    - text
+    - user
+id: node.visits.teaser
 targetEntityType: node
-bundle: sites
+bundle: visits
 mode: teaser
 content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     region: content
@@ -31,4 +41,5 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_point_cont: true
   uid: true

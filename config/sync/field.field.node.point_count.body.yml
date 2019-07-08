@@ -1,0 +1,22 @@
+uuid: f0dc1066-aefb-4919-b5b6-d7e7ea908826
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.point_count
+  module:
+    - text
+id: node.point_count.body
+field_name: body
+entity_type: node
+bundle: point_count
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

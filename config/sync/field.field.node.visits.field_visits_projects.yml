@@ -1,0 +1,29 @@
+uuid: 32975949-a817-488f-b934-403c9b40233e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visits_projects
+    - node.type.visits
+    - taxonomy.vocabulary.projects
+id: node.visits.field_visits_projects
+field_name: field_visits_projects
+entity_type: node
+bundle: visits
+label: Projects
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      projects: projects
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: c9880128-64f0-4f84-81d7-40d833eb09d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visits_notes
+    - node.type.visits
+id: node.visits.field_visits_notes
+field_name: field_visits_notes
+entity_type: node
+bundle: visits
+label: Notes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

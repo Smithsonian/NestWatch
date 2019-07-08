@@ -30,6 +30,7 @@
     "drupal/fast_404": "^1.0@alpha",
     "drupal/features": "^3.8",
     "drupal/field_group": "3.x-dev",
+    "drupal/geolocation": "^3.0",
     "drupal/google_tag": "^1.1",
     "drupal/image_widget_crop": "^2.2",
     "drupal/imce": "^1.7",

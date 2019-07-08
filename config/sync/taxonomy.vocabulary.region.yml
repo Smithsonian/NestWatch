@@ -1,0 +1,8 @@
+uuid: 53ff9258-777d-4425-abab-70f8a2c312ad
+langcode: en
+status: true
+dependencies: {  }
+name: Region
+vid: region
+description: 'List of Regions'
+weight: 0

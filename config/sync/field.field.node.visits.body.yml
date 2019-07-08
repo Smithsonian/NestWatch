@@ -1,16 +1,16 @@
-uuid: b20e138c-aabc-47cf-8974-fc7765ca998e
+uuid: 7e30f098-c7a9-4966-92fe-53c3d31a7399
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.sites
+    - node.type.visits
   module:
     - text
-id: node.sites.body
+id: node.visits.body
 field_name: body
 entity_type: node
-bundle: sites
+bundle: visits
 label: Body
 description: ''
 required: false

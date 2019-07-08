@@ -1,0 +1,18 @@
+uuid: e33806c9-a8f9-4c2e-8291-009712fae04c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sites
+id: node.sites.title
+field_name: title
+entity_type: node
+bundle: sites
+label: 'Site Id'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

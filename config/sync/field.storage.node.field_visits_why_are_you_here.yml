@@ -1,0 +1,30 @@
+uuid: e0c90edc-911b-4f1b-8d78-acd2006a59c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_visits_why_are_you_here
+field_name: field_visits_why_are_you_here
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Enter new data about my visit'
+    -
+      value: '2'
+      label: 'Proof or continue to enter data I collected on my visit'
+    -
+      value: '3'
+      label: 'I resighted a banded bird, but I was not on a banding or resighting visit'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 68d6d41b-8b69-492a-8d80-70aeab7ca7b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_site_status
+    - node.type.sites
+  module:
+    - options
+id: node.sites.field_site_status
+field_name: field_site_status
+entity_type: node
+bundle: sites
+label: 'Site Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: active
+default_value_callback: ''
+settings: {  }
+field_type: list_string

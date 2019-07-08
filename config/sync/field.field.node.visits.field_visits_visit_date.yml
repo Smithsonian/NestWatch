@@ -1,0 +1,24 @@
+uuid: d10fc298-cd50-417e-b166-e59cdeb6a1fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visits_visit_date
+    - node.type.visits
+  module:
+    - datetime
+id: node.visits.field_visits_visit_date
+field_name: field_visits_visit_date
+entity_type: node
+bundle: visits
+label: 'When did you collect your observations?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

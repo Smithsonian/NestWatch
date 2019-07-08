@@ -1,17 +1,25 @@
-uuid: bb4ed9c0-79e4-47f0-9627-351858d7f64e
+uuid: de0043dd-cb79-4bed-a58f-7ad1d4254105
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - node.type.sites
+    - field.field.node.point_count.body
+    - node.type.point_count
   module:
-    - manage_display
-id: node.sites.teaser
+    - text
+    - user
+id: node.point_count.default
 targetEntityType: node
-bundle: sites
-mode: teaser
+bundle: point_count
+mode: default
 content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     region: content

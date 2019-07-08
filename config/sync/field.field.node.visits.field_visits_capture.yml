@@ -1,0 +1,21 @@
+uuid: aec3136b-94b4-4aae-9606-7096734a0ce5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visits_capture
+    - node.type.visits
+id: node.visits.field_visits_capture
+field_name: field_visits_capture
+entity_type: node
+bundle: visits
+label: Capture
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference
