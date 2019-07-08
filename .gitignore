@@ -45,3 +45,6 @@ node_modules
 
 # Ignore Aquia Dev Desktop Files 
 /htdocs/sites/*.dd
+
+#ignore db-backups folder
+db-backups/
