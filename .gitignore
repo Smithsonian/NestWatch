@@ -2,8 +2,8 @@
 /drush/contrib/
 /vendor/
 /htdocs/core/
-/htdocs/modules
-/htdocs/themes
+/htdocs/modules/contrib
+/htdocs/themes/contrib
 /htdocs/profiles/contrib/
 /htdocs/libraries/superfish
 

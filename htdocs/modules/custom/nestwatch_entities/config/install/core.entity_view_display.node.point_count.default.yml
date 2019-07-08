@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.point_count.body
+        - node.type.point_count
+    module:
+        - text
+        - user
+id: node.point_count.default
+targetEntityType: node
+bundle: point_count
+mode: default
+content:
+    body:
+        label: hidden
+        type: text_default
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    links:
+        weight: 100
+hidden: {  }

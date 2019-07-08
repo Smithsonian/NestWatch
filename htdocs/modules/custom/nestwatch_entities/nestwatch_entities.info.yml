@@ -1,0 +1,5 @@
+name: 'Nestwatch Entities'
+type: module
+description: 'Module for managing all Nestwatch-related entities and data structures'
+core: 8.x
+package: 'Custom'
