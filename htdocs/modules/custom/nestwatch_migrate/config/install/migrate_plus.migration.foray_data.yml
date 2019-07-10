@@ -92,7 +92,7 @@ process:
       plugin: concat
       source: 
         - date
-        - startTime
+        - endTime
       delimiter: ' '
     -
       plugin: format_date
