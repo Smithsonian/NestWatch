@@ -17,9 +17,6 @@ dependencies:
     - paragraphs
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_theme:
       children:
@@ -52,6 +49,9 @@ third_party_settings:
         classes: grid-wrapper
       label: 'Grid Content'
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: sL4uXvsodIBMlrGL999D7FYvPyQNfTVMnvWqATOSVkU
 id: paragraph.grid_layout.default

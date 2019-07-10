@@ -1,0 +1,69 @@
+uuid: baaa3b51-f63d-4ec5-8d90-fd6b8ba142fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion_tab.field_layout
+    - field.field.paragraph.accordion_tab.field_spacing
+    - field.field.paragraph.accordion_tab.field_tab
+    - paragraphs.paragraphs_type.accordion_tab
+  module:
+    - field_group
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_theme:
+      children:
+        - field_layout
+        - field_spacing
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Theme
+      region: content
+_core:
+  default_config_hash: mcdyPn7uYaFK4orGdZlb2z4HbJcxF4o5SYNW4deczio
+id: paragraph.accordion_tab.default
+targetEntityType: paragraph
+bundle: accordion_tab
+mode: default
+content:
+  field_layout:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_spacing:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tab:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

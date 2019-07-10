@@ -1,0 +1,23 @@
+uuid: d4c918b5-11ce-4b68-95fa-ce52f00bf589
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.responsive_tabs
+  module:
+    - options
+_core:
+  default_config_hash: eGxWNydOlu9aO_e8fC1ev7Hzo8D5vJ9afBUsdjAPKU0
+id: paragraph.responsive_tabs.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: responsive_tabs
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

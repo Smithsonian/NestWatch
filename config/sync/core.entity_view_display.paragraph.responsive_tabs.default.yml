@@ -1,0 +1,39 @@
+uuid: 2b184396-b004-4700-a600-29545e99e615
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.responsive_tabs.field_layout
+    - field.field.paragraph.responsive_tabs.field_spacing
+    - field.field.paragraph.responsive_tabs.field_tab
+    - paragraphs.paragraphs_type.responsive_tabs
+  module:
+    - field_layout
+    - si_content
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: D8BhRFVf-Y05EtT2ZdBL9mAAKyK4ZRQC1mrvdeYYwJ0
+id: paragraph.responsive_tabs.default
+targetEntityType: paragraph
+bundle: responsive_tabs
+mode: default
+content:
+  field_tab:
+    weight: 0
+    label: above
+    settings:
+      tab_mode: responsiveTabs
+      view_mode: default
+      title_field: field_title
+      title_wrapper: div
+      expand_first: true
+      link: false
+    third_party_settings: {  }
+    type: si_tabs
+    region: content
+hidden:
+  field_layout: true
+  field_spacing: true

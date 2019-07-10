@@ -12,56 +12,15 @@ dependencies:
     - paragraphs.paragraphs_type.two_column_left
   module:
     - entity_reference_revisions
-    - field_layout
     - layout_builder
-    - si_content
 third_party_settings:
-  field_layout:
-    id: layout_twocol_left
-    settings:
-      extra_classes: ''
   layout_builder:
     enabled: true
     sections:
       -
-        layout_id: layout_twocol_left
-        layout_settings:
-          extra_classes: ''
-        components:
-          a673ce2b-3433-4175-a9b3-9de316a92f4f:
-            uuid: a673ce2b-3433-4175-a9b3-9de316a92f4f
-            region: aside
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:two_column_left:field_column_one'
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: hidden
-                settings:
-                  view_mode: sidebar
-                  link: ''
-                third_party_settings: {  }
-            additional: {  }
-            weight: 0
-          ccefcda9-99dd-461c-85ca-7f5ce7abd3ed:
-            uuid: ccefcda9-99dd-461c-85ca-7f5ce7abd3ed
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:two_column_left:field_column_two'
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: hidden
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-            additional: {  }
-            weight: 0
+        layout_id: layout_builder_blank
+        layout_settings: {  }
+        components: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: qcp1NmUPUqoN3zlZMRfS6aT5sAK9N_8Yb49BhDvQtvU

@@ -1,0 +1,11 @@
+uuid: 9613a094-5551-47f8-a607-c5af09b904bb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WTCbYu-TC8U5rz7afnDT-HlfQB7fJ7-RMi4ScU-ii5I
+id: accordion_tab
+label: 'Accordion Tab'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

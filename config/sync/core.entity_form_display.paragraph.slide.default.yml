@@ -18,9 +18,6 @@ dependencies:
     - link
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_slide:
       children:
@@ -38,6 +35,9 @@ third_party_settings:
         required_fields: true
       label: Slide
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: zkSKm1vKVL5-IacVJyDkrLlDwQ2NzuEkMXb8rS3kVmc
 id: paragraph.slide.default

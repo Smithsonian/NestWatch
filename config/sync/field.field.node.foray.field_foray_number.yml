@@ -1,0 +1,23 @@
+uuid: 39612889-0321-44c0-87dc-e6df25d8c239
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foray_number
+    - node.type.foray
+id: node.foray.field_foray_number
+field_name: field_foray_number
+entity_type: node
+bundle: foray
+label: 'Foray Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

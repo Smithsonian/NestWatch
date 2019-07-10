@@ -1,0 +1,22 @@
+uuid: 7762b6d6-47da-4a6c-a83b-289ca1b47d62
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: 9Me1kYtV1RrllnXPqkKb8k5xvadEV7ciLfUDvUD3UWk
+id: paragraph.field_tab
+field_name: field_tab
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

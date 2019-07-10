@@ -1,0 +1,39 @@
+uuid: 580bfe49-4df2-42fd-9a4e-bd8536ee17e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion_tab.field_layout
+    - field.field.paragraph.accordion_tab.field_spacing
+    - field.field.paragraph.accordion_tab.field_tab
+    - paragraphs.paragraphs_type.accordion_tab
+  module:
+    - field_layout
+    - si_content
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: 4iEeEU4FoiE82glz39DwnfWJ1JxtEGL7xjUh9ZIETm4
+id: paragraph.accordion_tab.default
+targetEntityType: paragraph
+bundle: accordion_tab
+mode: default
+content:
+  field_tab:
+    weight: 0
+    label: hidden
+    settings:
+      tab_mode: accordion
+      view_mode: default
+      title_field: field_title
+      title_wrapper: h3
+      expand_first: '1'
+      link: false
+    third_party_settings: {  }
+    type: si_tabs
+    region: content
+hidden:
+  field_layout: true
+  field_spacing: true

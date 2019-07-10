@@ -17,9 +17,6 @@ dependencies:
     - paragraphs
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_two_column_40_60:
       children:
@@ -53,6 +50,9 @@ third_party_settings:
         required_fields: true
       label: Theme
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 8Ou5ijXvf3aOXMtUEsoWt_HltR1ZKV_GF_RlMwEIPZg
 id: paragraph.two_column_left.default

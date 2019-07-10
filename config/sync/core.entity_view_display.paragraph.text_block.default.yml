@@ -11,14 +11,10 @@ dependencies:
     - field.field.paragraph.text_block.field_title
     - paragraphs.paragraphs_type.text_block
   module:
-    - field_layout
     - layout_builder
-    - si_content
+    - layout_discovery
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   layout_builder:
     enabled: true
     sections:
@@ -59,6 +55,21 @@ third_party_settings:
                 type: text_default
             additional: {  }
             weight: 1
+          927e6d94-e274-47b3-bca3-277264bb4058:
+            uuid: 927e6d94-e274-47b3-bca3-277264bb4058
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:text_block:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
 _core:
   default_config_hash: RAok7nXBpZiiwU7uNRTDxFYk9sQoEBLQ4n_5kllacyY
@@ -75,15 +86,12 @@ content:
     type: text_default
     region: ds_content
   field_title:
-    weight: 1
-    label: hidden
-    settings:
-      link: none
-      wrapper: h2
-      class: section-title
+    weight: 2
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: text_title
-    region: ds_content
+    type: text_default
+    region: content
 hidden:
   field_bg: true
   field_class: true

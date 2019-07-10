@@ -6,6 +6,9 @@ dependencies:
     - field.field.node.point_count.body
     - node.type.point_count
   module:
+    - content_moderation
+    - field_layout
+    - layout_discovery
     - path
     - text
 third_party_settings:

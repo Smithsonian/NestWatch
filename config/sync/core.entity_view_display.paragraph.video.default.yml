@@ -9,15 +9,11 @@ dependencies:
     - field.field.paragraph.video.field_video_embed
     - paragraphs.paragraphs_type.video
   module:
-    - field_layout
     - layout_builder
     - layout_discovery
-    - si_content
+    - text
     - video_embed_field
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   layout_builder:
     enabled: true
     sections:
@@ -62,6 +58,21 @@ third_party_settings:
                 type: video_embed_field_video
             additional: {  }
             weight: 1
+          ce7fde19-a13f-45ba-9e8c-edefb1051983:
+            uuid: ce7fde19-a13f-45ba-9e8c-edefb1051983
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:video:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
 _core:
   default_config_hash: LBP5R5I_q7Lu3kQkBu9pTjapcxJNdJtzIuPmWsJ7Egk
@@ -71,14 +82,11 @@ bundle: video
 mode: default
 content:
   field_title:
-    weight: 0
-    label: hidden
-    settings:
-      link: none
-      wrapper: h2
-      class: ''
+    weight: 2
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: text_title
+    type: text_default
     region: content
   field_video_embed:
     weight: 1

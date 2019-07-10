@@ -1,0 +1,23 @@
+uuid: 5067fdba-5651-4263-903e-13da1059d0b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.accordion_tab
+  module:
+    - options
+_core:
+  default_config_hash: ie2WwX-WNXcV8bokCjw62ZFZk7Jc9JI1-Q1pZl6Bl04
+id: paragraph.accordion_tab.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: accordion_tab
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

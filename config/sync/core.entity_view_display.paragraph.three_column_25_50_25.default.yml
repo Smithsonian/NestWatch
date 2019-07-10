@@ -14,14 +14,10 @@ dependencies:
     - paragraphs.paragraphs_type.three_column_25_50_25
   module:
     - entity_reference_revisions
-    - field_layout
     - layout_builder
     - layout_discovery
-    - si_content
+    - text
 third_party_settings:
-  field_layout:
-    id: layout_threecol_25_50_25
-    settings: {  }
   layout_builder:
     enabled: true
     sections:
@@ -98,6 +94,21 @@ third_party_settings:
                 type: entity_reference_revisions_entity_view
             additional: {  }
             weight: 0
+          65c0b351-6961-43ef-a9a5-f2dd1510ae1a:
+            uuid: 65c0b351-6961-43ef-a9a5-f2dd1510ae1a
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:three_column_25_50_25:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
 _core:
   default_config_hash: BZ3Cd3LG8JbvyOFhaRMyqMIkVPuvn2qsjJMCujviO4Q
@@ -134,15 +145,12 @@ content:
     type: entity_reference_revisions_entity_view
     region: first
   field_title:
-    weight: 0
-    label: hidden
-    settings:
-      link: none
-      wrapper: h2
-      class: ''
+    weight: 4
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: text_title
-    region: top
+    type: text_default
+    region: second
 hidden:
   field_bg: true
   field_class: true

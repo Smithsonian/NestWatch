@@ -13,15 +13,11 @@ dependencies:
     - paragraphs.paragraphs_type.three_column_equal
   module:
     - entity_reference_revisions
-    - field_layout
     - layout_builder
     - layout_discovery
     - options
     - text
 third_party_settings:
-  field_layout:
-    id: layout_threecol_33_34_33
-    settings: {  }
   layout_builder:
     enabled: true
     sections:

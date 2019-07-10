@@ -1,0 +1,23 @@
+uuid: fa5373d2-00e3-4eb6-87aa-cb1a912e03c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.accordion_tab
+  module:
+    - options
+_core:
+  default_config_hash: 2gWUVjhRYm2RHhUWggGy0SiFmLlRSuOPEeOvtpTb_Oo
+id: paragraph.accordion_tab.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: accordion_tab
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -11,72 +11,16 @@ dependencies:
     - paragraphs.paragraphs_type.two_column_right
   module:
     - entity_reference_revisions
-    - field_layout
     - layout_builder
-    - si_content
     - text
 third_party_settings:
-  field_layout:
-    id: layout_twocol_right
-    settings:
-      extra_classes: ''
   layout_builder:
     enabled: true
     sections:
       -
-        layout_id: layout_twocol_right
-        layout_settings:
-          extra_classes: ''
-        components:
-          b9b288ca-d3b3-44eb-8847-32c3de192d4e:
-            uuid: b9b288ca-d3b3-44eb-8847-32c3de192d4e
-            region: top
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:two_column_right:field_title'
-              formatter:
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-                type: text_default
-            additional: {  }
-            weight: 0
-          9ebc8767-ad30-434a-90b8-5078c7e9bfb2:
-            uuid: 9ebc8767-ad30-434a-90b8-5078c7e9bfb2
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:two_column_right:field_column_one'
-              formatter:
-                label: hidden
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-                type: entity_reference_revisions_entity_view
-            additional: {  }
-            weight: 0
-          a4e08ff8-f4b1-4516-83e4-91d68bbc1d64:
-            uuid: a4e08ff8-f4b1-4516-83e4-91d68bbc1d64
-            region: aside
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:two_column_right:field_column_two'
-              formatter:
-                label: hidden
-                settings:
-                  view_mode: sidebar
-                  link: ''
-                third_party_settings: {  }
-                type: entity_reference_revisions_entity_view
-            additional: {  }
-            weight: 0
+        layout_id: layout_builder_blank
+        layout_settings: {  }
+        components: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: cNmE3iVHail8XiiFnfgvS_uC6SbF-HLPNqoUIWoL5mo

@@ -10,15 +10,11 @@ dependencies:
     - field.field.paragraph.slideshow.field_title
     - paragraphs.paragraphs_type.slideshow
   module:
-    - field_layout
     - layout_builder
     - layout_discovery
-    - si_content
     - slick_entityreference
+    - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   layout_builder:
     enabled: true
     sections:
@@ -69,6 +65,21 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 1
+          1653f72b-19bb-4a1d-aade-f5e8d2e792e1:
+            uuid: 1653f72b-19bb-4a1d-aade-f5e8d2e792e1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slideshow:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
 _core:
   default_config_hash: '-Cp488db8uIM-DWOpro6wqeX2feI3yhpm1ULk22sI_Y'
@@ -95,14 +106,11 @@ content:
     third_party_settings: {  }
     region: content
   field_title:
-    weight: 0
-    label: hidden
-    settings:
-      link: none
-      wrapper: h2
-      class: 'Section Title'
+    weight: 2
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: text_title
+    type: text_default
     region: content
 hidden:
   field_class: true

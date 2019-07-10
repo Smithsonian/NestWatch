@@ -17,6 +17,7 @@ dependencies:
   module:
     - allowed_formats
     - conditional_fields
+    - content_moderation
     - field_group
     - field_layout
     - image
@@ -27,9 +28,6 @@ dependencies:
     - path
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_wrapper:
       children:
@@ -98,6 +96,9 @@ third_party_settings:
         classes: ''
       label: Teaser
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: tkmz0GONgkIsaKzi5Z9e7RJUdJNCSSU35nyeReL560A
 id: node.landing_page.default

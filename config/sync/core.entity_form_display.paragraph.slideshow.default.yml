@@ -16,9 +16,6 @@ dependencies:
     - paragraphs
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_slideshow:
       children:
@@ -50,6 +47,9 @@ third_party_settings:
         required_fields: true
       label: Theme
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: m04bcycohzFjn2Kg0DGIWRGwUKxD76-t4AqwtNMg4Oc
 id: paragraph.slideshow.default

@@ -14,7 +14,6 @@ dependencies:
     - node.type.page
   module:
     - entity_reference_revisions
-    - field_layout
     - layout_builder
     - manage_display
     - paragraphs
@@ -22,9 +21,6 @@ dependencies:
   theme:
     - si_nestwatch
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   layout_builder:
     enabled: true
     allow_custom: true

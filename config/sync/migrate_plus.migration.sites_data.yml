@@ -1,12 +1,10 @@
-uuid: 14454ab4-4fb2-4037-8699-16c7af4e1c16
+uuid: 2f0b5282-d2c1-42e9-9efd-b55c5b013515
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - nestwatch_migrate
-_core:
-  default_config_hash: dFmsWepRMT29fOlk6esUygmPCsANi0-ddbWqKLt1m5o
 id: sites_data
 class: null
 field_plugin_method: null

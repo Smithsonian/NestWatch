@@ -16,9 +16,6 @@ dependencies:
     - layout_discovery
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_text_block:
       children:
@@ -51,6 +48,9 @@ third_party_settings:
         required_fields: true
       label: Theme
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: naPxD7IQXijyy7yZICWl2v4XJHWTVy7zDEJD_WB70EU
 id: paragraph.text_block.default

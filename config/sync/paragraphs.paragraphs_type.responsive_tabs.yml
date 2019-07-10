@@ -1,0 +1,11 @@
+uuid: 65e40d6c-10c5-4b2b-8a60-b2e3474ae1b4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pcaQMdWR0y-dVm8nrfidTR3ucXpn5J0oeMP02K5nvzQ
+id: responsive_tabs
+label: 'Responsive Tabs'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

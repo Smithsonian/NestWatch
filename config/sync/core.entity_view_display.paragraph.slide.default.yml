@@ -10,97 +10,18 @@ dependencies:
     - paragraphs.paragraphs_type.slide
     - responsive_image.styles.slideshow_constrain
   module:
-    - field_layout
     - layout_builder
     - link
     - responsive_image
-    - si_content
     - text
 third_party_settings:
-  field_layout:
-    id: layout_teaser
-    settings:
-      extra_classes: ''
-      teaser_type: teaser-long
   layout_builder:
     enabled: true
     sections:
       -
-        layout_id: layout_teaser
-        layout_settings:
-          extra_classes: ''
-          teaser_type: teaser-long
-        components:
-          643b0bfa-4014-4d6d-9753-f7079d633471:
-            uuid: 643b0bfa-4014-4d6d-9753-f7079d633471
-            region: media
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:slide:field_image'
-              formatter:
-                label: hidden
-                settings:
-                  responsive_image_style: slideshow_constrain
-                  image_link: ''
-                third_party_settings: {  }
-                type: responsive_image
-            additional: {  }
-            weight: 0
-          8e1eb2c7-4e07-421b-a9b6-52ac5bd94bed:
-            uuid: 8e1eb2c7-4e07-421b-a9b6-52ac5bd94bed
-            region: title
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:slide:field_title'
-              formatter:
-                label: hidden
-                settings:
-                  link: none
-                  wrapper: span
-                  class: 'h3 title'
-                third_party_settings: {  }
-                type: text_title
-            additional: {  }
-            weight: 0
-          5e2628da-3b7f-433e-a867-598ac863a1c1:
-            uuid: 5e2628da-3b7f-433e-a867-598ac863a1c1
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:slide:field_text'
-              formatter:
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-                type: text_default
-            additional: {  }
-            weight: 0
-          cd2fbb4a-3cd2-4221-b6ea-259737ed17b4:
-            uuid: cd2fbb4a-3cd2-4221-b6ea-259737ed17b4
-            region: link
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:slide:field_url'
-              formatter:
-                label: hidden
-                settings:
-                  trim_length: 80
-                  url_only: false
-                  url_plain: false
-                  rel: '0'
-                  target: '0'
-                third_party_settings: {  }
-                type: link
-            additional: {  }
-            weight: 0
+        layout_id: layout_builder_blank
+        layout_settings: {  }
+        components: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: vUUW7AeZ_cqwrHgqqHPUGpV-japjmtBgRyLi2ipUtDM
@@ -126,15 +47,12 @@ content:
     type: text_default
     region: content
   field_title:
-    weight: 1
-    label: hidden
-    settings:
-      link: none
-      wrapper: span
-      class: 'h3 title'
+    weight: 4
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: text_title
-    region: title
+    type: text_default
+    region: null
   field_url:
     weight: 3
     label: hidden

@@ -1,0 +1,23 @@
+uuid: c6042f1b-8e46-4db5-8983-5475507a56f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spacing
+    - paragraphs.paragraphs_type.responsive_tabs
+  module:
+    - options
+_core:
+  default_config_hash: o_MP--cDhZYleTCIwtu84DlQffkWeCtgPjvxk_N1e6U
+id: paragraph.responsive_tabs.field_spacing
+field_name: field_spacing
+entity_type: paragraph
+bundle: responsive_tabs
+label: Spacing
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
