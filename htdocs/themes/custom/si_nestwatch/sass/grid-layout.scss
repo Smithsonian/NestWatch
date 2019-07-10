@@ -1,0 +1,62 @@
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "variables/**/*";
+@import "helpers/**/*";
+
+.paragraph--type--grid-layout{
+  > .content > div {
+    @include rem(margin-bottom, $space);
+  }
+  @include breakpoint($small) {
+    .no-media .inner,
+    .paragraph--type--text-block{
+        display: flex;
+        align-items: center;
+    }
+    > .content > div {
+      margin-bottom: 0;
+    }
+    > .content {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      @include rem(grid-row-gap, $space);
+      @include rem(grid-column-gap, $pad);
+      > div {
+        grid-column-end: span 6;
+        display: flex;
+      }
+    }
+
+
+  }
+  @include breakpoint($desk) {
+    &.col-3{
+      > .content {
+        > div {
+          grid-column-end: span 4;
+        }
+      }
+
+    }
+    &.col-4,
+    &.col-6{
+      > .content {
+        > div {
+          grid-column-end: span 3;
+        }
+      }
+    }
+  }
+
+  @include breakpoint($wide) {
+    > .content {
+      @include rem(grid-column-gap, $pad-double);
+    }
+    &.col-6 {
+      > .content {
+        > div {
+          grid-column-end: span 2;
+        }
+      }
+    }
+  }
+}

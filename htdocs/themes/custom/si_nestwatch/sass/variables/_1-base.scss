@@ -38,7 +38,7 @@ $yellow-brand		      	: #ffd400; // SI Logo - Yellow
 $white                  : #fff;
 
 $back-to-top-bg         :$burgundy;
-$nav-sub-bg				:$yellow-brand;
+$nav-sub-bg							: $yellow-brand;
 
 $header-bg              : $gray-darker;
 $preface-bg             : $gray-darkest; //#202023; //#27292e;
@@ -65,3 +65,10 @@ $text-muted             : $gray;
 $link-hover             : $burgundy;
 $link-color             : $blue-alt;
 $link-color-alt         : $yellow-brand;
+
+
+$transition-base:             all .2s ease-in-out !default;
+$transition-fade:             opacity .15s linear !default;
+$transition-collapse:         height .35s ease !default;
+$card-border-color : $gray-lighter;
+$card-border-width : 1px;

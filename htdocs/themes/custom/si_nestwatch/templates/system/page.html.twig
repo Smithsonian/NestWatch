@@ -76,22 +76,21 @@
   set classes = [
   page.header_preface_left ? 'has-preface-left' : '',
   page.header_preface_right ? 'has-preface-right' : '',
-  page.sidebar_first ? 'has-sidebar-first' : '',
-  page.sidebar_second ? 'has-sidebar-second' : ''
-]
+  ]
 %}
+
 <div{{ attributes.addClass(classes) }}>
   <header class="header {{ region_classes.header_preface_left }}" role="banner">
     {% if page.header_preface_left or  page.header_preface_right %}
     <div class="header_preface">
-      <div class="container">
+      <div class="container{{ page.header_preface_left and page.header_preface_right ? ' g-12' : '' }}">
             {{ page.header_preface_left }}
             {{ page.header_preface_right }}
       </div>
     </div>
     {% endif %}
 
-    <div class="header-inner container">
+    <div class="header-inner container g-12">
       {{ page.branding }}
       {{ page.header }}
 
@@ -102,9 +101,9 @@
 
   <div class="content-wrapper">
     {{ page.highlighted }}
-    <div class="cf">
-      <a id="main-content"></a>
-      <div class="main clearfix" role="main">
+    <div class="inner main-content">
+      <div id="main" role="main">
+        <a id="main-content"></a>
         {{ page.content }}
       </div>
       {{ page.sidebar_first }}
@@ -118,29 +117,14 @@
   <footer class="footer" role="contentinfo">
     <div class="container">
       {% if page.footer_top_left or page.footer_top_right %}
-        {% set footer_t_attribute = create_attribute() %}
-        {%
-        set footer_t_classes = [
-        'footer-top',
-        page.footer_top_left ? 'has-left' : '',
-        page.footer_top_right ? 'has-right' : ''
-        ]
-        %}
-        <div{{ footer_t_attribute.addClass(footer_t_classes) }}>
+
+        <div{{ create_attribute({'class': ['footer-top', page.footer_top_left and page.footer_top_right ? 'g-12-m' ]}) }}>
           {{ page.footer_top_left }}
           {{ page.footer_top_right }}
         </div>
       {% endif %}
       {% if page.footer_bottom_left or page.footer_bottom_right %}
-        {% set footer_b_attribute = create_attribute() %}
-        {%
-        set footer_b_classes = [
-        'footer-bottom',
-        page.footer_bottom_left ? 'has-left' : '',
-        page.footer_bottom_right ? 'has-right' : ''
-        ]
-        %}
-        <div{{ footer_b_attribute.addClass(footer_b_classes) }}>
+          <div{{ create_attribute({'class': ['footer-bottom', page.footer_bottom_left and page.footer_bottom_right ? 'g-12-m' ]}) }}>
 
           {{ page.footer_bottom_left }}
           {{ page.footer_bottom_right }}
@@ -149,9 +133,9 @@
       {% endif %}
     </div>
   </footer>
-  <div class="region-postscript">
-    <div>
-      <a href="#main-content" class="page-nav"><span class="icon"></span><span class="text">Back to Top</span> </a>
-    </div>
+</div>
+<div class="region-postscript">
+  <div>
+    <a href="#main-content" class="page-nav"><span class="icon"></span><span class="text">Back to Top</span> </a>
   </div>
 </div>

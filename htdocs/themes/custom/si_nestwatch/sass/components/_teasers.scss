@@ -1,5 +1,14 @@
-
 .layout--teaser{
+	//.inner {
+	//	img {
+	//		transition: all 200ms ease-in-out;
+	//	}
+	//	&:hover {
+	//		img {
+	//			transform: scale(1.101, 1.101);
+	//		}
+	//	}
+	//}
 	.preface {
 		font-family: $font-secondary;
 	}
@@ -71,7 +80,9 @@
 	}
 } // end teaser
 
-
+.b-text-wrapper span {
+	display: block;
+}
 
 .teaser-long.border .inner{
 	background: none;

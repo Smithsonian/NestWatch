@@ -1,16 +1,152 @@
 @import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
 @import "../node_modules/susy/sass/susy";
-// Globbing will always import files alphabetically. Optimally, all your
-// components should be self-contained and explicit enough to not have any
-// contained styles leak into unrelated components: The import order should not
-// affect the result.
-//
-// If there are variables, functions or mixins that depend on each other and
-// therefore need to be imported in a specific order you can import them
-// directly. Variables-, function- or mixin providing partials should never
-// output any styles themselves: Importing them multiple times to resolve
-// dependencies shouldn't be a problem.
+
 @import "variables/**/*";
 @import "helpers/**/*";
-@import "components/teasers/_default";
+
+.b-media-wrapper {
+	line-height: 1;
+}
+
+.b-text-wrapper {
+	@include rem(padding, $space-half $pad*.75);
+	.has-align-bottom & {
+		@include rem(padding-bottom, $space*2.5);
+		position: relative;
+	}
+}
+
+.layout--teaser {
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+
+	p {
+		@include rem(margin, 0 0 $space-half);
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	img {
+		display: block;
+		width: 100%;
+
+	}
+	h3,
+	h2,
+	.h3,
+	.h2,
+	h4,
+	.h4{
+		@include rem(margin-bottom, $space-half);
+		a {
+			@include link-colors($header-color, $link-hover, $link-hover, $header-color, $header-color);
+		}
+	}
+	a:hover {
+		text-decoration: none;
+	}
+
+	img {
+		width: 100% !important;
+	}
+
+	.inner {
+		background-color: $gray-lightest;
+		// border: 1px solid darken($gray-lightest, 2%);
+		border: 1px solid $gray-lighter;
+		display: block;
+		position: relative;
+		z-index: 1;
+		border-radius: inherit;
+		flex-grow: 1;
+		@include link-colors($text-color, $text-color, $text-color, $text-color, $text-color);
+		&:after, &:before {
+			border-radius: inherit;
+			z-index: -1;
+			position: absolute;
+			content: "";
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: 0;
+			padding: 0;
+		}
+		&:after {
+			opacity: .0625;
+			box-shadow: 0 2px 0 0 #000;
+		}
+	}
+
+	a.inner:hover,
+	.inner.hover {
+		background-color: $gray-lighter;
+		.bg-gray-light & {
+			background: none;
+		}
+	}
+
+	.title,
+	.b-text-wrapper {
+		display: block;
+	}
+	.b-text-wrapper {
+		@include rem(padding, $space-half $pad*.75);
+	}
+	.btn-text {
+		//display: block;
+		@include rem(margin-top, $space-half);
+	}
+}
+
+// end teaser
+
+.teaser-long {
+	display: flex;
+	flex-flow: column;
+	.teaser-link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+@include breakpoint($tab) {
+	.teaser-featured {
+		.inner {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			align-content: stretch;
+			grid-gap: 1em;
+			background: transparent;
+			border: none;
+			&:after{
+				box-shadow: none;
+			}
+		}
+		.b-media-wrapper {
+			grid-column-end: span 5;
+		}
+		.b-text-wrapper {
+			padding:0;
+			grid-column-end: span 7;
+		}
+
+		.no-cssgrid & {
+			.inner {
+				@include clearfix;
+			}
+			.b-media-wrapper {
+				@include span(5);
+			}
+			.b-text-wrapper {
+				@include span(7 last);
+			}
+		}
+	}
+}
+
 

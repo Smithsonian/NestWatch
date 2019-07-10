@@ -30,22 +30,17 @@
  * @see template_preprocess_views_view()
  */
 #}
-{%
-  set classes = [
-    dom_id ? 'js-view-dom-id-' ~ dom_id,
-    'page-title'
-  ]
-%}
-{% if rows %}
-  <div{{ attributes.addClass(classes) }}>
 
-    {{ title_prefix }}
-    {{ title }}
-    {{ title_suffix }}
+  {{ title_prefix }}
+  {{ title }}
+  {{ title_suffix }}
 
 
-    {{ rows }}
-    {{ empty }}
 
-  </div>
-{% endif %}
+  {{ exposed }}
+  {{ attachment_before }}
+
+  {{ rows }}
+
+
+

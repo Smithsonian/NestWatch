@@ -18,7 +18,7 @@ $color: white;
 	// box-shadow: -1px 0 2px 0 rgba(0,0,0,0.24) , 1px 0 2px 0 rgba(0,0,0,0.24) , 0 1px 1px 0 rgba(0,0,0,0.34);
 	cursor: pointer;
 	display: inline-block;
-	@include rem(padding, $space*.75 $pad-half);
+	@include rem(padding, $space*.75 $pad-half $space*1.25);
 	//padding: 20px 12px 26px;
 	user-select: none;
 	border-radius: 0;
@@ -32,15 +32,14 @@ $color: white;
 		transition: none;
 	}
 	.text {
-		@extend %hide-text;
-		//bottom: 1px;
-		//display: block;
-		//@include rem(font-size,$font-size-small);
-		//left: 0;
-		//position: absolute;
-		//text-align: center;
-		//width: 100%;
-
+		color: white;
+		bottom: 1px;
+		display: block;
+		@include rem(font-size,$font-size-small);
+		left: 0;
+		position: absolute;
+		text-align: center;
+		width: 100%;
 	}
 }
 
@@ -52,25 +51,17 @@ $color: white;
 
 	/*create the upper and lower lines as pseudo-elements of the middle line*/
 	&:before, &:after {
-
 		@include line;
 		position: absolute;
 		left: 0;
 		content: '';
 		transform-origin: 1.71429px center;
 	}
-	&:before {
-		top: $button-size/3;
-	}
-	&:after {
-		top: -$button-size/3;
-	}
+	&:before { top: $button-size/3;}
+	&:after { top: -$button-size/3;}
 }
 
 .sf-expanded.lines-button {
-	//.text {
-	//  opacity: 0;
-	//}
 	.lines {
 		background: transparent;
 		top: .4em;
@@ -89,10 +80,6 @@ $color: white;
 
 .region--main-menu,
 .region--header {
-	.lines-button {
-		position: absolute;
-		right: 0;
-	}
 	.sf-menu,
 	.menu {
 		line-height: $baseLineHeight;
@@ -104,6 +91,11 @@ $color: white;
 		&.sf-accordion.sf-expanded {
 			//  top: -19px !important;
 			top: 48px !important;
+			.menu-open & {
+				position: absolute;
+				width: 250px;
+				right: -250px;
+			}
 		}
 		&.sf-navbar {
 			width: 100%;
@@ -121,17 +113,17 @@ $color: white;
 				@include link-colors(white, white, white, white, white);
 				@include rem(padding, $space/3 $space-half);
 			}
+			border-bottom: 1px solid lighten($mobile-nav-btn, 5%);
 			ul {
-				background: $mobile-menu;
 				@include rem(padding-left, $pad*1.5);
 			}
-
+			li li:last-child {
+				border-bottom: none;
+			}
 		}
 		//top-level
 		> li {
 			> a {
-				@include rem(padding-left, $pad);
-				@include rem(margin-left, $pad-half);
 				&.btn {
 					display: inline-block;
 				}
@@ -141,9 +133,9 @@ $color: white;
 	//end mobile .sf-menu
 
 	@include breakpoint($desk) {
-
 		.sf-accordion-toggle {
 			display: none;
+			text-align: right;
 		}
 		background: $header-bg;
 
@@ -160,6 +152,7 @@ $color: white;
 				float: right;
 			}
 			li {
+				border-bottom: none;
 				a {
 					//  @include font-smoothing;
 					@include link-colors($gray-darkest, $gray-darkest, $gray-darkest, $gray-darkest, $gray-darkest);
@@ -246,7 +239,7 @@ $color: white;
 						top: 4.4rem !important;
 						left: 0 !important;
 					}
-					&.last {
+					&:last-child {
 						> ul {
 							left: auto !important;
 							right: 0 !important;
@@ -277,10 +270,14 @@ $color: white;
 						background: $blue-light;
 					}
 					> .active-trail {
-						background: $yellow;
+						background: $nav-sub-bg;
 					}
 				}
-
+				&:last-child {
+					> a {
+						padding-right: 0;
+					}
+				}
 			}
 			// end top-level li
 		}

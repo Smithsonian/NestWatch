@@ -1,5 +1,4 @@
 .header {
-	position: relative;
 	background: $header-bg;
 	p {
 		margin: 0;
@@ -9,8 +8,11 @@
 .header_preface {
 	background: $preface-bg;
 	@include rem(padding, 3px 0);
-	> .container {
+	.menu {
+		@extend %reset-list;
 		display: flex;
+	}
+	> .container {
 		align-items: center;
 	}
 	.block-title {
@@ -26,35 +28,19 @@
 	* {
 		color: white;
 	}
-
-	.region--header-preface-right {
-		float: right;
-	}
-	.has-preface-left.has-preface-right & {
-		.region--header-preface-left,
-		.region--header-preface-right {
-			width: span(6);
-		}
-		.region--header-preface-left {
-			float: left;
-			margin-right: gutter();
-		}
-	}
 }
 
-header {
-	position: relative;
-	.block-superfish {
-		position: absolute;
-		right: 2%;
-		@include rem(top, 43px + 16px);
-	}
-}
+//.header-inner {
+//	position: relative;
+//	.block-superfish {
+//		position: absolute;
+//		right: 2%;
+//		top: 10%
+//	}
+//}
 
 .region--branding {
-	@include span(10);
 	@include rem(padding, $space/3 0);
-
 	.branding-wrapper,
 	.site-slogan {
 		color: white;
@@ -63,7 +49,6 @@ header {
 		}
 	}
 	.branding-wrapper {
-		@extend %clearfix;
 		font-family: $font-secondary;
 		font-weight: normal;
 		margin: 0;
@@ -97,10 +82,7 @@ header {
 @include breakpoint($tab) {
 	.header-inner {
 		z-index: 100;
-		background: $header-bg;
-		display: flex;
-		align-items: flex-end;
-		align-content: flex-end;
+		align-items: end;
 	}
 	.header_preface {
 		.wrapper-logo {
@@ -113,7 +95,6 @@ header {
 	}
 	.region--branding {
 		@include rem(padding, $space-half 0);
-		@include span(8);
 		.logo-icon {
 			width: 80px;
 		}
@@ -139,26 +120,6 @@ header {
 			top: auto;
 			right: auto;
 		}
-
-	}
-	.region--branding {
-		@include span(5);
-	}
-	.region--header {
-		//position: static;
-		//right: auto;
-		//top: auto;
-		@include span(7 last);
 	}
 }
 
-//@include breakpoint('all' 1010px) {
-//  .region-header-preface-right {
-//    .inner > .block{
-//      width: 110px;
-//    }
-//    .inner > .block-search{
-//      width: 250px;
-//    }
-//  }
-//}
