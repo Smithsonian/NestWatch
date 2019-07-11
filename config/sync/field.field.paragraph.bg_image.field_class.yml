@@ -1,0 +1,21 @@
+uuid: 5fcafee2-88c6-45df-9a9c-19718377aaee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class
+    - paragraphs.paragraphs_type.bg_image
+_core:
+  default_config_hash: vUzToBZE3DJ1jC98WAKNw1UzBa0tYm6S9CXcAfREKfk
+id: paragraph.bg_image.field_class
+field_name: field_class
+entity_type: paragraph
+bundle: bg_image
+label: 'Custom Class'
+description: 'Text will automatically be white unless text-default is added as a custom class.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

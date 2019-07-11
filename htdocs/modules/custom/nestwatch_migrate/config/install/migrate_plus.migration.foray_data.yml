@@ -1,0 +1,105 @@
+# Migration configuration for NW Sites Data. We've described most of what goes
+# into migration configuration in migrate_plus.migration.beer_term.yml, so won't
+# repeat that here.
+id: foray_data
+label: Importing Nestwatch Foray Data
+migration_group: nestwatch
+migration_tags:
+  - nestwatch migrate
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  include_raw_data: true
+  track_changes: false
+  urls:
+    - 'public://import/foray.json'
+  item_selector: 0
+  fields:
+    -
+      name: forayID
+      label: 'Foray ID'
+      selector: forayID
+    -
+      name: siteID
+      label: 'Site ID'
+      selector: siteID
+    -
+      name: date
+      label: 'Date'
+      selector: date
+    -
+      name: startTime
+      label: 'Start Time'
+      selector: startTime
+    -
+      name: endTime
+      label: 'End Time'
+      selector: endTime
+    -
+      name: pathDist
+      label: 'Path Distance'
+      selector: pathDist
+    -
+      name: forayNumber
+      label: 'Number of Forays'
+      selector: forayNumber
+  
+  ids:
+    forayID:
+      type: string
+
+    
+
+  
+destination:
+  plugin: 'entity:node'
+  default_bundle: foray
+
+process:
+  
+# Title is the forayID
+  title: forayID 
+
+
+# Entity Lookup plugin for referencing the SiteID
+
+  field_foray_site_id: 
+    plugin: entity_lookup
+    source: siteID
+    value_key: title
+    bundle: sites
+    entity_type: node
+    ignore_case: true
+  
+  field_foray_path_distance: pathDist
+  field_foray_number: forayNumber
+
+  field_foray_date_and_time/value:
+    -
+      plugin: concat
+      source: 
+        - date
+        - startTime
+      delimiter: ' '
+    -
+      plugin: format_date
+      from_format: 'Y-m-d Hi'
+      to_format: 'Y-m-d\TH:i:s'
+  
+  field_foray_date_and_time/end_value:
+    -
+      plugin: concat
+      source: 
+        - date
+        - endTime
+      delimiter: ' '
+    -
+      plugin: format_date
+      from_format: 'Y-m-d Hi'
+      to_format: 'Y-m-d\TH:i:s'
+
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate

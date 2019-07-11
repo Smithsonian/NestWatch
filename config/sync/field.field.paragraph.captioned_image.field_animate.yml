@@ -1,0 +1,23 @@
+uuid: def39cb5-8bcf-4c3a-90d3-666ed48355d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_animate
+    - paragraphs.paragraphs_type.captioned_image
+  module:
+    - options
+_core:
+  default_config_hash: nnDd5jbmBkAdthOI5SzrU8zngGsT5IHWgQx_JZVqAtA
+id: paragraph.captioned_image.field_animate
+field_name: field_animate
+entity_type: paragraph
+bundle: captioned_image
+label: Animation
+description: 'Choose an animation effect.  Visit the <a href="https://michalsnik.github.io/aos/" target="_blank">AOS library</a> to view the different effects.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

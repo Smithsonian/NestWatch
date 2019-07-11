@@ -8,7 +8,7 @@ dependencies:
     - views
 name: image_browser
 label: 'Image Browser'
-display: modal
+display: iframe
 display_configuration:
   width: '650'
   height: '500'
@@ -19,16 +19,6 @@ selection_display_configuration: {  }
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  2c6293d9-7c73-41e1-b632-52cbc0ddb2a0:
-    settings:
-      view: media
-      view_display: entity_browser_2
-      submit_text: 'Select entities'
-      auto_select: false
-    uuid: 2c6293d9-7c73-41e1-b632-52cbc0ddb2a0
-    weight: 1
-    label: 'Manage Media Files'
-    id: view
   922b406b-6612-47e3-a9fd-7fbc497b39ac:
     settings:
       extensions: 'jpg jpeg png gif'
@@ -40,3 +30,13 @@ widgets:
     weight: 2
     label: 'Upload Image'
     id: media_image_upload
+  de97b712-d50b-43f9-b515-9de83d23c9df:
+    settings:
+      view: media
+      view_display: entity_browser_2
+      submit_text: 'Select Images'
+      auto_select: false
+    uuid: de97b712-d50b-43f9-b515-9de83d23c9df
+    weight: 2
+    label: 'Browse Images'
+    id: view

@@ -6,6 +6,9 @@ dependencies:
     - field.field.node.capture.body
     - node.type.capture
   module:
+    - content_moderation
+    - field_layout
+    - layout_discovery
     - path
     - text
 third_party_settings:

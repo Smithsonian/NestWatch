@@ -2,10 +2,6 @@
     $GLOBAL CLASSES
 \*------------------------------------*/
 
-/* Clearfix */
-.cf {
-  @extend %clearfix;
-}
 
 /* Completely remove from the flow and screen readers. */
 .is-hidden {
@@ -105,6 +101,9 @@
   &.paragraph--type--captioned-image,
   &.layout--teaser {
     padding: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -237,7 +236,11 @@ img.center {
   display: block;
   @include rem(margin, $space auto);
 }
-
+.clip-circle {
+  img {
+    clip-path: circle(40% at center);
+  }
+}
 [style*="float: left"]
 [style*="float:left"],
 figure[style*="float:left"],

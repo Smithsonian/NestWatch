@@ -22,9 +22,6 @@ dependencies:
     - link
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_theme:
       children:
@@ -59,6 +56,9 @@ third_party_settings:
         open: false
       label: Theme
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: nrDRrY4V9QpVh6f-uR1JRKNGDYt6FWeu60CkmMXZ0mY
 id: paragraph.captioned_image.default

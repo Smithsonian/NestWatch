@@ -1,0 +1,56 @@
+uuid: 8916aa7a-6c93-468c-bfd4-5f1531bdf74f
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: THSIAvgVqkxlMv5AehtyqYQSZKYN-iZ206g3w1yVEQw
+id: paragraph.field_animate
+field_name: field_animate
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: fade
+      label: fade
+    -
+      value: fade-left
+      label: fade-left
+    -
+      value: fade-right
+      label: fade-right
+    -
+      value: fade-down
+      label: fade-down
+    -
+      value: fade-up
+      label: fade-up
+    -
+      value: flip-left
+      label: flip-left
+    -
+      value: flip-right
+      label: flip-right
+    -
+      value: flip-down
+      label: flip-down
+    -
+      value: flip-up
+      label: flip-up
+    -
+      value: zoom-in
+      label: zoom-in
+    -
+      value: zoom-out
+      label: zoom-out
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

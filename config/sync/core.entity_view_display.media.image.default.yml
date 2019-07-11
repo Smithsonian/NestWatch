@@ -6,14 +6,10 @@ dependencies:
     - field.field.media.image.field_media_image
     - media.type.image
   module:
-    - field_layout
     - image
     - layout_builder
     - layout_discovery
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   layout_builder:
     enabled: true
     sections:

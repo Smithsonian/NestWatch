@@ -1,0 +1,23 @@
+uuid: 043de981-a813-4284-a016-6d281cd43cca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.bg_image
+  module:
+    - options
+_core:
+  default_config_hash: ibo0DcNqbiwcq-M-d_SXY_kHuAT1q2IlXmNT6yfsIoU
+id: paragraph.bg_image.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: bg_image
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

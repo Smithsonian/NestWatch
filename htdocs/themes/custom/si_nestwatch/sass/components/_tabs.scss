@@ -31,3 +31,17 @@ ul.tabs.primary {
     }
   }
 }
+
+.card-header button[aria-expanded="true"],
+.r-tabs-accordion-title.r-tabs-state-active a {
+  color: $link-hover;
+  @include font-icon("\f078", 26px, 3px);
+}
+.card-header button[aria-expanded="false"],
+.r-tabs-accordion-title a {
+  color: $text-color;
+  @include font-icon("\f054", 26px, 6px);
+  &:hover {
+    color: $link-hover;
+  }
+}

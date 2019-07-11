@@ -1,0 +1,68 @@
+uuid: 405c9f23-5327-4df5-80e2-3dbe17b86c66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.responsive_tabs.field_layout
+    - field.field.paragraph.responsive_tabs.field_spacing
+    - field.field.paragraph.responsive_tabs.field_tab
+    - paragraphs.paragraphs_type.responsive_tabs
+  module:
+    - field_group
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  field_group:
+    group_theme:
+      children:
+        - field_layout
+        - field_spacing
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Theme
+      region: content
+_core:
+  default_config_hash: 5tLQgwzeEil7Cc6f7AsxQwXrIq007CApCIMyzXKUB0M
+id: paragraph.responsive_tabs.default
+targetEntityType: paragraph
+bundle: responsive_tabs
+mode: default
+content:
+  field_layout:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_spacing:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tab:
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true

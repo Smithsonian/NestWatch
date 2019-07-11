@@ -1,0 +1,11 @@
+uuid: eefa4183-3db6-484e-b566-37bc37d8409b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PpGn_S8C3MIDQih_WvhcDyCw4_ULlwNbpnd7JSlTbE4
+id: bg_image
+label: 'BG Image'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

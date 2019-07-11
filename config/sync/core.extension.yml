@@ -27,7 +27,10 @@ module:
   ctools_block: 0
   ctools_views: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -49,6 +52,7 @@ module:
   imce: 0
   inline_entity_form: 0
   inline_form_errors: 0
+  kint: 0
   layout_builder: 0
   layout_discovery: 0
   ldap_authentication: 0
@@ -85,7 +89,6 @@ module:
   slick: 0
   slick_entityreference: 0
   slick_ui: 0
-  smithsonian_displays: 0
   superfish: 0
   system: 0
   taxonomy: 0

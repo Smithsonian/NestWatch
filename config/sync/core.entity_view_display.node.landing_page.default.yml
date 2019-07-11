@@ -15,13 +15,9 @@ dependencies:
     - node.type.landing_page
   module:
     - entity_reference_revisions
-    - field_layout
     - layout_builder
     - layout_discovery
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   layout_builder:
     enabled: true
     sections:

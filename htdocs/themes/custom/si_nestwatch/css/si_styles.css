@@ -4289,6 +4289,9 @@ header .search-block-form {
   .content-wrapper .search-form .container-inline .form-text input::-webkit-input-placeholder {
     color: #6c7a89;
     text-transform: capitalize; }
+  .content-wrapper .search-form .container-inline .form-text input::-moz-placeholder {
+    color: #6c7a89;
+    text-transform: capitalize; }
   .content-wrapper .search-form .container-inline .form-text input::-ms-input-placeholder {
     color: #6c7a89;
     text-transform: capitalize; }

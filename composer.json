@@ -24,7 +24,7 @@
     "drupal/conditional_fields": "^1.0@alpha",
     "drupal/console": "^1.9",
     "drupal/core": "^8.6.0",
-    "drupal/devel": "^2.0",
+    "drupal/devel": "^2.1",
     "drupal/ds": "3.x-dev",
     "drupal/entity_browser": "^2.1",
     "drupal/fast_404": "^1.0@alpha",

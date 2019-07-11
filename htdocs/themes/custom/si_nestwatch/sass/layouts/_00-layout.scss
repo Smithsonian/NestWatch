@@ -1,16 +1,16 @@
 
 .container,
 .layout-constrain > .content,
+.layout-constrain > .section-title,
 .main-content {
   @include set_layout($max-width);
-  @include clearfix;
 }
 .main-content {
   @include rem(padding, $space-and-half 0);
 }
 .node--type-landing-page .main-content {
-	max-width: 100%;
-	width: 100%;
+  max-width: 100%;
+  width: 100%;
   padding: 0;
 }
 
@@ -29,7 +29,6 @@
 .container-wide,
 .layout-wide > .content,
 .layout-wide .title{
-  @include clearfix;
   @include set_layout($bp-mega);
 }
 
@@ -105,322 +104,74 @@
 p.no-spacing {
   @include rem(margin-top, $space);
   margin-bottom: 0;
-  
 }
-
 
 .cf, .clearfix {
   @extend %clearfix;
 }
 
-.ds-2col-stacked,
-.ds-3col-stacked-equal,
-.ds-2col-fluid,
-.ds-2col-stacked-fluid {
-  > .group-left,
-  > .group-right{
-	float: none;
-	width: 100%;
-  }
-}
-
-.ds-3col-stacked-equal  > .group-middle {
-  float: none;
-  width: 100%;
-}
-
-@include breakpoint($small) {
-	.layout,
-	.layout > .content,
-	.node > .content{
-		@include clearfix;
-		> .col-sm-6 {
-			&:nth-child(2n) {
-				@include last;
-			}
-			@include span(6);
-		}
-	}
-}
 /// layout
 @include breakpoint($tab) {
   .padding-sm {
-	@include rem(padding-top, $space);
-	@include rem(padding-bottom, $space);
-	
+    @include rem(padding-top, $space);
+    @include rem(padding-bottom, $space);
   }
   
   .padding-extra-sm {
-	@include rem(padding-top, $space-double);
-	@include rem(padding-bottom, $space-double);
+    @include rem(padding-top, $space-double);
+    @include rem(padding-bottom, $space-double);
   }
   
   .spacing-sm {
-	//margin: em($space-and-half) 0;
-	@include rem(margin-top, $space);
-	@include rem(margin-bottom, $space);
-	
+    //margin: em($space-and-half) 0;
+    @include rem(margin-top, $space);
+    @include rem(margin-bottom, $space);
   }
   
   .spacing-extra-sm {
-	@include rem(margin-top, $space-double);
-	@include rem(margin-bottom, $space-double);
+    @include rem(margin-top, $space-double);
+    @include rem(margin-bottom, $space-double);
   }
   
   .no-spacing-sm {
-	margin: 0;
-  }
-  .has-sidebar-second{
-		.main {
-			@include span(8);
-		}
-		.region--sidebar-second {
-			@include span(4 last);
-		}
-	}
-	.has-sidebar-first{
-		.main {
-			@include span(8 last);
-		}
-		.region--sidebar-first {
-			@include span(4);
-		}
-	}
-	.has-sidebar-first.has-sidebar-second {
-		.region--sidebar-first {
-			@include span(3);
-			@include pull(9);
-		}
-		.main {
-			@include span(6);
-			@include push(3);
-		}
-		.region--sidebar-second {
-			@include span(3 last);
-		}
-	}
-  .layout,
-  .layout > .content,
-  .node > .content{
-	@include clearfix;
-
-	> .col-sm-9 {
-	  @include span(9);
-	}
-	> .col-sm-3 {
-	  @include span(3);
-	}
-	> .col-sm-8 {
-	  @include span(8);
-	}
-	> .col-sm-4 {
-	  @include span(4);
-	}
-	> .col-sm-5 {
-	  @include span(5);
-	}
-	> .col-sm-7 {
-	  @include span(7);
-	}
-	.col.last {
-	  @include last;
-	}
-  }
-  .ds-2col-stacked,
-  .ds-2col-fluid,
-  .ds-2col-stacked-fluid {
-	> .group-left {
-	  @include span(6);
-	}
-	> .group-right {
-	  @include span(6 last);
-	}
-	&.paragraphs-item-two-column-right {
-	  .group-left {
-		@include span(9);
-	  }
-	  .group-right {
-		@include span(3 last);
-	  }
-	}
-	&.paragraphs-item-two-column-left {
-	  .group-left {
-		@include span(9 last);
-	  }
-	  .group-right {
-		@include span(3);
-	  }
-	}
-  }
-  
-  //vertically align content
-  .vertically-centered {
-	> div{
-	  position: relative;
-	  height: 100%;
-	  @include set_layout($max-width);
-	}
-	.inner {
-	  width: 100%;
-	  margin: auto;
-	  position: absolute;
-	  top: 50%;
-	  -webkit-transform: translateY(-50%);
-	  -moz-transform: translateY(-50%);
-	  -ms-transform: translateY(-50%);
-	  -o-transform: translateY(-50%);
-	  transform: translateY(-50%);
-	  .footer-fix .last & {
-		top: 30%;
-		-webkit-transform: translateY(-30%);
-		-moz-transform: translateY(-30%);
-		-ms-transform: translateY(-30%);
-		-o-transform: translateY(-30%);
-		transform: translateY(-30%);
-		
-	  }
-	}
-	
+    margin: 0;
   }
 } //end tab
 
 @include breakpoint($desk) {
   .padding-md {
-	@include rem(padding-top, $space);
-	@include rem(padding-bottom, $space);
+    @include rem(padding-top, $space);
+    @include rem(padding-bottom, $space);
   }
   
   .padding-extra-md {
-	@include rem(padding-top, $space-double);
-	@include rem(padding-bottom, $space-double);
+    @include rem(padding-top, $space-double);
+    @include rem(padding-bottom, $space-double);
   }
   
   .spacing-md {
-	@include rem(margin-top, $space);
-	@include rem(margin-bottom, $space);
-	
+    @include rem(margin-top, $space);
+    @include rem(margin-bottom, $space);
   }
   
   .spacing-extra-md {
-	@include rem(margin-top, $space-double);
-	@include rem(margin-bottom, $space-double);
-	
+    @include rem(margin-top, $space-double);
+    @include rem(margin-bottom, $space-double);
   }
   
   .no-spacing-md {
-	margin: 0;
+    margin: 0;
   }
   
   .entity-paragraphs-item .layout .col {
-	margin-bottom: 0;
+    margin-bottom: 0;
   }
 
-	.has-sidebar-second{
-		.main {
-			@include span(9);
-		}
-		.region--sidebar-second {
-			@include span(3 last);
-		}
-	}
-	.has-sidebar-first{
-		.main {
-			@include span(9 last);
-		}
-		.region--sidebar-first {
-			@include span(3);
-		}
-	}
-
-  .layout,
-  .layout > .content,
-  .node > .content{
-	> .col-md.last {
-	  @include last;
-	}
-	> .col-md-3 {
-	  @include span(3);
-	  &.col-sm-6:nth-child(2n) {
-		@include span(3);
-		&.last {
-		  @include last;
-		}
-	  }
-	}
-	> .col-md-4 {
-	  @include span(4);
-	}
-	> .col-md-5 {
-	  @include span(5);
-	}
-	> .col-md-6 {
-	  @include span(6);
-	}
-	> .col-md-7 {
-	  @include span(7);
-	}
-	> .col-md-8 {
-	  @include span(8);
-	}
-	> .col-md-9 {
-	  @include span(9);
-	  .col-md-9 & {
-		@include span(6 of 9);
-	  }
-	}
-	> .col.last,
-	.col.last-md {
-	  @include last;
-	}
-	&.four-column {
-	  .col-fourth {
-		margin-right: 0;
-	  }
-	}
-		> .push-md-3 {
-			@include push(3);
-		}
-		>.pull-md-9 {
-			@include pull(9);
-		}
-  }
-  .ds-3col-stacked-equal {
-	@include clearfix;
-	> .group-left,
-	> .group-middle {
-	  @include span(4);
-	  flex: 1 0 auto;
-	}
-	> .group-right {
-	  @include span(4 last);
-	}
-  }
-}
-
-@include breakpoint($wide) {
-  .layout,
-  .layout > .content {
-	> .col-wd-3 {
-	  @include span(3);
-	}
-	> .col-wd-4 {
-	  @include span(4);
-	}
-	> .col.last {
-	  @include last;
-	}
-  }
-  //.container,
-  //.layout-constrain > .content,
-  //.layout-constrain .group-header .content,
-  //.page-user .l-content-wrapper {
-	//width: 100%;
-  //}
 }
 
 
 @include breakpoint('all' $bp-mega*1.04) {
   .container-wide {
-	width: 100%;
+    width: 100%;
   }
 }

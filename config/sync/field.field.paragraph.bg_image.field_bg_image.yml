@@ -1,0 +1,40 @@
+uuid: 480c3b31-6e46-4aab-a546-78e01bd1deee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_image
+    - paragraphs.paragraphs_type.bg_image
+  module:
+    - image
+_core:
+  default_config_hash: nQ7ZOKBkazb3JN--lhRZhYAJh9m13B41HFK_zSXavCE
+id: paragraph.bg_image.field_bg_image
+field_name: field_bg_image
+entity_type: paragraph
+bundle: bg_image
+label: 'BG Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: bg_image
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

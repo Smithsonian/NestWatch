@@ -1,0 +1,26 @@
+uuid: da16ad94-f8a1-4569-98dc-b9a73d2753c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foray_date_and_time
+    - node.type.foray
+  module:
+    - datetime_range
+id: node.foray.field_foray_date_and_time
+field_name: field_foray_date_and_time
+entity_type: node
+bundle: foray
+label: 'Foray Date and Time'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+1 hour'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

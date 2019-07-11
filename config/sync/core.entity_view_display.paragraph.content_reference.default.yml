@@ -10,13 +10,9 @@ dependencies:
     - field.field.paragraph.content_reference.field_spacing
     - paragraphs.paragraphs_type.content_reference
   module:
-    - field_layout
     - layout_builder
     - layout_discovery
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   layout_builder:
     enabled: true
     sections:

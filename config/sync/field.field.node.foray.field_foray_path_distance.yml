@@ -1,0 +1,23 @@
+uuid: a72cd5d4-b57d-43f4-b594-e9e4c5dbb4c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foray_path_distance
+    - node.type.foray
+id: node.foray.field_foray_path_distance
+field_name: field_foray_path_distance
+entity_type: node
+bundle: foray
+label: 'Foray Path Distance'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

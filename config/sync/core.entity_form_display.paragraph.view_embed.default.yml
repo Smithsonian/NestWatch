@@ -17,9 +17,6 @@ dependencies:
     - text
     - viewsreference
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_theme:
       children:
@@ -37,6 +34,9 @@ third_party_settings:
         required_fields: true
       label: Theme
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: i54atOPjnsDPJZdT3imxEvlcFk051AwtVMEvtBm4A-w
 id: paragraph.view_embed.default

@@ -18,9 +18,6 @@ dependencies:
     - paragraphs
     - text
 third_party_settings:
-  field_layout:
-    id: layout_threecol_33_34_33
-    settings: {  }
   field_group:
     group_theme:
       children: {  }
@@ -34,6 +31,9 @@ third_party_settings:
         required_fields: true
       label: Theme
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: LtoOKXC86fGbIztMqvGqLCLOdEGkBcZwXdSsQQszp3o
 id: paragraph.three_column_equal.default
@@ -48,7 +48,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: bottom
+    region: content
   field_column_one:
     weight: 1
     settings:
@@ -66,7 +66,7 @@ content:
         collapse_edit_all: collapse_edit_all
     third_party_settings: {  }
     type: paragraphs
-    region: first
+    region: content
   field_column_three:
     type: entity_reference_paragraphs
     weight: 3
@@ -78,7 +78,7 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: third
+    region: content
   field_column_two:
     weight: 2
     settings:
@@ -96,19 +96,19 @@ content:
         collapse_edit_all: collapse_edit_all
     third_party_settings: {  }
     type: paragraphs
-    region: second
+    region: content
   field_layout:
     weight: 21
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: first
+    region: content
   field_spacing:
     weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: bottom
+    region: content
   field_title:
     weight: 0
     settings:
@@ -116,7 +116,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
-    region: top
+    region: content
 hidden:
   created: true
   status: true

@@ -19,9 +19,6 @@ dependencies:
     - paragraphs
     - text
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   field_group:
     group_theme:
       children:
@@ -56,6 +53,9 @@ third_party_settings:
         classes: alt-theme-bundle
       label: 'Three Column (25-50-25)'
       region: content
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: Xj87UGVvrs_1YofFa1VikrLSAPJcDgO2t9XP1g6Ah-g
 id: paragraph.three_column_25_50_25.default

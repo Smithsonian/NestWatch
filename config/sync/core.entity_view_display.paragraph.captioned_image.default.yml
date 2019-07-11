@@ -13,18 +13,11 @@ dependencies:
     - image.style.grid
     - paragraphs.paragraphs_type.captioned_image
   module:
-    - field_layout
     - image
     - layout_builder
     - link
-    - si_content
     - text
 third_party_settings:
-  field_layout:
-    id: layout_teaser
-    settings:
-      extra_classes: ''
-      teaser_type: teaser-featured
   layout_builder:
     enabled: false
     allow_custom: false
@@ -52,15 +45,12 @@ content:
     type: text_default
     region: content
   field_title:
-    weight: 1
-    label: hidden
-    settings:
-      link: field_url
-      wrapper: span
-      class: h3
+    weight: 4
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: text_title
-    region: title
+    type: text_default
+    region: content
   field_url:
     weight: 3
     label: hidden

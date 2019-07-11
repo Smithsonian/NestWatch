@@ -4,7 +4,6 @@ ul.sf-menu.sf-accordion .sf-hidden{
   position: absolute;
 }
 ul.sf-menu.sf-accordion{
-  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.24) ;
   &,
   ul,
   li {
@@ -26,13 +25,14 @@ ul.sf-menu.sf-accordion{
  li {
    &.menuparent {
      > a {
-       @include font-icon("\f067", 20px, 12px, 5px, 14px, white, white);
-       display: block;
+       @include font-icon('\f107', 24px, 8px, 6px, 29px, white, white, true, false);
+       &:after {
+         transition: all .4s cubic-bezier(.55,.085,0,.99);
+       }
      }
      &.sf-expanded {
-       background: $mobile-menu;
-       > a:before {
-         content: "\f068";
+       > a:after {
+         transform: rotate(180deg);
        }
      }
    }

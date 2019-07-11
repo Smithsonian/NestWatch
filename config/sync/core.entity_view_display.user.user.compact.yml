@@ -5,14 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.user.compact
   module:
-    - field_layout
     - layout_builder
     - layout_discovery
     - user
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings: {  }
   layout_builder:
     enabled: true
     sections:

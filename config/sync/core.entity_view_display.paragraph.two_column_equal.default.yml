@@ -13,14 +13,10 @@ dependencies:
     - paragraphs.paragraphs_type.two_column_equal
   module:
     - entity_reference_revisions
-    - field_layout
     - layout_builder
     - layout_discovery
-    - si_content
+    - text
 third_party_settings:
-  field_layout:
-    id: layout_twocol
-    settings: {  }
   layout_builder:
     enabled: true
     sections:
@@ -80,6 +76,21 @@ third_party_settings:
                 type: entity_reference_revisions_entity_view
             additional: {  }
             weight: 0
+          57ebfb8a-aab4-4164-9acf-c8b9413c4bb1:
+            uuid: 57ebfb8a-aab4-4164-9acf-c8b9413c4bb1
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_equal:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
 _core:
   default_config_hash: 1ZVoTIDtXh98PwYUax8InjNzizTukl0JASnu_g8XrV8
@@ -107,15 +118,12 @@ content:
     type: entity_reference_revisions_entity_view
     region: second
   field_title:
-    weight: 0
-    label: hidden
-    settings:
-      link: entity
-      wrapper: h1
-      class: section-title
+    weight: 3
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: text_title
-    region: top
+    type: text_default
+    region: first
 hidden:
   field_bg: true
   field_class: true

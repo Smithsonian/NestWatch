@@ -1,0 +1,84 @@
+uuid: 816ab8e7-f9b2-48ee-899e-2bb31bd7e33a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab
+    - paragraphs.paragraphs_type.responsive_tabs
+    - paragraphs.paragraphs_type.tab_content
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Utw7tDtNRjsXuS5T0Gn6sLh6xgbCbXXnlzxJjDrvDVE
+id: paragraph.responsive_tabs.field_tab
+field_name: field_tab
+entity_type: paragraph
+bundle: responsive_tabs
+label: 'Tab Content'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tab_content: tab_content
+    target_bundles_drag_drop:
+      accordion_tab:
+        weight: 19
+        enabled: false
+      captioned_image:
+        weight: 20
+        enabled: false
+      content_reference:
+        weight: 21
+        enabled: false
+      grid_layout:
+        weight: 22
+        enabled: false
+      linked_text:
+        weight: 23
+        enabled: false
+      responsive_tabs:
+        weight: 24
+        enabled: false
+      slide:
+        weight: 25
+        enabled: false
+      slideshow:
+        weight: 26
+        enabled: false
+      tab_content:
+        enabled: true
+        weight: 27
+      test:
+        weight: 28
+        enabled: false
+      text_block:
+        weight: 29
+        enabled: false
+      three_column_25_50_25:
+        weight: 30
+        enabled: false
+      three_column_equal:
+        weight: 31
+        enabled: false
+      two_column_equal:
+        weight: 32
+        enabled: false
+      two_column_left:
+        weight: 33
+        enabled: false
+      two_column_right:
+        weight: 34
+        enabled: false
+      video:
+        weight: 35
+        enabled: false
+      view_embed:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

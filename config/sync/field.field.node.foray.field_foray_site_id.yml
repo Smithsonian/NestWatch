@@ -1,0 +1,28 @@
+uuid: 130aba1e-8e68-4834-9e84-56ca7e13ef0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foray_site_id
+    - node.type.foray
+    - node.type.sites
+id: node.foray.field_foray_site_id
+field_name: field_foray_site_id
+entity_type: node
+bundle: foray
+label: 'Foray Site ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sites: sites
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

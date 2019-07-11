@@ -1,0 +1,23 @@
+uuid: 2970c2ec-612f-4a95-b113-17f2a7c8d7c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_animate
+    - paragraphs.paragraphs_type.bg_image
+  module:
+    - options
+_core:
+  default_config_hash: vLGzyhYd9x7GyONW8OmEgq3dPQX3lLrr2fzP-KvwS5o
+id: paragraph.bg_image.field_animate
+field_name: field_animate
+entity_type: paragraph
+bundle: bg_image
+label: Animation
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -4,24 +4,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.foray.body
+    - field.field.node.foray.field_foray_date_and_time
+    - field.field.node.foray.field_foray_number
+    - field.field.node.foray.field_foray_path_distance
+    - field.field.node.foray.field_foray_site_id
     - node.type.foray
   module:
-    - text
-    - user
+    - manage_display
 id: node.foray.teaser
 targetEntityType: node
 bundle: foray
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content
@@ -41,4 +35,8 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_foray_date_and_time: true
+  field_foray_number: true
+  field_foray_path_distance: true
+  field_foray_site_id: true
   uid: true
