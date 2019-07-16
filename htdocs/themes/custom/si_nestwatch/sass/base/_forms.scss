@@ -341,3 +341,12 @@ form.node-edit-form details table thead{
   display: none;
 }
 
+//Hide caret when using the Drupal off-canvas
+
+#drupal-off-canvas {
+  summary {
+    a:before {
+      content: "";
+    }
+  } 
+}

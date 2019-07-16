@@ -1040,6 +1040,10 @@ form.node-form details table thead,
 form.node-edit-form details table thead {
   display: none; }
 
+/* line 348, sass/base/_forms.scss */
+#drupal-off-canvas summary a:before {
+  content: ""; }
+
 /*------------------------------------*\
     $GLOBAL CLASSES
 \*------------------------------------*/
