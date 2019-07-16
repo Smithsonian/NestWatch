@@ -3209,7 +3209,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
 
 /* line 1, sass/components/_header.scss */
 .header {
-  background: #333F48; }
+  background: #fff; }
   /* line 3, sass/components/_header.scss */
   .header p {
     margin: 0; }
@@ -5579,7 +5579,7 @@ li.sfHover > span.nolink > .sf-sub-indicator {
   /* line 81, sass/components/navigation/_main-nav.scss */
   .region--main-menu,
   .region--header {
-    background: #333F48; }
+    background: #fff; }
     /* line 136, sass/components/navigation/_main-nav.scss */
     .region--main-menu .sf-accordion-toggle,
     .region--header .sf-accordion-toggle {
@@ -5588,7 +5588,7 @@ li.sfHover > span.nolink > .sf-sub-indicator {
     /* line 142, sass/components/navigation/_main-nav.scss */
     .region--main-menu .sf-menu.sf-style-none,
     .region--header .sf-menu.sf-style-none {
-      background: #333F48;
+      background: #fff;
       -webkit-box-shadow: none;
               box-shadow: none;
       max-width: 100%;
