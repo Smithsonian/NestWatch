@@ -34,15 +34,17 @@ $plum                   : #692c7a;
 $red                    : #BE1512; //#F0515A; //#BE1512;
 $red-dark               : #78070e;
 $yellow                 : #F0B323; //#f5b333;
-$yellow-brand		      	: #ffd400; // SI Logo - Yellow
+$yellow-brand		    : #ffd400; // SI Logo - Yellow
 $white                  : #fff;
+// New Zoo Colors
 
+$beige                  : #faf8f3;
 $back-to-top-bg         :$burgundy;
-$nav-sub-bg							: $yellow-brand;
+$nav-sub-bg				: $yellow-brand;
 
 $header-bg              : $gray-darker;
 $preface-bg             : $gray-darkest; //#202023; //#27292e;
-$footer-bg              : $gray-darkest;
+$footer-bg              : $beige; //$gray-darkest;
 //** Background color for `<body>`.
 $body-bg                : $footer-bg;
 $content-bg             : #FFF;
