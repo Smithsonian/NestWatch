@@ -3111,7 +3111,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
       color: #ffd400; }
   /* line 9, sass/components/_footer.scss */
   .footer * {
-    color: white; }
+    color: #5c5d5d; }
   /* line 13, sass/components/_footer.scss */
   .footer p {
     margin: 0; }

@@ -7,7 +7,7 @@
     @include link-colors(white, $link-color-alt, $link-color-alt, white, white);
   }
   * {
-    color: white;
+    color: $gray-darkish; //color: white;
   }
 
   p {
