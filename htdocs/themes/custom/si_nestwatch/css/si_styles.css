@@ -3216,39 +3216,40 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
 
 /* line 8, sass/components/_header.scss */
 .header_preface {
-  background: #101820;
+  background: #faf8f3;
+  border-bottom: 1px solid #b2b2b2;
   padding: 3px 0;
   padding: 0.3rem 0; }
-  /* line 11, sass/components/_header.scss */
+  /* line 12, sass/components/_header.scss */
   .header_preface .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  /* line 15, sass/components/_header.scss */
+  /* line 16, sass/components/_header.scss */
   .header_preface > .container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  /* line 21, sass/components/_header.scss */
+  /* line 22, sass/components/_header.scss */
   .header_preface .wrapper-logo {
     padding-left: 10px; }
-    /* line 22, sass/components/_header.scss */
+    /* line 23, sass/components/_header.scss */
     .header_preface .wrapper-logo a {
       display: block;
       width: 123px; }
-  /* line 28, sass/components/_header.scss */
+  /* line 29, sass/components/_header.scss */
   .header_preface * {
     color: white; }
 
-/* line 42, sass/components/_header.scss */
+/* line 43, sass/components/_header.scss */
 .region--branding {
   padding: 8px 0;
   padding: 0.8rem 0; }
-  /* line 44, sass/components/_header.scss */
+  /* line 45, sass/components/_header.scss */
   .region--branding .branding-wrapper,
   .region--branding .site-slogan {
     color: white; }
-    /* line 47, sass/components/_header.scss */
+    /* line 48, sass/components/_header.scss */
     .region--branding .branding-wrapper a,
     .region--branding .site-slogan a {
       color: white; }
@@ -3268,33 +3269,33 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
       .region--branding .branding-wrapper a:active,
       .region--branding .site-slogan a:active {
         color: white; }
-  /* line 51, sass/components/_header.scss */
+  /* line 52, sass/components/_header.scss */
   .region--branding .branding-wrapper {
     font-family: "MinionPro", Georgia, Times, "Times New Roman", serif;
     font-weight: normal;
     margin: 0; }
-    /* line 55, sass/components/_header.scss */
+    /* line 56, sass/components/_header.scss */
     .region--branding .branding-wrapper span {
       display: block;
       padding-left: 62px;
       padding-left: 6.2rem; }
-  /* line 60, sass/components/_header.scss */
+  /* line 61, sass/components/_header.scss */
   .region--branding .site-slogan {
     padding-left: 62px;
     padding-left: 6.2rem;
     font-style: italic; }
-  /* line 64, sass/components/_header.scss */
+  /* line 65, sass/components/_header.scss */
   .region--branding .logo-icon {
     width: 52px;
     float: left; }
-  /* line 68, sass/components/_header.scss */
+  /* line 69, sass/components/_header.scss */
   .region--branding .si-name {
     font-size: 28px;
     font-size: 2.8rem;
     line-height: 1;
     padding-top: 4px;
     padding-top: 0.4rem; }
-  /* line 73, sass/components/_header.scss */
+  /* line 74, sass/components/_header.scss */
   .region--branding .site-name {
     font-size: 18px;
     font-size: 1.8rem;
@@ -3302,42 +3303,42 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
     font-style: italic; }
 
 @media (min-width: 768px) {
-  /* line 83, sass/components/_header.scss */
+  /* line 84, sass/components/_header.scss */
   .header-inner {
     z-index: 100;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end; }
-  /* line 88, sass/components/_header.scss */
+  /* line 89, sass/components/_header.scss */
   .header_preface .wrapper-logo {
     padding-left: 20px; }
-    /* line 89, sass/components/_header.scss */
+    /* line 90, sass/components/_header.scss */
     .header_preface .wrapper-logo a {
       display: block;
       width: 132px; }
-  /* line 96, sass/components/_header.scss */
+  /* line 97, sass/components/_header.scss */
   .region--branding {
     padding: 12px 0;
     padding: 1.2rem 0; }
-    /* line 98, sass/components/_header.scss */
+    /* line 99, sass/components/_header.scss */
     .region--branding .logo-icon {
       width: 80px; }
-    /* line 101, sass/components/_header.scss */
+    /* line 102, sass/components/_header.scss */
     .region--branding .branding-wrapper span,
     .region--branding .site-slogan {
       padding-left: 90px;
       padding-left: 9rem; }
-    /* line 105, sass/components/_header.scss */
+    /* line 106, sass/components/_header.scss */
     .region--branding .si-name {
       font-size: 42px;
       font-size: 4.2rem; }
-    /* line 108, sass/components/_header.scss */
+    /* line 109, sass/components/_header.scss */
     .region--branding .site-name {
       font-size: 25px;
       font-size: 2.5rem; } }
 
 @media (min-width: 980px) {
-  /* line 117, sass/components/_header.scss */
+  /* line 118, sass/components/_header.scss */
   header .block-superfish {
     position: relative;
     width: 100%;

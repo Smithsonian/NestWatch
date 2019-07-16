@@ -7,6 +7,7 @@
 
 .header_preface {
 	background: $preface-bg;
+	border-bottom: 1px solid $gray-lightish;
 	@include rem(padding, 3px 0);
 	.menu {
 		@extend %reset-list;
