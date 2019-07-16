@@ -23,7 +23,7 @@ regions:
   footer_bottom_right: 'Footer Bottom Right'
 
 libraries:
-  - si_basetheme/base
+  - si_nestwatch/base
 
 libraries-override:
   superfish/superfish_smallscreen:

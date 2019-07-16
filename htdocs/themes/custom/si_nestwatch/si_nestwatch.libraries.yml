@@ -16,3 +16,4 @@ base:
     - core/drupal
     - core/drupal.ajax
     - core/drupalSettings
+    - si_content/layout

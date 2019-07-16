@@ -1,0 +1,54 @@
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
+	Usage: @include font-size(1, large);
+*/
+/* line 44, sass/grid-layout.scss */
+.paragraph--type--grid-layout > .content > div {
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem; }
+
+@media (min-width: 600px) {
+  /* line 48, sass/grid-layout.scss */
+  .paragraph--type--grid-layout .no-media .inner,
+  .paragraph--type--grid-layout .paragraph--type--text-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 53, sass/grid-layout.scss */
+  .paragraph--type--grid-layout > .content > div {
+    margin-bottom: 0; }
+  /* line 56, sass/grid-layout.scss */
+  .paragraph--type--grid-layout > .content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 24px;
+    grid-row-gap: 2.4rem;
+    grid-column-gap: 20px;
+    grid-column-gap: 2rem; }
+    /* line 61, sass/grid-layout.scss */
+    .paragraph--type--grid-layout > .content > div {
+      grid-column-end: span 6;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+@media (min-width: 980px) {
+  /* line 72, sass/grid-layout.scss */
+  .paragraph--type--grid-layout.col-3 > .content > div {
+    grid-column-end: span 4; }
+  /* line 81, sass/grid-layout.scss */
+  .paragraph--type--grid-layout.col-4 > .content > div, .paragraph--type--grid-layout.col-6 > .content > div {
+    grid-column-end: span 3; } }
+
+@media (min-width: 1280px) {
+  /* line 89, sass/grid-layout.scss */
+  .paragraph--type--grid-layout > .content {
+    grid-column-gap: 40px;
+    grid-column-gap: 4rem; }
+  /* line 94, sass/grid-layout.scss */
+  .paragraph--type--grid-layout.col-6 > .content > div {
+    grid-column-end: span 2; } }
+
+/*# sourceMappingURL=maps/grid-layout.css.map */
