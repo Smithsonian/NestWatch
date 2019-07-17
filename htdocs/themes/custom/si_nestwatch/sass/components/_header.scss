@@ -12,7 +12,9 @@
 	.menu {
 		@extend %reset-list;
 		display: flex;
-		color: $gray-dark-azureish;
+		a {
+			color: $gray-dark-azureish;
+		}
 	}
 	> .container {
 		align-items: center;
