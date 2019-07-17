@@ -128,7 +128,9 @@
 			width: 100%;
 			top: auto;
 			right: auto;
-			color: $gray-dark-azureish;
+			a {
+				color: $gray-dark-azureish;
+			}
 		}
 	}
 }

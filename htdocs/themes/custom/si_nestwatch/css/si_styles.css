@@ -3349,8 +3349,10 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
     position: relative;
     width: 100%;
     top: auto;
-    right: auto;
-    color: #66686a; } }
+    right: auto; }
+    /* line 131, sass/components/_header.scss */
+    header .block-superfish a {
+      color: #66686a; } }
 
 @-webkit-keyframes fadeInUp {
   0% {
