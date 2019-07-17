@@ -29,6 +29,14 @@
 	* {
 		color: $gray-dark-azureish !important; // white;
 	}
+	#superfish-zoo-navigation {
+		a {
+			padding: .5rem 1.5rem;
+		}
+		a:nth-child(1) {
+			padding-left: 0;
+		}
+	}
 }
 
 //.header-inner {
