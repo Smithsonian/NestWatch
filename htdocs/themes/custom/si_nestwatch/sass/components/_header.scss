@@ -12,9 +12,6 @@
 	.menu {
 		@extend %reset-list;
 		display: flex;
-		a {
-			color: $gray-dark-azureish;
-		}
 	}
 	> .container {
 		align-items: center;
@@ -131,6 +128,7 @@
 			width: 100%;
 			top: auto;
 			right: auto;
+			color: $gray-dark-azureish;
 		}
 	}
 }
