@@ -3239,7 +3239,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
       width: 123px; }
   /* line 29, sass/components/_header.scss */
   .header_preface * {
-    color: white; }
+    color: #66686a; }
 
 /* line 43, sass/components/_header.scss */
 .region--branding {
