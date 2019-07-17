@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a two column layout.
+ *
+ * This template provides a two column display layout with full width areas at
+ * the top, bottom and in the middle.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if content %}
+    <div {{ attributes }}>
+        <div class="g-12-m {{ settings.wrapper_class }}">
+            {% if content.one_col %}
+                <div {{ region_attributes.one_col.addClass(settings.col_width.one_col) }}>
+                    {{ content.one_col }}
+                </div>
+            {% endif %}
+
+            {% if content.two_col %}
+                <div {{ region_attributes.two_col.addClass(settings.col_width.two_col) }}>
+                    {{ content.two_col }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}

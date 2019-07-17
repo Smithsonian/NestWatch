@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5241e78ac19250d9187ee4ccb076e386",
+    "content-hash": "50bef9fe060e88a5f2de1ca7adf949ef",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -124,16 +124,16 @@
         },
         {
             "name": "brumann/polyfill-unserialize",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbrumann/polyfill-unserialize.git",
-                "reference": "844d7e44b62a1a3d5c68cfb7ebbd59c17ea0fd7b"
+                "reference": "8ed1cd343ddc134a7ef649aca0aa0fe2a1b45008"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbrumann/polyfill-unserialize/zipball/844d7e44b62a1a3d5c68cfb7ebbd59c17ea0fd7b",
-                "reference": "844d7e44b62a1a3d5c68cfb7ebbd59c17ea0fd7b",
+                "url": "https://api.github.com/repos/dbrumann/polyfill-unserialize/zipball/8ed1cd343ddc134a7ef649aca0aa0fe2a1b45008",
+                "reference": "8ed1cd343ddc134a7ef649aca0aa0fe2a1b45008",
                 "shasum": ""
             },
             "require": {
@@ -156,7 +156,7 @@
                 }
             ],
             "description": "Backports unserialize options introduced in PHP 7.0 to older PHP versions.",
-            "time": "2017-02-03T09:55:47+00:00"
+            "time": "2019-07-14T23:16:24+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -3630,11 +3630,17 @@
         },
         {
             "name": "drupal/ds",
-            "version": "dev-3.x",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ds.git",
-                "reference": "3ad3a1b1475562472fc3b37e2e4a966a295a1dfb"
+                "reference": "8.x-3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.3.zip",
+                "reference": "8.x-3.3",
+                "shasum": "0f586997908d464c123b1ab8817cf13363666459"
             },
             "require": {
                 "drupal/core": "^8.6"
@@ -3649,14 +3655,13 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.3+13-dev",
-                    "datestamp": "1556524084",
+                    "version": "8.x-3.3",
+                    "datestamp": "1551355085",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -5007,17 +5012,17 @@
         },
         {
             "name": "drupal/migrate_source_csv",
-            "version": "3.0.0-rc1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_source_csv.git",
-                "reference": "8.x-3.0-rc1"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-3.0-rc1.zip",
-                "reference": "8.x-3.0-rc1",
-                "shasum": "2793485ac64f40b02a9e603f09b22475c719d598"
+                "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "a1f45f4beebba5d7135938b4679f03aeb321bc77"
             },
             "require": {
                 "drupal/core": "^8.7",
@@ -5034,11 +5039,11 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-rc1",
-                    "datestamp": "1559827090",
+                    "version": "8.x-3.0",
+                    "datestamp": "1562953385",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -5462,17 +5467,17 @@
         },
         {
             "name": "drupal/schema_metatag",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/schema_metatag.git",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "a2c52956cdef9eafa274d8a6b23aa5439f24e1f1"
+                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "5d0a677608e30a7c8ffb43d98759b19cf5be17f6"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5489,8 +5494,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1527343084",
+                    "version": "8.x-1.4",
+                    "datestamp": "1563033785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7386,12 +7391,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:Smithsonian/si_d8_basetheme.git",
-                "reference": "7fa8f9f02557e0351a31776a070e16bfd0723136"
+                "reference": "e498d7507628c838a3bff4f9fc49fb6c689f219f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Smithsonian/si_d8_basetheme/zipball/7fa8f9f02557e0351a31776a070e16bfd0723136",
-                "reference": "7fa8f9f02557e0351a31776a070e16bfd0723136",
+                "url": "https://api.github.com/repos/Smithsonian/si_d8_basetheme/zipball/e498d7507628c838a3bff4f9fc49fb6c689f219f",
+                "reference": "e498d7507628c838a3bff4f9fc49fb6c689f219f",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -7400,7 +7405,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_basetheme/tree/master",
                 "issues": "https://github.com/Smithsonian/si_d8_basetheme/issues"
             },
-            "time": "2019-07-09 23:00:04"
+            "time": "2019-07-11 22:39:54"
         },
         {
             "name": "smithsonian/si_content",
@@ -7408,12 +7413,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:Smithsonian/si_d8_content.git",
-                "reference": "19cdd8e35455b308a4206bacd79ee3432aa6892b"
+                "reference": "70146f5eace8f292525fef6a0a93f211999d31fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Smithsonian/si_d8_content/zipball/19cdd8e35455b308a4206bacd79ee3432aa6892b",
-                "reference": "19cdd8e35455b308a4206bacd79ee3432aa6892b",
+                "url": "https://api.github.com/repos/Smithsonian/si_d8_content/zipball/70146f5eace8f292525fef6a0a93f211999d31fd",
+                "reference": "70146f5eace8f292525fef6a0a93f211999d31fd",
                 "shasum": ""
             },
             "type": "drupal-custom-module",
@@ -7422,7 +7427,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_content/tree/master",
                 "issues": "https://github.com/Smithsonian/si_d8_content/issues"
             },
-            "time": "2019-07-09 23:00:50"
+            "time": "2019-07-11 22:40:23"
         },
         {
             "name": "stack/builder",
@@ -9683,12 +9688,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/Mink.git",
-                "reference": "7f7af8fc7649c4f74935ddd1a1fa82e205eeb25e"
+                "reference": "a534fe7dac9525e8e10ca68e737c3d7e5058ec83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/Mink/zipball/7f7af8fc7649c4f74935ddd1a1fa82e205eeb25e",
-                "reference": "7f7af8fc7649c4f74935ddd1a1fa82e205eeb25e",
+                "url": "https://api.github.com/repos/minkphp/Mink/zipball/a534fe7dac9525e8e10ca68e737c3d7e5058ec83",
+                "reference": "a534fe7dac9525e8e10ca68e737c3d7e5058ec83",
                 "shasum": ""
             },
             "require": {
@@ -9696,7 +9701,7 @@
                 "symfony/css-selector": "^2.7|^3.0|^4.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "^3.3|^4.0"
+                "symfony/phpunit-bridge": "^4.2"
             },
             "suggest": {
                 "behat/mink-browserkit-driver": "extremely fast headless driver for Symfony\\Kernel-based apps (Sf2, Silex)",
@@ -9734,7 +9739,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2019-07-08T10:19:23+00:00"
+            "time": "2019-07-15 12:45:29"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -11918,7 +11923,6 @@
     "stability-flags": {
         "drupal/captcha": 10,
         "drupal/conditional_fields": 15,
-        "drupal/ds": 20,
         "drupal/fast_404": 15,
         "drupal/field_group": 20,
         "drupal/inline_entity_form": 5,

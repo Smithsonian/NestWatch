@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains nzp_layouts.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function nzp_layouts_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the nzp_layouts module.
+    case 'help.page.nzp_layouts':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('NZP Layouts') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function nzp_layouts_theme() {
+  return [
+    'nzp_layouts' => [
+      'render element' => 'children',
+    ],
+  ];
+}

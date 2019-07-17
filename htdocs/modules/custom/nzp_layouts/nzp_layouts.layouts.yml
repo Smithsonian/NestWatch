@@ -1,0 +1,45 @@
+layout_nzp_one_col:
+  label: 'One Column Stacked'
+  path: templates
+  template: layout--nzp-one-col
+  category: 'Columns: 1'
+  default_region: content
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpOneColLayouts'
+  icon_map:
+    - [top]
+    - [content]
+  regions:
+    banner:
+      label: "Banner"
+    content:
+      label: 'Main Content'
+
+
+
+layout_nzp_two_col:
+  label: 'Two Column'
+  path: templates
+  template: layout--nzp-two-col
+  category: 'Columns: 2'
+  default_region: one_col
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpTwoColLayouts'
+  icon_map:
+    - [aside]
+    - [content]
+  regions:
+    one_col:
+      label: Column 1
+    two_col:
+      label: Column 2
+
+
+layout_accordion:
+  label: 'Accordion'
+  template: templates/layout--accordion
+  category: 'Components'
+  default_region: content
+  regions:
+    summary:
+      label: summary
+    content:
+      label: content
