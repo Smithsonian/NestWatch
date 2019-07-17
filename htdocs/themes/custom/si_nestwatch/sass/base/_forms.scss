@@ -287,6 +287,7 @@ details {
     @include rem(padding, $space-half $pad-half);
     border-bottom: 1px solid #d1d1d1;
     cursor: pointer;
+    outline: none;
     > a {
       text-shadow: 0 1px 0 white;
       @include link-colors($blue-darkest, $link-hover, $link-hover, $blue-darkest, $blue-darkest);
@@ -304,7 +305,20 @@ details {
       }
     }
   }
-
+  summary:focus {
+    outline: none;
+  }
+  p {
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+  }
+  p:last-child {
+    padding-bottom: 1rem;
+  }
+  figure {
+    width: 38%;
+    float: right;
+  }
   > .details-wrapper {
     @include rem(padding, $space-half $pad-half);
 

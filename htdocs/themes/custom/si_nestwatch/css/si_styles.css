@@ -967,8 +967,9 @@ details {
     padding: 12px 10px;
     padding: 1.2rem 1rem;
     border-bottom: 1px solid #d1d1d1;
-    cursor: pointer; }
-    /* line 290, sass/base/_forms.scss */
+    cursor: pointer;
+    outline: none; }
+    /* line 291, sass/base/_forms.scss */
     details summary > a {
       text-shadow: 0 1px 0 white;
       color: #002554;
@@ -1005,42 +1006,56 @@ details {
       /* line 80, sass/helpers/_icon.scss */
       details summary > a:hover:before {
         color: #9f3050; }
-      /* line 294, sass/base/_forms.scss */
+      /* line 295, sass/base/_forms.scss */
       details summary > a:before {
         -webkit-transition: all .4s;
         transition: all .4s; }
-    /* line 299, sass/base/_forms.scss */
+    /* line 300, sass/base/_forms.scss */
     details summary[aria-expanded=false] > a:before {
       -ms-transform: rotate(180deg);
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg); }
   /* line 308, sass/base/_forms.scss */
+  details summary:focus {
+    outline: none; }
+  /* line 311, sass/base/_forms.scss */
+  details p {
+    padding: 1rem 1rem 0 1rem;
+    margin: 0; }
+  /* line 315, sass/base/_forms.scss */
+  details p:last-child {
+    padding-bottom: 1rem; }
+  /* line 318, sass/base/_forms.scss */
+  details figure {
+    width: 38%;
+    float: right; }
+  /* line 322, sass/base/_forms.scss */
   details > .details-wrapper {
     padding: 12px 10px;
     padding: 1.2rem 1rem; }
-  /* line 317, sass/base/_forms.scss */
+  /* line 331, sass/base/_forms.scss */
   details table {
     border: none; }
-  /* line 320, sass/base/_forms.scss */
+  /* line 334, sass/base/_forms.scss */
   details tr.odd {
     background: transparent; }
 
-/* line 326, sass/base/_forms.scss */
+/* line 340, sass/base/_forms.scss */
 .collapse-processed > summary:before {
   background: none;
   width: 0;
   height: 0; }
 
-/* line 332, sass/base/_forms.scss */
+/* line 346, sass/base/_forms.scss */
 .collapse-processed:not([open]) > summary:before {
   background: none; }
 
-/* line 339, sass/base/_forms.scss */
+/* line 353, sass/base/_forms.scss */
 form.node-form details table thead,
 form.node-edit-form details table thead {
   display: none; }
 
-/* line 348, sass/base/_forms.scss */
+/* line 362, sass/base/_forms.scss */
 #drupal-off-canvas summary a:before {
   content: ""; }
 
@@ -3010,24 +3025,24 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
 .path-contact input {
   margin-bottom: 15px; }
 
-/* line 4, sass/components/_details.scss */
-details p {
-  padding: 1rem 1rem 0 1rem;
-  margin: 0; }
-
-/* line 8, sass/components/_details.scss */
-details p:last-child {
-  padding-bottom: 1rem; }
-
-/* line 11, sass/components/_details.scss */
-details figure {
-  width: 38%;
-  float: right; }
-
-/* line 15, sass/components/_details.scss */
-details summary, details summary:focus {
-  outline: none; }
-
+/*
+details {
+    p {
+        padding: 1rem 1rem 0 1rem;
+        margin: 0;
+    }
+    p:last-child {
+        padding-bottom: 1rem;
+    }
+    figure {
+        width: 38%;
+        float: right;
+    }
+    summary, summary:focus {
+        outline: none;
+    }
+}
+*/
 /* line 1, sass/components/_fields.scss */
 .field__label {
   font-weight: bold; }
