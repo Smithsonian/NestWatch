@@ -3025,24 +3025,6 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
 .path-contact input {
   margin-bottom: 15px; }
 
-/*
-details {
-    p {
-        padding: 1rem 1rem 0 1rem;
-        margin: 0;
-    }
-    p:last-child {
-        padding-bottom: 1rem;
-    }
-    figure {
-        width: 38%;
-        float: right;
-    }
-    summary, summary:focus {
-        outline: none;
-    }
-}
-*/
 /* line 1, sass/components/_fields.scss */
 .field__label {
   font-weight: bold; }
