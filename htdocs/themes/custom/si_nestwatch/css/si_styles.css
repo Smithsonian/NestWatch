@@ -3352,7 +3352,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
     right: auto; }
     /* line 131, sass/components/_header.scss */
     header .block-superfish a {
-      color: #66686a; } }
+      color: #66686a !important; } }
 
 @-webkit-keyframes fadeInUp {
   0% {
