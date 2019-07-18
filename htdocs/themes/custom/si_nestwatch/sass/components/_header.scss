@@ -94,6 +94,7 @@
 		align-items: end;
 	}
 	.header_preface {
+		display: none;
 		.wrapper-logo {
 			a {
 				display: block;
@@ -121,12 +122,6 @@
 	}
 }
 
-@include breakpoint($tab) {
-	.header_preface {
-		display: none;
-	}
-}
-
 @include breakpoint($desk) {
 	header {
 		.block-superfish {
@@ -140,4 +135,3 @@
 		}
 	}
 }
-
