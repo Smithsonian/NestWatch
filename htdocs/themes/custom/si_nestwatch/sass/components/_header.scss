@@ -6,7 +6,6 @@
 }
 
 .header_preface {
-	display: none;
 	background: $preface-bg;
 	border-bottom: 1px solid $gray-lightish;
 	@include rem(padding, 3px 0);
@@ -120,6 +119,12 @@
 			@include rem(font-size, 25px);
 		}
 
+	}
+}
+
+@media (max-width: $tab) {
+	header_preface {
+		display: none;
 	}
 }
 
