@@ -88,7 +88,7 @@
 
 // end l-branding
 
-@media (min-width: $tab) {
+@media (max-width: $tab) {
 	.header_preface {
 		display: none;
 	}
