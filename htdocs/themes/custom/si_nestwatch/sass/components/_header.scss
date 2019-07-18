@@ -94,7 +94,6 @@
 		align-items: end;
 	}
 	.header_preface {
-		display: none;
 		.wrapper-logo {
 			a {
 				display: block;
@@ -122,7 +121,7 @@
 	}
 }
 
-@media (max-width: $tab) {
+@media (min-width: $tab) {
 	.header_preface {
 		display: none;
 	}
