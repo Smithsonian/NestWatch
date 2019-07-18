@@ -3325,7 +3325,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
 
 @media (max-width: "all" 768px) {
   /* line 92, sass/components/_header.scss */
-  .header_preface {
+  #block-zoonavigation {
     display: none; } }
 
 @media (min-width: 768px) {
