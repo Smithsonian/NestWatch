@@ -121,6 +121,12 @@
 	}
 }
 
+@include breakpoint($tab) {
+	.header_preface {
+		display: none;
+	}
+}
+
 @include breakpoint($desk) {
 	header {
 		.block-superfish {
