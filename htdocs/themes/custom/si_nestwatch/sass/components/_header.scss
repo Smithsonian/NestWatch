@@ -93,6 +93,12 @@
 		.header_preface {
 			display: none;
 		}
+		#block-zoonavigation-2 {
+			.menu {
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+		}
 		/*
 		.lines-button {
 			right: unset;
