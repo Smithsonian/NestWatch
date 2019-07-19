@@ -3323,54 +3323,65 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
     line-height: 1.125;
     font-style: italic; }
 
-@media (max-width: "all" 768px) {
-  /* line 92, sass/components/_header.scss */
-  #block-zoonavigation {
-    display: none; } }
+@media screen and (max-width: 979px) {
+  /* line 94, sass/components/_header.scss */
+  header.header .region--main-menu .donate-join {
+    display: none; }
+  /* line 97, sass/components/_header.scss */
+  header.header .region--main-menu .lines-button {
+    right: unset;
+    left: 4%;
+    top: -75px; }
+  /* line 102, sass/components/_header.scss */
+  header.header .region--main-menu #superfish-main-accordion.sf-expanded {
+    top: -27px !important; }
+  /* line 108, sass/components/_header.scss */
+  header.header .header_preface .region--header-preface-right .menu--social-media {
+    margin-right: 0; } }
 
 @media (min-width: 768px) {
-  /* line 98, sass/components/_header.scss */
+  /* line 117, sass/components/_header.scss */
   .header-inner {
     z-index: 100;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end; }
-  /* line 103, sass/components/_header.scss */
+  /* line 122, sass/components/_header.scss */
   .header_preface .wrapper-logo {
     padding-left: 20px; }
-    /* line 104, sass/components/_header.scss */
+    /* line 123, sass/components/_header.scss */
     .header_preface .wrapper-logo a {
       display: block;
       width: 132px; }
-  /* line 111, sass/components/_header.scss */
+  /* line 130, sass/components/_header.scss */
   .region--branding {
     padding: 12px 0;
     padding: 1.2rem 0; }
-    /* line 113, sass/components/_header.scss */
+    /* line 132, sass/components/_header.scss */
     .region--branding .logo-icon {
       width: 80px; }
-    /* line 116, sass/components/_header.scss */
+    /* line 135, sass/components/_header.scss */
     .region--branding .branding-wrapper span,
     .region--branding .site-slogan {
       padding-left: 90px;
       padding-left: 9rem; }
-    /* line 120, sass/components/_header.scss */
+    /* line 139, sass/components/_header.scss */
     .region--branding .si-name {
       font-size: 42px;
       font-size: 4.2rem; }
-    /* line 123, sass/components/_header.scss */
+    /* line 142, sass/components/_header.scss */
     .region--branding .site-name {
       font-size: 25px;
       font-size: 2.5rem; } }
 
 @media (min-width: 980px) {
-  /* line 132, sass/components/_header.scss */
+  /* line 151, sass/components/_header.scss */
   header .block-superfish {
     position: relative;
     width: 100%;
     top: auto;
     right: auto; }
-    /* line 137, sass/components/_header.scss */
+    /* line 156, sass/components/_header.scss */
     header .block-superfish a {
       color: #66686a !important; } }
 
