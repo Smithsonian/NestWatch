@@ -90,10 +90,15 @@
 
 @media screen and (max-width: 979px) {
     header.header {
+		/*
 		.lines-button {
 			right: unset;
 			left: 4%;
 			top: -75px;
+		}
+		*/
+		#block-zoonavigation {
+			display: none;
 		}
 		/*
         .region--main-menu {
