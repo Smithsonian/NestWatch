@@ -29,7 +29,7 @@
 	* {
 		color: $gray-dark-azureish !important; // white;
 	}
-	#superfish-zoo-navigation {
+	#block-zoonavigation-2 {
 		a {
 			padding: .5rem 1.5rem;
 		}
@@ -90,12 +90,6 @@
 
 @media screen and (max-width: 979px) {
     header.header {
-		#block-zoonavigation-2 {
-			.menu {
-				justify-content: space-between;
-				flex-wrap: wrap;
-			}
-		}
 		/*
 		.lines-button {
 			right: unset;
