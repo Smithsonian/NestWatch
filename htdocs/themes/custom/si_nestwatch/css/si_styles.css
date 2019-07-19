@@ -3270,7 +3270,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
 .region--header #superfish-main ul {
   background-color: #efeff0; }
   /* line 50, sass/components/_header.scss */
-  .region--header #superfish-main ul li:hover {
+  .region--header #superfish-main ul li:hover, .region--header #superfish-main ul .active-trail {
     background-color: #e7e7e8; }
 
 /* line 66, sass/components/_header.scss */
