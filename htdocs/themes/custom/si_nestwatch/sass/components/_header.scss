@@ -90,15 +90,17 @@
 
 @media screen and (max-width: 979px) {
     header.header {
+		.lines-button {
+			right: unset;
+			left: 4%;
+			top: -75px;
+		}
+		/*
         .region--main-menu {
             .donate-join {
                 display: none;
             }
-            .lines-button {
-                right: unset;
-                left: 4%;
-                top: -75px;
-            }
+
             #superfish-main-accordion.sf-expanded {
                 top: -27px !important;
             }
@@ -109,7 +111,8 @@
                     margin-right: 0;
                 }
             }
-        }
+		}
+		*/
     }
 }
 

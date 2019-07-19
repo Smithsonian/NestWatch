@@ -3324,64 +3324,75 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
     font-style: italic; }
 
 @media screen and (max-width: 979px) {
-  /* line 94, sass/components/_header.scss */
-  header.header .region--main-menu .donate-join {
-    display: none; }
-  /* line 97, sass/components/_header.scss */
-  header.header .region--main-menu .lines-button {
-    right: unset;
-    left: 4%;
-    top: -75px; }
-  /* line 102, sass/components/_header.scss */
-  header.header .region--main-menu #superfish-main-accordion.sf-expanded {
-    top: -27px !important; }
-  /* line 108, sass/components/_header.scss */
-  header.header .header_preface .region--header-preface-right .menu--social-media {
-    margin-right: 0; } }
+  /* line 92, sass/components/_header.scss */
+  header.header {
+    /*
+        .region--main-menu {
+            .donate-join {
+                display: none;
+            }
+
+            #superfish-main-accordion.sf-expanded {
+                top: -27px !important;
+            }
+        }
+        .header_preface {
+            .region--header-preface-right {
+                .menu--social-media {
+                    margin-right: 0;
+                }
+            }
+		}
+		*/ }
+    /* line 93, sass/components/_header.scss */
+    header.header .lines-button {
+      right: unset;
+      left: 4%;
+      top: -75px; } }
 
 @media (min-width: 768px) {
-  /* line 117, sass/components/_header.scss */
+  /* line 120, sass/components/_header.scss */
   .header-inner {
     z-index: 100;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end; }
-  /* line 122, sass/components/_header.scss */
+  /* line 125, sass/components/_header.scss */
   .header_preface .wrapper-logo {
     padding-left: 20px; }
-    /* line 123, sass/components/_header.scss */
+    /* line 126, sass/components/_header.scss */
     .header_preface .wrapper-logo a {
       display: block;
       width: 132px; }
-  /* line 130, sass/components/_header.scss */
+  /* line 133, sass/components/_header.scss */
   .region--branding {
     padding: 12px 0;
     padding: 1.2rem 0; }
-    /* line 132, sass/components/_header.scss */
+    /* line 135, sass/components/_header.scss */
     .region--branding .logo-icon {
       width: 80px; }
-    /* line 135, sass/components/_header.scss */
+    /* line 138, sass/components/_header.scss */
     .region--branding .branding-wrapper span,
     .region--branding .site-slogan {
       padding-left: 90px;
       padding-left: 9rem; }
-    /* line 139, sass/components/_header.scss */
+    /* line 142, sass/components/_header.scss */
     .region--branding .si-name {
       font-size: 42px;
       font-size: 4.2rem; }
-    /* line 142, sass/components/_header.scss */
+    /* line 145, sass/components/_header.scss */
     .region--branding .site-name {
       font-size: 25px;
       font-size: 2.5rem; } }
 
 @media (min-width: 980px) {
-  /* line 151, sass/components/_header.scss */
+  /* line 154, sass/components/_header.scss */
   header .block-superfish {
     position: relative;
     width: 100%;
     top: auto;
     right: auto; }
-    /* line 156, sass/components/_header.scss */
+    /* line 159, sass/components/_header.scss */
     header .block-superfish a {
       color: #66686a !important; } }
 
