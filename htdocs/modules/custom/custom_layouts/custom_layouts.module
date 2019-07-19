@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_layouts.module.
+ */
+
+use Drupal\custom_layouts\PluginAlter;
+
+/**
+ * Implements hook_plugin_filter_TYPE__CONSUMER_alter() for block__layout_builder().
+ *
+ * Re-organize the block list.
+ *
+ * We used Block Blacklist to remove blocks we don't want to see at all. Here
+ * we re-organize the remaining blocks in a way that is appropriate for our
+ * needs. Including:
+ *   - Change some labels and categories to be more editor-friendly.
+ *   - Group blocks in a way that is meaningful for our site.
+ *   - Adjust category names so the categories appear in the right order.
+ */
+

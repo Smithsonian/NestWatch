@@ -22,7 +22,7 @@ layout_nzp_two_col:
   template: layout--nzp-two-col
   category: 'Columns: 2'
   default_region: one_col
-  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpTwoColLayouts'
+  class: '\Drupal\nzp_layouts\Plugin\Layout\NzpTwoColLayouts'
   icon_map:
     - [aside]
     - [content]

@@ -1,32 +1,38 @@
 {#
 /**
  * @file
- * Default theme implementation for a two column layout.
+ * SI theme implementation for a two column layout.
  *
  * This template provides a two column display layout with full width areas at
  * the top, bottom and in the middle.
  *
  * Available variables:
  * - content: The content for this layout.
- * - attributes: HTML attributes for the layout <div>.
- *
+ * - attributes: HTML attributes for the layout.
+ * - region_attributes attributes for the region itself
+ * Settings Variables (pulled from the Layout Section config form): 
+ *   HTML Tags/Elements:
+ *   - settings.html_container_elements: wrapper/container html tags selected by the user.
+ *   - settings.html_region_elements.[region_name]: region html tags selected by the user (eg: settings.html_region_elements.one_col). 
+ *   HTML Classes:
+ *   - settings.container_classes: Container classes set by the user. 
+ *   - settings.region_classes.[region_name]: Region classes set by the user (eg: settings.region_classes.one_col).
  * @ingroup themeable
  */
 #}
 {% if content %}
-    <div {{ attributes }}>
-        <div class="g-12-m {{ settings.wrapper_class }}">
+{{ kint(settings)}}
+            <{{settings.html_container_elements}} {{attributes.addClass('g-12-m', settings.container_classes)}}>
             {% if content.one_col %}
-                <div {{ region_attributes.one_col.addClass(settings.col_width.one_col) }}>
+                <{{ settings.html_region_elements.one_col }} {{ region_attributes.one_col.addClass(settings.region_classes.one_col) }}>
                     {{ content.one_col }}
-                </div>
+                </{{ settings.html_region_elements.one_col }}>
             {% endif %}
 
             {% if content.two_col %}
-                <div {{ region_attributes.two_col.addClass(settings.col_width.two_col) }}>
+                <{{settings.html_region_elements.two_col }} {{ region_attributes.two_col.addClass(settings.region_classes.two_col) }}>
                     {{ content.two_col }}
-                </div>
+                </{{settings.html_region_elements.two_col }}>
             {% endif %}
-        </div>
-    </div>
+            </{{settings.html_container_elements}}>
 {% endif %}
