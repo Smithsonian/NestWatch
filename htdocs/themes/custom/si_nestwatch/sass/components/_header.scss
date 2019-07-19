@@ -90,6 +90,9 @@
 
 @media screen and (max-width: 979px) {
     header.header {
+		.header_preface {
+			display: none;
+		}
 		/*
 		.lines-button {
 			right: unset;
@@ -97,9 +100,11 @@
 			top: -75px;
 		}
 		*/
+		/*
 		#block-zoonavigation {
 			display: none;
 		}
+		*/
 		/*
         .region--main-menu {
             .donate-join {
