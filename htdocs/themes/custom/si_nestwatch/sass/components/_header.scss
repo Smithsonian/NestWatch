@@ -37,8 +37,10 @@
 			padding-left: 0;
 		}
 	}
-	#block-si-nestwatch-mainnavigation {
-		span.text {
+}
+.region--header {
+	#superfish-main-toggle {
+		.text {
 			display: none;
 		}
 	}
