@@ -88,13 +88,10 @@
 
 // end l-branding
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: $tab) {
     header.header {
 		.header_preface {
 			display: none;
-		}
-		.block-superfishmain {
-			text-align: right;
 		}
 		/*
 		.lines-button {
