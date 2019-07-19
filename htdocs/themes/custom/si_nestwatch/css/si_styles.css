@@ -3323,7 +3323,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
     line-height: 1.125;
     font-style: italic; }
 
-@media screen and (max-width: "all" 768px) {
+@media screen and (max-width: 979px) {
   /* line 92, sass/components/_header.scss */
   header.header {
     /*
