@@ -50,6 +50,11 @@
 			li:hover, .active-trail {
 				background-color: #e7e7e8;
 			}
+			.active-trail {
+				&:after {
+					border-bottom-color: #efeff0;
+				}
+			}
 		}
 	}
 }
