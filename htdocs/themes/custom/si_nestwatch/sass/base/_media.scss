@@ -47,6 +47,12 @@ figcaption {
   @include rem(font-size, $font-size-small);
 }
 
+// feeder cam was spilling off page on mobile
+.feederCam-Container {
+	width: unset;
+	height: unset;
+}
+
 .wrapper--video {
 	padding-bottom: 56.25%; /* 16:9 */
 }

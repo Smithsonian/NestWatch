@@ -1486,16 +1486,21 @@ figcaption {
   font-size: 12px;
   font-size: 1.2rem; }
 
-/* line 50, sass/base/_media.scss */
+/* line 51, sass/base/_media.scss */
+.feederCam-Container {
+  width: unset;
+  height: unset; }
+
+/* line 56, sass/base/_media.scss */
 .wrapper--video {
   padding-bottom: 56.25%;
   /* 16:9 */ }
 
-/* line 54, sass/base/_media.scss */
+/* line 60, sass/base/_media.scss */
 .wrapper--video {
   position: relative;
   height: 0; }
-  /* line 57, sass/base/_media.scss */
+  /* line 63, sass/base/_media.scss */
   .wrapper--video iframe {
     position: absolute;
     top: 0;
@@ -1504,16 +1509,16 @@ figcaption {
     height: 100%;
     margin: 0; }
 
-/* line 68, sass/base/_media.scss */
+/* line 74, sass/base/_media.scss */
 .wrapper--image-text .image {
   border: 1px solid #D0D7DE; }
-  /* line 70, sass/base/_media.scss */
+  /* line 76, sass/base/_media.scss */
   .wrapper--image-text .image img {
     width: 100% !important;
     height: auto !important; }
 
 @media (min-width: 768px) {
-  /* line 75, sass/base/_media.scss */
+  /* line 81, sass/base/_media.scss */
   .wrapper--image-text.vertical {
     display: -webkit-box;
     display: flex;
@@ -1521,18 +1526,18 @@ figcaption {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    /* line 79, sass/base/_media.scss */
+    /* line 85, sass/base/_media.scss */
     .wrapper--image-text.vertical .image {
       -webkit-box-ordinal-group: 1;
           -ms-flex-order: 0;
               order: 0; }
-      /* line 81, sass/base/_media.scss */
+      /* line 87, sass/base/_media.scss */
       .wrapper--image-text.vertical .image.right {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; } }
 
-/* line 89, sass/base/_media.scss */
+/* line 95, sass/base/_media.scss */
 .image_name, .video_name {
   display: none; }
 
