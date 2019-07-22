@@ -3270,7 +3270,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
     display: none; }
 
 /* line 49, sass/components/_header.scss */
-.region--header .sfexpanded.lines-button .lines {
+.region--header .sf-expanded .lines {
   top: 4px; }
 
 /* line 54, sass/components/_header.scss */
