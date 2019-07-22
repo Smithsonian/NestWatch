@@ -39,7 +39,7 @@ use Drupal\Core\Plugin\PluginFormInterface;
    */
   public function defaultConfiguration() {
     return parent::defaultConfiguration() + [
-            'tab_title' => '',
+            'tab_title' => [],
         ];
 }
 
@@ -50,11 +50,31 @@ use Drupal\Core\Plugin\PluginFormInterface;
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $configuration = $this->getConfiguration();
-    $form['tab_title'] = [
+
+    $form['tab_number'] = [
         '#type' => 'textfield',
-        '#title' => $this->t('Tab Title'),
-        '#default_value' => $configuration['tab_title'],
+        '#attributes' => array(
+            ' type' => 'number', // insert space before attribute name :)
+        ),
+        '#title' => 'number of tabs',
+        '#required' => true,
+        '#maxlength' => 3
     ];
+    $num = $form_state->getValue('tab_number');
+    // $tab_num = filter_var($num, FILTER_SANITIZE_NUMBER_INT);
+    $tab_num = 3;
+    // if (!empty($num)) {
+        for ($i=0; $i < $tab_num; $i++) { 
+            $form['tab_title'][$i] = [
+                '#type' => 'textfield',
+                '#title' => $this->t('Tab Title for Tab:' . $i),
+                '#default_value' => $configuration['tab_title'],
+            ];
+        }
+    // }
+
+
+
     return $form;
 }
 
