@@ -45,6 +45,11 @@
 			display: none;
 		}
 	}
+	.sfexpanded.lines-button {
+		.lines {
+			top: 4px;
+		}
+	}
 	#superfish-main {
 		ul {
 			background-color: #efeff0;
