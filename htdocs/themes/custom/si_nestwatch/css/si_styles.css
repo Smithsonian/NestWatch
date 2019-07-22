@@ -3271,7 +3271,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
 
 /* line 49, sass/components/_header.scss */
 .region--header .sf-expanded .lines {
-  top: 4px; }
+  top: 4px !important; }
 
 /* line 54, sass/components/_header.scss */
 .region--header #superfish-main ul {
