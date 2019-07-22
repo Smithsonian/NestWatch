@@ -3294,7 +3294,7 @@ a.btn-blue, a.btn-orange, a.btn-green, a.btn-burgundy {
 
 /* line 67, sass/components/_header.scss */
 .region--header #superfish-main-accordion {
-  top: 24px !important; }
+  top: 0px !important; }
 
 /* line 81, sass/components/_header.scss */
 .region--branding {
