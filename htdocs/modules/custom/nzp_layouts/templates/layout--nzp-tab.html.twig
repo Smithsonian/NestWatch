@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * NZP Tabbed Theme interface
+ *
+ * This template provides a tab interface
+ * the top, bottom and in the middle.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div class="tab-wrapper" {{ attributes.setAttribute('data-position', '1') }}>
+            <div class="tab-title">
+             <h2>{{ settings.tab_title }} </h2>
+            </div>
+        {% if content.tab_content %}
+            <div {{ region_attributes.tab_content.addClass('tab-content') }} >
+                {{ content.tab_content }}
+            </div>
+        {% endif %}
+</div>
