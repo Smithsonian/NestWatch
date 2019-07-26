@@ -42,7 +42,7 @@ layout_accordion:
       label: content
 
 layout_nzp_tab:
-  label: 'tab'
+  label: 'Tabbed Interface'
   template: templates/layout--nzp-tab
   class: '\Drupal\nzp_layouts\Plugin\Layout\nzpTabLayouts'
   category: 'Components'

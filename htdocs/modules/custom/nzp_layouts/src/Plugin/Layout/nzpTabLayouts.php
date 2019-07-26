@@ -39,7 +39,8 @@ use Drupal\Core\Plugin\PluginFormInterface;
   public function defaultConfiguration() {
     return parent::defaultConfiguration() + [
             'tab_title' => [],
-        ];
+             'num_tabs' =>  '',
+      ];
 }
 
  
@@ -49,34 +50,40 @@ use Drupal\Core\Plugin\PluginFormInterface;
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $configuration = $this->getConfiguration();
+    $i = 0;
 
-        $i = 0;
-        $tabs_field = $form_state->getValue('num_tabs');
+    $tabs_field = $form_state->get('nb_package');
+
+    if (is_null($tabs_field)) {
+      $tabs_field = 2;
+      $form_state->set('num_tabs', $tabs_field);
+    }
+
 
         $form['#tree'] = TRUE;
-        $form['tabs_fieldset'] = [
+        $form['tabs_fieldset'] = array(
           '#type' => 'fieldset',
           '#title' => $this->t('Number of Tabs'),
           '#ajax' => TRUE,
           '#prefix' => '<div id="tabs-fieldset-wrapper">',
           '#suffix' => '</div>',
-        ];
+        );
         
-        $tabs_field = $form_state->setValue('num_tabs', 2);
         for ($i = 0; $i < $tabs_field; $i++) {
-          $form['tabs_fieldset']['tab'][$i] = [
+          $form['tabs_fieldset'][$i]['tab'] = [
             '#type' => 'textfield',
             '#title' => t('Tab Label'),
             '#default_value' => !empty($configuration['tab_title'][$i]) ? $configuration['tab_title'][$i] : 'Tab 1',
           ];
         }
+
         $form['actions'] = [
           '#type' => 'actions',
         ];
         $form['tabs_fieldset']['actions']['add_tab'] = [
           '#type' => 'submit',
           '#value' => t('Add another Tab'),
-          '#submit' => array('::addOne'),
+          '#submit' => array($this, 'addOne'),
           '#ajax' => [
             'callback' => '::addmoreCallback',
             'wrapper' => 'tabs-fieldset-wrapper',
@@ -86,14 +93,14 @@ use Drupal\Core\Plugin\PluginFormInterface;
           $form['tabs_fieldset']['actions']['remove_tab'] = [
             '#type' => 'submit',
             '#value' => t('Remove a Tab'),
-            '#submit' => array('::removeCallback'),
+            '#submit' => array($this, 'removeCallback'),
            '#ajax' => [
               'callback' => '::addmoreCallback',
               'wrapper' => 'tabs-fieldset-wrapper',
             ]
           ];
         }
-        $form_state->setCached(FALSE);
+//        $form_state->setCached(FALSE);
    
     
         return $form;
@@ -104,24 +111,23 @@ use Drupal\Core\Plugin\PluginFormInterface;
       }
     
       public function addOne(array &$form, FormStateInterface $form_state) {
-        $tabs_field = $form_state->get('num_tabs');
-        $add_button = $tabs_field + 1;
+        $num_tabs = $form_state->get('num_tabs');
+        $add_button = $num_tabs + 1;
         $form_state->set('num_tabs', $add_button);
-        $form_state->setRebuild();
+        $form_state->setRebuild(TRUE);
       }
     
       public function addmoreCallback(array &$form, FormStateInterface $form_state) {
-        $tabs_field = $form_state->get('num_tabs');
         return $form['tabs_fieldset'];
       }
     
       public function removeCallback(array &$form, FormStateInterface $form_state) {
-        $tabs_field = $form_state->get('num_tabs');
-        if ($tabs_field > 1) {
-          $remove_button = $tabs_field - 1;
+        $num_tabs = $form_state->get('num_tabs');
+        if ($num_tabs > 1) {
+          $remove_button = $num_tabs - 1;
           $form_state->set('num_tabs', $remove_button);
         }
-       $form_state->setRebuild();
+       $form_state->setRebuild(TRUE);
     }
       
 
@@ -135,7 +141,7 @@ use Drupal\Core\Plugin\PluginFormInterface;
    * {@inheritdoc}
    */
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
-    $this->configuration['tab_title'] = $form_state->getValue(array('tabs_fieldset', 'tab'));
+    $this->configuration['tab_title'] = $form_state->getValue(array('tabs_fieldset'));
     
   }
 
