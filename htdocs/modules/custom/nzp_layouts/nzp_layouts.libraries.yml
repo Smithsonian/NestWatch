@@ -1,0 +1,5 @@
+nzp_layouts-library:
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/drupal.ajax

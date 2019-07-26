@@ -4,6 +4,7 @@ namespace Drupal\nzp_layouts\Plugin\Layout;
 
 use Drupal\Core\Layout\LayoutDefault;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Form\FormBase;
 use Drupal\Core\Plugin\PluginFormInterface;
 
 /**
@@ -20,10 +21,8 @@ use Drupal\Core\Plugin\PluginFormInterface;
 
 
  class NzpTabLayouts extends LayoutDefault implements PluginFormInterface {
-  /**
-   * {@inheritdoc}
-   */
 
+  protected $number = 1;
 
   public function __construct(array $configuration, $plugin_id, $plugin_definition) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
@@ -43,91 +42,78 @@ use Drupal\Core\Plugin\PluginFormInterface;
       ];
 }
 
- 
+   /**
+   * {@inheritdoc}
+   */
+public function getFormId() {
+  return 'tabs_fieldset';
+}
 
   /**
    * {@inheritdoc}
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $configuration = $this->getConfiguration();
-    $i = 0;
 
-    $tabs_field = $form_state->get('nb_package');
+        $form['#tree'] =  TRUE;
 
-    if (is_null($tabs_field)) {
-      $tabs_field = 2;
-      $form_state->set('num_tabs', $tabs_field);
-    }
-
-
-        $form['#tree'] = TRUE;
         $form['tabs_fieldset'] = array(
-          '#type' => 'fieldset',
-          '#title' => $this->t('Number of Tabs'),
-          '#ajax' => TRUE,
-          '#prefix' => '<div id="tabs-fieldset-wrapper">',
-          '#suffix' => '</div>',
+          '#type' => 'container',
+          '#attributes' => ['id' => 'tabs-fieldset-wrapper'], // CHECK THIS ID
+
         );
         
-        for ($i = 0; $i < $tabs_field; $i++) {
-          $form['tabs_fieldset'][$i]['tab'] = [
+        for ($i = 0; $i < $this->number; $i++) {
+          $form['tabs_fieldset']['tab_'. $i]= [
             '#type' => 'textfield',
             '#title' => t('Tab Label'),
             '#default_value' => !empty($configuration['tab_title'][$i]) ? $configuration['tab_title'][$i] : 'Tab 1',
           ];
         }
 
-        $form['actions'] = [
+
+        $form['tabs_fieldset']['actions'] = [
           '#type' => 'actions',
         ];
+
         $form['tabs_fieldset']['actions']['add_tab'] = [
           '#type' => 'submit',
           '#value' => t('Add another Tab'),
-          '#submit' => array($this, 'addOne'),
+          '#submit' => [$this, 'addOne'],
           '#ajax' => [
-            'callback' => '::addmoreCallback',
-            'wrapper' => 'tabs-fieldset-wrapper',
+            'callback' => [$this, 'addmoreCallback'],
           ],
         ];
-        if ($tabs_field > 1) {
+        if ($this->number > 1) {
           $form['tabs_fieldset']['actions']['remove_tab'] = [
             '#type' => 'submit',
             '#value' => t('Remove a Tab'),
-            '#submit' => array($this, 'removeCallback'),
+            '#submit' => [$this, 'removeCallback'],
            '#ajax' => [
-              'callback' => '::addmoreCallback',
+              'callback' => [$this, 'addmoreCallback'],
               'wrapper' => 'tabs-fieldset-wrapper',
-            ]
-          ];
+              ]
+           ];
         }
-//        $form_state->setCached(FALSE);
-   
-    
         return $form;
       }
     
-      public function getFormId() {
-        return 'tabs_add_more';
-      }
-    
-      public function addOne(array &$form, FormStateInterface $form_state) {
-        $num_tabs = $form_state->get('num_tabs');
-        $add_button = $num_tabs + 1;
-        $form_state->set('num_tabs', $add_button);
-        $form_state->setRebuild(TRUE);
-      }
-    
-      public function addmoreCallback(array &$form, FormStateInterface $form_state) {
+   
+      public function addmoreCallback($form, $form_state) {
+        $number = $this->number++;
         return $form['tabs_fieldset'];
       }
     
+      public function addOne(array &$form, FormStateInterface $form_state) {
+        $this->number++;
+        $form_state->setRebuild();
+      }
+    
       public function removeCallback(array &$form, FormStateInterface $form_state) {
-        $num_tabs = $form_state->get('num_tabs');
-        if ($num_tabs > 1) {
-          $remove_button = $num_tabs - 1;
-          $form_state->set('num_tabs', $remove_button);
+        if ($this->number > 1) {
+          $this->number--;
         }
-       $form_state->setRebuild(TRUE);
+        $form_state->setRebuild();
     }
       
 
