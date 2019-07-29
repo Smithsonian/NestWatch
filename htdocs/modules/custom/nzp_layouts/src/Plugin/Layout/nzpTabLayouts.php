@@ -4,8 +4,9 @@ namespace Drupal\nzp_layouts\Plugin\Layout;
 
 use Drupal\Core\Layout\LayoutDefault;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Form\FormBase;
 use Drupal\Core\Plugin\PluginFormInterface;
+use Drupal\Core\Block\BlockBase;
+
 
 /**
  * Credit goes to npinos at https://github.com/npinos/drupal8-layouts.
@@ -22,7 +23,7 @@ use Drupal\Core\Plugin\PluginFormInterface;
 
  class NzpTabLayouts extends LayoutDefault implements PluginFormInterface {
 
-  protected $number = 1;
+  protected $number;
 
   public function __construct(array $configuration, $plugin_id, $plugin_definition) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
@@ -54,19 +55,20 @@ public function getFormId() {
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $configuration = $this->getConfiguration();
+    $tab_number = $this->number;
 
         $form['#tree'] =  TRUE;
-
         $form['tabs_fieldset'] = array(
           '#type' => 'container',
-          '#attributes' => ['id' => 'tabs-fieldset-wrapper'], // CHECK THIS ID
+          '#attributes' => ['id' => 'tabs-fieldset-wrapper'],
 
         );
-        
-        for ($i = 0; $i < $this->number; $i++) {
-          $form['tabs_fieldset']['tab_'. $i]= [
+
+        for ($i = 0; $i < $tab_number; $i++) {
+          $form['tabs_fieldset']['tab'][$i]= [
             '#type' => 'textfield',
             '#title' => t('Tab Label'),
+            '#description' => t('Number of Tabs @tab_number', ['@tab_number' => $tab_number]),
             '#default_value' => !empty($configuration['tab_title'][$i]) ? $configuration['tab_title'][$i] : 'Tab 1',
           ];
         }
@@ -76,46 +78,48 @@ public function getFormId() {
           '#type' => 'actions',
         ];
 
-        $form['tabs_fieldset']['actions']['add_tab'] = [
+        $form['actions']['add_tab'] = [
           '#type' => 'submit',
           '#value' => t('Add another Tab'),
-          '#submit' => [$this, 'addOne'],
+          '#submit' => [[$this, 'addOne']],
           '#ajax' => [
-            'callback' => [$this, 'addmoreCallback'],
+            'callback' => [$this, 'addMoreCallback'],
+            'wrapper' => 'tabs-fieldset-wrapper',
           ],
         ];
-        if ($this->number > 1) {
-          $form['tabs_fieldset']['actions']['remove_tab'] = [
+        if ($tab_number > 1) {
+          $form['actions']['remove_tab'] = [
             '#type' => 'submit',
             '#value' => t('Remove a Tab'),
-            '#submit' => [$this, 'removeCallback'],
-           '#ajax' => [
-              'callback' => [$this, 'addmoreCallback'],
-              'wrapper' => 'tabs-fieldset-wrapper',
-              ]
+            '#submit' => [[$this, 'removeCallback']],
+            '#ajax' => [
+               'callback' => [$this, 'addMoreCallback'],
+                'wrapper' => 'tabs-fieldset-wrapper',
+                ]
            ];
         }
         return $form;
       }
-    
-   
-      public function addmoreCallback($form, $form_state) {
-        $number = $this->number++;
-        return $form['tabs_fieldset'];
-      }
-    
+
+
+      public function addMoreCallback(array$form, FormStateInterface $form_state) {
+
+        return $form['layout_settings']['tabs_fieldset'];
+  }
+
       public function addOne(array &$form, FormStateInterface $form_state) {
         $this->number++;
         $form_state->setRebuild();
+
       }
-    
+
       public function removeCallback(array &$form, FormStateInterface $form_state) {
         if ($this->number > 1) {
           $this->number--;
         }
         $form_state->setRebuild();
     }
-      
+
 
   /**
    * {@inheritdoc}
@@ -128,7 +132,7 @@ public function getFormId() {
    */
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
     $this->configuration['tab_title'] = $form_state->getValue(array('tabs_fieldset'));
-    
+
   }
 
 }
