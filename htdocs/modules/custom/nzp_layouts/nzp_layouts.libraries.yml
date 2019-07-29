@@ -3,3 +3,13 @@ nzp_layouts-library:
     js/script.js: {}
   dependencies:
     - core/drupal.ajax
+
+nzp_tabs-library:
+  js: 
+    js/tabby/dist/js/tabby.js: {}    
+    js/script.js: {}
+  css:
+     theme:
+      js/tabby/dist/css/tabby-ui.css: {}
+
+

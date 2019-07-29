@@ -45,10 +45,21 @@ layout_nzp_tab:
   label: 'Tabbed Interface'
   template: templates/layout--nzp-tab
   class: '\Drupal\nzp_layouts\Plugin\Layout\nzpTabLayouts'
+  library: nzp_layouts/nzp_tabs-library
   category: 'Components'
   default_region: content
   regions:
     tab_title:
       label: Tab Title
-    tab_content:
-      label: Tab Content
+    tab_content_0:
+      label: Tab 1
+    tab_content_1:
+      label: Tab 2
+    tab_content_2:
+      label: Tab 3
+    tab_content_3:
+      label: Tab 4
+    tab_content_4:
+      label: Tab 5
+    tab_content_5:
+      label: Tab 6

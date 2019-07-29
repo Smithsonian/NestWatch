@@ -13,14 +13,28 @@
  * @ingroup themeable
  */
 #}
+{% set tabIndex = settings.num_tabs %}
 
-<div class="tab-wrapper" {{ attributes.setAttribute('data-position', '1') }}>
-            <div class="tab-title">
-             <h2>{{ settings.tab_title }} </h2>
-            </div>
-        {% if content.tab_content %}
-            <div {{ region_attributes.tab_content.addClass('tab-content') }} >
-                {{ content.tab_content }}
-            </div>
-        {% endif %}
+{{kint(settings)}}
+<div class="tab-wrapper">
+ <ul data-tabs="{{settings.uuid}}">
+            <li>
+                <a data-tabby-default href="#tab-{{settings.uuid}}-0">{{ settings.tab_title.tab[0]}}</a>
+            </li>
+    {% for index in range(1, tabIndex-1) %}
+            <li>
+                <a href="#tab-{{settings.uuid}}-{{index}}">{{ settings.tab_title.tab[index]}}</a>
+            </li>
+   {% endfor %}
+     </ul>
+     {% for index in range(0, tabIndex-1) %}
+        <div id="tab-{{settings.uuid}}-{{index}}">
+            {{ attribute(content, 'tab_content_' ~ index) }}
+        </div>
+    {% endfor %}
 </div>
+
+<script>
+const uuid = '{{settings.uuid }}';
+ var tabs = new Tabby('[data-tabs="'+uuid+"]');
+ </script>
