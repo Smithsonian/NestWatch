@@ -48,3 +48,6 @@ node_modules
 
 #ignore db-backups folder
 db-backups/
+
+#ignore VS Code generated files
+.vscode/*
