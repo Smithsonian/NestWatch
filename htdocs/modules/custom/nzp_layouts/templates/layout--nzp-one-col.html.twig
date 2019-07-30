@@ -15,18 +15,9 @@
 #}
 
 {% if content %}
-    <div {{ attributes }}>
-        {% if content.banner %}
-            <{{settings.wrappers.banner}} {{ region_attributes.banner.addClass(settings.region_wrapper_classes.banner) }}>
-                {{ content.banner }}
-            </{{settings.wrappers.banner}}>
-        {% endif %}
-
         {% if content.content %}
             <{{settings.wrappers.content}} {{ region_attributes.content.addClass(settings.region_wrapper_classes.content) }}>
                 {{ content.content }}
             </{{settings.wrappers.content}}>
         {% endif %}
-
-    </div>
 {% endif %}

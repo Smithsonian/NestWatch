@@ -35,6 +35,7 @@
     "drupal/image_widget_crop": "^2.2",
     "drupal/imce": "^1.7",
     "drupal/inline_entity_form": "^1.0@RC",
+    "drupal/layout_builder_modal": "^1.0",
     "drupal/ldap": "^3.0@beta",
     "drupal/linkit": "^4.3",
     "drupal/manage_display": "^1.0@alpha",

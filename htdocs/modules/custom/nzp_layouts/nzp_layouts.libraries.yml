@@ -1,0 +1,15 @@
+nzp_layouts-library:
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/drupal.ajax
+
+nzp_tabs-library:
+  js: 
+    js/tabby/dist/js/tabby.js: {}    
+    js/nzp_tabs.js: {}
+  css:
+     theme:
+      js/tabby/dist/css/tabby-ui.css: {}
+
+
