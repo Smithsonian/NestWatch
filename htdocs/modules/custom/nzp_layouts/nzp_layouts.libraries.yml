@@ -7,7 +7,7 @@ nzp_layouts-library:
 nzp_tabs-library:
   js: 
     js/tabby/dist/js/tabby.js: {}    
-    js/script.js: {}
+    js/nzp_tabs.js: {}
   css:
      theme:
       js/tabby/dist/css/tabby-ui.css: {}
