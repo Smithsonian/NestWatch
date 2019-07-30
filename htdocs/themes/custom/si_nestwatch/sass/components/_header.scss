@@ -36,6 +36,9 @@
 		a:nth-child(1) {
 			padding-left: 0;
 		}
+		a:last-child {
+			padding-right: 0;
+		}
 		.menu {
 			flex-wrap: wrap;
 		}
