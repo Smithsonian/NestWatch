@@ -138,7 +138,8 @@
     },
     "patches": {
       "drupal/paragraphs": {
-        "Fix support for field_group module in combination with field_layout module patch": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch"
+        "Fix support for field_group module in combination with field_layout module patch": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch",
+        "Fix Support for Lang Code when using Paragraphs in Entity Browser and Layout Builder": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch"
       }
     }
   },
