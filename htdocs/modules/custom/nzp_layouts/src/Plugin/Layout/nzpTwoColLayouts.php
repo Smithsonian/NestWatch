@@ -8,7 +8,7 @@ namespace Drupal\nzp_layouts\Plugin\Layout;
  * @internal
  *   Plugin classes are internal.
  */
-class NzpTwoColLayouts extends NzpWrapperBase {
+class nzpTwoColLayouts extends nzpWrapperBase {
 
   /**
    * {@inheritdoc}

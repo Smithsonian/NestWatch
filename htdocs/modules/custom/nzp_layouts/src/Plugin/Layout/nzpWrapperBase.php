@@ -20,7 +20,7 @@ use Drupal\Core\Plugin\PluginFormInterface;
  */
 
 
-abstract class NzpWrapperBase extends LayoutDefault implements PluginFormInterface {
+abstract class nzpWrapperBase extends LayoutDefault implements PluginFormInterface {
   /**
    * {@inheritdoc}
    */

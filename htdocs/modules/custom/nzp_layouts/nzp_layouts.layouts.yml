@@ -19,7 +19,7 @@ layout_nzp_two_col:
   template: layout--nzp-two-col
   category: 'Columns: 2'
   default_region: one_col
-  class: '\Drupal\nzp_layouts\Plugin\Layout\NzpTwoColLayouts'
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpTwoColLayouts'
   icon_map:
     - [left]
     - [right]
