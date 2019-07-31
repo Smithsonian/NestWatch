@@ -1614,7 +1614,11 @@ a.tabledrag-handle .handle {
   width: 100%;
   padding: 0; }
 
-/* line 17, sass/layouts/_00-layout.scss */
+/* line 16, sass/layouts/_00-layout.scss */
+.node--type-page .main-content {
+  padding-top: 0; }
+
+/* line 20, sass/layouts/_00-layout.scss */
 .container .container,
 .container .layout-constrain > .content,
 .layout-constrain > .content .title {
@@ -1622,12 +1626,12 @@ a.tabledrag-handle .handle {
   width: 100%;
   margin: auto; }
 
-/* line 26, sass/layouts/_00-layout.scss */
+/* line 29, sass/layouts/_00-layout.scss */
 .page-user .content-wrapper {
   margin-top: 48px;
   margin-top: 4.8rem; }
 
-/* line 29, sass/layouts/_00-layout.scss */
+/* line 32, sass/layouts/_00-layout.scss */
 .container-wide,
 .layout-wide > .content,
 .layout-wide .title {
@@ -1636,166 +1640,166 @@ a.tabledrag-handle .handle {
   margin-left: auto;
   margin-right: auto; }
 
-/* line 35, sass/layouts/_00-layout.scss */
+/* line 38, sass/layouts/_00-layout.scss */
 .layout-constrain .content .content {
   max-width: 100%; }
 
-/* line 38, sass/layouts/_00-layout.scss */
+/* line 41, sass/layouts/_00-layout.scss */
 .padding {
   padding: 24px 0;
   padding: 2.4rem 0; }
 
-/* line 42, sass/layouts/_00-layout.scss */
+/* line 45, sass/layouts/_00-layout.scss */
 .padding-all {
   padding: 24px 20px;
   padding: 2.4rem 2rem; }
 
-/* line 45, sass/layouts/_00-layout.scss */
+/* line 48, sass/layouts/_00-layout.scss */
 .padding-extra {
   padding-top: 48px;
   padding-top: 4.8rem;
   padding-bottom: 48px;
   padding-bottom: 4.8rem; }
 
-/* line 49, sass/layouts/_00-layout.scss */
+/* line 52, sass/layouts/_00-layout.scss */
 .padding-left {
   padding-left: 20px;
   padding-left: 2rem; }
 
-/* line 52, sass/layouts/_00-layout.scss */
+/* line 55, sass/layouts/_00-layout.scss */
 .padding-right {
   padding-right: 20px;
   padding-right: 2rem; }
 
-/* line 56, sass/layouts/_00-layout.scss */
+/* line 59, sass/layouts/_00-layout.scss */
 .spacing {
   margin-top: 24px;
   margin-top: 2.4rem;
   margin-bottom: 24px;
   margin-bottom: 2.4rem; }
 
-/* line 61, sass/layouts/_00-layout.scss */
+/* line 64, sass/layouts/_00-layout.scss */
 .spacing-half {
   margin-top: 12px;
   margin-top: 1.2rem;
   margin-bottom: 12px;
   margin-bottom: 1.2rem; }
 
-/* line 66, sass/layouts/_00-layout.scss */
+/* line 69, sass/layouts/_00-layout.scss */
 .spacing-extra {
   margin-top: 48px;
   margin-top: 4.8rem;
   margin-bottom: 48px;
   margin-bottom: 4.8rem; }
 
-/* line 71, sass/layouts/_00-layout.scss */
+/* line 74, sass/layouts/_00-layout.scss */
 .spacing-top {
   margin-top: 24px;
   margin-top: 2.4rem; }
 
-/* line 75, sass/layouts/_00-layout.scss */
+/* line 78, sass/layouts/_00-layout.scss */
 .spacing-top-half {
   margin-top: 12px;
   margin-top: 1.2rem; }
 
-/* line 79, sass/layouts/_00-layout.scss */
+/* line 82, sass/layouts/_00-layout.scss */
 .spacing-top-extra {
   margin-top: 48px;
   margin-top: 4.8rem; }
 
-/* line 83, sass/layouts/_00-layout.scss */
+/* line 86, sass/layouts/_00-layout.scss */
 .spacing-bottom {
   margin-bottom: 24px;
   margin-bottom: 2.4rem; }
 
-/* line 87, sass/layouts/_00-layout.scss */
+/* line 90, sass/layouts/_00-layout.scss */
 .spacing-bottom-half {
   margin-bottom: 12px;
   margin-bottom: 1.2rem; }
 
-/* line 91, sass/layouts/_00-layout.scss */
+/* line 94, sass/layouts/_00-layout.scss */
 .spacing-bottom-extra {
   margin-bottom: 48px;
   margin-bottom: 4.8rem; }
 
-/* line 95, sass/layouts/_00-layout.scss */
+/* line 98, sass/layouts/_00-layout.scss */
 .no-spacing {
   margin-top: 0;
   margin-bottom: 0; }
 
-/* line 100, sass/layouts/_00-layout.scss */
+/* line 103, sass/layouts/_00-layout.scss */
 .no-padding {
   padding: 0; }
 
-/* line 104, sass/layouts/_00-layout.scss */
+/* line 107, sass/layouts/_00-layout.scss */
 p.no-spacing {
   margin-top: 24px;
   margin-top: 2.4rem;
   margin-bottom: 0; }
 
 @media (min-width: 768px) {
-  /* line 115, sass/layouts/_00-layout.scss */
+  /* line 118, sass/layouts/_00-layout.scss */
   .padding-sm {
     padding-top: 24px;
     padding-top: 2.4rem;
     padding-bottom: 24px;
     padding-bottom: 2.4rem; }
-  /* line 120, sass/layouts/_00-layout.scss */
+  /* line 123, sass/layouts/_00-layout.scss */
   .padding-extra-sm {
     padding-top: 48px;
     padding-top: 4.8rem;
     padding-bottom: 48px;
     padding-bottom: 4.8rem; }
-  /* line 125, sass/layouts/_00-layout.scss */
+  /* line 128, sass/layouts/_00-layout.scss */
   .spacing-sm {
     margin-top: 24px;
     margin-top: 2.4rem;
     margin-bottom: 24px;
     margin-bottom: 2.4rem; }
-  /* line 131, sass/layouts/_00-layout.scss */
+  /* line 134, sass/layouts/_00-layout.scss */
   .spacing-extra-sm {
     margin-top: 48px;
     margin-top: 4.8rem;
     margin-bottom: 48px;
     margin-bottom: 4.8rem; }
-  /* line 136, sass/layouts/_00-layout.scss */
+  /* line 139, sass/layouts/_00-layout.scss */
   .no-spacing-sm {
     margin: 0; } }
 
 @media (min-width: 980px) {
-  /* line 142, sass/layouts/_00-layout.scss */
+  /* line 145, sass/layouts/_00-layout.scss */
   .padding-md {
     padding-top: 24px;
     padding-top: 2.4rem;
     padding-bottom: 24px;
     padding-bottom: 2.4rem; }
-  /* line 147, sass/layouts/_00-layout.scss */
+  /* line 150, sass/layouts/_00-layout.scss */
   .padding-extra-md {
     padding-top: 48px;
     padding-top: 4.8rem;
     padding-bottom: 48px;
     padding-bottom: 4.8rem; }
-  /* line 152, sass/layouts/_00-layout.scss */
+  /* line 155, sass/layouts/_00-layout.scss */
   .spacing-md {
     margin-top: 24px;
     margin-top: 2.4rem;
     margin-bottom: 24px;
     margin-bottom: 2.4rem; }
-  /* line 157, sass/layouts/_00-layout.scss */
+  /* line 160, sass/layouts/_00-layout.scss */
   .spacing-extra-md {
     margin-top: 48px;
     margin-top: 4.8rem;
     margin-bottom: 48px;
     margin-bottom: 4.8rem; }
-  /* line 162, sass/layouts/_00-layout.scss */
+  /* line 165, sass/layouts/_00-layout.scss */
   .no-spacing-md {
     margin: 0; }
-  /* line 166, sass/layouts/_00-layout.scss */
+  /* line 169, sass/layouts/_00-layout.scss */
   .entity-paragraphs-item .layout .col {
     margin-bottom: 0; } }
 
 @media (min-width: 1996.8px) {
-  /* line 174, sass/layouts/_00-layout.scss */
+  /* line 177, sass/layouts/_00-layout.scss */
   .container-wide {
     width: 100%; } }
 
