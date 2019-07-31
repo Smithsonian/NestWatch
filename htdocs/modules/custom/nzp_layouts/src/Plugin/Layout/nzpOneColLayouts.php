@@ -30,6 +30,7 @@ class nzpOneColLayouts extends LayoutDefault implements PluginFormInterface {
       'region_wrapper_classes' => [],
     ];
   }
+
   
 
   /**
