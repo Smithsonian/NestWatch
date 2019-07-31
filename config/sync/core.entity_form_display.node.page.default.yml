@@ -11,8 +11,8 @@ dependencies:
     - field.field.node.page.field_share
     - field.field.node.page.field_sidebar
     - field.field.node.page.field_teaser
-    - field.field.node.page.layout_builder__layout
     - node.type.page
+    - workflows.workflow.editorial
   module:
     - allowed_formats
     - content_moderation

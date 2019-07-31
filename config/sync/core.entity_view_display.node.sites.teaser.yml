@@ -31,4 +31,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_site_location: true
+  field_site_region: true
+  field_site_status: true
   uid: true

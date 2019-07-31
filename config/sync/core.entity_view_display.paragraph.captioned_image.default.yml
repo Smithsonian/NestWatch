@@ -64,6 +64,7 @@ content:
     type: link
     region: link
 hidden:
+  field_animate: true
   field_bg: true
   field_layout: true
   field_spacing: true

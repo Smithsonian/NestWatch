@@ -1,0 +1,25 @@
+uuid: 5e40867e-eb63-4dc8-9670-7b6672fa0238
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.zoo-navigation
+  module:
+    - system
+  theme:
+    - si_nestwatch
+id: zoonavigation_2
+theme: si_nestwatch
+region: header_preface_left
+weight: 0
+provider: null
+plugin: 'system_menu_block:zoo-navigation'
+settings:
+  id: 'system_menu_block:zoo-navigation'
+  label: 'Zoo navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

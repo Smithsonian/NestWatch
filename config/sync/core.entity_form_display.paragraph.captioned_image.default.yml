@@ -131,5 +131,6 @@ content:
     region: content
 hidden:
   created: true
+  field_animate: true
   status: true
   uid: true

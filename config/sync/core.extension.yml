@@ -54,6 +54,7 @@ module:
   inline_form_errors: 0
   kint: 0
   layout_builder: 0
+  layout_builder_modal: 0
   layout_discovery: 0
   ldap_authentication: 0
   ldap_authorization: 0
@@ -77,6 +78,7 @@ module:
   nestwatch_migrate: 0
   node: 0
   noreqnewpass: 0
+  nzp_layouts: 0
   options: 0
   page_cache: 0
   path: 0

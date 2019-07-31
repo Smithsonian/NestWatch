@@ -21,27 +21,35 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_twocol
+        layout_id: layout_onecol
         layout_settings: {  }
         components:
-          7af6afe2-9819-42ae-b086-78e970537776:
-            uuid: 7af6afe2-9819-42ae-b086-78e970537776
-            region: top
+          d71dce89-8e31-47e2-bccb-7bc36d8586c9:
+            uuid: d71dce89-8e31-47e2-bccb-7bc36d8586c9
+            region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:paragraph:two_column_equal:field_title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
               formatter:
                 label: hidden
-                settings:
-                  link: entity
-                  wrapper: h1
-                  class: section-title
-                third_party_settings: {  }
                 type: text_title
+                settings:
+                  link: none
+                  wrapper: h2
+                  class: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
             additional: {  }
             weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 50-50
+        components:
           34849b89-a463-4cf6-aca4-301a82789aaf:
             uuid: 34849b89-a463-4cf6-aca4-301a82789aaf
             region: first
@@ -58,7 +66,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_revisions_entity_view
             additional: {  }
-            weight: 0
+            weight: 1
           25b2b965-303e-46cd-861b-307a1cc1169f:
             uuid: 25b2b965-303e-46cd-861b-307a1cc1169f
             region: second
@@ -74,21 +82,6 @@ third_party_settings:
                   link: ''
                 third_party_settings: {  }
                 type: entity_reference_revisions_entity_view
-            additional: {  }
-            weight: 0
-          57ebfb8a-aab4-4164-9acf-c8b9413c4bb1:
-            uuid: 57ebfb8a-aab4-4164-9acf-c8b9413c4bb1
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:paragraph:two_column_equal:field_title'
-              formatter:
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-                type: text_default
             additional: {  }
             weight: 1
         third_party_settings: {  }

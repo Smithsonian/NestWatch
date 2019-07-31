@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_content_ref
+    - node.type.landing_page
+    - node.type.page
     - paragraphs.paragraphs_type.content_reference
 _core:
   default_config_hash: Ungvz8x7cbPsVNLhyRVe8jh0BAqWiHOl85RsRypjupw
@@ -18,10 +20,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: views
+  handler: 'default:node'
   handler_settings:
-    view:
-      view_name: entity_reference
-      display_name: entity_reference_1
-      arguments: {  }
+    target_bundles:
+      page: page
+      landing_page: landing_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: page
 field_type: entity_reference

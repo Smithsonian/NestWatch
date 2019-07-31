@@ -70,6 +70,7 @@ content:
       target: ''
     third_party_settings: {  }
 hidden:
+  field_animate: true
   field_bg: true
   field_layout: true
   field_spacing: true

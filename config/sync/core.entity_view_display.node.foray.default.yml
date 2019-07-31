@@ -10,7 +10,111 @@ dependencies:
     - node.type.foray
   module:
     - datetime_range
+    - layout_builder
     - manage_display
+    - nzp_layouts
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          wrappers:
+            content: div
+          wrapper_classes: ''
+          region_wrapper_classes:
+            content: container
+        components:
+          03cc250f-b649-4e34-b975-2af7b8f36ce0:
+            uuid: 03cc250f-b649-4e34-b975-2af7b8f36ce0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:foray:title'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h2
+                  linked: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          d41b2624-a401-4c8a-ac59-8f5dd086360f:
+            uuid: d41b2624-a401-4c8a-ac59-8f5dd086360f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:foray:field_foray_date_and_time'
+              formatter:
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                  separator: '-'
+                third_party_settings: {  }
+                type: daterange_default
+            additional: {  }
+            weight: 1
+          335a8eb3-84df-4166-8565-db1fed126f65:
+            uuid: 335a8eb3-84df-4166-8565-db1fed126f65
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:foray:field_foray_site_id'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 2
+          b49e13b4-efb9-4fea-a292-176fc38b0016:
+            uuid: b49e13b4-efb9-4fea-a292-176fc38b0016
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:foray:field_foray_number'
+              formatter:
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_integer
+            additional: {  }
+            weight: 3
+          33a7e2cc-0cc9-4297-bd14-a53038e9525b:
+            uuid: 33a7e2cc-0cc9-4297-bd14-a53038e9525b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:foray:field_foray_path_distance'
+              formatter:
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_decimal
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
 id: node.foray.default
 targetEntityType: node
 bundle: foray

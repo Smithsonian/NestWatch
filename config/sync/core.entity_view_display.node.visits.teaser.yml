@@ -42,4 +42,11 @@ content:
 hidden:
   addtoany: true
   field_point_cont: true
+  field_visits_capture: true
+  field_visits_notes: true
+  field_visits_projects: true
+  field_visits_region: true
+  field_visits_sites: true
+  field_visits_visit_date: true
+  field_visits_why_are_you_here: true
   uid: true
