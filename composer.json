@@ -23,7 +23,7 @@
     "drupal/captcha": "^1.0@beta",
     "drupal/conditional_fields": "^1.0@alpha",
     "drupal/console": "^1.9",
-    "drupal/core": "^8.6.0",
+    "drupal/core": "^8.7.5",
     "drupal/devel": "^2.1",
     "drupal/ds": "^3.3",
     "drupal/entity_browser": "^2.1",
