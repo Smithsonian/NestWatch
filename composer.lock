@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "cd3b650baf4f2e0b2f8f0caffb038310",
@@ -1838,30 +1838,28 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "1.1.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "e17f069ede36f7534b95adec71910ed1b49c74ea"
+                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/e17f069ede36f7534b95adec71910ed1b49c74ea",
-                "reference": "e17f069ede36f7534b95adec71910ed1b49c74ea",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/1febd6c3ef84253d7c815bed85fc622ad207a9f8",
+                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2"
+                "php": ">=5.3.2"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
-                "phpstan/phpstan": "^0.11.8",
-                "phpunit/phpunit": "^8.2"
+                "phpunit/phpunit": "^4.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
@@ -1875,12 +1873,12 @@
             ],
             "authors": [
                 {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Johannes Schmitt",
@@ -1896,7 +1894,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-07-30T19:33:28+00:00"
+            "time": "2019-06-08T11:03:04+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -2331,7 +2329,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/authorization"
             },
-            "time": "2018-09-18 18:07:38"
+            "time": "2018-09-18T18:07:38+00:00"
         },
         {
             "name": "drupal/autologout",
@@ -4111,7 +4109,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group"
             },
-            "time": "2019-05-23 21:31:25"
+            "time": "2019-05-23T21:31:25+00:00"
         },
         {
             "name": "drupal/geolocation",
@@ -7570,7 +7568,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_admintheme/tree/master",
                 "issues": "https://github.com/Smithsonian/si_d8_admintheme/issues"
             },
-            "time": "2019-07-30 16:43:40"
+            "time": "2019-07-30T16:43:40+00:00"
         },
         {
             "name": "smithsonian/si_basetheme",
@@ -7592,7 +7590,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_basetheme/tree/master",
                 "issues": "https://github.com/Smithsonian/si_d8_basetheme/issues"
             },
-            "time": "2019-07-30 20:57:36"
+            "time": "2019-07-30T20:57:36+00:00"
         },
         {
             "name": "smithsonian/si_content",
@@ -7614,7 +7612,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_content/tree/master",
                 "issues": "https://github.com/Smithsonian/si_d8_content/issues"
             },
-            "time": "2019-07-30 15:20:58"
+            "time": "2019-07-30T15:20:58+00:00"
         },
         {
             "name": "stack/builder",
@@ -9926,7 +9924,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2019-07-15 12:45:29"
+            "time": "2019-07-15T12:45:29+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -10098,7 +10096,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-10 12:39:06"
+            "time": "2018-10-10T12:39:06+00:00"
         },
         {
             "name": "doctrine/instantiator",
