@@ -32,6 +32,9 @@ backup.php
 #Sass config
 */.sass-cache
 
+#DDEV Files
+.ddev/
+
 npm-debug.log
 node_modules
 
