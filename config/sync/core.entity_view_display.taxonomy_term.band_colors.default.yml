@@ -1,0 +1,82 @@
+uuid: 72aed117-ee73-41c5-9096-9e299a7a1121
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.band_colors.field_color_swatch
+    - taxonomy.vocabulary.band_colors
+  module:
+    - color_field
+    - layout_builder
+    - nzp_layouts
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          wrappers:
+            content: div
+          wrapper_classes: ''
+          region_wrapper_classes:
+            content: container
+        components:
+          bf04afd9-302d-4daa-a75d-23900b18f944:
+            uuid: bf04afd9-302d-4daa-a75d-23900b18f944
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:band_colors:field_color_swatch'
+              label: 'Color Swatch'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: color_field_formatter_swatch
+                settings:
+                  shape: circle
+                  width: '50'
+                  height: '50'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          32fc39dc-dc98-4c72-b9fb-75d7fc98903a:
+            uuid: 32fc39dc-dc98-4c72-b9fb-75d7fc98903a
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:band_colors:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: taxonomy_term.band_colors.default
+targetEntityType: taxonomy_term
+bundle: band_colors
+mode: default
+content:
+  field_color_swatch:
+    weight: 0
+    label: above
+    settings:
+      opacity: '1'
+      shape: square
+      width: '50'
+      height: '50'
+    third_party_settings: {  }
+    type: color_field_formatter_swatch
+    region: content
+hidden:
+  description: true

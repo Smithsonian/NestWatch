@@ -1,0 +1,8 @@
+uuid: 51bea46d-45d9-4d28-88ed-d28f46501fca
+langcode: en
+status: true
+dependencies: {  }
+name: 'Band Colors'
+vid: band_colors
+description: 'A list of all band color options. Add new color band options here!'
+weight: 0

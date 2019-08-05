@@ -10,13 +10,11 @@ dependencies:
     - field.field.node.page.field_share
     - field.field.node.page.field_sidebar
     - field.field.node.page.field_teaser
-    - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
     - entity_reference_revisions
     - layout_builder
     - manage_display
-    - nzp_layouts
     - paragraphs
     - text
   theme:
@@ -26,88 +24,6 @@ third_party_settings:
     enabled: true
     allow_custom: true
     sections:
-      -
-        layout_id: layout_nzp_one_col
-        layout_settings:
-          wrappers:
-            content: div
-          wrapper_classes: ''
-          region_wrapper_classes:
-            content: container
-        components:
-          45459bdf-5342-4928-a2fe-c50c26df0837:
-            uuid: 45459bdf-5342-4928-a2fe-c50c26df0837
-            region: content
-            configuration:
-              id: 'field_block:node:page:title'
-              label: Title
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: title
-                settings:
-                  tag: h1
-                  linked: false
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: -9
-          a73b85fe-18ef-486c-8c64-a183fcdf4780:
-            uuid: a73b85fe-18ef-486c-8c64-a183fcdf4780
-            region: content
-            configuration:
-              id: 'field_block:node:page:body'
-              label: Body
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: -8
-          7ba18f6f-6861-405c-a6b5-16ce8f6a7380:
-            uuid: 7ba18f6f-6861-405c-a6b5-16ce8f6a7380
-            region: content
-            configuration:
-              id: 'field_block:node:page:field_block_content'
-              label: 'Block Content'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: -7
-          3624803a-bdf4-44ec-9ede-c84abd560b6a:
-            uuid: 3624803a-bdf4-44ec-9ede-c84abd560b6a
-            region: content
-            configuration:
-              id: 'field_block:node:page:field_hero_image'
-              label: 'Hero Image'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: -10
-        third_party_settings: {  }
       -
         layout_id: layout_page_wide_banner
         layout_settings: {  }
@@ -166,6 +82,60 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 1
+          7ba18f6f-6861-405c-a6b5-16ce8f6a7380:
+            uuid: 7ba18f6f-6861-405c-a6b5-16ce8f6a7380
+            region: page_content
+            configuration:
+              id: 'field_block:node:page:field_block_content'
+              label: 'Block Content'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -8
+          a73b85fe-18ef-486c-8c64-a183fcdf4780:
+            uuid: a73b85fe-18ef-486c-8c64-a183fcdf4780
+            region: page_content
+            configuration:
+              id: 'field_block:node:page:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -9
+          45459bdf-5342-4928-a2fe-c50c26df0837:
+            uuid: 45459bdf-5342-4928-a2fe-c50c26df0837
+            region: page_content
+            configuration:
+              id: 'field_block:node:page:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h1
+                  linked: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: -10
           e1147a1b-77c7-4ed7-a780-4b9e9323643b:
             uuid: e1147a1b-77c7-4ed7-a780-4b9e9323643b
             region: content
@@ -183,6 +153,24 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 3
+          3624803a-bdf4-44ec-9ede-c84abd560b6a:
+            uuid: 3624803a-bdf4-44ec-9ede-c84abd560b6a
+            region: page_banner
+            configuration:
+              id: 'field_block:node:page:field_hero_image'
+              label: 'Hero Image'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
 _core:
   default_config_hash: l2_ndfrvtu7Ck95YIHlUXnxsIevBQtBeoESSh0YmQpk

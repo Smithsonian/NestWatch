@@ -1,0 +1,29 @@
+uuid: b63686a4-4271-4725-8aab-00135db677f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bottom_right_band
+    - node.type.bird
+    - taxonomy.vocabulary.band_colors
+id: node.bird.field_bottom_right_band
+field_name: field_bottom_right_band
+entity_type: node
+bundle: bird
+label: 'Bottom Right Band'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      band_colors: band_colors
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

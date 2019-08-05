@@ -1,0 +1,23 @@
+uuid: 1add8c4a-59aa-4a5e-9c42-c6485174edc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bird_sex
+    - node.type.bird
+  module:
+    - options
+id: node.bird.field_bird_sex
+field_name: field_bird_sex
+entity_type: node
+bundle: bird
+label: Sex
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: U
+default_value_callback: ''
+settings: {  }
+field_type: list_string

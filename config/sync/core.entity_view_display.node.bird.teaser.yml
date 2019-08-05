@@ -1,0 +1,36 @@
+uuid: 9cc3e9de-975c-48e7-a76b-1dcbf020a2ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.bird
+  module:
+    - manage_display
+id: node.bird.teaser
+targetEntityType: node
+bundle: bird
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  node_link:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: title
+    weight: -50
+    region: content
+    settings:
+      tag: h2
+      linked: true
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  uid: true

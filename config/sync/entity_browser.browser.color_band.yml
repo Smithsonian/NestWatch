@@ -1,0 +1,31 @@
+uuid: b3cf9a0e-9b10-4366-ae8a-705fe35c132a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entity_reference_selects
+  module:
+    - views
+name: color_band
+label: 'Color Band'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select Color'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  437922e4-982e-4f96-9179-8e1c59a88e81:
+    settings:
+      view: entity_reference_selects
+      view_display: entity_browser_1
+      submit_text: 'Select Color'
+      auto_select: false
+    uuid: 437922e4-982e-4f96-9179-8e1c59a88e81
+    weight: 1
+    label: Select
+    id: view

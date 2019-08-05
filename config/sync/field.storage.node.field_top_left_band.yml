@@ -1,0 +1,20 @@
+uuid: dbd55875-e840-423b-9cd2-76dd40a9985b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_top_left_band
+field_name: field_top_left_band
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

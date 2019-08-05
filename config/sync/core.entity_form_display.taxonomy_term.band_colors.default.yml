@@ -1,0 +1,49 @@
+uuid: fd9c48cb-92a2-4f3c-88c3-44ffc10330ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.band_colors.field_color_swatch
+    - taxonomy.vocabulary.band_colors
+  module:
+    - color_field
+    - field_layout
+    - layout_discovery
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: taxonomy_term.band_colors.default
+targetEntityType: taxonomy_term
+bundle: band_colors
+mode: default
+content:
+  field_color_swatch:
+    weight: 2
+    settings:
+      show_input: ''
+      show_palette: ''
+      palette: ''
+      show_palette_only: ''
+      show_buttons: ''
+      allow_empty: ''
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true

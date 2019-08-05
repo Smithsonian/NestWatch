@@ -1,0 +1,18 @@
+uuid: a1e00d2a-b2ae-40c8-a7dc-af55ff285cce
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bird
+id: node.bird.title
+field_name: title
+entity_type: node
+bundle: bird
+label: 'Band Number'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

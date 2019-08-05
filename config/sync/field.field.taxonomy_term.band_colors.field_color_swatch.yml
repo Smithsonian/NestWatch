@@ -1,0 +1,22 @@
+uuid: 654fc9e2-a033-461f-82ef-5b6aa8979ec5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_color_swatch
+    - taxonomy.vocabulary.band_colors
+  module:
+    - color_field
+id: taxonomy_term.band_colors.field_color_swatch
+field_name: field_color_swatch
+entity_type: taxonomy_term
+bundle: band_colors
+label: 'Color Swatch'
+description: "enter the hexadecimal value of the color swatch. \r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

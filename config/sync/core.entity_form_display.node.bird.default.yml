@@ -1,0 +1,190 @@
+uuid: 7b887da3-69c4-4ce8-850f-0f6cf1aa1ce5
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.color_band
+    - field.field.node.bird.field_bird_sex
+    - field.field.node.bird.field_bottom_left_band
+    - field.field.node.bird.field_bottom_right_band
+    - field.field.node.bird.field_species
+    - field.field.node.bird.field_top_left_band
+    - field.field.node.bird.field_top_right_band
+    - node.type.bird
+  module:
+    - content_moderation
+    - entity_browser
+    - field_group
+    - field_layout
+    - nzp_layouts
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_nzp_one_col
+    settings:
+      wrappers:
+        content: div
+      wrapper_classes: ''
+      region_wrapper_classes:
+        content: container
+  field_group:
+    group_band_colors:
+      children:
+        - field_top_left_band
+        - field_bottom_left_band
+        - field_top_right_band
+        - field_bottom_right_band
+      parent_name: ''
+      weight: 7
+      format_type: details
+      format_settings:
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+        open: false
+      label: 'Band Colors'
+      region: content
+id: node.bird.default
+targetEntityType: node
+bundle: bird
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bird_sex:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_bottom_left_band:
+    weight: 30
+    settings:
+      entity_browser: color_band
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_prepend
+      field_widget_replace: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_bottom_right_band:
+    weight: 32
+    settings:
+      entity_browser: color_band
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_prepend
+      field_widget_replace: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_species:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_top_left_band:
+    weight: 29
+    settings:
+      entity_browser: color_band
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_remove: true
+      field_widget_replace: true
+      open: true
+      selection_mode: selection_prepend
+      field_widget_edit: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_top_right_band:
+    weight: 31
+    settings:
+      entity_browser: color_band
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_prepend
+      field_widget_replace: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 9
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

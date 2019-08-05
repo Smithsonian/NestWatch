@@ -1,0 +1,30 @@
+uuid: 0fb49bfd-abdc-49f5-bc31-3aa0141b543f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_bird_sex
+field_name: field_bird_sex
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: F
+      label: F
+    -
+      value: M
+      label: M
+    -
+      value: U
+      label: U
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
