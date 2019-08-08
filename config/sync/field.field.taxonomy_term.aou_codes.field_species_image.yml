@@ -1,0 +1,32 @@
+uuid: 9c501760-643f-4300-8070-446e0cfa8059
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_species_image
+    - media.type.file
+    - media.type.image
+    - media.type.video
+    - taxonomy.vocabulary.aou_codes
+id: taxonomy_term.aou_codes.field_species_image
+field_name: field_species_image
+entity_type: taxonomy_term
+bundle: aou_codes
+label: 'Species Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

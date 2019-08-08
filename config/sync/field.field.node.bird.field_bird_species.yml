@@ -1,0 +1,29 @@
+uuid: 054c22ca-6037-4b2c-98d8-cc9cda5f44f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bird_species
+    - node.type.bird
+    - taxonomy.vocabulary.aou_codes
+id: node.bird.field_bird_species
+field_name: field_bird_species
+entity_type: node
+bundle: bird
+label: 'Bird Species'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      aou_codes: aou_codes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

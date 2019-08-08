@@ -27,7 +27,7 @@ label: Nest Watch
 description: Nest Watch Data Migrations.
 
 # Short description of the type of source, e.g. "Drupal 6" or "WordPress".
-source_type: CSV
+source_type: url
 
 # Here we add any default settings common to the migration group.
 #

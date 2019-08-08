@@ -1,0 +1,249 @@
+uuid: 1eab2aa8-79d1-44a1-bc53-73fcc1f4f610
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.bird.title
+    - core.entity_view_mode.node.data_row
+    - field.field.node.bird.field_bird_sex
+    - field.field.node.bird.field_bird_species
+    - field.field.node.bird.field_bottom_left_band
+    - field.field.node.bird.field_bottom_right_band
+    - field.field.node.bird.field_top_left_band
+    - field.field.node.bird.field_top_right_band
+    - node.type.bird
+  module:
+    - layout_builder
+    - layout_discovery
+    - manage_display
+    - nzp_layouts
+    - options
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_two_col
+        layout_settings:
+          region_classes:
+            one_col: gs3
+            two_col: gs9
+          container_classes: container-fuid
+          html_container_elements: div
+          html_region_elements:
+            one_col: div
+            two_col: div
+        components:
+          4f2e1445-02ea-4d7d-9561-2c6b5ef4b5df:
+            uuid: 4f2e1445-02ea-4d7d-9561-2c6b5ef4b5df
+            region: one_col
+            configuration:
+              id: 'field_block:node:bird:field_bird_species'
+              label: 'Bird Species'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: image_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          fce4106c-ba0a-4a64-b82d-3643a6b0d54f:
+            uuid: fce4106c-ba0a-4a64-b82d-3643a6b0d54f
+            region: two_col
+            configuration:
+              id: 'field_block:node:bird:title'
+              label: 'Band Number'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h5
+                  linked: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 6
+          9ace3acc-ef0a-4157-90ea-7152e25b2543:
+            uuid: 9ace3acc-ef0a-4157-90ea-7152e25b2543
+            region: two_col
+            configuration:
+              id: 'field_block:node:bird:field_bird_species'
+              label: 'Bird Species'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 5
+        third_party_settings: {  }
+      -
+        layout_id: layout_fourcol_section
+        layout_settings: {  }
+        components:
+          34f48c7d-abf5-4bfd-85df-8177a4f0e1da:
+            uuid: 34f48c7d-abf5-4bfd-85df-8177a4f0e1da
+            region: first
+            configuration:
+              id: 'field_block:node:bird:field_bottom_left_band'
+              label: 'Bottom Left Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          1730bd41-52ef-47f3-ac8b-d38084c85098:
+            uuid: 1730bd41-52ef-47f3-ac8b-d38084c85098
+            region: second
+            configuration:
+              id: 'field_block:node:bird:field_top_left_band'
+              label: 'Top Left Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          107deb1f-81f7-4864-a25d-b5306367796e:
+            uuid: 107deb1f-81f7-4864-a25d-b5306367796e
+            region: fourth
+            configuration:
+              id: 'field_block:node:bird:field_bottom_right_band'
+              label: 'Bottom Right Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          fd04c3ca-fd05-422e-81b3-991c6fed9b83:
+            uuid: fd04c3ca-fd05-422e-81b3-991c6fed9b83
+            region: third
+            configuration:
+              id: 'field_block:node:bird:field_top_right_band'
+              label: 'Top Right Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+        third_party_settings: {  }
+id: node.bird.data_row
+targetEntityType: node
+bundle: bird
+mode: data_row
+content:
+  field_bird_sex:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_bird_species:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_bottom_left_band:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_bottom_right_band:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_top_left_band:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_top_right_band:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  node_link:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: title
+    weight: -50
+    region: content
+    settings:
+      tag: h2
+      linked: true
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  uid: true

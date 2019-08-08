@@ -1,0 +1,19 @@
+uuid: 396b73ad-a837-4342-8e32-45582af43eaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_species_sppcode
+    - taxonomy.vocabulary.aou_codes
+id: taxonomy_term.aou_codes.field_species_sppcode
+field_name: field_species_sppcode
+entity_type: taxonomy_term
+bundle: aou_codes
+label: 'Species SPP Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

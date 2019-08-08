@@ -1,0 +1,20 @@
+uuid: 5ddfc4f3-de4b-4fd0-8bdf-b9b4a7f05de9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_bird_species
+field_name: field_bird_species
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,99 @@
+uuid: a642e22c-8165-4414-be94-6f2980c81dcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.aou_codes.field_species_image
+    - field.field.taxonomy_term.aou_codes.field_species_sppcode
+    - taxonomy.vocabulary.aou_codes
+  module:
+    - layout_builder
+    - layout_discovery
+    - nzp_layouts
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          wrappers:
+            content: div
+          wrapper_classes: ''
+          region_wrapper_classes:
+            content: container
+        components:
+          e596f721-8a82-48c0-92dc-151d18351934:
+            uuid: e596f721-8a82-48c0-92dc-151d18351934
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:aou_codes:field_species_image'
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          42440123-c61c-4984-a9a7-83af1994dc7c:
+            uuid: 42440123-c61c-4984-a9a7-83af1994dc7c
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:aou_codes:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h4
+                  linked: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
+        third_party_settings: {  }
+id: taxonomy_term.aou_codes.default
+targetEntityType: taxonomy_term
+bundle: aou_codes
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_species_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_species_sppcode:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

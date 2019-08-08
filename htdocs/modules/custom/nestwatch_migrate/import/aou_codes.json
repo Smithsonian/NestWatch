@@ -1,0 +1,4794 @@
+[
+  {
+    "Alpha": "CARC",
+    "Common": "Caribbean Coot"
+  },
+  {
+    "Alpha": "CARW",
+    "Common": "Carolina Wren"
+  },
+  {
+    "Alpha": "VEFL",
+    "Common": "Vermilion Flycatcher"
+  },
+  {
+    "Alpha": "VERD",
+    "Common": "Verdin"
+  },
+  {
+    "Alpha": "VESP",
+    "Common": "Vesper Sparrow"
+  },
+  {
+    "Alpha": "VETR",
+    "Common": "Venezuelan Troupial"
+  },
+  {
+    "Alpha": "VGSW",
+    "Common": "Violet-green Swallow"
+  },
+  {
+    "Alpha": "VIPE",
+    "Common": "Victoria Penguin"
+  },
+  {
+    "Alpha": "VIRA",
+    "Common": "Virginia Rail"
+  },
+  {
+    "Alpha": "VIWA",
+    "Common": "Virginia's Warbler"
+  },
+  {
+    "Alpha": "WAAL",
+    "Common": "Wandering Albatross"
+  },
+  {
+    "Alpha": "WAHO",
+    "Common": "Wattled Honeyeater"
+  },
+  {
+    "Alpha": "WATA",
+    "Common": "Wandering Tattler"
+  },
+  {
+    "Alpha": "WAVA",
+    "Common": "Waved Albatross"
+  },
+  {
+    "Alpha": "WAVI",
+    "Common": "Warbling Vireo"
+  },
+  {
+    "Alpha": "WBNU",
+    "Common": "White-breasted Nuthatch"
+  },
+  {
+    "Alpha": "WCGR",
+    "Common": "Western/Clark's Grebe"
+  },
+  {
+    "Alpha": "WCPE",
+    "Common": "White-chinned Petrel"
+  },
+  {
+    "Alpha": "WCPI",
+    "Common": "White-crowned Pigeon"
+  },
+  {
+    "Alpha": "WCSE",
+    "Common": "White-collared Seedeater"
+  },
+  {
+    "Alpha": "WCSP",
+    "Common": "White-crowned Sparrow"
+  },
+  {
+    "Alpha": "WCTH",
+    "Common": "White-chinned Thrush"
+  },
+  {
+    "Alpha": "WEBL",
+    "Common": "Western Bluebird"
+  },
+  {
+    "Alpha": "WEFL",
+    "Common": "Western Flycatcher"
+  },
+  {
+    "Alpha": "WEGR",
+    "Common": "Western Grebe"
+  },
+  {
+    "Alpha": "WEGU",
+    "Common": "Western Gull"
+  },
+  {
+    "Alpha": "WEHU",
+    "Common": "White-eared Hummingbird"
+  },
+  {
+    "Alpha": "WEKI",
+    "Common": "Western Kingbird"
+  },
+  {
+    "Alpha": "WEME",
+    "Common": "Western Meadowlark"
+  },
+  {
+    "Alpha": "WESA",
+    "Common": "Western Sandpiper"
+  },
+  {
+    "Alpha": "WESJ",
+    "Common": "Western Scrub-Jay"
+  },
+  {
+    "Alpha": "WESO",
+    "Common": "Western Screech-Owl"
+  },
+  {
+    "Alpha": "WESP",
+    "Common": "Western Spindalis"
+  },
+  {
+    "Alpha": "WETA",
+    "Common": "Western Tanager"
+  },
+  {
+    "Alpha": "WETH",
+    "Common": "White-eyed Thrush"
+  },
+  {
+    "Alpha": "WEVI",
+    "Common": "White-eyed Vireo"
+  },
+  {
+    "Alpha": "WEWA",
+    "Common": "Worm-eating Warbler"
+  },
+  {
+    "Alpha": "WEWP",
+    "Common": "Western Wood-Pewee"
+  },
+  {
+    "Alpha": "WFIB",
+    "Common": "White-faced Ibis"
+  },
+  {
+    "Alpha": "WFSP",
+    "Common": "White-faced Storm-Petrel"
+  },
+  {
+    "Alpha": "WHAU",
+    "Common": "Whiskered Auklet"
+  },
+  {
+    "Alpha": "WHCR",
+    "Common": "Whooping Crane"
+  },
+  {
+    "Alpha": "WHIB",
+    "Common": "White Ibis"
+  },
+  {
+    "Alpha": "WHIM",
+    "Common": "Whimbrel"
+  },
+  {
+    "Alpha": "WHIP",
+    "Common": "White-cheeked Pintail"
+  },
+  {
+    "Alpha": "WHIT",
+    "Common": "Whiskered Tern"
+  },
+  {
+    "Alpha": "WHOS",
+    "Common": "Whooper Swan"
+  },
+  {
+    "Alpha": "WHSO",
+    "Common": "Whiskered Screech-Owl"
+  },
+  {
+    "Alpha": "WHSP",
+    "Common": "White-throated Storm-Petrel"
+  },
+  {
+    "Alpha": "WHSW",
+    "Common": "Whistling Swan"
+  },
+  {
+    "Alpha": "WHTE",
+    "Common": "White Tern"
+  },
+  {
+    "Alpha": "WHWA",
+    "Common": "White Wagtail"
+  },
+  {
+    "Alpha": "WHWO",
+    "Common": "White-headed Woodpecker"
+  },
+  {
+    "Alpha": "WIFL",
+    "Common": "Willow Flycatcher"
+  },
+  {
+    "Alpha": "WILL",
+    "Common": "Willet"
+  },
+  {
+    "Alpha": "WIPH",
+    "Common": "Wilson's Phalarope"
+  },
+  {
+    "Alpha": "WIPL",
+    "Common": "Wilson's Plover"
+  },
+  {
+    "Alpha": "WIPT",
+    "Common": "Willow Ptarmigan"
+  },
+  {
+    "Alpha": "WISA",
+    "Common": "Williamson's Sapsucker"
+  },
+  {
+    "Alpha": "WISN",
+    "Common": "Wilson's Snipe"
+  },
+  {
+    "Alpha": "WISP",
+    "Common": "Wilson's Storm-Petrel"
+  },
+  {
+    "Alpha": "WITU",
+    "Common": "Wild Turkey"
+  },
+  {
+    "Alpha": "SCJU",
+    "Common": "Slate-colored Junco"
+  },
+  {
+    "Alpha": "PRTA",
+    "Common": "Puerto Rican Tanager"
+  },
+  {
+    "Alpha": "PRTO",
+    "Common": "Puerto Rican Tody"
+  },
+  {
+    "Alpha": "PRVI",
+    "Common": "Puerto Rican Vireo"
+  },
+  {
+    "Alpha": "PRWO",
+    "Common": "Puerto Rican Woodpecker"
+  },
+  {
+    "Alpha": "PSFL",
+    "Common": "Pacific-slope Flycatcher"
+  },
+  {
+    "Alpha": "WOSA",
+    "Common": "Wood Sandpiper"
+  },
+  {
+    "Alpha": "WOSP",
+    "Common": "Worthen's Sparrow"
+  },
+  {
+    "Alpha": "WOST",
+    "Common": "Wood Stork"
+  },
+  {
+    "Alpha": "WOTH",
+    "Common": "Wood Thrush"
+  },
+  {
+    "Alpha": "WOWA",
+    "Common": "Wood Warbler"
+  },
+  {
+    "Alpha": "WPWA",
+    "Common": "Western Palm Warbler"
+  },
+  {
+    "Alpha": "WREN",
+    "Common": "Wrentit"
+  },
+  {
+    "Alpha": "WRSA",
+    "Common": "White-rumped Sandpiper"
+  },
+  {
+    "Alpha": "WRSH",
+    "Common": "White-rumped Shama"
+  },
+  {
+    "Alpha": "WRSP",
+    "Common": "Wedge-rumped Storm-Petrel"
+  },
+  {
+    "Alpha": "WRSW",
+    "Common": "White-rumped Swiftlet"
+  },
+  {
+    "Alpha": "WSPL",
+    "Common": "Western Snowy Plover"
+  },
+  {
+    "Alpha": "WTDO",
+    "Common": "White-tipped Dove"
+  },
+  {
+    "Alpha": "WTGD",
+    "Common": "White-throated Ground-Dove"
+  },
+  {
+    "Alpha": "WTHA",
+    "Common": "White-tailed Hawk"
+  },
+  {
+    "Alpha": "WTKI",
+    "Common": "White-tailed Kite"
+  },
+  {
+    "Alpha": "WTPT",
+    "Common": "White-tailed Ptarmigan"
+  },
+  {
+    "Alpha": "WTSH",
+    "Common": "Wedge-tailed Shearwater"
+  },
+  {
+    "Alpha": "WTSP",
+    "Common": "White-throated Sparrow"
+  },
+  {
+    "Alpha": "WTSW",
+    "Common": "White-throated Swift"
+  },
+  {
+    "Alpha": "WTTR",
+    "Common": "White-tailed Tropicbird"
+  },
+  {
+    "Alpha": "WVMY",
+    "Common": "White-vented Myna"
+  },
+  {
+    "Alpha": "WWCR",
+    "Common": "White-winged Crossbill"
+  },
+  {
+    "Alpha": "WWDO",
+    "Common": "White-winged Dove"
+  },
+  {
+    "Alpha": "WWJU",
+    "Common": "White-winged Junco"
+  },
+  {
+    "Alpha": "WWSC",
+    "Common": "White-winged Scoter"
+  },
+  {
+    "Alpha": "WWTE",
+    "Common": "White-winged Tern"
+  },
+  {
+    "Alpha": "WYBC",
+    "Common": "Western Yellow-billed Cuckoo"
+  },
+  {
+    "Alpha": "XAMU",
+    "Common": "Xantus's Murrelet"
+  },
+  {
+    "Alpha": "YBCA",
+    "Common": "Yellow-billed Cardinal"
+  },
+  {
+    "Alpha": "YBCH",
+    "Common": "Yellow-breasted Chat"
+  },
+  {
+    "Alpha": "YBCR",
+    "Common": "Yellow-breasted Crake"
+  },
+  {
+    "Alpha": "YBCU",
+    "Common": "Yellow-billed Cuckoo"
+  },
+  {
+    "Alpha": "YBEL",
+    "Common": "Yellow-bellied Elaenia"
+  },
+  {
+    "Alpha": "YBFL",
+    "Common": "Yellow-bellied Flycatcher"
+  },
+  {
+    "Alpha": "YBLO",
+    "Common": "Yellow-billed Loon"
+  },
+  {
+    "Alpha": "YBMA",
+    "Common": "Yellow-billed Magpie"
+  },
+  {
+    "Alpha": "YBSA",
+    "Common": "Yellow-bellied Sapsucker"
+  },
+  {
+    "Alpha": "YBSE",
+    "Common": "Yellow-bellied Seedeater"
+  },
+  {
+    "Alpha": "YCBI",
+    "Common": "Yellow-crowned Bishop"
+  },
+  {
+    "Alpha": "YCNH",
+    "Common": "Yellow-crowned Night-Heron"
+  },
+  {
+    "Alpha": "YEBI",
+    "Common": "Yellow Bittern"
+  },
+  {
+    "Alpha": "YEGR",
+    "Common": "Yellow Grosbeak"
+  },
+  {
+    "Alpha": "YEJU",
+    "Common": "Yellow-eyed Junco"
+  },
+  {
+    "Alpha": "YERA",
+    "Common": "Yellow Rail"
+  },
+  {
+    "Alpha": "YEWA",
+    "Common": "Yellow Warbler"
+  },
+  {
+    "Alpha": "YFCA",
+    "Common": "Yellow-fronted Canary"
+  },
+  {
+    "Alpha": "YFGR",
+    "Common": "Yellow-faced Grassquit"
+  },
+  {
+    "Alpha": "YFGU",
+    "Common": "Yellow-footed Gull"
+  },
+  {
+    "Alpha": "YGVI",
+    "Common": "Yellow-green Vireo"
+  },
+  {
+    "Alpha": "YHBL",
+    "Common": "Yellow-headed Blackbird"
+  },
+  {
+    "Alpha": "YNAL",
+    "Common": "Yellow-nosed Albatross"
+  },
+  {
+    "Alpha": "YPWA",
+    "Common": "Yellow Palm Warbler"
+  },
+  {
+    "Alpha": "YSBL",
+    "Common": "Yellow-shouldered Blackbird"
+  },
+  {
+    "Alpha": "YSFL",
+    "Common": "Yellow-shafted Flicker"
+  },
+  {
+    "Alpha": "YSGR",
+    "Common": "Yellow-shouldered Grassquit"
+  },
+  {
+    "Alpha": "YTVI",
+    "Common": "Yellow-throated Vireo"
+  },
+  {
+    "Alpha": "YTWA",
+    "Common": "Yellow-throated Warbler"
+  },
+  {
+    "Alpha": "ZEBD",
+    "Common": "Zebra Dove"
+  },
+  {
+    "Alpha": "ZEND",
+    "Common": "Zenaida Dove"
+  },
+  {
+    "Alpha": "ATSP",
+    "Common": "American Tree Sparrow"
+  },
+  {
+    "Alpha": "ATTW",
+    "Common": "American Three-toed Woodpecker"
+  },
+  {
+    "Alpha": "AUOR",
+    "Common": "Audubon's Oriole"
+  },
+  {
+    "Alpha": "AUSH",
+    "Common": "Audubon's Shearwater"
+  },
+  {
+    "Alpha": "AUWA",
+    "Common": "Audubon's Warbler"
+  },
+  {
+    "Alpha": "AWPE",
+    "Common": "American White Pelican"
+  },
+  {
+    "Alpha": "AZTH",
+    "Common": "Aztec Thrush"
+  },
+  {
+    "Alpha": "BABI",
+    "Common": "Black X Atlantic Brant Intergrade"
+  },
+  {
+    "Alpha": "BACG",
+    "Common": "Baja Gnatcatcher"
+  },
+  {
+    "Alpha": "BACS",
+    "Common": "Bachman's Sparrow"
+  },
+  {
+    "Alpha": "BAEA",
+    "Common": "Bald Eagle"
+  },
+  {
+    "Alpha": "BAGO",
+    "Common": "Barrow's Goldeneye"
+  },
+  {
+    "Alpha": "BAHO",
+    "Common": "Bahama Oriole"
+  },
+  {
+    "Alpha": "BAHS",
+    "Common": "Bahama Swallow"
+  },
+  {
+    "Alpha": "BAIS",
+    "Common": "Baird's Sparrow"
+  },
+  {
+    "Alpha": "BAMO",
+    "Common": "Bahama Mockingbird"
+  },
+  {
+    "Alpha": "BANA",
+    "Common": "Bananaquit"
+  },
+  {
+    "Alpha": "BANP",
+    "Common": "Band-rumped Storm-Petrel"
+  },
+  {
+    "Alpha": "BANS",
+    "Common": "Bank Swallow"
+  },
+  {
+    "Alpha": "BAOR",
+    "Common": "Baltimore Oriole"
+  },
+  {
+    "Alpha": "BARG",
+    "Common": "Bar-tailed Godwit"
+  },
+  {
+    "Alpha": "BARS",
+    "Common": "Barn Swallow"
+  },
+  {
+    "Alpha": "BARW",
+    "Common": "Barbuda Warbler"
+  },
+  {
+    "Alpha": "BASA",
+    "Common": "Baird's Sandpiper"
+  },
+  {
+    "Alpha": "BATE",
+    "Common": "Baikal Teal"
+  },
+  {
+    "Alpha": "BAWO",
+    "Common": "Bahama Woodstar"
+  },
+  {
+    "Alpha": "BAWW",
+    "Common": "Black-and-white Warbler"
+  },
+  {
+    "Alpha": "BAYE",
+    "Common": "Bahama Yellowthroat"
+  },
+  {
+    "Alpha": "BBAL",
+    "Common": "Black-browed Albatross"
+  },
+  {
+    "Alpha": "BBCU",
+    "Common": "Black-billed Cuckoo"
+  },
+  {
+    "Alpha": "BBFL",
+    "Common": "Buff-breasted Flycatcher"
+  },
+  {
+    "Alpha": "BBGR",
+    "Common": "Blue-black Grassquit"
+  },
+  {
+    "Alpha": "BBLH",
+    "Common": "Broad-billed Hummingbird"
+  },
+  {
+    "Alpha": "BBMA",
+    "Common": "Black-billed Magpie"
+  },
+  {
+    "Alpha": "BBOH",
+    "Common": "Baltimore X Bullock's Oriole Hybrid"
+  },
+  {
+    "Alpha": "BBPL",
+    "Common": "Black-bellied Plover"
+  },
+  {
+    "Alpha": "BBPR",
+    "Common": "Broad-billed Prion"
+  },
+  {
+    "Alpha": "BBRA",
+    "Common": "Buff-banded Rail"
+  },
+  {
+    "Alpha": "BBSA",
+    "Common": "Buff-breasted Sandpiper"
+  },
+  {
+    "Alpha": "BBWA",
+    "Common": "Bay-breasted Warbler"
+  },
+  {
+    "Alpha": "BBWD",
+    "Common": "Black-bellied Whistling-Duck"
+  },
+  {
+    "Alpha": "BBWO",
+    "Common": "Black-backed Woodpecker"
+  },
+  {
+    "Alpha": "BCCH",
+    "Common": "Black-capped Chickadee"
+  },
+  {
+    "Alpha": "BCFL",
+    "Common": "Brown-crested Flycatcher"
+  },
+  {
+    "Alpha": "BCGN",
+    "Common": "Black-capped Gnatcatcher"
+  },
+  {
+    "Alpha": "BCHU",
+    "Common": "Black-chinned Hummingbird"
+  },
+  {
+    "Alpha": "BCLO",
+    "Common": "Blue-crowned Lorikeet"
+  },
+  {
+    "Alpha": "BCNH",
+    "Common": "Black-crowned Night-Heron"
+  },
+  {
+    "Alpha": "BCNI",
+    "Common": "Buff-collared Nightjar"
+  },
+  {
+    "Alpha": "BCOR",
+    "Common": "Black-cowled Oriole"
+  },
+  {
+    "Alpha": "BCPE",
+    "Common": "Black-capped Petrel"
+  },
+  {
+    "Alpha": "BCRF",
+    "Common": "Brown-capped Rosy-Finch"
+  },
+  {
+    "Alpha": "BCSP",
+    "Common": "Black-chinned Sparrow"
+  },
+  {
+    "Alpha": "BCTI",
+    "Common": "Black-crested Titmouse"
+  },
+  {
+    "Alpha": "BCVI",
+    "Common": "Black-capped Vireo"
+  },
+  {
+    "Alpha": "BDOW",
+    "Common": "Barred Owl"
+  },
+  {
+    "Alpha": "BECO",
+    "Common": "Blue-eyed Cormorant"
+  },
+  {
+    "Alpha": "BEHU",
+    "Common": "Berylline Hummingbird"
+  },
+  {
+    "Alpha": "BEKI",
+    "Common": "Belted Kingfisher"
+  },
+  {
+    "Alpha": "BESP",
+    "Common": "Bell's Sparrow"
+  },
+  {
+    "Alpha": "BESW",
+    "Common": "Bewick's Swan"
+  },
+  {
+    "Alpha": "BETH",
+    "Common": "Bendire's Thrasher"
+  },
+  {
+    "Alpha": "DEJU",
+    "Common": "Dark-eyed Junco"
+  },
+  {
+    "Alpha": "SCMU",
+    "Common": "Scripps's Murrelet"
+  },
+  {
+    "Alpha": "SCOR",
+    "Common": "Scott's Oriole"
+  },
+  {
+    "Alpha": "SCQU",
+    "Common": "Scaled Quail"
+  },
+  {
+    "Alpha": "SCTA",
+    "Common": "Scarlet Tanager"
+  },
+  {
+    "Alpha": "SEOW",
+    "Common": "Short-eared Owl"
+  },
+  {
+    "Alpha": "SEPL",
+    "Common": "Semipalmated Plover"
+  },
+  {
+    "Alpha": "SESA",
+    "Common": "Semipalmated Sandpiper"
+  },
+  {
+    "Alpha": "SESP",
+    "Common": "Seaside Sparrow"
+  },
+  {
+    "Alpha": "SEWR",
+    "Common": "Sedge Wren"
+  },
+  {
+    "Alpha": "SGPE",
+    "Common": "Southern Giant Petrel"
+  },
+  {
+    "Alpha": "SHAL",
+    "Common": "Shy Albatross"
+  },
+  {
+    "Alpha": "SHAS",
+    "Common": "Sharp-tailed Sandpiper"
+  },
+  {
+    "Alpha": "SHCO",
+    "Common": "Shiny Cowbird"
+  },
+  {
+    "Alpha": "SHGD",
+    "Common": "Shy Ground Dove"
+  },
+  {
+    "Alpha": "SHLA",
+    "Common": "Streaked Horned Lark"
+  },
+  {
+    "Alpha": "SHOS",
+    "Common": "Short-tailed Shearwater"
+  },
+  {
+    "Alpha": "SHWR",
+    "Common": "Southern House Wren"
+  },
+  {
+    "Alpha": "SIAC",
+    "Common": "Siberian Accentor"
+  },
+  {
+    "Alpha": "SIRU",
+    "Common": "Siberian Rubythroat"
+  },
+  {
+    "Alpha": "SKLA",
+    "Common": "Sky Lark"
+  },
+  {
+    "Alpha": "SLAR",
+    "Common": "Slate-throated Redstart"
+  },
+  {
+    "Alpha": "SLSH",
+    "Common": "San Clemente Loggerhead Shrike"
+  },
+  {
+    "Alpha": "SLWA",
+    "Common": "St. Lucia Warbler"
+  },
+  {
+    "Alpha": "SMLO",
+    "Common": "Smith's Longspur"
+  },
+  {
+    "Alpha": "SNBU",
+    "Common": "Snow Bunting"
+  },
+  {
+    "Alpha": "SNEG",
+    "Common": "Snowy Egret"
+  },
+  {
+    "Alpha": "SNKI",
+    "Common": "Snail Kite"
+  },
+  {
+    "Alpha": "SNOW",
+    "Common": "Snowy Owl"
+  },
+  {
+    "Alpha": "SNPE",
+    "Common": "Snow Petrel"
+  },
+  {
+    "Alpha": "SNPI",
+    "Common": "Scaly-naped Pigeon"
+  },
+  {
+    "Alpha": "SNPL",
+    "Common": "Snowy Plover"
+  },
+  {
+    "Alpha": "SNSH",
+    "Common": "Snowy Sheathbill"
+  },
+  {
+    "Alpha": "SOAL",
+    "Common": "Sooty Albatross"
+  },
+  {
+    "Alpha": "SOFU",
+    "Common": "Southern Fulmar"
+  },
+  {
+    "Alpha": "SORA",
+    "Common": "Sora"
+  },
+  {
+    "Alpha": "SOSA",
+    "Common": "Solitary Sandpiper"
+  },
+  {
+    "Alpha": "SOSH",
+    "Common": "Sooty Shearwater"
+  },
+  {
+    "Alpha": "SOSP",
+    "Common": "Song Sparrow"
+  },
+  {
+    "Alpha": "SOTE",
+    "Common": "Sooty Tern"
+  },
+  {
+    "Alpha": "SOVI",
+    "Common": "Solitary Vireo"
+  },
+  {
+    "Alpha": "SPDO",
+    "Common": "Spotted Dove"
+  },
+  {
+    "Alpha": "SPEI",
+    "Common": "Spectacled Eider"
+  },
+  {
+    "Alpha": "SPGR",
+    "Common": "Spruce Grouse"
+  },
+  {
+    "Alpha": "SPOO",
+    "Common": "Spot-breasted Oriole"
+  },
+  {
+    "Alpha": "SPOS",
+    "Common": "Spoon-billed Sandpiper"
+  },
+  {
+    "Alpha": "SPOW",
+    "Common": "Spotted Owl"
+  },
+  {
+    "Alpha": "SPPI",
+    "Common": "Sprague's Pipit"
+  },
+  {
+    "Alpha": "SPSA",
+    "Common": "Spotted Sandpiper"
+  },
+  {
+    "Alpha": "SPSK",
+    "Common": "South Polar Skua"
+  },
+  {
+    "Alpha": "SPTO",
+    "Common": "Spotted Towhee"
+  },
+  {
+    "Alpha": "SRGH",
+    "Common": "Snow X Ross's Goose Hybrid"
+  },
+  {
+    "Alpha": "SSHA",
+    "Common": "Sharp-shinned Hawk"
+  },
+  {
+    "Alpha": "STAL",
+    "Common": "Short-tailed Albatross"
+  },
+  {
+    "Alpha": "STEI",
+    "Common": "Steller's Eider"
+  },
+  {
+    "Alpha": "STFL",
+    "Common": "Scissor-tailed Flycatcher"
+  },
+  {
+    "Alpha": "STGR",
+    "Common": "Sharp-tailed Grouse"
+  },
+  {
+    "Alpha": "STHA",
+    "Common": "Short-tailed Hawk"
+  },
+  {
+    "Alpha": "STJA",
+    "Common": "Steller's Jay"
+  },
+  {
+    "Alpha": "STKI",
+    "Common": "Swallow-tailed Kite"
+  },
+  {
+    "Alpha": "STOF",
+    "Common": "Stolid Flycatcher"
+  },
+  {
+    "Alpha": "STPE",
+    "Common": "Stejneger's Petrel"
+  },
+  {
+    "Alpha": "STRO",
+    "Common": "Streak-backed Oriole"
+  },
+  {
+    "Alpha": "STRS",
+    "Common": "Streaked Shearwater"
+  },
+  {
+    "Alpha": "STSA",
+    "Common": "Stilt Sandpiper"
+  },
+  {
+    "Alpha": "STSP",
+    "Common": "Unidentified Sharp-tailed Sparrow"
+  },
+  {
+    "Alpha": "BRSK",
+    "Common": "Brown Skua"
+  },
+  {
+    "Alpha": "BRSP",
+    "Common": "Brewer's Sparrow"
+  },
+  {
+    "Alpha": "BRTE",
+    "Common": "Bridled Tern"
+  },
+  {
+    "Alpha": "BRTH",
+    "Common": "Brown Thrasher"
+  },
+  {
+    "Alpha": "BRTI",
+    "Common": "Bridled Titmouse"
+  },
+  {
+    "Alpha": "BRTR",
+    "Common": "Brown Trembler"
+  },
+  {
+    "Alpha": "BRWA",
+    "Common": "Brewster's Warbler"
+  },
+  {
+    "Alpha": "BRWE",
+    "Common": "Bridled White-eye"
+  },
+  {
+    "Alpha": "BRWX",
+    "Common": "Black-rumped Waxbill"
+  },
+  {
+    "Alpha": "BSSP",
+    "Common": "Belding's Savannah Sparrow"
+  },
+  {
+    "Alpha": "BTBW",
+    "Common": "Black-throated Blue Warbler"
+  },
+  {
+    "Alpha": "BTCU",
+    "Common": "Bristle-thighed Curlew"
+  },
+  {
+    "Alpha": "BTGN",
+    "Common": "Black-tailed Gnatcatcher"
+  },
+  {
+    "Alpha": "BTGR",
+    "Common": "Boat-tailed Grackle"
+  },
+  {
+    "Alpha": "BTGU",
+    "Common": "Band-tailed Gull"
+  },
+  {
+    "Alpha": "BTLH",
+    "Common": "Broad-tailed Hummingbird"
+  },
+  {
+    "Alpha": "BTNW",
+    "Common": "Black-throated Green Warbler"
+  },
+  {
+    "Alpha": "BTPA",
+    "Common": "Brown-throated Parakeet"
+  },
+  {
+    "Alpha": "BTPI",
+    "Common": "Band-tailed Pigeon"
+  },
+  {
+    "Alpha": "BTSP",
+    "Common": "Black-throated Sparrow"
+  },
+  {
+    "Alpha": "BTYW",
+    "Common": "Black-throated Gray Warbler"
+  },
+  {
+    "Alpha": "BUAL",
+    "Common": "Buller's Albatross"
+  },
+  {
+    "Alpha": "BUFF",
+    "Common": "Bufflehead"
+  },
+  {
+    "Alpha": "BUFH",
+    "Common": "Buff-bellied Hummingbird"
+  },
+  {
+    "Alpha": "BUHU",
+    "Common": "Bumblebee Hummingbird"
+  },
+  {
+    "Alpha": "BULS",
+    "Common": "Buller's Shearwater"
+  },
+  {
+    "Alpha": "BUOR",
+    "Common": "Bullock's Oriole"
+  },
+  {
+    "Alpha": "BUOW",
+    "Common": "Burrowing Owl"
+  },
+  {
+    "Alpha": "BUPE",
+    "Common": "Bulwer's Petrel"
+  },
+  {
+    "Alpha": "BUSH",
+    "Common": "Bushtit"
+  },
+  {
+    "Alpha": "BVOR",
+    "Common": "Black-vented Oriole"
+  },
+  {
+    "Alpha": "BVSH",
+    "Common": "Black-vented Shearwater"
+  },
+  {
+    "Alpha": "BWAG",
+    "Common": "Black-backed Wagtail"
+  },
+  {
+    "Alpha": "BWHA",
+    "Common": "Broad-winged Hawk"
+  },
+  {
+    "Alpha": "BWPE",
+    "Common": "Black-winged Petrel"
+  },
+  {
+    "Alpha": "BWTE",
+    "Common": "Blue-winged Teal"
+  },
+  {
+    "Alpha": "BWVI",
+    "Common": "Black-whiskered Vireo"
+  },
+  {
+    "Alpha": "BWWA",
+    "Common": "Blue-winged Warbler"
+  },
+  {
+    "Alpha": "CAAU",
+    "Common": "Cassin's Auklet"
+  },
+  {
+    "Alpha": "CACG",
+    "Common": "Cackling Goose"
+  },
+  {
+    "Alpha": "CACH",
+    "Common": "Carolina Chickadee"
+  },
+  {
+    "Alpha": "CACW",
+    "Common": "Cactus Wren"
+  },
+  {
+    "Alpha": "CADO",
+    "Common": "Caribbean Dove"
+  },
+  {
+    "Alpha": "CAEG",
+    "Common": "Cattle Egret"
+  },
+  {
+    "Alpha": "CAEL",
+    "Common": "Caribbean Elaenia"
+  },
+  {
+    "Alpha": "CAFI",
+    "Common": "Cassin's Finch"
+  },
+  {
+    "Alpha": "CAGN",
+    "Common": "California Gnatcatcher"
+  },
+  {
+    "Alpha": "CAGO",
+    "Common": "Canada Goose"
+  },
+  {
+    "Alpha": "CAGU",
+    "Common": "California Gull"
+  },
+  {
+    "Alpha": "CAHO",
+    "Common": "Cardinal Honeyeater"
+  },
+  {
+    "Alpha": "CAHU",
+    "Common": "Calliope Hummingbird"
+  },
+  {
+    "Alpha": "CAKI",
+    "Common": "Cassin's Kingbird"
+  },
+  {
+    "Alpha": "CALC",
+    "Common": "California Condor"
+  },
+  {
+    "Alpha": "CALT",
+    "Common": "California Towhee"
+  },
+  {
+    "Alpha": "CAMA",
+    "Common": "Caribbean Martin"
+  },
+  {
+    "Alpha": "CANT",
+    "Common": "Canyon Towhee"
+  },
+  {
+    "Alpha": "CANV",
+    "Common": "Canvasback"
+  },
+  {
+    "Alpha": "CANW",
+    "Common": "Canyon Wren"
+  },
+  {
+    "Alpha": "CAPE",
+    "Common": "Cape Petrel"
+  },
+  {
+    "Alpha": "CAQU",
+    "Common": "California Quail"
+  },
+  {
+    "Alpha": "JUTI",
+    "Common": "Juniper Titmouse"
+  },
+  {
+    "Alpha": "KAAM",
+    "Common": "Kauai Amakihi"
+  },
+  {
+    "Alpha": "CASP",
+    "Common": "Cassin's Sparrow"
+  },
+  {
+    "Alpha": "CASW",
+    "Common": "Cave Swallow"
+  },
+  {
+    "Alpha": "CATE",
+    "Common": "Caspian Tern"
+  },
+  {
+    "Alpha": "CATH",
+    "Common": "California Thrasher"
+  },
+  {
+    "Alpha": "CAVI",
+    "Common": "Cassin's Vireo"
+  },
+  {
+    "Alpha": "CAWA",
+    "Common": "Canada Warbler"
+  },
+  {
+    "Alpha": "CAYT",
+    "Common": "Cayenne Tern"
+  },
+  {
+    "Alpha": "CBCH",
+    "Common": "Chestnut-backed Chickadee"
+  },
+  {
+    "Alpha": "CBHA",
+    "Common": "Common Black Hawk"
+  },
+  {
+    "Alpha": "CBTH",
+    "Common": "Curve-billed Thrasher"
+  },
+  {
+    "Alpha": "CCLO",
+    "Common": "Chestnut-collared Longspur"
+  },
+  {
+    "Alpha": "CCSP",
+    "Common": "Clay-colored Sparrow"
+  },
+  {
+    "Alpha": "CCTH",
+    "Common": "Clay-colored Thrush"
+  },
+  {
+    "Alpha": "CEDW",
+    "Common": "Cedar Waxwing"
+  },
+  {
+    "Alpha": "CERW",
+    "Common": "Cerulean Warbler"
+  },
+  {
+    "Alpha": "CGRE",
+    "Common": "Common Greenshank"
+  },
+  {
+    "Alpha": "CHCO",
+    "Common": "Cherry-head Conure"
+  },
+  {
+    "Alpha": "CHPE",
+    "Common": "Chinstrap Penguin"
+  },
+  {
+    "Alpha": "CHRA",
+    "Common": "Chihuahuan Raven"
+  },
+  {
+    "Alpha": "CHSH",
+    "Common": "Christmas Shearwater"
+  },
+  {
+    "Alpha": "CHSP",
+    "Common": "Chipping Sparrow"
+  },
+  {
+    "Alpha": "CHSW",
+    "Common": "Chimney Swift"
+  },
+  {
+    "Alpha": "CHUK",
+    "Common": "Chukar"
+  },
+  {
+    "Alpha": "CITE",
+    "Common": "Cinnamon Teal"
+  },
+  {
+    "Alpha": "CLGR",
+    "Common": "Clark's Grebe"
+  },
+  {
+    "Alpha": "CLNU",
+    "Common": "Clark's Nutcracker"
+  },
+  {
+    "Alpha": "CLRA",
+    "Common": "Clapper Rail"
+  },
+  {
+    "Alpha": "CLSW",
+    "Common": "Cliff Swallow"
+  },
+  {
+    "Alpha": "CLTE",
+    "Common": "California Least Tern"
+  },
+  {
+    "Alpha": "CMWA",
+    "Common": "Cape May Warbler"
+  },
+  {
+    "Alpha": "COCA",
+    "Common": "Common Canary"
+  },
+  {
+    "Alpha": "COCH",
+    "Common": "Common Chaffinch"
+  },
+  {
+    "Alpha": "COEI",
+    "Common": "Common Eider"
+  },
+  {
+    "Alpha": "COFL",
+    "Common": "Cordilleran Flycatcher"
+  },
+  {
+    "Alpha": "COGA",
+    "Common": "Common Gallinule"
+  },
+  {
+    "Alpha": "COGD",
+    "Common": "Common Ground-Dove"
+  },
+  {
+    "Alpha": "COGO",
+    "Common": "Common Goldeneye"
+  },
+  {
+    "Alpha": "COGR",
+    "Common": "Common Grackle"
+  },
+  {
+    "Alpha": "COHA",
+    "Common": "Cooper's Hawk"
+  },
+  {
+    "Alpha": "COHU",
+    "Common": "Costa's Hummingbird"
+  },
+  {
+    "Alpha": "COKI",
+    "Common": "Couch's Kingbird"
+  },
+  {
+    "Alpha": "COLK",
+    "Common": "Collared Kingfisher"
+  },
+  {
+    "Alpha": "COLO",
+    "Common": "Common Loon"
+  },
+  {
+    "Alpha": "COLW",
+    "Common": "Colima Warbler"
+  },
+  {
+    "Alpha": "COME",
+    "Common": "Common Merganser"
+  },
+  {
+    "Alpha": "COMP",
+    "Common": "Common Peafowl"
+  },
+  {
+    "Alpha": "COMU",
+    "Common": "Common Murre"
+  },
+  {
+    "Alpha": "COMW",
+    "Common": "Common Waxbill"
+  },
+  {
+    "Alpha": "COMY",
+    "Common": "Common Myna"
+  },
+  {
+    "Alpha": "CONI",
+    "Common": "Common Nighthawk"
+  },
+  {
+    "Alpha": "CONW",
+    "Common": "Connecticut Warbler"
+  },
+  {
+    "Alpha": "COPA",
+    "Common": "Common Pauraque"
+  },
+  {
+    "Alpha": "COPE",
+    "Common": "Cook's Petrel"
+  },
+  {
+    "Alpha": "COPO",
+    "Common": "Common Poorwill"
+  },
+  {
+    "Alpha": "CORA",
+    "Common": "Common Raven"
+  },
+  {
+    "Alpha": "CORE",
+    "Common": "Common Redpoll"
+  },
+  {
+    "Alpha": "CORO",
+    "Common": "Common Rosefinch"
+  },
+  {
+    "Alpha": "COSA",
+    "Common": "Common Sandpiper"
+  },
+  {
+    "Alpha": "COSH",
+    "Common": "Cory's Shearwater"
+  },
+  {
+    "Alpha": "COSN",
+    "Common": "Common Snipe"
+  },
+  {
+    "Alpha": "WIWA",
+    "Common": "Wilson's Warbler"
+  },
+  {
+    "Alpha": "WIWD",
+    "Common": "West Indian Whistling-Duck"
+  },
+  {
+    "Alpha": "WIWO",
+    "Common": "West Indian Woodpecker"
+  },
+  {
+    "Alpha": "WIWR",
+    "Common": "Winter Wren"
+  },
+  {
+    "Alpha": "WNCR",
+    "Common": "White-necked Crow"
+  },
+  {
+    "Alpha": "WODU",
+    "Common": "Wood Duck"
+  },
+  {
+    "Alpha": "ABDU",
+    "Common": "American Black Duck"
+  },
+  {
+    "Alpha": "ABDX",
+    "Common": "American Black Duck Dominant X Mallard Hybrid"
+  },
+  {
+    "Alpha": "ABTO",
+    "Common": "Abert's Towhee"
+  },
+  {
+    "Alpha": "ACCA",
+    "Common": "Audubon's Crested Caracara"
+  },
+  {
+    "Alpha": "ACFL",
+    "Common": "Acadian Flycatcher"
+  },
+  {
+    "Alpha": "ACGO",
+    "Common": "Aleutian Canada Goose"
+  },
+  {
+    "Alpha": "ACHU",
+    "Common": "Antillean Crested Hummingbird"
+  },
+  {
+    "Alpha": "ACWO",
+    "Common": "Acorn Woodpecker"
+  },
+  {
+    "Alpha": "ADPE",
+    "Common": "Adelie Penguin"
+  },
+  {
+    "Alpha": "ADWA",
+    "Common": "Adelaide's Warbler"
+  },
+  {
+    "Alpha": "AFCD",
+    "Common": "African Collared-Dove"
+  },
+  {
+    "Alpha": "AFOW",
+    "Common": "Ashy-faced Owl"
+  },
+  {
+    "Alpha": "AFPE",
+    "Common": "African Penguin"
+  },
+  {
+    "Alpha": "AFSI",
+    "Common": "African Silverbill"
+  },
+  {
+    "Alpha": "AGWT",
+    "Common": "Green-winged Teal"
+  },
+  {
+    "Alpha": "AKEK",
+    "Common": "Akekee"
+  },
+  {
+    "Alpha": "AKEP",
+    "Common": "Akepa"
+  },
+  {
+    "Alpha": "AKIK",
+    "Common": "Akikiki"
+  },
+  {
+    "Alpha": "AKIP",
+    "Common": "Akiapolaau"
+  },
+  {
+    "Alpha": "AKOH",
+    "Common": "Akohekohe"
+  },
+  {
+    "Alpha": "ALFL",
+    "Common": "Alder Flycatcher"
+  },
+  {
+    "Alpha": "ALHU",
+    "Common": "Allen's Hummingbird"
+  },
+  {
+    "Alpha": "ALOR",
+    "Common": "Altamira Oriole"
+  },
+  {
+    "Alpha": "ALTE",
+    "Common": "Aleutian Tern"
+  },
+  {
+    "Alpha": "AMAV",
+    "Common": "American Avocet"
+  },
+  {
+    "Alpha": "AMBI",
+    "Common": "American Bittern"
+  },
+  {
+    "Alpha": "AMCO",
+    "Common": "American Coot"
+  },
+  {
+    "Alpha": "AMCR",
+    "Common": "American Crow"
+  },
+  {
+    "Alpha": "AMDI",
+    "Common": "American Dipper"
+  },
+  {
+    "Alpha": "AMFL",
+    "Common": "American Flamingo"
+  },
+  {
+    "Alpha": "AMGO",
+    "Common": "American Goldfinch"
+  },
+  {
+    "Alpha": "AMGP",
+    "Common": "American Golden-Plover"
+  },
+  {
+    "Alpha": "AMKE",
+    "Common": "American Kestrel"
+  },
+  {
+    "Alpha": "AMMU",
+    "Common": "Alaska Marbled Murrelet"
+  },
+  {
+    "Alpha": "AMOY",
+    "Common": "American Oystercatcher"
+  },
+  {
+    "Alpha": "AMPI",
+    "Common": "American Pipit"
+  },
+  {
+    "Alpha": "AMRE",
+    "Common": "American Redstart"
+  },
+  {
+    "Alpha": "AMRO",
+    "Common": "American Robin"
+  },
+  {
+    "Alpha": "AMWI",
+    "Common": "American Wigeon"
+  },
+  {
+    "Alpha": "AMWO",
+    "Common": "American Woodcock"
+  },
+  {
+    "Alpha": "ANEU",
+    "Common": "Antillean Euphonia"
+  },
+  {
+    "Alpha": "ANHI",
+    "Common": "Anhinga"
+  },
+  {
+    "Alpha": "ANHU",
+    "Common": "Anna's Hummingbird"
+  },
+  {
+    "Alpha": "ANIA",
+    "Common": "Anianiau"
+  },
+  {
+    "Alpha": "ANMA",
+    "Common": "Antillean Mango"
+  },
+  {
+    "Alpha": "ANMU",
+    "Common": "Ancient Murrelet"
+  },
+  {
+    "Alpha": "ANNI",
+    "Common": "Antillean Nighthawk"
+  },
+  {
+    "Alpha": "ANPE",
+    "Common": "Antarctic Petrel"
+  },
+  {
+    "Alpha": "ANTE",
+    "Common": "Antarctic Tern"
+  },
+  {
+    "Alpha": "APAP",
+    "Common": "Apapane"
+  },
+  {
+    "Alpha": "APFA",
+    "Common": "Aplomado Falcon"
+  },
+  {
+    "Alpha": "ARLO",
+    "Common": "Arctic Loon"
+  },
+  {
+    "Alpha": "ARRW",
+    "Common": "Arrowhead Warbler"
+  },
+  {
+    "Alpha": "ARTE",
+    "Common": "Arctic Tern"
+  },
+  {
+    "Alpha": "ARWA",
+    "Common": "Arctic Warbler"
+  },
+  {
+    "Alpha": "ARWO",
+    "Common": "Arizona Woodpecker"
+  },
+  {
+    "Alpha": "ASSP",
+    "Common": "Ashy Storm-Petrel"
+  },
+  {
+    "Alpha": "ATBR",
+    "Common": "Atlantic Brant"
+  },
+  {
+    "Alpha": "ATFL",
+    "Common": "Ash-throated Flycatcher"
+  },
+  {
+    "Alpha": "ATPU",
+    "Common": "Atlantic Puffin"
+  },
+  {
+    "Alpha": "FEHA",
+    "Common": "Ferruginous Hawk"
+  },
+  {
+    "Alpha": "FEPO",
+    "Common": "Ferruginous Pygmy-Owl"
+  },
+  {
+    "Alpha": "FFSH",
+    "Common": "Flesh-footed Shearwater"
+  },
+  {
+    "Alpha": "FGSP",
+    "Common": "Florida Grasshopper Sparrow"
+  },
+  {
+    "Alpha": "FICR",
+    "Common": "Fish Crow"
+  },
+  {
+    "Alpha": "FIEL",
+    "Common": "Fieldfare"
+  },
+  {
+    "Alpha": "FISH",
+    "Common": "Fiji Shrikebill"
+  },
+  {
+    "Alpha": "FISP",
+    "Common": "Field Sparrow"
+  },
+  {
+    "Alpha": "FLIN",
+    "Common": "Flicker Intergrade"
+  },
+  {
+    "Alpha": "FLOW",
+    "Common": "Flammulated Owl"
+  },
+  {
+    "Alpha": "FLSJ",
+    "Common": "Florida Scrub-Jay"
+  },
+  {
+    "Alpha": "FOSP",
+    "Common": "Fox Sparrow"
+  },
+  {
+    "Alpha": "FOTE",
+    "Common": "Forster's Tern"
+  },
+  {
+    "Alpha": "FRGU",
+    "Common": "Franklin's Gull"
+  },
+  {
+    "Alpha": "FSSP",
+    "Common": "Five-striped Sparrow"
+  },
+  {
+    "Alpha": "FTFL",
+    "Common": "Fork-tailed Flycatcher"
+  },
+  {
+    "Alpha": "FTSP",
+    "Common": "Fork-tailed Storm-Petrel"
+  },
+  {
+    "Alpha": "FTWA",
+    "Common": "Fan-tailed Warbler"
+  },
+  {
+    "Alpha": "FUWD",
+    "Common": "Fulvous Whistling-Duck"
+  },
+  {
+    "Alpha": "GABU",
+    "Common": "Greater Antillean Bullfinch"
+  },
+  {
+    "Alpha": "GADW",
+    "Common": "Gadwall"
+  },
+  {
+    "Alpha": "GAEL",
+    "Common": "Greater Antillean Elaenia"
+  },
+  {
+    "Alpha": "GAGR",
+    "Common": "Greater Antillean Grackle"
+  },
+  {
+    "Alpha": "GALP",
+    "Common": "Galapagos Penguin"
+  },
+  {
+    "Alpha": "GAQU",
+    "Common": "Gambel's Quail"
+  },
+  {
+    "Alpha": "GARG",
+    "Common": "Garganey"
+  },
+  {
+    "Alpha": "GBAN",
+    "Common": "Groove-billed Ani"
+  },
+  {
+    "Alpha": "GBBG",
+    "Common": "Great Black-backed Gull"
+  },
+  {
+    "Alpha": "GBHE",
+    "Common": "Great Blue Heron"
+  },
+  {
+    "Alpha": "GBMA",
+    "Common": "Gray-breasted Martin"
+  },
+  {
+    "Alpha": "GBSP",
+    "Common": "Gray-backed Storm-Petrel"
+  },
+  {
+    "Alpha": "GBTE",
+    "Common": "Gull-billed Tern"
+  },
+  {
+    "Alpha": "GBWH",
+    "Common": "Golden-winged x Blue-winged Warbler Hybrid"
+  },
+  {
+    "Alpha": "GCBT",
+    "Common": "Unidentified Gray-cheeked/Bicknell's Thrush"
+  },
+  {
+    "Alpha": "GCFL",
+    "Common": "Great Crested Flycatcher"
+  },
+  {
+    "Alpha": "GCKI",
+    "Common": "Golden-crowned Kinglet"
+  },
+  {
+    "Alpha": "GCRF",
+    "Common": "Gray-crowned Rosy-Finch"
+  },
+  {
+    "Alpha": "GCSP",
+    "Common": "Golden-crowned Sparrow"
+  },
+  {
+    "Alpha": "GCTH",
+    "Common": "Gray-cheeked Thrush"
+  },
+  {
+    "Alpha": "GCWA",
+    "Common": "Golden-cheeked Warbler"
+  },
+  {
+    "Alpha": "GCYE",
+    "Common": "Gray-crowned Yellowthroat"
+  },
+  {
+    "Alpha": "GEPE",
+    "Common": "Gentoo Penguin"
+  },
+  {
+    "Alpha": "GFWO",
+    "Common": "Golden-fronted Woodpecker"
+  },
+  {
+    "Alpha": "GGOW",
+    "Common": "Great Gray Owl"
+  },
+  {
+    "Alpha": "GHAL",
+    "Common": "Gray-headed Albatross"
+  },
+  {
+    "Alpha": "GHCH",
+    "Common": "Gray-headed Chickadee"
+  },
+  {
+    "Alpha": "GHJU",
+    "Common": "Gray-headed Junco"
+  },
+  {
+    "Alpha": "GHOW",
+    "Common": "Great Horned Owl"
+  },
+  {
+    "Alpha": "GIFL",
+    "Common": "Gilded Flicker"
+  },
+  {
+    "Alpha": "GIWO",
+    "Common": "Gila Woodpecker"
+  },
+  {
+    "Alpha": "GKIN",
+    "Common": "Green Kingfisher"
+  },
+  {
+    "Alpha": "GKIS",
+    "Common": "Great Kiskadee"
+  },
+  {
+    "Alpha": "GLGU",
+    "Common": "Glaucous Gull"
+  },
+  {
+    "Alpha": "GLIB",
+    "Common": "Glossy Ibis"
+  },
+  {
+    "Alpha": "GMKI",
+    "Common": "Guam Micronesian Kingfisher"
+  },
+  {
+    "Alpha": "GNLA",
+    "Common": "Greater Necklaced Laughingthrush"
+  },
+  {
+    "Alpha": "GOEA",
+    "Common": "Golden Eagle"
+  },
+  {
+    "Alpha": "GOLW",
+    "Common": "Golden-crowned Warbler"
+  },
+  {
+    "Alpha": "GOWE",
+    "Common": "Golden White-eye"
+  },
+  {
+    "Alpha": "GPCH",
+    "Common": "Greater Prairie-Chicken"
+  },
+  {
+    "Alpha": "GRAJ",
+    "Common": "Gray Jay"
+  },
+  {
+    "Alpha": "GRAK",
+    "Common": "Gray Kingbird"
+  },
+  {
+    "Alpha": "BEVI",
+    "Common": "Bell's Vireo"
+  },
+  {
+    "Alpha": "BEWR",
+    "Common": "Bewick's Wren"
+  },
+  {
+    "Alpha": "BFAL",
+    "Common": "Black-footed Albatross"
+  },
+  {
+    "Alpha": "BFBO",
+    "Common": "Blue-footed Booby"
+  },
+  {
+    "Alpha": "BFGR",
+    "Common": "Black-faced Grassquit"
+  },
+  {
+    "Alpha": "BGGN",
+    "Common": "Blue-gray Gnatcatcher"
+  },
+  {
+    "Alpha": "BGNO",
+    "Common": "Blue-gray Noddy"
+  },
+  {
+    "Alpha": "BGSE",
+    "Common": "Blue Grouse"
+  },
+  {
+    "Alpha": "BGSG",
+    "Common": "Blue Greater Snow Goose"
+  },
+  {
+    "Alpha": "BHCO",
+    "Common": "Brown-headed Cowbird"
+  },
+  {
+    "Alpha": "BHGR",
+    "Common": "Black-headed Grosbeak"
+  },
+  {
+    "Alpha": "BHGU",
+    "Common": "Black-headed Gull"
+  },
+  {
+    "Alpha": "BHNU",
+    "Common": "Brown-headed Nuthatch"
+  },
+  {
+    "Alpha": "BHPA",
+    "Common": "Black-headed Parakeet"
+  },
+  {
+    "Alpha": "BHVI",
+    "Common": "Blue-headed Vireo"
+  },
+  {
+    "Alpha": "BIOO",
+    "Common": "Bishop's Oo"
+  },
+  {
+    "Alpha": "BITH",
+    "Common": "Bicknell's Thrush"
+  },
+  {
+    "Alpha": "BLAG",
+    "Common": "Black-tailed Godwit"
+  },
+  {
+    "Alpha": "BLBR",
+    "Common": "Black Brant"
+  },
+  {
+    "Alpha": "BLBU",
+    "Common": "Blue Bunting"
+  },
+  {
+    "Alpha": "BLBW",
+    "Common": "Blackburnian Warbler"
+  },
+  {
+    "Alpha": "BLDR",
+    "Common": "Black Drongo"
+  },
+  {
+    "Alpha": "BLGO",
+    "Common": "Blue Goose"
+  },
+  {
+    "Alpha": "BLGR",
+    "Common": "Blue Grosbeak"
+  },
+  {
+    "Alpha": "BLGU",
+    "Common": "Black Guillemot"
+  },
+  {
+    "Alpha": "BLJA",
+    "Common": "Blue Jay"
+  },
+  {
+    "Alpha": "BLKI",
+    "Common": "Black-legged Kittiwake"
+  },
+  {
+    "Alpha": "BLNO",
+    "Common": "Black Noddy"
+  },
+  {
+    "Alpha": "BLOY",
+    "Common": "Black Oystercatcher"
+  },
+  {
+    "Alpha": "BLPE",
+    "Common": "Blue Petrel"
+  },
+  {
+    "Alpha": "BLPH",
+    "Common": "Black Phoebe"
+  },
+  {
+    "Alpha": "BLPW",
+    "Common": "Blackpoll Warbler"
+  },
+  {
+    "Alpha": "BLRA",
+    "Common": "Black Rail"
+  },
+  {
+    "Alpha": "BLRF",
+    "Common": "Black Rosy-Finch"
+  },
+  {
+    "Alpha": "BLSC",
+    "Common": "Black Scoter"
+  },
+  {
+    "Alpha": "BLSK",
+    "Common": "Black Skimmer"
+  },
+  {
+    "Alpha": "BLSP",
+    "Common": "Black Storm-Petrel"
+  },
+  {
+    "Alpha": "BLSW",
+    "Common": "Black Swift"
+  },
+  {
+    "Alpha": "BLTE",
+    "Common": "Black Tern"
+  },
+  {
+    "Alpha": "BLTU",
+    "Common": "Black Turnstone"
+  },
+  {
+    "Alpha": "BLUE",
+    "Common": "Bluethroat"
+  },
+  {
+    "Alpha": "BLUH",
+    "Common": "Blue-throated Hummingbird"
+  },
+  {
+    "Alpha": "BLVU",
+    "Common": "Black Vulture"
+  },
+  {
+    "Alpha": "BNOW",
+    "Common": "Barn Owl"
+  },
+  {
+    "Alpha": "BNST",
+    "Common": "Black-necked Stilt"
+  },
+  {
+    "Alpha": "BNTE",
+    "Common": "Black-naped Tern"
+  },
+  {
+    "Alpha": "BOBO",
+    "Common": "Bobolink"
+  },
+  {
+    "Alpha": "BOCH",
+    "Common": "Boreal Chickadee"
+  },
+  {
+    "Alpha": "BOGU",
+    "Common": "Bonaparte's Gull"
+  },
+  {
+    "Alpha": "BOOW",
+    "Common": "Boreal Owl"
+  },
+  {
+    "Alpha": "BOPE",
+    "Common": "Bonin Petrel"
+  },
+  {
+    "Alpha": "BOSP",
+    "Common": "Botteri's Sparrow"
+  },
+  {
+    "Alpha": "BOWA",
+    "Common": "Bohemian Waxwing"
+  },
+  {
+    "Alpha": "BRAC",
+    "Common": "Brandt's Cormorant"
+  },
+  {
+    "Alpha": "BRAM",
+    "Common": "Brambling"
+  },
+  {
+    "Alpha": "BRBL",
+    "Common": "Brewer's Blackbird"
+  },
+  {
+    "Alpha": "BRBO",
+    "Common": "Brown Booby"
+  },
+  {
+    "Alpha": "BRCR",
+    "Common": "Brown Creeper"
+  },
+  {
+    "Alpha": "BRJA",
+    "Common": "Brown Jay"
+  },
+  {
+    "Alpha": "BRMA",
+    "Common": "Bronze Mannikin"
+  },
+  {
+    "Alpha": "BRNG",
+    "Common": "Barnacle Goose"
+  },
+  {
+    "Alpha": "BRNO",
+    "Common": "Brown Noddy"
+  },
+  {
+    "Alpha": "BROC",
+    "Common": "Bronzed Cowbird"
+  },
+  {
+    "Alpha": "BRPE",
+    "Common": "Brown Pelican"
+  },
+  {
+    "Alpha": "BRQD",
+    "Common": "Bridled Quail-Dove"
+  },
+  {
+    "Alpha": "BRSH",
+    "Common": "Brown Shrike"
+  },
+  {
+    "Alpha": "HIMY",
+    "Common": "Hill Myna"
+  },
+  {
+    "Alpha": "HIOR",
+    "Common": "Hispaniolan Oriole"
+  },
+  {
+    "Alpha": "HIPE",
+    "Common": "Hispaniolan Pewee"
+  },
+  {
+    "Alpha": "HISP",
+    "Common": "Hispaniolan Spindalis"
+  },
+  {
+    "Alpha": "HOFI",
+    "Common": "House Finch"
+  },
+  {
+    "Alpha": "HOGR",
+    "Common": "Horned Grebe"
+  },
+  {
+    "Alpha": "HOLA",
+    "Common": "Horned Lark"
+  },
+  {
+    "Alpha": "HOME",
+    "Common": "Hooded Merganser"
+  },
+  {
+    "Alpha": "HOOR",
+    "Common": "Hooded Oriole"
+  },
+  {
+    "Alpha": "HOPU",
+    "Common": "Horned Puffin"
+  },
+  {
+    "Alpha": "HORE",
+    "Common": "Hoary Redpoll"
+  },
+  {
+    "Alpha": "HOSP",
+    "Common": "House Sparrow"
+  },
+  {
+    "Alpha": "HOWA",
+    "Common": "Hooded Warbler"
+  },
+  {
+    "Alpha": "HOWR",
+    "Common": "House Wren"
+  },
+  {
+    "Alpha": "HPKT",
+    "Common": "Hispaniolan Parakeet"
+  },
+  {
+    "Alpha": "HPRT",
+    "Common": "Hispaniolan Parrot"
+  },
+  {
+    "Alpha": "HRLH",
+    "Common": "Harlan's Hawk"
+  },
+  {
+    "Alpha": "HRSH",
+    "Common": "Harris's Hawk"
+  },
+  {
+    "Alpha": "HUGO",
+    "Common": "Hudsonian Godwit"
+  },
+  {
+    "Alpha": "HUPE",
+    "Common": "Humboldt Penguin"
+  },
+  {
+    "Alpha": "HUVI",
+    "Common": "Hutton's Vireo"
+  },
+  {
+    "Alpha": "HWAM",
+    "Common": "Hwamei"
+  },
+  {
+    "Alpha": "HWHA",
+    "Common": "Hawaiian Hawk"
+  },
+  {
+    "Alpha": "HYAL",
+    "Common": "Hybrid Albatross"
+  },
+  {
+    "Alpha": "HYBL",
+    "Common": "Hybrid Western/Mountain Bluebird"
+  },
+  {
+    "Alpha": "HYCH",
+    "Common": "Hybrid Chickadee"
+  },
+  {
+    "Alpha": "HYGU",
+    "Common": "Hybrid Gull"
+  },
+  {
+    "Alpha": "HYHU",
+    "Common": "Hybrid Hummingbird"
+  },
+  {
+    "Alpha": "HYNO",
+    "Common": "Hybrid Nonpasserine"
+  },
+  {
+    "Alpha": "HYPA",
+    "Common": "Hybrid Passerine"
+  },
+  {
+    "Alpha": "HYSA",
+    "Common": "Hybrid Sapsucker"
+  },
+  {
+    "Alpha": "HYSK",
+    "Common": "Hybrid Skua"
+  },
+  {
+    "Alpha": "HYTE",
+    "Common": "Hybrid Tern"
+  },
+  {
+    "Alpha": "HYTO",
+    "Common": "Hybrid Towhee"
+  },
+  {
+    "Alpha": "HYWA",
+    "Common": "Hybrid Warbler"
+  },
+  {
+    "Alpha": "IBWO",
+    "Common": "Ivory-billed Woodpecker"
+  },
+  {
+    "Alpha": "ICGU",
+    "Common": "Iceland Gull"
+  },
+  {
+    "Alpha": "ICTO",
+    "Common": "Inyo California Towhee"
+  },
+  {
+    "Alpha": "IIWI",
+    "Common": "Iiwi"
+  },
+  {
+    "Alpha": "ILBH",
+    "Common": "Indigo X Lazuli Bunting Hybrid"
+  },
+  {
+    "Alpha": "ILTE",
+    "Common": "Interior Least Tern"
+  },
+  {
+    "Alpha": "INBU",
+    "Common": "Indigo Bunting"
+  },
+  {
+    "Alpha": "INDO",
+    "Common": "Inca Dove"
+  },
+  {
+    "Alpha": "IPSP",
+    "Common": "Ipswich Sparrow"
+  },
+  {
+    "Alpha": "ISSJ",
+    "Common": "Island Scrub-Jay"
+  },
+  {
+    "Alpha": "IVGU",
+    "Common": "Ivory Gull"
+  },
+  {
+    "Alpha": "JABW",
+    "Common": "Japanese Bush-Warbler"
+  },
+  {
+    "Alpha": "JACR",
+    "Common": "Jamaican Crow"
+  },
+  {
+    "Alpha": "JAEL",
+    "Common": "Jamaican Elaenia"
+  },
+  {
+    "Alpha": "JAEU",
+    "Common": "Jamaican Euphonia"
+  },
+  {
+    "Alpha": "JAMA",
+    "Common": "Jamaican Mango"
+  },
+  {
+    "Alpha": "JAMS",
+    "Common": "Jamaican Spindalis"
+  },
+  {
+    "Alpha": "JAOR",
+    "Common": "Jamaican Oriole"
+  },
+  {
+    "Alpha": "JAPE",
+    "Common": "Jamaican Pewee"
+  },
+  {
+    "Alpha": "JATO",
+    "Common": "Jamaican Tody"
+  },
+  {
+    "Alpha": "JAVI",
+    "Common": "Jamaican Vireo"
+  },
+  {
+    "Alpha": "JAVS",
+    "Common": "Java Sparrow"
+  },
+  {
+    "Alpha": "JAWE",
+    "Common": "Japanese White-eye"
+  },
+  {
+    "Alpha": "JFPE",
+    "Common": "Juan Fernandez Petrel"
+  },
+  {
+    "Alpha": "JUMY",
+    "Common": "Jungle Myna"
+  },
+  {
+    "Alpha": "RODO",
+    "Common": "Rock Dove"
+  },
+  {
+    "Alpha": "ROGO",
+    "Common": "Ross's Goose"
+  },
+  {
+    "Alpha": "KAEL",
+    "Common": "Kauai Elepaio"
+  },
+  {
+    "Alpha": "KAKA",
+    "Common": "Kakawahie"
+  },
+  {
+    "Alpha": "KAMA",
+    "Common": "Kamao"
+  },
+  {
+    "Alpha": "KAOO",
+    "Common": "Kauai Oo"
+  },
+  {
+    "Alpha": "KEPE",
+    "Common": "Kerguelen Petrel"
+  },
+  {
+    "Alpha": "KETE",
+    "Common": "Kerguelen Tern"
+  },
+  {
+    "Alpha": "KEWA",
+    "Common": "Kentucky Warbler"
+  },
+  {
+    "Alpha": "KIEI",
+    "Common": "King Eider"
+  },
+  {
+    "Alpha": "KILL",
+    "Common": "Killdeer"
+  },
+  {
+    "Alpha": "KIMU",
+    "Common": "Kittlitz's Murrelet"
+  },
+  {
+    "Alpha": "KIPE",
+    "Common": "King Penguin"
+  },
+  {
+    "Alpha": "KIRA",
+    "Common": "King Rail"
+  },
+  {
+    "Alpha": "KIWA",
+    "Common": "Kirtland's Warbler"
+  },
+  {
+    "Alpha": "KWQD",
+    "Common": "Key West Quail-Dove"
+  },
+  {
+    "Alpha": "LAAL",
+    "Common": "Laysan Albatross"
+  },
+  {
+    "Alpha": "LADU",
+    "Common": "Laysan Duck"
+  },
+  {
+    "Alpha": "LAFI",
+    "Common": "Laysan Finch"
+  },
+  {
+    "Alpha": "LAGO",
+    "Common": "Lawrence's Goldfinch"
+  },
+  {
+    "Alpha": "LAGU",
+    "Common": "Laughing Gull"
+  },
+  {
+    "Alpha": "LALO",
+    "Common": "Lapland Longspur"
+  },
+  {
+    "Alpha": "LANW",
+    "Common": "Lanceolated Warbler"
+  },
+  {
+    "Alpha": "LAPE",
+    "Common": "Lesser Antillean Pewee"
+  },
+  {
+    "Alpha": "LARB",
+    "Common": "Lark Bunting"
+  },
+  {
+    "Alpha": "LASP",
+    "Common": "Lark Sparrow"
+  },
+  {
+    "Alpha": "LAVW",
+    "Common": "Lavender Waxbill"
+  },
+  {
+    "Alpha": "LAWA",
+    "Common": "Lawrence's Warbler"
+  },
+  {
+    "Alpha": "LAZB",
+    "Common": "Lazuli Bunting"
+  },
+  {
+    "Alpha": "LBBG",
+    "Common": "Lesser Black-backed Gull"
+  },
+  {
+    "Alpha": "LBCU",
+    "Common": "Long-billed Curlew"
+  },
+  {
+    "Alpha": "LBDO",
+    "Common": "Long-billed Dowitcher"
+  },
+  {
+    "Alpha": "LBHE",
+    "Common": "Little Blue Heron"
+  },
+  {
+    "Alpha": "LBMU",
+    "Common": "Long-billed Murrelet"
+  },
+  {
+    "Alpha": "LBSP",
+    "Common": "Large-billed Sparrow"
+  },
+  {
+    "Alpha": "LBTH",
+    "Common": "Long-billed Thrasher"
+  },
+  {
+    "Alpha": "LBVI",
+    "Common": "Least Bell's Vireo"
+  },
+  {
+    "Alpha": "LBWO",
+    "Common": "Ladder-backed Woodpecker"
+  },
+  {
+    "Alpha": "LCGO",
+    "Common": "Large Canada Goose"
+  },
+  {
+    "Alpha": "LCSP",
+    "Common": "Le Conte's Sparrow"
+  },
+  {
+    "Alpha": "LCTH",
+    "Common": "Le Conte's Thrasher"
+  },
+  {
+    "Alpha": "LEAU",
+    "Common": "Least Auklet"
+  },
+  {
+    "Alpha": "LEBI",
+    "Common": "Least Bittern"
+  },
+  {
+    "Alpha": "LEFL",
+    "Common": "Least Flycatcher"
+  },
+  {
+    "Alpha": "LEFR",
+    "Common": "Lesser Frigatebird"
+  },
+  {
+    "Alpha": "LEGO",
+    "Common": "Lesser Goldfinch"
+  },
+  {
+    "Alpha": "LEGP",
+    "Common": "Lesser Golden-Plover"
+  },
+  {
+    "Alpha": "LEGR",
+    "Common": "Least Grebe"
+  },
+  {
+    "Alpha": "LENI",
+    "Common": "Lesser Nighthawk"
+  },
+  {
+    "Alpha": "LEOW",
+    "Common": "Long-eared Owl"
+  },
+  {
+    "Alpha": "LESA",
+    "Common": "Least Sandpiper"
+  },
+  {
+    "Alpha": "LESB",
+    "Common": "Lesser Antillean Bullfinch"
+  },
+  {
+    "Alpha": "LESC",
+    "Common": "Lesser Scaup"
+  },
+  {
+    "Alpha": "LESF",
+    "Common": "Lesser Antillean Flycatcher"
+  },
+  {
+    "Alpha": "LESH",
+    "Common": "Lesser Sheathbill"
+  },
+  {
+    "Alpha": "LETE",
+    "Common": "Least Tern"
+  },
+  {
+    "Alpha": "LEWO",
+    "Common": "Lewis's Woodpecker"
+  },
+  {
+    "Alpha": "LEYE",
+    "Common": "Lesser Yellowlegs"
+  },
+  {
+    "Alpha": "LHSP",
+    "Common": "Leach's Storm-Petrel"
+  },
+  {
+    "Alpha": "LIBU",
+    "Common": "Little Bunting"
+  },
+  {
+    "Alpha": "LIGU",
+    "Common": "Little Gull"
+  },
+  {
+    "Alpha": "LIMP",
+    "Common": "Limpkin"
+  },
+  {
+    "Alpha": "COTE",
+    "Common": "Common Tern"
+  },
+  {
+    "Alpha": "COYE",
+    "Common": "Common Yellowthroat"
+  },
+  {
+    "Alpha": "CPOC",
+    "Common": "Common Pochard"
+  },
+  {
+    "Alpha": "CRAU",
+    "Common": "Crested Auklet"
+  },
+  {
+    "Alpha": "CRCA",
+    "Common": "Crested Caracara"
+  },
+  {
+    "Alpha": "CRMU",
+    "Common": "Craveri's Murrelet"
+  },
+  {
+    "Alpha": "CRMY",
+    "Common": "Crested Myna"
+  },
+  {
+    "Alpha": "CRPL",
+    "Common": "Common Ringed Plover"
+  },
+  {
+    "Alpha": "CRTE",
+    "Common": "Crested Tern"
+  },
+  {
+    "Alpha": "CRTH",
+    "Common": "Crissal Thrasher"
+  },
+  {
+    "Alpha": "CSOW",
+    "Common": "California Spotted Owl"
+  },
+  {
+    "Alpha": "CSSS",
+    "Common": "Cape Sable Seaside Sparrow"
+  },
+  {
+    "Alpha": "CSWA",
+    "Common": "Chestnut-sided Warbler"
+  },
+  {
+    "Alpha": "CUGR",
+    "Common": "Cuban Grassquit"
+  },
+  {
+    "Alpha": "CUOR",
+    "Common": "Cuban Oriole"
+  },
+  {
+    "Alpha": "CUPE",
+    "Common": "Cuban Pewee"
+  },
+  {
+    "Alpha": "CUSA",
+    "Common": "Curlew Sandpiper"
+  },
+  {
+    "Alpha": "CWWI",
+    "Common": "Chuck-will's-widow"
+  },
+  {
+    "Alpha": "DCCO",
+    "Common": "Double-crested Cormorant"
+  },
+  {
+    "Alpha": "DCFL",
+    "Common": "Dusky-capped Flycatcher"
+  },
+  {
+    "Alpha": "DICK",
+    "Common": "Dickcissel"
+  },
+  {
+    "Alpha": "DOPR",
+    "Common": "Dove Prion"
+  },
+  {
+    "Alpha": "DOVE",
+    "Common": "Dovekie"
+  },
+  {
+    "Alpha": "DOWO",
+    "Common": "Downy Woodpecker"
+  },
+  {
+    "Alpha": "DSFL",
+    "Common": "Dark-sided Flycatcher"
+  },
+  {
+    "Alpha": "DSSP",
+    "Common": "Dusky Seaside Sparrow"
+  },
+  {
+    "Alpha": "DUFL",
+    "Common": "Dusky Flycatcher"
+  },
+  {
+    "Alpha": "DUNL",
+    "Common": "Dunlin"
+  },
+  {
+    "Alpha": "DUTH",
+    "Common": "Dusky Thrush"
+  },
+  {
+    "Alpha": "DUWA",
+    "Common": "Dusky Warbler"
+  },
+  {
+    "Alpha": "EABL",
+    "Common": "Eastern Bluebird"
+  },
+  {
+    "Alpha": "EADO",
+    "Common": "Eared Dove"
+  },
+  {
+    "Alpha": "EAGR",
+    "Common": "Eared Grebe"
+  },
+  {
+    "Alpha": "EAKI",
+    "Common": "Eastern Kingbird"
+  },
+  {
+    "Alpha": "EAME",
+    "Common": "Eastern Meadowlark"
+  },
+  {
+    "Alpha": "EAPH",
+    "Common": "Eastern Phoebe"
+  },
+  {
+    "Alpha": "EAQU",
+    "Common": "Eared Quetzal"
+  },
+  {
+    "Alpha": "EASO",
+    "Common": "Eastern Screech-Owl"
+  },
+  {
+    "Alpha": "EATO",
+    "Common": "Eastern Towhee"
+  },
+  {
+    "Alpha": "EAWP",
+    "Common": "Eastern Wood-Pewee"
+  },
+  {
+    "Alpha": "ECDO",
+    "Common": "Eurasian Collared-Dove"
+  },
+  {
+    "Alpha": "EGWT",
+    "Common": "European Green-winged Teal"
+  },
+  {
+    "Alpha": "ELOW",
+    "Common": "Elf Owl"
+  },
+  {
+    "Alpha": "ELTE",
+    "Common": "Elegant Tern"
+  },
+  {
+    "Alpha": "ELTR",
+    "Common": "Elegant Trogon"
+  },
+  {
+    "Alpha": "EMGO",
+    "Common": "Emperor Goose"
+  },
+  {
+    "Alpha": "EMPE",
+    "Common": "Emperor Penguin"
+  },
+  {
+    "Alpha": "ETSP",
+    "Common": "Eurasian Tree Sparrow"
+  },
+  {
+    "Alpha": "EUBU",
+    "Common": "Eurasian Bullfinch"
+  },
+  {
+    "Alpha": "EUDO",
+    "Common": "Eurasian Dotterel"
+  },
+  {
+    "Alpha": "EUGO",
+    "Common": "European Goldfinch"
+  },
+  {
+    "Alpha": "EUGP",
+    "Common": "European Golden-Plover"
+  },
+  {
+    "Alpha": "EUKE",
+    "Common": "Eurasian Kestrel"
+  },
+  {
+    "Alpha": "EUST",
+    "Common": "European Starling"
+  },
+  {
+    "Alpha": "EUWI",
+    "Common": "Eurasian Wigeon"
+  },
+  {
+    "Alpha": "EUWO",
+    "Common": "Eurasian Woodcock"
+  },
+  {
+    "Alpha": "EVGR",
+    "Common": "Evening Grosbeak"
+  },
+  {
+    "Alpha": "EWCS",
+    "Common": "Eastern White-crowned Sparrow"
+  },
+  {
+    "Alpha": "EWPW",
+    "Common": "Eastern Whip-poor-will"
+  },
+  {
+    "Alpha": "EWWA",
+    "Common": "Elfin-woods Warbler"
+  },
+  {
+    "Alpha": "EYTH",
+    "Common": "Eyebrowed Thrush"
+  },
+  {
+    "Alpha": "EYWA",
+    "Common": "Eastern Yellow Wagtail"
+  },
+  {
+    "Alpha": "FAPE",
+    "Common": "Fairy Penguin"
+  },
+  {
+    "Alpha": "FAPR",
+    "Common": "Fairy Prion"
+  },
+  {
+    "Alpha": "FATE",
+    "Common": "Falcated Teal"
+  },
+  {
+    "Alpha": "FCTA",
+    "Common": "Flame-colored Tanager"
+  },
+  {
+    "Alpha": "MOPL",
+    "Common": "Mountain Plover"
+  },
+  {
+    "Alpha": "MOUQ",
+    "Common": "Mountain Quail"
+  },
+  {
+    "Alpha": "MOWA",
+    "Common": "Mourning Warbler"
+  },
+  {
+    "Alpha": "MSCR",
+    "Common": "Mississippi Sandhill Crane"
+  },
+  {
+    "Alpha": "MSOW",
+    "Common": "Mexican Spotted Owl"
+  },
+  {
+    "Alpha": "MTZQ",
+    "Common": "Montezuma Quail"
+  },
+  {
+    "Alpha": "MUDU",
+    "Common": "Muscovy Duck"
+  },
+  {
+    "Alpha": "MUPE",
+    "Common": "Murphy's Petrel"
+  },
+  {
+    "Alpha": "MUSW",
+    "Common": "Mute Swan"
+  },
+  {
+    "Alpha": "MWCS",
+    "Common": "Mountain White-crowned Sparrow"
+  },
+  {
+    "Alpha": "MWPW",
+    "Common": "Mexican Whip-poor-will"
+  },
+  {
+    "Alpha": "MYWA",
+    "Common": "Myrtle Warbler"
+  },
+  {
+    "Alpha": "NABO",
+    "Common": "Nazca Booby"
+  },
+  {
+    "Alpha": "NAWA",
+    "Common": "Nashville Warbler"
+  },
+  {
+    "Alpha": "NBTY",
+    "Common": "Northern Beardless-Tyrannulet"
+  },
+  {
+    "Alpha": "NECO",
+    "Common": "Neotropic Cormorant"
+  },
+  {
+    "Alpha": "NESH",
+    "Common": "Newell's Shearwater"
+  },
+  {
+    "Alpha": "NESP",
+    "Common": "Nelson's Sparrow"
+  },
+  {
+    "Alpha": "NGPE",
+    "Common": "Northern Giant Petrel"
+  },
+  {
+    "Alpha": "NHOW",
+    "Common": "Northern Hawk Owl"
+  },
+  {
+    "Alpha": "NIFI",
+    "Common": "Nihoa Finch"
+  },
+  {
+    "Alpha": "NIRW",
+    "Common": "Nightingale Reed Warbler"
+  },
+  {
+    "Alpha": "NOBO",
+    "Common": "Northern Bobwhite"
+  },
+  {
+    "Alpha": "NOCA",
+    "Common": "Northern Cardinal"
+  },
+  {
+    "Alpha": "NOCR",
+    "Common": "Northwestern Crow"
+  },
+  {
+    "Alpha": "NOFU",
+    "Common": "Northern Fulmar"
+  },
+  {
+    "Alpha": "NOGA",
+    "Common": "Northern Gannet"
+  },
+  {
+    "Alpha": "NOGO",
+    "Common": "Northern Goshawk"
+  },
+  {
+    "Alpha": "NOHA",
+    "Common": "Northern Harrier"
+  },
+  {
+    "Alpha": "NOJA",
+    "Common": "Northern Jacana"
+  },
+  {
+    "Alpha": "NOLA",
+    "Common": "Northern Lapwing"
+  },
+  {
+    "Alpha": "NOMO",
+    "Common": "Northern Mockingbird"
+  },
+  {
+    "Alpha": "NOPA",
+    "Common": "Northern Parula"
+  },
+  {
+    "Alpha": "NOPI",
+    "Common": "Northern Pintail"
+  },
+  {
+    "Alpha": "NOPO",
+    "Common": "Northern Pygmy-Owl"
+  },
+  {
+    "Alpha": "NOWA",
+    "Common": "Northern Waterthrush"
+  },
+  {
+    "Alpha": "NOWH",
+    "Common": "Northern Wheatear"
+  },
+  {
+    "Alpha": "NRWS",
+    "Common": "Northern Rough-winged Swallow"
+  },
+  {
+    "Alpha": "NSHO",
+    "Common": "Northern Shoveler"
+  },
+  {
+    "Alpha": "NSHR",
+    "Common": "Northern Shrike"
+  },
+  {
+    "Alpha": "NSOW",
+    "Common": "Northern Spotted Owl"
+  },
+  {
+    "Alpha": "NSWO",
+    "Common": "Northern Saw-whet Owl"
+  },
+  {
+    "Alpha": "NUFL",
+    "Common": "Nutting's Flycatcher"
+  },
+  {
+    "Alpha": "NUKU",
+    "Common": "Nukupuu"
+  },
+  {
+    "Alpha": "NUWO",
+    "Common": "Nuttall's Woodpecker"
+  },
+  {
+    "Alpha": "NWCS",
+    "Common": "Nuttall's White-crowned Sparrow"
+  },
+  {
+    "Alpha": "OAAL",
+    "Common": "Oahu Alauahio"
+  },
+  {
+    "Alpha": "OAAM",
+    "Common": "Oahu Amakihi"
+  },
+  {
+    "Alpha": "OAEL",
+    "Common": "Oahu Elepaio"
+  },
+  {
+    "Alpha": "OATI",
+    "Common": "Oak Titmouse"
+  },
+  {
+    "Alpha": "OBNT",
+    "Common": "Orange-billed Nightingale-Thrush"
+  },
+  {
+    "Alpha": "OBPI",
+    "Common": "Olive-backed Pipit"
+  },
+  {
+    "Alpha": "OCWA",
+    "Common": "Orange-crowned Warbler"
+  },
+  {
+    "Alpha": "OFPA",
+    "Common": "Orange-fronted Parakeet"
+  },
+  {
+    "Alpha": "OHDU",
+    "Common": "Other Hybrid Duck"
+  },
+  {
+    "Alpha": "OHGO",
+    "Common": "Other Hybrid Goose"
+  },
+  {
+    "Alpha": "OLIW",
+    "Common": "Olive-capped Warbler"
+  },
+  {
+    "Alpha": "OLOM",
+    "Common": "Olomao"
+  },
+  {
+    "Alpha": "OLSP",
+    "Common": "Olive Sparrow"
+  },
+  {
+    "Alpha": "OLWA",
+    "Common": "Olive Warbler"
+  },
+  {
+    "Alpha": "OMAO",
+    "Common": "Omao"
+  },
+  {
+    "Alpha": "ORAN",
+    "Common": "Orangequit"
+  },
+  {
+    "Alpha": "GRAT",
+    "Common": "Gray-backed Tern"
+  },
+  {
+    "Alpha": "GRAW",
+    "Common": "Gray Wagtail"
+  },
+  {
+    "Alpha": "GRBU",
+    "Common": "Gray Bunting"
+  },
+  {
+    "Alpha": "GRCA",
+    "Common": "Gray Catbird"
+  },
+  {
+    "Alpha": "GRCO",
+    "Common": "Great Cormorant"
+  },
+  {
+    "Alpha": "GREA",
+    "Common": "Greater Akialoa"
+  },
+  {
+    "Alpha": "GREG",
+    "Common": "Great Egret"
+  },
+  {
+    "Alpha": "GREJ",
+    "Common": "Green Jay"
+  },
+  {
+    "Alpha": "GREL",
+    "Common": "Greenish Elaenia"
+  },
+  {
+    "Alpha": "GREM",
+    "Common": "Green-breasted Mango"
+  },
+  {
+    "Alpha": "GRFL",
+    "Common": "Gray Flycatcher"
+  },
+  {
+    "Alpha": "GRFR",
+    "Common": "Great Frigatebird"
+  },
+  {
+    "Alpha": "GRHA",
+    "Common": "Gray Hawk"
+  },
+  {
+    "Alpha": "GRHE",
+    "Common": "Green Heron"
+  },
+  {
+    "Alpha": "GRMA",
+    "Common": "Green Mango"
+  },
+  {
+    "Alpha": "GRPA",
+    "Common": "Gray Partridge"
+  },
+  {
+    "Alpha": "GRPE",
+    "Common": "Greater Pewee"
+  },
+  {
+    "Alpha": "GRRO",
+    "Common": "Greater Roadrunner"
+  },
+  {
+    "Alpha": "GRSC",
+    "Common": "Greater Scaup"
+  },
+  {
+    "Alpha": "GRSG",
+    "Common": "Greater Sage Grouse"
+  },
+  {
+    "Alpha": "GRSH",
+    "Common": "Great Shearwater"
+  },
+  {
+    "Alpha": "GRSK",
+    "Common": "Great Skua"
+  },
+  {
+    "Alpha": "GRSP",
+    "Common": "Grasshopper Sparrow"
+  },
+  {
+    "Alpha": "GRVI",
+    "Common": "Gray Vireo"
+  },
+  {
+    "Alpha": "GRWA",
+    "Common": "Grace's Warbler"
+  },
+  {
+    "Alpha": "GRYE",
+    "Common": "Greater Yellowlegs"
+  },
+  {
+    "Alpha": "GSFL",
+    "Common": "Gray-streaked Flycatcher"
+  },
+  {
+    "Alpha": "GSGO",
+    "Common": "Greater Snow Goose"
+  },
+  {
+    "Alpha": "GTCA",
+    "Common": "Green-throated Carib"
+  },
+  {
+    "Alpha": "GTGR",
+    "Common": "Great-tailed Grackle"
+  },
+  {
+    "Alpha": "GTTA",
+    "Common": "Gray-tailed Tattler"
+  },
+  {
+    "Alpha": "GTTO",
+    "Common": "Green-tailed Towhee"
+  },
+  {
+    "Alpha": "GUCO",
+    "Common": "Guanay Cormorant"
+  },
+  {
+    "Alpha": "GUMU",
+    "Common": "Guadalupe Murrelet"
+  },
+  {
+    "Alpha": "GUSG",
+    "Common": "Gunnison Sage-Grouse"
+  },
+  {
+    "Alpha": "GUSW",
+    "Common": "Guam Swiftlet"
+  },
+  {
+    "Alpha": "GVIO",
+    "Common": "Green Violetear"
+  },
+  {
+    "Alpha": "GWCS",
+    "Common": "Gambel's White-crowned Sparrow"
+  },
+  {
+    "Alpha": "GWFG",
+    "Common": "Greater White-fronted Goose"
+  },
+  {
+    "Alpha": "GWGU",
+    "Common": "Glaucous-winged Gull"
+  },
+  {
+    "Alpha": "GWHE",
+    "Common": "Great White Heron"
+  },
+  {
+    "Alpha": "GWWA",
+    "Common": "Golden-winged Warbler"
+  },
+  {
+    "Alpha": "GYRF",
+    "Common": "Gyrfalcon"
+  },
+  {
+    "Alpha": "HAAM",
+    "Common": "Hawaii Amakihi"
+  },
+  {
+    "Alpha": "HACO",
+    "Common": "Hawaiian Coot"
+  },
+  {
+    "Alpha": "HAEL",
+    "Common": "Hawaii Elepaio"
+  },
+  {
+    "Alpha": "HAFL",
+    "Common": "Hammond's Flycatcher"
+  },
+  {
+    "Alpha": "HAGA",
+    "Common": "Hawaiian Gallinule"
+  },
+  {
+    "Alpha": "HAGO",
+    "Common": "Hawaiian Goose"
+  },
+  {
+    "Alpha": "HAPE",
+    "Common": "Hawaiian Petrel"
+  },
+  {
+    "Alpha": "HARD",
+    "Common": "Harlequin Duck"
+  },
+  {
+    "Alpha": "HASP",
+    "Common": "Harris's Sparrow"
+  },
+  {
+    "Alpha": "HAST",
+    "Common": "Hawaiian Stilt"
+  },
+  {
+    "Alpha": "HAWD",
+    "Common": "Hawaiian Duck"
+  },
+  {
+    "Alpha": "HAWF",
+    "Common": "Hawfinch"
+  },
+  {
+    "Alpha": "HAWO",
+    "Common": "Hairy Woodpecker"
+  },
+  {
+    "Alpha": "HBKI",
+    "Common": "Hook-billed Kite"
+  },
+  {
+    "Alpha": "HCRE",
+    "Common": "Hawaii Creeper"
+  },
+  {
+    "Alpha": "HCRO",
+    "Common": "Hawaiian Crow"
+  },
+  {
+    "Alpha": "HCRT",
+    "Common": "Common Tern X Roseate Tern Hybrid"
+  },
+  {
+    "Alpha": "HEEG",
+    "Common": "Heermann's Gull"
+  },
+  {
+    "Alpha": "HERG",
+    "Common": "Herring Gull"
+  },
+  {
+    "Alpha": "HESP",
+    "Common": "Henslow's Sparrow"
+  },
+  {
+    "Alpha": "HETA",
+    "Common": "Hepatic Tanager"
+  },
+  {
+    "Alpha": "HETH",
+    "Common": "Hermit Thrush"
+  },
+  {
+    "Alpha": "HEWA",
+    "Common": "Hermit Warbler"
+  },
+  {
+    "Alpha": "PSSH",
+    "Common": "Puerto Rican Sharp-shinned Hawk"
+  },
+  {
+    "Alpha": "PSWS",
+    "Common": "Puget Sound White-crowned Sparrow"
+  },
+  {
+    "Alpha": "PTSN",
+    "Common": "Pin-tailed Snipe"
+  },
+  {
+    "Alpha": "PTWH",
+    "Common": "Pin-tailed Whydah"
+  },
+  {
+    "Alpha": "PUAI",
+    "Common": "Puaiohi"
+  },
+  {
+    "Alpha": "PUEB",
+    "Common": "Puerto Rican Bullfinch"
+  },
+  {
+    "Alpha": "PUFI",
+    "Common": "Purple Finch"
+  },
+  {
+    "Alpha": "PUGA",
+    "Common": "Purple Gallinule"
+  },
+  {
+    "Alpha": "PUMA",
+    "Common": "Purple Martin"
+  },
+  {
+    "Alpha": "PUSA",
+    "Common": "Purple Sandpiper"
+  },
+  {
+    "Alpha": "PUSW",
+    "Common": "Purple Swamphen"
+  },
+  {
+    "Alpha": "PYNU",
+    "Common": "Pygmy Nuthatch"
+  },
+  {
+    "Alpha": "PYRR",
+    "Common": "Pyrrhuloxia"
+  },
+  {
+    "Alpha": "RAZO",
+    "Common": "Razorbill"
+  },
+  {
+    "Alpha": "RBGR",
+    "Common": "Rose-breasted Grosbeak"
+  },
+  {
+    "Alpha": "RBGU",
+    "Common": "Ring-billed Gull"
+  },
+  {
+    "Alpha": "RBLE",
+    "Common": "Red-billed Leiothrix"
+  },
+  {
+    "Alpha": "RBME",
+    "Common": "Red-breasted Merganser"
+  },
+  {
+    "Alpha": "RBNU",
+    "Common": "Red-breasted Nuthatch"
+  },
+  {
+    "Alpha": "RBPI",
+    "Common": "Red-billed Pigeon"
+  },
+  {
+    "Alpha": "RBRO",
+    "Common": "Rufous-backed Robin"
+  },
+  {
+    "Alpha": "RBSA",
+    "Common": "Red-breasted Sapsucker"
+  },
+  {
+    "Alpha": "RBTR",
+    "Common": "Red-billed Tropicbird"
+  },
+  {
+    "Alpha": "RBWO",
+    "Common": "Red-bellied Woodpecker"
+  },
+  {
+    "Alpha": "RCCA",
+    "Common": "Red-crested Cardinal"
+  },
+  {
+    "Alpha": "RCCO",
+    "Common": "Red-cheeked Cordonbleu"
+  },
+  {
+    "Alpha": "RCKI",
+    "Common": "Ruby-crowned Kinglet"
+  },
+  {
+    "Alpha": "RCPA",
+    "Common": "Red-crowned Parrot"
+  },
+  {
+    "Alpha": "RCSP",
+    "Common": "Rufous-crowned Sparrow"
+  },
+  {
+    "Alpha": "RCWA",
+    "Common": "Rufous-capped Warbler"
+  },
+  {
+    "Alpha": "RCWO",
+    "Common": "Red-cockaded Woodpecker"
+  },
+  {
+    "Alpha": "REAV",
+    "Common": "Red Avadavat"
+  },
+  {
+    "Alpha": "REBI",
+    "Common": "Red Bishop"
+  },
+  {
+    "Alpha": "REBU",
+    "Common": "Reed Bunting"
+  },
+  {
+    "Alpha": "RECR",
+    "Common": "Red Crossbill"
+  },
+  {
+    "Alpha": "REDH",
+    "Common": "Redhead"
+  },
+  {
+    "Alpha": "REDW",
+    "Common": "Redwing"
+  },
+  {
+    "Alpha": "REEG",
+    "Common": "Reddish Egret"
+  },
+  {
+    "Alpha": "REKN",
+    "Common": "Red Knot"
+  },
+  {
+    "Alpha": "REPH",
+    "Common": "Red Phalarope"
+  },
+  {
+    "Alpha": "RESI",
+    "Common": "Red Siskin"
+  },
+  {
+    "Alpha": "REVI",
+    "Common": "Red-eyed Vireo"
+  },
+  {
+    "Alpha": "RFBL",
+    "Common": "Red-flanked Bluetail"
+  },
+  {
+    "Alpha": "RFBO",
+    "Common": "Red-footed Booby"
+  },
+  {
+    "Alpha": "RFCO",
+    "Common": "Red-faced Cormorant"
+  },
+  {
+    "Alpha": "RFWA",
+    "Common": "Red-faced Warbler"
+  },
+  {
+    "Alpha": "RHAU",
+    "Common": "Rhinoceros Auklet"
+  },
+  {
+    "Alpha": "RHWO",
+    "Common": "Red-headed Woodpecker"
+  },
+  {
+    "Alpha": "RIKI",
+    "Common": "Ringed Kingfisher"
+  },
+  {
+    "Alpha": "RIRA",
+    "Common": "Ridgway's Rail"
+  },
+  {
+    "Alpha": "RLHA",
+    "Common": "Rough-legged Hawk"
+  },
+  {
+    "Alpha": "RLKI",
+    "Common": "Red-legged Kittiwake"
+  },
+  {
+    "Alpha": "RLTH",
+    "Common": "Red-legged Thrush"
+  },
+  {
+    "Alpha": "RNDU",
+    "Common": "Ring-necked Duck"
+  },
+  {
+    "Alpha": "RNGR",
+    "Common": "Red-necked Grebe"
+  },
+  {
+    "Alpha": "RNPH",
+    "Common": "Red-necked Phalarope"
+  },
+  {
+    "Alpha": "RNSA",
+    "Common": "Red-naped Sapsucker"
+  },
+  {
+    "Alpha": "RNST",
+    "Common": "Red-necked Stint"
+  },
+  {
+    "Alpha": "ROAL",
+    "Common": "Royal Albatross"
+  },
+  {
+    "Alpha": "ROCP",
+    "Common": "Rockhopper Penguin"
+  },
+  {
+    "Alpha": "ZSHY",
+    "Common": "Zonotrichia Sparrow Hybrid"
+  },
+  {
+    "Alpha": "ZTHA",
+    "Common": "Zone-tailed Hawk"
+  },
+  {
+    "Alpha": "ROGU",
+    "Common": "Ross's Gull"
+  },
+  {
+    "Alpha": "ROHA",
+    "Common": "Roadside Hawk"
+  },
+  {
+    "Alpha": "ROPT",
+    "Common": "Rock Ptarmigan"
+  },
+  {
+    "Alpha": "ROSA",
+    "Common": "Rock Sandpiper"
+  },
+  {
+    "Alpha": "ROSP",
+    "Common": "Roseate Spoonbill"
+  },
+  {
+    "Alpha": "ROST",
+    "Common": "Roseate Tern"
+  },
+  {
+    "Alpha": "ROWE",
+    "Common": "Rota White-eye"
+  },
+  {
+    "Alpha": "ROWR",
+    "Common": "Rock Wren"
+  },
+  {
+    "Alpha": "ROYP",
+    "Common": "Royal Penguin"
+  },
+  {
+    "Alpha": "ROYT",
+    "Common": "Royal Tern"
+  },
+  {
+    "Alpha": "RPHE",
+    "Common": "Ring-necked Pheasant"
+  },
+  {
+    "Alpha": "RRKN",
+    "Common": "Rufa Red Knot"
+  },
+  {
+    "Alpha": "RSFL",
+    "Common": "Red-shafted Flicker"
+  },
+  {
+    "Alpha": "RSHA",
+    "Common": "Red-shouldered Hawk"
+  },
+  {
+    "Alpha": "RTBE",
+    "Common": "Rose-throated Becard"
+  },
+  {
+    "Alpha": "RTHA",
+    "Common": "Red-tailed Hawk"
+  },
+  {
+    "Alpha": "RTHU",
+    "Common": "Ruby-throated Hummingbird"
+  },
+  {
+    "Alpha": "RTLO",
+    "Common": "Red-throated Loon"
+  },
+  {
+    "Alpha": "RTPI",
+    "Common": "Red-throated Pipit"
+  },
+  {
+    "Alpha": "RTSO",
+    "Common": "Rufous-throated Solitaire"
+  },
+  {
+    "Alpha": "RTTR",
+    "Common": "Red-tailed Tropicbird"
+  },
+  {
+    "Alpha": "RUBL",
+    "Common": "Rusty Blackbird"
+  },
+  {
+    "Alpha": "RUBU",
+    "Common": "Rustic Bunting"
+  },
+  {
+    "Alpha": "RUDU",
+    "Common": "Ruddy Duck"
+  },
+  {
+    "Alpha": "RUFA",
+    "Common": "Rufous Fantail"
+  },
+  {
+    "Alpha": "RUFF",
+    "Common": "Ruff"
+  },
+  {
+    "Alpha": "RUFH",
+    "Common": "Rufous-tailed Hummingbird"
+  },
+  {
+    "Alpha": "RUFS",
+    "Common": "Rufous-collared Sparrow"
+  },
+  {
+    "Alpha": "RUGD",
+    "Common": "Ruddy Ground-Dove"
+  },
+  {
+    "Alpha": "RUGR",
+    "Common": "Ruffed Grouse"
+  },
+  {
+    "Alpha": "RUHU",
+    "Common": "Rufous Hummingbird"
+  },
+  {
+    "Alpha": "RUQD",
+    "Common": "Ruddy Quail-Dove"
+  },
+  {
+    "Alpha": "RUTU",
+    "Common": "Ruddy Turnstone"
+  },
+  {
+    "Alpha": "RVBU",
+    "Common": "Red-vented Bulbul"
+  },
+  {
+    "Alpha": "RWBL",
+    "Common": "Red-winged Blackbird"
+  },
+  {
+    "Alpha": "RWBU",
+    "Common": "Red-whiskered Bulbul"
+  },
+  {
+    "Alpha": "RWSP",
+    "Common": "Rufous-winged Sparrow"
+  },
+  {
+    "Alpha": "SACR",
+    "Common": "Sandhill Crane"
+  },
+  {
+    "Alpha": "SAFI",
+    "Common": "Saffron Finch"
+  },
+  {
+    "Alpha": "SAFL",
+    "Common": "Sad Flycatcher"
+  },
+  {
+    "Alpha": "SAGU",
+    "Common": "Sabine's Gull"
+  },
+  {
+    "Alpha": "SALS",
+    "Common": "Saltmarsh Sparrow"
+  },
+  {
+    "Alpha": "SAND",
+    "Common": "Sanderling"
+  },
+  {
+    "Alpha": "SAPH",
+    "Common": "Say's Phoebe"
+  },
+  {
+    "Alpha": "SAST",
+    "Common": "Samoan Starling"
+  },
+  {
+    "Alpha": "SATE",
+    "Common": "Sandwich Tern"
+  },
+  {
+    "Alpha": "SATH",
+    "Common": "Sage Thrasher"
+  },
+  {
+    "Alpha": "SAVS",
+    "Common": "Savannah Sparrow"
+  },
+  {
+    "Alpha": "SBAN",
+    "Common": "Smooth-billed Ani"
+  },
+  {
+    "Alpha": "SBBG",
+    "Common": "Southern Black-backed Gull"
+  },
+  {
+    "Alpha": "SBDO",
+    "Common": "Short-billed Dowitcher"
+  },
+  {
+    "Alpha": "SBFL",
+    "Common": "Sulphur-bellied Flycatcher"
+  },
+  {
+    "Alpha": "SBGI",
+    "Common": "Snow X Blue Goose Intergrade"
+  },
+  {
+    "Alpha": "SBGU",
+    "Common": "Slaty-backed Gull"
+  },
+  {
+    "Alpha": "SBMU",
+    "Common": "Scaly-breasted Munia"
+  },
+  {
+    "Alpha": "SBOH",
+    "Common": "Spotted X Barred Owl Hybrid"
+  },
+  {
+    "Alpha": "SBSP",
+    "Common": "Sagebrush Sparrow"
+  },
+  {
+    "Alpha": "SCBS",
+    "Common": "San Clemente Bell's Sparrow"
+  },
+  {
+    "Alpha": "SCGO",
+    "Common": "Small Canada Goose"
+  },
+  {
+    "Alpha": "SCIB",
+    "Common": "Scarlet Ibis"
+  },
+  {
+    "Alpha": "LISH",
+    "Common": "Little Shearwater"
+  },
+  {
+    "Alpha": "LISP",
+    "Common": "Lincoln's Sparrow"
+  },
+  {
+    "Alpha": "LITE",
+    "Common": "Little Tern"
+  },
+  {
+    "Alpha": "LMSA",
+    "Common": "Light-mantled Albatross"
+  },
+  {
+    "Alpha": "LOKI",
+    "Common": "Loggerhead Kingbird"
+  },
+  {
+    "Alpha": "LOSH",
+    "Common": "Loggerhead Shrike"
+  },
+  {
+    "Alpha": "LOWA",
+    "Common": "Louisiana Waterthrush"
+  },
+  {
+    "Alpha": "LPCH",
+    "Common": "Lesser Prairie-Chicken"
+  },
+  {
+    "Alpha": "LRSP",
+    "Common": "Lesser Sand-Plover"
+  },
+  {
+    "Alpha": "LSFL",
+    "Common": "La Sagra's Flycatcher"
+  },
+  {
+    "Alpha": "LSGO",
+    "Common": "Lesser Snow Goose"
+  },
+  {
+    "Alpha": "LTCU",
+    "Common": "Long-tailed Cuckoo"
+  },
+  {
+    "Alpha": "LTDU",
+    "Common": "Long-tailed Duck"
+  },
+  {
+    "Alpha": "LTJA",
+    "Common": "Long-tailed Jaeger"
+  },
+  {
+    "Alpha": "LTSP",
+    "Common": "Least Storm-Petrel"
+  },
+  {
+    "Alpha": "LTST",
+    "Common": "Long-toed Stint"
+  },
+  {
+    "Alpha": "LUHU",
+    "Common": "Lucifer Hummingbird"
+  },
+  {
+    "Alpha": "LUWA",
+    "Common": "Lucy's Warbler"
+  },
+  {
+    "Alpha": "LWFG",
+    "Common": "Lesser White-fronted Goose"
+  },
+  {
+    "Alpha": "MAAL",
+    "Common": "Maui Alauahio"
+  },
+  {
+    "Alpha": "MABO",
+    "Common": "Masked Booby"
+  },
+  {
+    "Alpha": "MACP",
+    "Common": "Macaroni Penguin"
+  },
+  {
+    "Alpha": "MACU",
+    "Common": "Mangrove Cuckoo"
+  },
+  {
+    "Alpha": "MADU",
+    "Common": "Masked Duck"
+  },
+  {
+    "Alpha": "MAFD",
+    "Common": "Mariana Fruit Dove"
+  },
+  {
+    "Alpha": "MAFR",
+    "Common": "Magnificent Frigatebird"
+  },
+  {
+    "Alpha": "MAGO",
+    "Common": "Marbled Godwit"
+  },
+  {
+    "Alpha": "MAGP",
+    "Common": "Magellanic Penguin"
+  },
+  {
+    "Alpha": "MAGU",
+    "Common": "Magellan Gull"
+  },
+  {
+    "Alpha": "MAHU",
+    "Common": "Magnificent Hummingbird"
+  },
+  {
+    "Alpha": "MALL",
+    "Common": "Mallard"
+  },
+  {
+    "Alpha": "MALX",
+    "Common": "Mallard Dominant X American Black Duck Hybrid"
+  },
+  {
+    "Alpha": "MAMU",
+    "Common": "Marbled Murrelet"
+  },
+  {
+    "Alpha": "MAPA",
+    "Common": "Maui Parrotbill"
+  },
+  {
+    "Alpha": "MARC",
+    "Common": "Mariana Crow"
+  },
+  {
+    "Alpha": "MASA",
+    "Common": "Marsh Sandpiper"
+  },
+  {
+    "Alpha": "MASH",
+    "Common": "Manx Shearwater"
+  },
+  {
+    "Alpha": "MASW",
+    "Common": "Mariana Swiftlet"
+  },
+  {
+    "Alpha": "MAWA",
+    "Common": "Magnolia Warbler"
+  },
+  {
+    "Alpha": "MAWR",
+    "Common": "Marsh Wren"
+  },
+  {
+    "Alpha": "MBDH",
+    "Common": "Mallard X American Black Duck Hybrid"
+  },
+  {
+    "Alpha": "MBDX",
+    "Common": "Mallard X American Black Duck Intermediate"
+  },
+  {
+    "Alpha": "MCFD",
+    "Common": "Many-colored Fruit Dove"
+  },
+  {
+    "Alpha": "MCLO",
+    "Common": "McCown's Longspur"
+  },
+  {
+    "Alpha": "MCMO",
+    "Common": "Mariana Common Moorhen"
+  },
+  {
+    "Alpha": "MECH",
+    "Common": "Mexican Chickadee"
+  },
+  {
+    "Alpha": "MEDU",
+    "Common": "Mexican Duck"
+  },
+  {
+    "Alpha": "MEGU",
+    "Common": "Mew Gull"
+  },
+  {
+    "Alpha": "MEJA",
+    "Common": "Mexican Jay"
+  },
+  {
+    "Alpha": "MERL",
+    "Common": "Merlin"
+  },
+  {
+    "Alpha": "MGWA",
+    "Common": "MacGillivray's Warbler"
+  },
+  {
+    "Alpha": "MHDH",
+    "Common": "Mallard X Hawaiian Duck Hybrid"
+  },
+  {
+    "Alpha": "MICK",
+    "Common": "Micronesian Kingfisher"
+  },
+  {
+    "Alpha": "MIGW",
+    "Common": "Middendorff's Grasshopper-Warbler"
+  },
+  {
+    "Alpha": "MIHO",
+    "Common": "Micronesian Honeyeater"
+  },
+  {
+    "Alpha": "MIKI",
+    "Common": "Mississippi Kite"
+  },
+  {
+    "Alpha": "MILL",
+    "Common": "Millerbird"
+  },
+  {
+    "Alpha": "MIME",
+    "Common": "Micronesian Megapode"
+  },
+  {
+    "Alpha": "MIST",
+    "Common": "Micronesian Starling"
+  },
+  {
+    "Alpha": "MKBU",
+    "Common": "McKay's Bunting"
+  },
+  {
+    "Alpha": "MOBL",
+    "Common": "Mountain Bluebird"
+  },
+  {
+    "Alpha": "MOCH",
+    "Common": "Mountain Chickadee"
+  },
+  {
+    "Alpha": "MODO",
+    "Common": "Mourning Dove"
+  },
+  {
+    "Alpha": "MODU",
+    "Common": "Mottled Duck"
+  },
+  {
+    "Alpha": "MOPA",
+    "Common": "Monk Parakeet"
+  },
+  {
+    "Alpha": "MOPE",
+    "Common": "Mottled Petrel"
+  },
+  {
+    "Alpha": "STSW",
+    "Common": "Short-tailed Swift"
+  },
+  {
+    "Alpha": "STTL",
+    "Common": "Streamertail"
+  },
+  {
+    "Alpha": "SURF",
+    "Common": "Surfbird"
+  },
+  {
+    "Alpha": "SUSC",
+    "Common": "Surf Scoter"
+  },
+  {
+    "Alpha": "SUTA",
+    "Common": "Summer Tanager"
+  },
+  {
+    "Alpha": "SUWA",
+    "Common": "Sutton's Warbler"
+  },
+  {
+    "Alpha": "SWFL",
+    "Common": "Southwestern Willow Flycatcher"
+  },
+  {
+    "Alpha": "SWHA",
+    "Common": "Swainson's Hawk"
+  },
+  {
+    "Alpha": "SWSN",
+    "Common": "Swinhoe's Snipe"
+  },
+  {
+    "Alpha": "SWSP",
+    "Common": "Swamp Sparrow"
+  },
+  {
+    "Alpha": "SWTH",
+    "Common": "Swainson's Thrush"
+  },
+  {
+    "Alpha": "SWWA",
+    "Common": "Swainson's Warbler"
+  },
+  {
+    "Alpha": "TABG",
+    "Common": "Taiga Bean-Goose"
+  },
+  {
+    "Alpha": "TACR",
+    "Common": "Tamaulipas Crow"
+  },
+  {
+    "Alpha": "TAFL",
+    "Common": "Taiga Flycatcher"
+  },
+  {
+    "Alpha": "TAPE",
+    "Common": "Tahiti Petrel"
+  },
+  {
+    "Alpha": "TBKI",
+    "Common": "Thick-billed Kingbird"
+  },
+  {
+    "Alpha": "TBMU",
+    "Common": "Thick-billed Murre"
+  },
+  {
+    "Alpha": "TBPA",
+    "Common": "Thick-billed Parrot"
+  },
+  {
+    "Alpha": "TBPR",
+    "Common": "Thin-billed Prion"
+  },
+  {
+    "Alpha": "TBVI",
+    "Common": "Thick-billed Vireo"
+  },
+  {
+    "Alpha": "TEWA",
+    "Common": "Tennessee Warbler"
+  },
+  {
+    "Alpha": "THGU",
+    "Common": "Thayer's Gull"
+  },
+  {
+    "Alpha": "THWH",
+    "Common": "Townsend's X Hermit Warbler Hybrid"
+  },
+  {
+    "Alpha": "TIMO",
+    "Common": "Tinian Monarch"
+  },
+  {
+    "Alpha": "TOSH",
+    "Common": "Townsend's Shearwater"
+  },
+  {
+    "Alpha": "TOSO",
+    "Common": "Townsend's Solitaire"
+  },
+  {
+    "Alpha": "TOWA",
+    "Common": "Townsend's Warbler"
+  },
+  {
+    "Alpha": "TRBL",
+    "Common": "Tricolored Blackbird"
+  },
+  {
+    "Alpha": "TRES",
+    "Common": "Tree Swallow"
+  },
+  {
+    "Alpha": "TRFL",
+    "Common": "Traill's Flycatcher"
+  },
+  {
+    "Alpha": "TRHE",
+    "Common": "Tricolored Heron"
+  },
+  {
+    "Alpha": "TRKI",
+    "Common": "Tropical Kingbird"
+  },
+  {
+    "Alpha": "TRMO",
+    "Common": "Tropical Mockingbird"
+  },
+  {
+    "Alpha": "TRMU",
+    "Common": "Tricolored Munia"
+  },
+  {
+    "Alpha": "TRPA",
+    "Common": "Tropical Parula"
+  },
+  {
+    "Alpha": "TRSH",
+    "Common": "Tropical Shearwater"
+  },
+  {
+    "Alpha": "TRSP",
+    "Common": "Tristram's Storm-Petrel"
+  },
+  {
+    "Alpha": "TRUS",
+    "Common": "Trumpeter Swan"
+  },
+  {
+    "Alpha": "TSBL",
+    "Common": "Tawny-shouldered Blackbird"
+  },
+  {
+    "Alpha": "TUDU",
+    "Common": "Tufted Duck"
+  },
+  {
+    "Alpha": "TUPU",
+    "Common": "Tufted Puffin"
+  },
+  {
+    "Alpha": "TUTI",
+    "Common": "Tufted Titmouse"
+  },
+  {
+    "Alpha": "TUVU",
+    "Common": "Turkey Vulture"
+  },
+  {
+    "Alpha": "TWFG",
+    "Common": "Tule White-fronted Goose"
+  },
+  {
+    "Alpha": "UDEJ",
+    "Common": "Unidentified Dark-eyed Junco"
+  },
+  {
+    "Alpha": "UNCH",
+    "Common": "Unknown chickadee"
+  },
+  {
+    "Alpha": "UNEM",
+    "Common": "Unidentified Empidonax"
+  },
+  {
+    "Alpha": "UNGU",
+    "Common": "Unidentified Gull"
+  },
+  {
+    "Alpha": "UNHU",
+    "Common": "Unidentified Hummingbird"
+  },
+  {
+    "Alpha": "UNRE",
+    "Common": "Unidentified Common/Hoary Redpoll"
+  },
+  {
+    "Alpha": "UNTE",
+    "Common": "Unidentified Teal"
+  },
+  {
+    "Alpha": "UPSA",
+    "Common": "Upland Sandpiper"
+  },
+  {
+    "Alpha": "URST",
+    "Common": "Unidentified Rufous-sided Towhee"
+  },
+  {
+    "Alpha": "USSP",
+    "Common": "Unspecified Sage Sparrow"
+  },
+  {
+    "Alpha": "UYRW",
+    "Common": "Unknown Yellow-rumped Warbler"
+  },
+  {
+    "Alpha": "VABU",
+    "Common": "Varied Bunting"
+  },
+  {
+    "Alpha": "VASW",
+    "Common": "Vaux's Swift"
+  },
+  {
+    "Alpha": "VATH",
+    "Common": "Varied Thrush"
+  },
+  {
+    "Alpha": "VATI",
+    "Common": "Varied Tit"
+  },
+  {
+    "Alpha": "VCHU",
+    "Common": "Violet-crowned Hummingbird"
+  },
+  {
+    "Alpha": "VEER",
+    "Common": "Veery"
+  },
+  {
+    "Alpha": "ORAW",
+    "Common": "Orange-cheeked Waxbill"
+  },
+  {
+    "Alpha": "ORGR",
+    "Common": "Oriental Greenfinch"
+  },
+  {
+    "Alpha": "ORJU",
+    "Common": "Oregon Junco"
+  },
+  {
+    "Alpha": "OROR",
+    "Common": "Orchard Oriole"
+  },
+  {
+    "Alpha": "OSFL",
+    "Common": "Olive-sided Flycatcher"
+  },
+  {
+    "Alpha": "OSPR",
+    "Common": "Osprey"
+  },
+  {
+    "Alpha": "OU",
+    "Common": "Ou"
+  },
+  {
+    "Alpha": "OVEN",
+    "Common": "Ovenbird"
+  },
+  {
+    "Alpha": "OWPA",
+    "Common": "Orange-winged Parrot"
+  },
+  {
+    "Alpha": "PAAU",
+    "Common": "Parakeet Auklet"
+  },
+  {
+    "Alpha": "PABU",
+    "Common": "Painted Bunting"
+  },
+  {
+    "Alpha": "PAGP",
+    "Common": "Pacific Golden-Plover"
+  },
+  {
+    "Alpha": "PAJA",
+    "Common": "Parasitic Jaeger"
+  },
+  {
+    "Alpha": "PALB",
+    "Common": "Pallas's Bunting"
+  },
+  {
+    "Alpha": "PALI",
+    "Common": "Palila"
+  },
+  {
+    "Alpha": "PALO",
+    "Common": "Pacific Loon"
+  },
+  {
+    "Alpha": "PAPI",
+    "Common": "Pacific Pigeon"
+  },
+  {
+    "Alpha": "PARE",
+    "Common": "Painted Redstart"
+  },
+  {
+    "Alpha": "PAWR",
+    "Common": "Pacific Wren"
+  },
+  {
+    "Alpha": "PBGR",
+    "Common": "Pied-billed Grebe"
+  },
+  {
+    "Alpha": "PBWH",
+    "Common": "Puerto Rican Broad-winged Hawk"
+  },
+  {
+    "Alpha": "PCFD",
+    "Common": "Purple-capped Fruit Dove"
+  },
+  {
+    "Alpha": "PCST",
+    "Common": "Plain-capped Starthroat"
+  },
+  {
+    "Alpha": "PECO",
+    "Common": "Pelagic Cormorant"
+  },
+  {
+    "Alpha": "PEFA",
+    "Common": "Peregrine Falcon"
+  },
+  {
+    "Alpha": "PEPI",
+    "Common": "Pechora Pipit"
+  },
+  {
+    "Alpha": "PESA",
+    "Common": "Pectoral Sandpiper"
+  },
+  {
+    "Alpha": "PETH",
+    "Common": "Pearly-eyed Thrasher"
+  },
+  {
+    "Alpha": "PFGO",
+    "Common": "Pink-footed Goose"
+  },
+  {
+    "Alpha": "PFSH",
+    "Common": "Pink-footed Shearwater"
+  },
+  {
+    "Alpha": "PHAI",
+    "Common": "Phainopepla"
+  },
+  {
+    "Alpha": "PHPE",
+    "Common": "Phoenix Petrel"
+  },
+  {
+    "Alpha": "PHTD",
+    "Common": "Philippine Turtle-Dove"
+  },
+  {
+    "Alpha": "PHVI",
+    "Common": "Philadelphia Vireo"
+  },
+  {
+    "Alpha": "PIGR",
+    "Common": "Pine Grosbeak"
+  },
+  {
+    "Alpha": "PIGU",
+    "Common": "Pigeon Guillemot"
+  },
+  {
+    "Alpha": "PIJA",
+    "Common": "Pinyon Jay"
+  },
+  {
+    "Alpha": "PIPL",
+    "Common": "Piping Plover"
+  },
+  {
+    "Alpha": "PISI",
+    "Common": "Pine Siskin"
+  },
+  {
+    "Alpha": "PIWA",
+    "Common": "Pine Warbler"
+  },
+  {
+    "Alpha": "PIWO",
+    "Common": "Pileated Woodpecker"
+  },
+  {
+    "Alpha": "PLCH",
+    "Common": "Plain Chachalaca"
+  },
+  {
+    "Alpha": "PLPI",
+    "Common": "Plain Pigeon"
+  },
+  {
+    "Alpha": "PLTI",
+    "Common": "Plain Titmouse"
+  },
+  {
+    "Alpha": "PLVI",
+    "Common": "Plumbeous Vireo"
+  },
+  {
+    "Alpha": "POJA",
+    "Common": "Pomarine Jaeger"
+  },
+  {
+    "Alpha": "POST",
+    "Common": "Polynesian Starling"
+  },
+  {
+    "Alpha": "POUL",
+    "Common": "Poo-uli"
+  },
+  {
+    "Alpha": "PRAW",
+    "Common": "Prairie Warbler"
+  },
+  {
+    "Alpha": "PREM",
+    "Common": "Puerto Rican Emerald"
+  },
+  {
+    "Alpha": "PRFA",
+    "Common": "Prairie Falcon"
+  },
+  {
+    "Alpha": "PRFL",
+    "Common": "Puerto Rican Flycatcher"
+  },
+  {
+    "Alpha": "PRHE",
+    "Common": "Pacific Reef Heron"
+  },
+  {
+    "Alpha": "PRLC",
+    "Common": "Puerto Rican Lizard-Cuckoo"
+  },
+  {
+    "Alpha": "PRNI",
+    "Common": "Puerto Rican Nightjar"
+  },
+  {
+    "Alpha": "PROR",
+    "Common": "Puerto Rican Oriole"
+  },
+  {
+    "Alpha": "PROW",
+    "Common": "Prothonotary Warbler"
+  },
+  {
+    "Alpha": "PRPA",
+    "Common": "Puerto Rican Parrot"
+  },
+  {
+    "Alpha": "PRPP",
+    "Common": "Puerto Rican Plain Pigeon"
+  },
+  {
+    "Alpha": "PRSO",
+    "Common": "Puerto Rican Screech-Owl"
+  }
+]

@@ -1,0 +1,34 @@
+uuid: f5b831c1-623b-42e4-845f-7ba18c0fe133
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.image_only
+    - field.field.taxonomy_term.aou_codes.field_species_image
+    - field.field.taxonomy_term.aou_codes.field_species_sppcode
+    - image.style.medium
+    - taxonomy.vocabulary.aou_codes
+  module:
+    - layout_builder
+    - media
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.aou_codes.image_only
+targetEntityType: taxonomy_term
+bundle: aou_codes
+mode: image_only
+content:
+  field_species_image:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  description: true
+  field_species_sppcode: true

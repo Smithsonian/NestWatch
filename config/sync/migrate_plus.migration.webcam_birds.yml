@@ -1,0 +1,107 @@
+uuid: 30677dd4-3ba7-4849-b608-08ce4c518d21
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate
+id: webcam_birds
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'nestwatch migrate birds webcam'
+migration_group: nestwatch
+label: 'Importing webcam birds.'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  include_raw_data: true
+  track_changes: false
+  urls:
+    - 'public://import/webcam_birds.json'
+  item_selector: 0
+  fields:
+    -
+      name: siteID
+      label: 'Site ID'
+      selector: siteID
+    -
+      name: bandNumber
+      label: 'Band Numer'
+      selector: bandNumber
+    -
+      name: spp
+      label: Species
+      selector: spp
+    -
+      name: sex
+      label: Sex
+      selector: sex
+    -
+      name: LeftTop
+      label: 'Left Top Band Color'
+      selector: LeftTop
+    -
+      name: LeftBottom
+      label: 'Left Bottom Band Color'
+      selector: LeftBottom
+    -
+      name: RightTop
+      label: 'Right Top Band Color'
+      selector: RightTop
+    -
+      name: RightBottom
+      label: ' Right Bottom Band Color'
+      selector: RightBottom
+  ids:
+    bandNumber:
+      type: string
+process:
+  title: bandNumber
+  field_bird_sex: sex
+  field_bird_species:
+    plugin: entity_lookup
+    source: spp
+    value_key: field_species_sppcode
+    bundle_key: vid
+    bundle: aou_codes
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_top_right_band:
+    plugin: entity_lookup
+    source: RightTop
+    bundle_key: vid
+    value_key: field_color_code
+    bundle: band_colors
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_bottom_right_band:
+    plugin: entity_lookup
+    source: RightBottom
+    bundle_key: vid
+    value_key: field_color_code
+    bundle: band_colors
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_top_left_band:
+    plugin: entity_lookup
+    source: LeftTop
+    bundle_key: vid
+    bundle: band_colors
+    value_key: field_color_code
+    entity_type: taxonomy_term
+    ignore_case: true
+  field_bottom_left_band:
+    plugin: entity_lookup
+    source: LeftBottom
+    bundle_key: vid
+    value_key: field_color_code
+    bundle: band_colors
+    entity_type: taxonomy_term
+    ignore_case: true
+destination:
+  plugin: 'entity:node'
+  default_bundle: bird
+migration_dependencies: null

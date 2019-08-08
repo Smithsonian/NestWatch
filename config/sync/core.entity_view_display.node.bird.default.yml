@@ -3,16 +3,156 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.base_field_override.node.bird.title
     - field.field.node.bird.field_bird_sex
+    - field.field.node.bird.field_bird_species
     - field.field.node.bird.field_bottom_left_band
     - field.field.node.bird.field_bottom_right_band
-    - field.field.node.bird.field_species
     - field.field.node.bird.field_top_left_band
     - field.field.node.bird.field_top_right_band
     - node.type.bird
   module:
+    - layout_builder
     - manage_display
+    - nzp_layouts
     - options
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          wrappers:
+            content: div
+          wrapper_classes: ''
+          region_wrapper_classes:
+            content: container
+        components:
+          ebb0a77c-42ab-435d-91b5-71dbda2c8b29:
+            uuid: ebb0a77c-42ab-435d-91b5-71dbda2c8b29
+            region: content
+            configuration:
+              id: 'field_block:node:bird:field_bird_species'
+              label: 'Bird Species'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: teaser
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          8f8c7b59-fd0f-4a83-a284-225410de5299:
+            uuid: 8f8c7b59-fd0f-4a83-a284-225410de5299
+            region: content
+            configuration:
+              id: 'field_block:node:bird:title'
+              label: 'Band Number'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h2
+                  linked: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_nzp_two_col
+        layout_settings:
+          region_classes:
+            one_col: gs6
+            two_col: gs6
+          container_classes: container
+          html_container_elements: div
+          html_region_elements:
+            one_col: div
+            two_col: div
+        components:
+          f7da3416-5d48-40ee-a5d5-612d0c2c6727:
+            uuid: f7da3416-5d48-40ee-a5d5-612d0c2c6727
+            region: one_col
+            configuration:
+              id: 'field_block:node:bird:field_top_left_band'
+              label: 'Top Left Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          e795d2a9-2f1c-4552-8b5b-50d11d3c0021:
+            uuid: e795d2a9-2f1c-4552-8b5b-50d11d3c0021
+            region: two_col
+            configuration:
+              id: 'field_block:node:bird:field_top_right_band'
+              label: 'Top Right Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+          77c525a7-f89e-45c4-8443-c052ba79739a:
+            uuid: 77c525a7-f89e-45c4-8443-c052ba79739a
+            region: one_col
+            configuration:
+              id: 'field_block:node:bird:field_bottom_left_band'
+              label: 'Bottom Left Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+          cb4b6a15-fe15-4e11-bf14-e6abdc9ebbdf:
+            uuid: cb4b6a15-fe15-4e11-bf14-e6abdc9ebbdf
+            region: two_col
+            configuration:
+              id: 'field_block:node:bird:field_bottom_right_band'
+              label: 'Bottom Right Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
 id: node.bird.default
 targetEntityType: node
 bundle: bird
@@ -25,6 +165,14 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
+  field_bird_species:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_bottom_left_band:
     weight: 109
     label: above
@@ -35,14 +183,6 @@ content:
     region: content
   field_bottom_right_band:
     weight: 110
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_species:
-    weight: 105
     label: above
     settings:
       link: true

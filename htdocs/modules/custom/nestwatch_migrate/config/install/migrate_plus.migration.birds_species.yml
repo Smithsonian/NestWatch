@@ -1,0 +1,41 @@
+id: birds_species
+label: Importing Bird Species Taxonomy
+migration_group: nestwatch
+migration_tags:
+  - nestwatch migrate taxonomy species
+
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  include_raw_data: true
+  track_changes: false
+  urls:
+    - 'public://import/aou_codes.json'
+  item_selector: 0
+  fields:
+    -
+      name: Alpha
+      label: 'AOU Code'
+      selector: Alpha
+    -
+      name: Common
+      label: 'Common Name'
+      selector: Common
+
+  ids:
+    Alpha:
+      type: string
+
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: aou_codes
+
+process:
+  name: Common
+  field_species_sppcode: Alpha
+
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate

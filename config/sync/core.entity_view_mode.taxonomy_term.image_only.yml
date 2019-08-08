@@ -1,0 +1,10 @@
+uuid: e364d178-54f0-4ca9-b21e-ae959d69a7d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.image_only
+label: 'Image Only'
+targetEntityType: taxonomy_term
+cache: true

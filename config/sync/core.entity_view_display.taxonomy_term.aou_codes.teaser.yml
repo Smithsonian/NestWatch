@@ -1,0 +1,96 @@
+uuid: cfaf4640-6206-4295-9da1-47c5effe5096
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.aou_codes.field_species_image
+    - field.field.taxonomy_term.aou_codes.field_species_sppcode
+    - taxonomy.vocabulary.aou_codes
+  module:
+    - layout_builder
+    - nzp_layouts
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          wrappers:
+            content: section
+          wrapper_classes: ''
+          region_wrapper_classes:
+            content: container-fluid
+        components:
+          f3f237b9-317c-493a-beef-c917a5a4d791:
+            uuid: f3f237b9-317c-493a-beef-c917a5a4d791
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:aou_codes:field_species_image'
+              label: 'Species Image'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: media_thumbnail
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          41faac53-938c-4f41-956f-aef29ed4daf2:
+            uuid: 41faac53-938c-4f41-956f-aef29ed4daf2
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:aou_codes:name'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h4
+                  linked: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: taxonomy_term.aou_codes.teaser
+targetEntityType: taxonomy_term
+bundle: aou_codes
+mode: teaser
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_species_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_species_sppcode:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

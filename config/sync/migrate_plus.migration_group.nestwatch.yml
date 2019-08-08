@@ -1,4 +1,4 @@
-uuid: 9c2e6b8f-b262-4542-9173-26831beb13b2
+uuid: 063324b6-af64-42f2-aed3-0a0135505f43
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,6 @@ dependencies:
 id: nestwatch
 label: 'Nest Watch'
 description: 'Nest Watch Data Migrations.'
-source_type: CSV
+source_type: url
 module: null
 shared_configuration: null

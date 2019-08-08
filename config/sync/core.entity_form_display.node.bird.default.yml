@@ -5,9 +5,9 @@ dependencies:
   config:
     - entity_browser.browser.color_band
     - field.field.node.bird.field_bird_sex
+    - field.field.node.bird.field_bird_species
     - field.field.node.bird.field_bottom_left_band
     - field.field.node.bird.field_bottom_right_band
-    - field.field.node.bird.field_species
     - field.field.node.bird.field_top_left_band
     - field.field.node.bird.field_top_right_band
     - node.type.bird
@@ -68,6 +68,15 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_bird_species:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_bottom_left_band:
     weight: 30
     settings:
@@ -97,15 +106,6 @@ content:
       field_widget_replace: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
-    region: content
-  field_species:
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   field_top_left_band:
     weight: 29

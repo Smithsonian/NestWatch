@@ -7,24 +7,30 @@ dependencies:
   module:
     - views
 name: media_browser
-label: 'media browser'
+label: 'Media Browser'
 display: modal
 display_configuration:
   width: '650'
   height: '500'
   link_text: 'Select entities'
   auto_open: false
-selection_display: no_display
-selection_display_configuration: {  }
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: media
+  display: rendered_entity
+  display_settings:
+    view_mode: default
+  select_text: 'Use selected'
+  selection_hidden: false
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   822b2c2e-2996-41df-9de3-38935bdf6d7c:
     settings:
-      extensions: 'jpg jpeg png gif '
+      extensions: 'jpg jpeg png gif'
       media_type: image
       upload_location: 'public://'
-      multiple: 0
+      multiple: '1'
       submit_text: Upload
     uuid: 822b2c2e-2996-41df-9de3-38935bdf6d7c
     weight: 1

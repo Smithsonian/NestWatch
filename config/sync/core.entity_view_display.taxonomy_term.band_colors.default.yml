@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.band_colors.field_color_code
     - field.field.taxonomy_term.band_colors.field_color_swatch
     - taxonomy.vocabulary.band_colors
   module:
@@ -61,12 +62,36 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 1
+          50af3a07-e2ab-4862-a5e8-34f1a0448bda:
+            uuid: 50af3a07-e2ab-4862-a5e8-34f1a0448bda
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:band_colors:field_color_code'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
 id: taxonomy_term.band_colors.default
 targetEntityType: taxonomy_term
 bundle: band_colors
 mode: default
 content:
+  field_color_code:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_color_swatch:
     weight: 0
     label: above

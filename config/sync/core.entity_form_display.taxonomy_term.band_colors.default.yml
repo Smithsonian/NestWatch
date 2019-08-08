@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.band_colors.field_color_code
     - field.field.taxonomy_term.band_colors.field_color_swatch
     - taxonomy.vocabulary.band_colors
   module:
@@ -19,6 +20,14 @@ targetEntityType: taxonomy_term
 bundle: band_colors
 mode: default
 content:
+  field_color_code:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_color_swatch:
     weight: 2
     settings:
