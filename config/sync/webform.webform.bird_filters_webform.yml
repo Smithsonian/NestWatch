@@ -16,16 +16,16 @@ elements: "filter_by_color:\n  '#type': webform_term_select\n  '#title': 'Filter
 css: ''
 javascript: ''
 settings:
-  ajax: false
-  ajax_scroll_top: form
+  ajax: true
+  ajax_scroll_top: ''
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
-  page: true
+  page: false
   page_submit_path: ''
   page_confirm_path: ''
   page_admin_theme: false
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -35,11 +35,11 @@ settings:
   form_confidential_message: ''
   form_remote_addr: true
   form_convert_anonymous: false
-  form_prepopulate: false
+  form_prepopulate: true
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_reset: true
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
@@ -57,9 +57,11 @@ settings:
   submission_label: ''
   submission_log: false
   submission_views: {  }
-  submission_views_replace: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
   submission_user_columns: {  }
-  submission_user_duplicate: false
+  submission_user_duplicate: true
   submission_access_denied: default
   submission_access_denied_title: ''
   submission_access_denied_message: ''
@@ -71,16 +73,16 @@ settings:
   submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
-  autofill: false
+  autofill: true
   autofill_message: ''
   autofill_excluded_elements: {  }
-  wizard_progress_bar: true
+  wizard_progress_bar: false
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_start_label: ''
   wizard_preview_link: false
-  wizard_confirmation: true
+  wizard_confirmation: false
   wizard_confirmation_label: ''
   wizard_track: ''
   preview: 0
@@ -98,7 +100,7 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
+  confirmation_type: none
   confirmation_title: ''
   confirmation_message: ''
   confirmation_url: ''
@@ -123,7 +125,7 @@ settings:
   entity_limit_user_interval: null
   purge: none
   purge_days: null
-  results_disabled: false
+  results_disabled: true
   results_disabled_ignore: false
   token_update: false
 access:
@@ -178,13 +180,12 @@ handlers:
     id: action
     label: Action
     handler_id: action
-    status: true
+    status: false
     conditions: {  }
     weight: 0
     settings:
       states:
         - completed
-        - updated
       notes: ''
       sticky: null
       locked: null
@@ -192,3 +193,58 @@ handlers:
       message: ''
       message_type: status
       debug: false
+  remote_post:
+    id: remote_post
+    label: 'Remote post'
+    handler_id: remote_post
+    status: false
+    conditions: {  }
+    weight: 0
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+      custom_data: ''
+      custom_options: ''
+      debug: false
+      completed_url: /feeder-cam
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_url: ''
+      draft_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages:
+        -
+          code: null
+          message: 'no params passed'
+      error_url: ''
+  debug:
+    id: debug
+    label: Debug
+    handler_id: debug
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }

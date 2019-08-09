@@ -1,0 +1,9 @@
+uuid: dc650829-cbb3-4405-b8af-8b8c383ed04c
+langcode: en
+status: true
+dependencies: {  }
+id: embedded_block
+label: 'Embedded Block'
+icon_uuid: null
+description: 'Embed blocks'
+behavior_plugins: {  }
