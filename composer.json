@@ -18,6 +18,7 @@
     "drupal/allowed_formats": "^1.1",
     "drupal/autologout": "^1.0",
     "drupal/backup_migrate": "^4.0",
+    "drupal/better_exposed_filters": "^3.0",
     "drupal/bg_image_formatter": "^1.5",
     "drupal/block_class": "^1.0",
     "drupal/captcha": "^1.0@beta",
@@ -139,6 +140,9 @@
       }
     },
     "patches": {
+      "drupal/core" : {
+        "fixes issue with Layout Builder Override not returning default region when instantiating": "https://www.drupal.org/files/issues/2019-06-18/3053906-11-default-region-value.patch"
+      },
       "drupal/paragraphs": {
         "Fix support for field_group module in combination with field_layout module patch": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch",
         "Fix Support for Lang Code when using Paragraphs in Entity Browser and Layout Builder": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch"
