@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89690376cc2d4bfbb45a799fc3fecf5e",
+    "content-hash": "a98b32c20daab583dadccfab1c054583",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3493,6 +3493,9 @@
                     "recurse": false,
                     "replace": false,
                     "merge-extra": false
+                },
+                "patches_applied": {
+                    "fixes issue with Layout Builder Override not returning default region when instantiating": "https://www.drupal.org/files/issues/2019-06-18/3053906-11-default-region-value.patch"
                 }
             },
             "autoload": {
@@ -4548,17 +4551,11 @@
         },
         {
             "name": "drupal/layout_builder_modal",
-            "version": "1.0.0-alpha2",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/layout_builder_modal.git",
-                "reference": "8.x-1.0-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/layout_builder_modal-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "241f5fea6639cd8dd4ed5c556b1e0ee05a96b589"
+                "reference": "6ff883e5a1cb5f9822d7f84d8cc278b43fbc16b7"
             },
             "require": {
                 "drupal/core": "^8.7.0"
@@ -4569,11 +4566,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1564581785",
+                    "version": "8.x-1.0-alpha2+0-dev",
+                    "datestamp": "1564581185",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4610,7 +4607,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/layout_builder_modal",
                 "issues": "https://www.drupal.org/project/issues/layout_builder_modal"
-            }
+            },
+            "time": "2019-07-31T13:49:00+00:00"
         },
         {
             "name": "drupal/ldap",
@@ -12235,6 +12233,7 @@
         "drupal/fast_404": 15,
         "drupal/field_group": 20,
         "drupal/inline_entity_form": 5,
+        "drupal/layout_builder_modal": 20,
         "drupal/ldap": 10,
         "drupal/manage_display": 15,
         "drupal/maxlength": 10,

@@ -37,7 +37,7 @@
     "drupal/image_widget_crop": "^2.2",
     "drupal/imce": "^1.7",
     "drupal/inline_entity_form": "^1.0@RC",
-    "drupal/layout_builder_modal": "^1.0",
+    "drupal/layout_builder_modal": "1.x-dev",
     "drupal/ldap": "^3.0@beta",
     "drupal/linkit": "^4.3",
     "drupal/manage_display": "^1.0@alpha",
@@ -141,7 +141,7 @@
     },
     "patches": {
       "drupal/core" : {
-        "fixes issue with Layout Builder Override not returning default region when instantiating": "https://www.drupal.org/files/issues/2019-06-18/3053906-11-default-region-value.patch"
+        "fixes issue with Layout Builder Override not returning default region when instantiating": "https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch"
       },
       "drupal/paragraphs": {
         "Fix support for field_group module in combination with field_layout module patch": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch",

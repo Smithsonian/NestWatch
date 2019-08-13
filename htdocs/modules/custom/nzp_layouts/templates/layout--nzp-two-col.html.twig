@@ -21,6 +21,7 @@
  */
 #}
 {% if content %}
+<div{{ attributes }} >
             <{{settings.html_container_elements}} {{attributes.addClass('g-12-m', settings.container_classes)}}>
             {% if content.one_col %}
                 <{{ settings.html_region_elements.one_col }} {{ region_attributes.one_col.addClass(settings.region_classes.one_col) }}>
@@ -34,4 +35,5 @@
                 </{{settings.html_region_elements.two_col }}>
             {% endif %}
             </{{settings.html_container_elements}}>
+</div>
 {% endif %}

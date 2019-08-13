@@ -15,9 +15,13 @@
 #}
 
 {% if content %}
+<section{{ attributes }} >
         {% if content.content %}
+
             <{{settings.wrappers.content}} {{ region_attributes.content.addClass(settings.region_wrapper_classes.content) }}>
                 {{ content.content }}
             </{{settings.wrappers.content}}>
+       
         {% endif %}
+</section>
 {% endif %}

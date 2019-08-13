@@ -15,7 +15,8 @@
 #}
 {% set tabIndex = settings.num_tabs %}
 
-{{kint(settings)}}
+{% if content %}
+<section{{ attributes }} >
 <div class="tab-wrapper">
  <ul data-tabs="{{settings.uuid}}">
             <li>
@@ -28,8 +29,10 @@
    {% endfor %}
      </ul>
      {% for index in range(0, tabIndex-1) %}
-        <div id="tab-{{settings.uuid}}-{{index}}">
+        <div {{attribute(region_attributes, 'tab_content_' ~index)}} id="tab-{{settings.uuid}}-{{index}}">
             {{ attribute(content, 'tab_content_' ~ index) }}
         </div>
     {% endfor %}
 </div>
+</section>
+{% endif %}
