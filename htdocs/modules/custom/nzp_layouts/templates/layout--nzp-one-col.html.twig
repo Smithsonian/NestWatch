@@ -15,7 +15,7 @@
 #}
 
 {% if content %}
-<section{{ attributes }} >
+<div{{ attributes }} >
         {% if content.content %}
 
             <{{settings.wrappers.content}} {{ region_attributes.content.addClass(settings.region_wrapper_classes.content) }}>
@@ -23,5 +23,5 @@
             </{{settings.wrappers.content}}>
        
         {% endif %}
-</section>
+</div>
 {% endif %}

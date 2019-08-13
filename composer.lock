@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a98b32c20daab583dadccfab1c054583",
+    "content-hash": "3c295ef5526171d31ae756aff5fe700e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2329,7 +2329,75 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/authorization"
             },
-            "time": "2018-09-18T18:07:38+00:00"
+            "time": "2018-09-18 18:07:38"
+        },
+        {
+            "name": "drupal/auto_entitylabel",
+            "version": "3.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/auto_entitylabel.git",
+                "reference": "8.x-3.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/auto_entitylabel-8.x-3.0-beta1.zip",
+                "reference": "8.x-3.0-beta1",
+                "shasum": "9e58235519ff98d44687ef27e6c49af37b4ca533"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0-beta1",
+                    "datestamp": "1563986592",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pravin Ajaaz",
+                    "homepage": "https://www.drupal.org/user/2910049"
+                },
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
+                    "name": "bforchhammer",
+                    "homepage": "https://www.drupal.org/user/216396"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
+                    "name": "purushotam.rai",
+                    "homepage": "https://www.drupal.org/user/3193859"
+                }
+            ],
+            "description": "Allows hiding of entity label fields and automatic label creation.",
+            "homepage": "https://www.drupal.org/project/auto_entitylabel",
+            "support": {
+                "source": "https://git.drupalcode.org/project/auto_entitylabel",
+                "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
+            }
         },
         {
             "name": "drupal/autologout",
@@ -3495,7 +3563,8 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "fixes issue with Layout Builder Override not returning default region when instantiating": "https://www.drupal.org/files/issues/2019-06-18/3053906-11-default-region-value.patch"
+                    "fixes issue with Layout Builder Override not returning default region when instantiating": "https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch",
+                    "adds validation check for #summary_attributes": "https://www.drupal.org/files/issues/2018-12-17/core-undefined-index-summary_attributes-2998194-9.patch"
                 }
             },
             "autoload": {
@@ -4236,7 +4305,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group"
             },
-            "time": "2019-05-23T21:31:25+00:00"
+            "time": "2019-05-23 21:31:25"
         },
         {
             "name": "drupal/geolocation",
@@ -4608,7 +4677,7 @@
                 "source": "http://cgit.drupalcode.org/layout_builder_modal",
                 "issues": "https://www.drupal.org/project/issues/layout_builder_modal"
             },
-            "time": "2019-07-31T13:49:00+00:00"
+            "time": "2019-07-31 13:49:00"
         },
         {
             "name": "drupal/ldap",
@@ -5709,6 +5778,58 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/schema_metatag",
                 "issues": "https://www.drupal.org/project/issues/schema_metatag"
+            }
+        },
+        {
+            "name": "drupal/selective_better_exposed_filters",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/selective_better_exposed_filters.git",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/selective_better_exposed_filters-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "7e2d437a88de42988288dcda5a8a3807f66c5b55"
+            },
+            "require": {
+                "drupal/better_exposed_filters": "^3.0",
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1565365384",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "stomusic",
+                    "homepage": "https://www.drupal.org/user/3405436"
+                }
+            ],
+            "description": "Provide extra option for better exposed filters to show only used terms in filter.",
+            "homepage": "https://www.drupal.org/project/selective_better_exposed_filters",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/selective_better_exposed_filters",
+                "issues": "https://www.drupal.org/project/issues/selective_better_exposed_filters"
             }
         },
         {
@@ -7676,12 +7797,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:Smithsonian/si_d8_admintheme.git",
-                "reference": "30810dceee774c22cbbd2699ccbb1e71ceecd5a3"
+                "reference": "463a584d0e02d99d4bf68b31e3dfac51da9201fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Smithsonian/si_d8_admintheme/zipball/30810dceee774c22cbbd2699ccbb1e71ceecd5a3",
-                "reference": "30810dceee774c22cbbd2699ccbb1e71ceecd5a3",
+                "url": "https://api.github.com/repos/Smithsonian/si_d8_admintheme/zipball/463a584d0e02d99d4bf68b31e3dfac51da9201fd",
+                "reference": "463a584d0e02d99d4bf68b31e3dfac51da9201fd",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -7690,7 +7811,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_admintheme/tree/master",
                 "issues": "https://github.com/Smithsonian/si_d8_admintheme/issues"
             },
-            "time": "2019-07-30T16:43:40+00:00"
+            "time": "2019-08-07 18:23:21"
         },
         {
             "name": "smithsonian/si_basetheme",
@@ -7698,21 +7819,21 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:Smithsonian/si_d8_basetheme.git",
-                "reference": "53b1178e31ffa610ded731e3e00a75c87332e2fd"
+                "reference": "3cd7f6ab74a52338a3dda73013bb1a4915096ff7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Smithsonian/si_d8_basetheme/zipball/53b1178e31ffa610ded731e3e00a75c87332e2fd",
-                "reference": "53b1178e31ffa610ded731e3e00a75c87332e2fd",
+                "url": "https://api.github.com/repos/Smithsonian/si_d8_basetheme/zipball/3cd7f6ab74a52338a3dda73013bb1a4915096ff7",
+                "reference": "3cd7f6ab74a52338a3dda73013bb1a4915096ff7",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
             "description": "Smithsonian Drupal 8 Theme",
             "support": {
-                "source": "https://github.com/Smithsonian/si_d8_basetheme/tree/master",
+                "source": "https://github.com/Smithsonian/si_d8_basetheme/tree/2.21",
                 "issues": "https://github.com/Smithsonian/si_d8_basetheme/issues"
             },
-            "time": "2019-07-30T20:57:36+00:00"
+            "time": "2019-08-12 21:39:32"
         },
         {
             "name": "smithsonian/si_content",
@@ -7720,21 +7841,21 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:Smithsonian/si_d8_content.git",
-                "reference": "a04c925e408d43bb22d46ef6a42b574f9d03c19e"
+                "reference": "a230267efc546733da11566b4dc45b91f1988882"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Smithsonian/si_d8_content/zipball/a04c925e408d43bb22d46ef6a42b574f9d03c19e",
-                "reference": "a04c925e408d43bb22d46ef6a42b574f9d03c19e",
+                "url": "https://api.github.com/repos/Smithsonian/si_d8_content/zipball/a230267efc546733da11566b4dc45b91f1988882",
+                "reference": "a230267efc546733da11566b4dc45b91f1988882",
                 "shasum": ""
             },
             "type": "drupal-custom-module",
             "description": "Smithsonian module for custom layouts and blocks",
             "support": {
-                "source": "https://github.com/Smithsonian/si_d8_content/tree/master",
+                "source": "https://github.com/Smithsonian/si_d8_content/tree/2.12",
                 "issues": "https://github.com/Smithsonian/si_d8_content/issues"
             },
-            "time": "2019-07-30T15:20:58+00:00"
+            "time": "2019-08-12 21:33:33"
         },
         {
             "name": "stack/builder",
@@ -10046,7 +10167,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2019-07-15T12:45:29+00:00"
+            "time": "2019-07-15 12:45:29"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -10218,7 +10339,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-10T12:39:06+00:00"
+            "time": "2018-10-10 12:39:06"
         },
         {
             "name": "doctrine/instantiator",
@@ -10281,7 +10402,7 @@
             "version": "8.3.5",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/coder.git",
+                "url": "https://git.drupalcode.org/project/coder.git",
                 "reference": "35277fc8675b6a2cbb194f8880145a9c85c845c4"
             },
             "require": {
