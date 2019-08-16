@@ -1,0 +1,53 @@
+uuid: 5e828638-32ed-4829-9af1-e02c85399ba6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.webcam_resight.body
+    - field.field.node.webcam_resight.field_resight_bird
+    - node.type.webcam_resight
+  module:
+    - manage_display
+    - text
+id: node.webcam_resight.default
+targetEntityType: node
+bundle: webcam_resight
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_resight_bird:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  node_link:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: title
+    weight: -50
+    region: content
+    settings:
+      tag: h2
+      linked: true
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  uid: true

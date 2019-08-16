@@ -73,6 +73,40 @@ third_party_settings:
                 type: text_default
             additional: {  }
             weight: 2
+          02bc03e4-7712-4424-90dc-891010448646:
+            uuid: 02bc03e4-7712-4424-90dc-891010448646
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:video:field_video_embed'
+              formatter:
+                label: hidden
+                settings:
+                  autoplay: true
+                  responsive: true
+                  width: 854
+                  height: 480
+                third_party_settings: {  }
+                type: video_embed_field_video
+            additional: {  }
+            weight: 3
+          367d9cc5-e86f-494a-9c3b-ada417d01efb:
+            uuid: 367d9cc5-e86f-494a-9c3b-ada417d01efb
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:video:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 4
         third_party_settings: {  }
 _core:
   default_config_hash: LBP5R5I_q7Lu3kQkBu9pTjapcxJNdJtzIuPmWsJ7Egk

@@ -1,0 +1,18 @@
+uuid: 1eac710a-6dda-4fce-93aa-c34fbf56c042
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Webcam Resight'
+type: webcam_resight
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

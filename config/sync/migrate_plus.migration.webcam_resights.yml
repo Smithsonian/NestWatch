@@ -1,0 +1,63 @@
+uuid: f045e192-5e7c-4300-99a0-e2ca7c67d409
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate
+id: webcam_resights
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'nestwatch migrate webcam resignts'
+migration_group: nestwatch
+label: 'Importing webcam resights.'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  include_raw_data: true
+  track_changes: false
+  urls:
+    - 'public://import/camRs.json'
+  item_selector: 0
+  fields:
+    -
+      name: sessionId
+      label: sessionId
+      selector: sessionId
+    -
+      name: dateTime
+      label: 'Date and time'
+      selector: dateTime
+    -
+      name: bandNumber
+      label: 'Band Number'
+      selector: bandNumber
+    -
+      name: comment
+      label: Comment
+      selector: comment
+  ids:
+    sessionId:
+      type: string
+process:
+  title: sessionId
+  body/value: comment
+  field_resight_bird:
+    plugin: entity_lookup
+    source: bandNumber
+    value_key: title
+    bundle: bird
+    entity_type: node
+    ignore_case: true
+  created:
+    -
+      plugin: format_date
+      from_format: 'Y-m-d G:i:s'
+      to_format: 'Y-m-d\TH:i:s'
+destination:
+  plugin: 'entity:node'
+  default_bundle: webcam_resight
+migration_dependencies: null

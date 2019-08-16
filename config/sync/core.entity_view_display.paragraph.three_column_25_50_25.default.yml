@@ -109,6 +109,72 @@ third_party_settings:
                 type: text_default
             additional: {  }
             weight: 1
+          11969267-8727-4853-b752-855503d7dd34:
+            uuid: 11969267-8727-4853-b752-855503d7dd34
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:three_column_25_50_25:field_column_two'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 1
+          8b69bf8e-913f-4770-8006-0fdcf50247d3:
+            uuid: 8b69bf8e-913f-4770-8006-0fdcf50247d3
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:three_column_25_50_25:field_column_one'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: sidebar
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 2
+          e79b1d56-219e-4e20-ac43-6af2968c3a50:
+            uuid: e79b1d56-219e-4e20-ac43-6af2968c3a50
+            region: third
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:three_column_25_50_25:field_column_three'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: sidebar
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 1
+          39a4ea3d-3a30-4c61-a0b2-c8de4a71072a:
+            uuid: 39a4ea3d-3a30-4c61-a0b2-c8de4a71072a
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:three_column_25_50_25:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
 _core:
   default_config_hash: BZ3Cd3LG8JbvyOFhaRMyqMIkVPuvn2qsjJMCujviO4Q

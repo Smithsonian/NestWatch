@@ -1,0 +1,111 @@
+uuid: 248b0733-3fe6-4e14-a60c-1cb757c4740b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webcam_resight.body
+    - field.field.node.webcam_resight.field_resight_bird
+    - node.type.webcam_resight
+  module:
+    - layout_builder
+    - nzp_layouts
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          wrappers:
+            content: div
+          wrapper_classes: ''
+          region_wrapper_classes:
+            content: container
+        components:
+          567bb62f-156e-4109-a9d1-e6a7b49c2025:
+            uuid: 567bb62f-156e-4109-a9d1-e6a7b49c2025
+            region: content
+            configuration:
+              id: 'field_block:node:webcam_resight:created'
+              label: Sighted
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          3a4e952f-4341-4a60-8c43-9391fa699447:
+            uuid: 3a4e952f-4341-4a60-8c43-9391fa699447
+            region: content
+            configuration:
+              id: 'field_block:node:webcam_resight:body'
+              label: Notes
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          58b10a41-03b7-447e-a27d-033e884d2b26:
+            uuid: 58b10a41-03b7-447e-a27d-033e884d2b26
+            region: content
+            configuration:
+              id: 'field_block:node:webcam_resight:uid'
+              label: 'Authored by'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: node.webcam_resight.teaser
+targetEntityType: node
+bundle: webcam_resight
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  node_link:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_resight_bird: true
+  title: true
+  uid: true

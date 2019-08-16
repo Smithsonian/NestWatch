@@ -20,7 +20,56 @@ third_party_settings:
       -
         layout_id: layout_builder_blank
         layout_settings: {  }
-        components: {  }
+        components:
+          c84cf759-e108-4568-a3ff-37595c021f94:
+            uuid: c84cf759-e108-4568-a3ff-37595c021f94
+            region: top
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_right:field_title'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          b8d8601b-0b23-437f-88e0-f66025180749:
+            uuid: b8d8601b-0b23-437f-88e0-f66025180749
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_right:field_column_one'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 0
+          69c860ed-747a-4715-8ed5-45bf12847a79:
+            uuid: 69c860ed-747a-4715-8ed5-45bf12847a79
+            region: aside
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_right:field_column_two'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: sidebar
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
 _core:
   default_config_hash: cNmE3iVHail8XiiFnfgvS_uC6SbF-HLPNqoUIWoL5mo

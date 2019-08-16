@@ -1,0 +1,6 @@
+status: 0
+pattern: '[node:created] - [node:author:account-name]'
+escape: false
+dependencies:
+  config:
+    - node.type.webcam_resight

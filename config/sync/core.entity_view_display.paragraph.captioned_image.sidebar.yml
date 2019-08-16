@@ -25,7 +25,74 @@ third_party_settings:
       -
         layout_id: layout_builder_blank
         layout_settings: {  }
-        components: {  }
+        components:
+          1bb2f3fb-de9b-4b84-beea-363d3d036111:
+            uuid: 1bb2f3fb-de9b-4b84-beea-363d3d036111
+            region: media
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:captioned_image:field_image'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: grid
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 0
+          ba9fdb82-1abc-47cf-8ad9-83a1418f600b:
+            uuid: ba9fdb82-1abc-47cf-8ad9-83a1418f600b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:captioned_image:field_text'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          a29d8293-5e83-47ce-8f42-26c38706443c:
+            uuid: a29d8293-5e83-47ce-8f42-26c38706443c
+            region: link
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:captioned_image:field_url'
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          ffd8f298-d1c0-4c01-b3a7-2cbe2bf5f745:
+            uuid: ffd8f298-d1c0-4c01-b3a7-2cbe2bf5f745
+            region: null
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:captioned_image:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
 _core:
   default_config_hash: MrhCroBCZlTyg-wue3dmDZG2VRejc0FBu4Lc5fyklGU

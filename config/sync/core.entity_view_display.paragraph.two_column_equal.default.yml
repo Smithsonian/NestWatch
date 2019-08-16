@@ -44,6 +44,55 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 0
+          4915cca6-b51b-4b1b-9b33-58c50f4d7992:
+            uuid: 4915cca6-b51b-4b1b-9b33-58c50f4d7992
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_equal:field_column_one'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 0
+          26bed91c-9a84-48b9-9399-4b165aa391d9:
+            uuid: 26bed91c-9a84-48b9-9399-4b165aa391d9
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_equal:field_column_two'
+              formatter:
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 0
+          e8ae84f5-1edf-4e27-931c-84e9e3458ddf:
+            uuid: e8ae84f5-1edf-4e27-931c-84e9e3458ddf
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:two_column_equal:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section

@@ -74,6 +74,38 @@ third_party_settings:
                 type: text_default
             additional: {  }
             weight: 1
+          ec5c1f66-65e0-40e0-a59c-497289eb338d:
+            uuid: ec5c1f66-65e0-40e0-a59c-497289eb338d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:grid_layout:field_grid_content'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: sidebar
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          b5d6ad17-27e6-44f2-adb8-4f4b1b56aa35:
+            uuid: b5d6ad17-27e6-44f2-adb8-4f4b1b56aa35
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:grid_layout:field_title'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
 _core:
   default_config_hash: rXC1OA7fP39Bbno-wqBDLDSU7aHcCjxjrNZyYrrD5R8

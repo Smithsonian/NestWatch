@@ -11,11 +11,14 @@ dependencies:
     - field.field.node.bird.field_top_left_band
     - field.field.node.bird.field_top_right_band
     - node.type.bird
+    - views.view.webcam_resights
   module:
     - layout_builder
+    - layout_discovery
     - manage_display
     - nzp_layouts
     - options
+    - views
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -152,6 +155,24 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 4
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          919aaf4c-a492-4c4e-82aa-1e2681140472:
+            uuid: 919aaf4c-a492-4c4e-82aa-1e2681140472
+            region: content
+            configuration:
+              id: 'views_block:webcam_resights-block_2'
+              label: Resights
+              provider: views
+              label_display: '0'
+              views_label: Resights
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
 id: node.bird.default
 targetEntityType: node

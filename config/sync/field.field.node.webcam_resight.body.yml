@@ -1,0 +1,32 @@
+uuid: d3c45e01-0470-4b61-ae01-ffee0de02bb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.webcam_resight
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    basic_html: '0'
+    caption_text: '0'
+    raw_html_css_js: '0'
+    restricted_html: '0'
+    title: '0'
+    full_html: '0'
+id: node.webcam_resight.body
+field_name: body
+entity_type: node
+bundle: webcam_resight
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

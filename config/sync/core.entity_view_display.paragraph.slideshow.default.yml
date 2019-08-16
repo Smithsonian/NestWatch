@@ -80,6 +80,46 @@ third_party_settings:
                 type: text_default
             additional: {  }
             weight: 2
+          40475f16-6e7f-4e30-8347-92d6caab2cb4:
+            uuid: 40475f16-6e7f-4e30-8347-92d6caab2cb4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slideshow:field_slide'
+              formatter:
+                type: slick_entityreference_vanilla
+                label: hidden
+                settings:
+                  view_mode: default
+                  override: false
+                  overridables: {  }
+                  skin_arrows: ''
+                  skin_dots: ''
+                  cache: 0
+                  current_view_mode: ''
+                  optionset: default
+                  skin: ''
+                  style: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          791a5a84-2161-4909-8719-59d0856bd2e6:
+            uuid: 791a5a84-2161-4909-8719-59d0856bd2e6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slideshow:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 4
         third_party_settings: {  }
 _core:
   default_config_hash: '-Cp488db8uIM-DWOpro6wqeX2feI3yhpm1ULk22sI_Y'

@@ -1,0 +1,65 @@
+id: webcam_resights
+label: Importing webcam resights. 
+migration_group: nestwatch
+migration_tags:
+  - nestwatch migrate webcam resignts
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  include_raw_data: true
+  track_changes: false
+  urls:
+    - 'public://import/camRs.json'
+  item_selector: 0
+  fields:
+    -
+      name: sessionId
+      label: 'sessionId'
+      selector: sessionId
+    -
+      name: dateTime
+      label: 'Date and time'
+      selector: dateTime
+    -
+      name: bandNumber
+      label: 'Band Number'
+      selector: bandNumber
+    -
+      name: comment
+      label: 'Comment'
+      selector: comment
+  
+  ids:
+    sessionId:
+      type: string
+
+destination:
+  plugin: 'entity:node'
+  default_bundle: webcam_resight
+
+process:
+  title: sessionId
+
+  'body/value': comment
+
+  field_resight_bird : 
+    plugin: entity_lookup
+    source: bandNumber
+    value_key: title
+    bundle: bird
+    entity_type: node
+    ignore_case: true  
+
+  created: 
+    -
+      plugin: format_date
+      from_format: 'Y-m-d G:i:s'
+      to_format: 'Y-m-d\TG:i:s'
+      
+  
+
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate

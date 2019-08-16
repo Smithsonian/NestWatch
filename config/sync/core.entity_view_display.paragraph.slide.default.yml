@@ -21,7 +21,74 @@ third_party_settings:
       -
         layout_id: layout_builder_blank
         layout_settings: {  }
-        components: {  }
+        components:
+          480d6bd7-3b30-4e86-8c9c-2af6934ae11e:
+            uuid: 480d6bd7-3b30-4e86-8c9c-2af6934ae11e
+            region: media
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slide:field_image'
+              formatter:
+                label: hidden
+                settings:
+                  responsive_image_style: slideshow_constrain
+                  image_link: ''
+                third_party_settings: {  }
+                type: responsive_image
+            additional: {  }
+            weight: 0
+          0b3bf8e1-63c7-475b-b4e9-c84aeeb4471a:
+            uuid: 0b3bf8e1-63c7-475b-b4e9-c84aeeb4471a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slide:field_text'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          abc30f6e-3302-4f98-97b0-00430659e37d:
+            uuid: abc30f6e-3302-4f98-97b0-00430659e37d
+            region: link
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slide:field_url'
+              formatter:
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 0
+          5d758037-c7ab-42b4-ad30-a24c607a15ce:
+            uuid: 5d758037-c7ab-42b4-ad30-a24c607a15ce
+            region: null
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:slide:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
 _core:
   default_config_hash: vUUW7AeZ_cqwrHgqqHPUGpV-japjmtBgRyLi2ipUtDM

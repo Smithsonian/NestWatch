@@ -1,0 +1,28 @@
+uuid: 21fb634b-31de-4fed-ae46-eaf414263c15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resight_bird
+    - node.type.bird
+    - node.type.webcam_resight
+id: node.webcam_resight.field_resight_bird
+field_name: field_resight_bird
+entity_type: node
+bundle: webcam_resight
+label: Bird
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      bird: bird
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

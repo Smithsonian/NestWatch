@@ -70,6 +70,36 @@ third_party_settings:
                 type: text_default
             additional: {  }
             weight: 2
+          964bc17f-1213-4846-920a-8ab21d728b7d:
+            uuid: 964bc17f-1213-4846-920a-8ab21d728b7d
+            region: ds_content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:text_block:field_text_block'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          77cc25d8-8f4c-4fbc-9a27-84996af891b9:
+            uuid: 77cc25d8-8f4c-4fbc-9a27-84996af891b9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:text_block:field_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
 _core:
   default_config_hash: RAok7nXBpZiiwU7uNRTDxFYk9sQoEBLQ4n_5kllacyY

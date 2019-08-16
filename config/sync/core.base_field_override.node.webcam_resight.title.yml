@@ -1,0 +1,18 @@
+uuid: dff2c0d8-5981-474f-879b-4ebac61e2fbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.webcam_resight
+id: node.webcam_resight.title
+field_name: title
+entity_type: node
+bundle: webcam_resight
+label: 'Resight ID'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
