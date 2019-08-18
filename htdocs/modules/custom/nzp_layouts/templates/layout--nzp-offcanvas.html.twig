@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a one column layout.
+ *
+ * This template provides a two column display layout with full width areas at
+ * the top, bottom and in the middle.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if content %}
+<div{{ attributes }} >
+
+{{ kint(settings) }}
+<a  class="js-offcanvas-trigger" 
+    data-offcanvas-trigger="off-canvas-id"
+    href="#off-canvas">{{settings.oc_label}}</a>
+
+<aside class="js-offcanvas" 
+       data-offcanvas-options='{"modifiers": "left,overlay"}' 
+       id="off-canvas-id">
+    
+            {% if content.content %}
+
+            {{ content.content }}
+
+             {% endif %}
+
+       </aside>
+
+       
+       
+</div>
+{% endif %}

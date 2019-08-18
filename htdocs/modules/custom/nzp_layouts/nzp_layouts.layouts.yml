@@ -63,3 +63,20 @@ layout_nzp_tab:
       label: Tab 5
     tab_content_5:
       label: Tab 6
+
+
+layout_flyout:
+  label: 'NZP OffCanvas'
+  path: templates
+  template: layout--nzp-offcanvas
+  library: nzp_layouts/nzp_offcanvas-library
+  category: ''
+  default_region: content
+  class: '\Drupal\nzp_layouts\Plugin\Layout\nzpOffCanvasLayout'
+  icon_map:
+    - [top]
+    - [bottom]
+  regions:
+    content:
+      label: Label
+  

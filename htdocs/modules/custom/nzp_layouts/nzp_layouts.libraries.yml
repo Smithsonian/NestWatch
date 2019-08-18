@@ -13,3 +13,10 @@ nzp_tabs-library:
       js/tabby/dist/css/tabby-ui.css: {}
 
 
+nzp_offcanvas-library:
+  js:
+    js/off-canvas/js/js-offcanvas.js: {}
+  css:
+      theme:
+        js/js-offcanvas/css/js-offcanvas.css: {}
+      
