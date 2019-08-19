@@ -38,6 +38,7 @@ use Drupal\Component\Uuid;
   public function defaultConfiguration() {
     return parent::defaultConfiguration() + [
             'oc_label' => '',
+            'oc_position' => '',
              'uuid' => '',
       ];
 }
@@ -54,29 +55,36 @@ public function getFormId() {
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $configuration = $this->getConfiguration();
-    $ocLabelConfig = $configuration['oc_label'];
-    $ocLabelFormstate = $form_state->get('ocLabelFormstate');
-
-    if (!$form_state->has('ocLabelFormstate')) {
-      $form_state->set('ocLabelFormstate', $ocLabelConfig);
-    }
    
-
-        $form['#tree'] =  TRUE;
         $form['oc_fieldset'] = array(
           '#type' => 'container',
           '#attributes' => ['id' => 'oc-fieldset-wrapper'],
 
         );
 
-          $form['oc_fieldset']['oc_label']= [
+        $ocPositionOptions = [
+          'left' => 'Left',
+          'down' => 'Down',
+          'up' => 'Up',
+          'right' => 'Right',        
+        ];
+
+        $form['oc_position']= [
+          '#type' => 'select',
+          '#title' => t('oc Label'),
+          '#options'=>  $ocPositionOptions,
+          '#description' => t('Enter the offCanvas label'),
+          '#default_value' => !empty($configuration['oc_position']) ? $configuration['oc_position'] : '',
+        ];      
+
+          $form['oc_label']= [
             '#type' => 'textfield',
             '#title' => t('oc Label'),
             '#description' => t('Enter the offCanvas label'),
-            '#default_value' => !empty($ocLabelConfig) ? $configuration['oc_label'] : '',
+            '#default_value' => !empty($configuration['oc_label']) ? $configuration['oc_label'] : '',
           ];      
-
           return $form;
+         
   }
 
 
@@ -93,7 +101,7 @@ public function getFormId() {
    * {@inheritdoc}
    */
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
-    $this->configuration['oc_label'] = $form_state->getValue(array('ocLabelFormstate'));
+    $this->configuration['oc_label'] = $form_state->getValue('oc_label');
 
     //generate a unique id for this tabs instance
     $uuid_service = \Drupal::service('uuid');

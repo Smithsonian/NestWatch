@@ -15,26 +15,22 @@
 #}
 
 {% if content %}
-<div{{ attributes }} >
-
 {{ kint(settings) }}
-<a  class="js-offcanvas-trigger" 
-    data-offcanvas-trigger="off-canvas-id"
-    href="#off-canvas">{{settings.oc_label}}</a>
+    <div{{attributes}}>
+        <div class="c-offcanvas-content-wrap" role="main">
+            {{ kint(settings) }}
+            <button class="c-button js-offcanvas-trigger" data-offcanvas-trigger="oc-{{ settings.uuid }}" href="#">{{settings.oc_label}}</button>
 
-<aside class="js-offcanvas" 
-       data-offcanvas-options='{"modifiers": "left,overlay"}' 
-       id="off-canvas-id">
-    
-            {% if content.content %}
 
-            {{ content.content }}
+            <aside class="js-offcanvas c-panel c-panel--red c-panel--animate-content" data-offcanvas-options='{"modifiers": "bottom,overlay"}' id="oc-{{ settings.uuid }}">
+                <div class="c-panel__content u-transition-all">
+                    <div class="l-wrapper">
+                        {{ content.content }}
+                    </div>
+                </div>
+            </aside>
 
-             {% endif %}
+        </div>
 
-       </aside>
-
-       
-       
-</div>
+    </div>
 {% endif %}

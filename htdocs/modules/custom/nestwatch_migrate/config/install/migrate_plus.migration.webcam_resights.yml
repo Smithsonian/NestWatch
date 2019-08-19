@@ -51,11 +51,13 @@ process:
     entity_type: node
     ignore_case: true  
 
-  created: 
-    -
-      plugin: format_date
-      from_format: 'Y-m-d G:i:s'
-      to_format: 'Y-m-d\TG:i:s'
+  created:
+    plugin: callback
+    source: dateTime
+    callable: strtotime
+    created: dateTime
+
+  changed: '@created'
       
   
 

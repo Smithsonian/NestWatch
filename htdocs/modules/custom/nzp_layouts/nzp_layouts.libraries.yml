@@ -15,8 +15,11 @@ nzp_tabs-library:
 
 nzp_offcanvas-library:
   js:
-    js/off-canvas/js/js-offcanvas.js: {}
+    js/js-offcanvas/dist/js/js-offcanvas.pkgd.min.js: {}
+    js/nzp_offcanvas.js: {}
+
   css:
       theme:
-        js/js-offcanvas/css/js-offcanvas.css: {}
-      
+        js/js-offcanvas/dist/css/js-offcanvas.css: {}
+
+

@@ -78,5 +78,5 @@ layout_flyout:
     - [bottom]
   regions:
     content:
-      label: Label
+      label: Content
   
