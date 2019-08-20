@@ -56,11 +56,11 @@ public function getFormId() {
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $configuration = $this->getConfiguration();
    
-        $form['oc_fieldset'] = array(
+        $form['oc_fieldset'] = [
           '#type' => 'container',
           '#attributes' => ['id' => 'oc-fieldset-wrapper'],
 
-        );
+        ];
 
         $ocPositionOptions = [
           'left' => 'Left',
@@ -83,6 +83,7 @@ public function getFormId() {
             '#description' => t('Enter the offCanvas label'),
             '#default_value' => !empty($configuration['oc_label']) ? $configuration['oc_label'] : '',
           ];      
+
           return $form;
          
   }
@@ -102,6 +103,8 @@ public function getFormId() {
    */
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
     $this->configuration['oc_label'] = $form_state->getValue('oc_label');
+    $this->configuration['oc_position'] = $form_state->getValue('oc_position');
+    
 
     //generate a unique id for this tabs instance
     $uuid_service = \Drupal::service('uuid');

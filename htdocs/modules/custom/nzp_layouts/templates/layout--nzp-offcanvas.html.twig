@@ -22,7 +22,7 @@
             <button class="c-button js-offcanvas-trigger" data-offcanvas-trigger="oc-{{ settings.uuid }}" href="#">{{settings.oc_label}}</button>
 
 
-            <aside class="js-offcanvas c-panel c-panel--red c-panel--animate-content" data-offcanvas-options='{"modifiers": "bottom,overlay"}' id="oc-{{ settings.uuid }}">
+            <aside class="js-offcanvas c-panel c-panel--red c-panel--animate-content" data-offcanvas-options='{"modifiers": "{{settings.oc_position}},overlay"}' id="oc-{{ settings.uuid }}">
                 <div class="c-panel__content u-transition-all">
                     <div class="l-wrapper">
                         {{ content.content }}
