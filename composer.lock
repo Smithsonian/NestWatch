@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23a67a41d8d6a23a5ed997ce167f1b62",
+    "content-hash": "a96931841245151d350e18566ff2b397",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2331,7 +2331,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/authorization"
             },
-            "time": "2018-09-18 18:07:38"
+            "time": "2018-09-18T18:07:38+00:00"
         },
         {
             "name": "drupal/auto_entitylabel",
@@ -4313,6 +4313,73 @@
             }
         },
         {
+            "name": "drupal/fences",
+            "version": "2.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fences.git",
+                "reference": "8.x-2.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fences-8.x-2.0-alpha2.zip",
+                "reference": "8.x-2.0-alpha2",
+                "shasum": "fbcd74bab8cd7000a679a9679929c188db4115c5"
+            },
+            "require": {
+                "drupal/core": "^8.7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-alpha2",
+                    "datestamp": "1565235185",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "CrashTest_",
+                    "homepage": "https://www.drupal.org/user/261457"
+                },
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "gleroux02",
+                    "homepage": "https://www.drupal.org/user/282323"
+                },
+                {
+                    "name": "jensimmons",
+                    "homepage": "https://www.drupal.org/user/140882"
+                },
+                {
+                    "name": "stevector",
+                    "homepage": "https://www.drupal.org/user/179805"
+                }
+            ],
+            "description": "Alter wrapping markup of fields.",
+            "homepage": "https://www.drupal.org/project/fences",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fences"
+            }
+        },
+        {
             "name": "drupal/field_group",
             "version": "dev-3.x",
             "source": {
@@ -4368,7 +4435,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group"
             },
-            "time": "2019-05-23 21:31:25"
+            "time": "2019-05-23T21:31:25+00:00"
         },
         {
             "name": "drupal/geolocation",
@@ -4740,7 +4807,7 @@
                 "source": "http://cgit.drupalcode.org/layout_builder_modal",
                 "issues": "https://www.drupal.org/project/issues/layout_builder_modal"
             },
-            "time": "2019-07-31 13:49:00"
+            "time": "2019-07-31T13:49:00+00:00"
         },
         {
             "name": "drupal/ldap",
@@ -7874,7 +7941,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_admintheme/tree/master",
                 "issues": "https://github.com/Smithsonian/si_d8_admintheme/issues"
             },
-            "time": "2019-08-07 18:23:21"
+            "time": "2019-08-07T18:23:21+00:00"
         },
         {
             "name": "smithsonian/si_basetheme",
@@ -7896,7 +7963,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_basetheme/tree/2.21",
                 "issues": "https://github.com/Smithsonian/si_d8_basetheme/issues"
             },
-            "time": "2019-08-12 21:39:32"
+            "time": "2019-08-12T21:39:32+00:00"
         },
         {
             "name": "smithsonian/si_content",
@@ -7918,7 +7985,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_content/tree/2.13",
                 "issues": "https://github.com/Smithsonian/si_d8_content/issues"
             },
-            "time": "2019-08-13 21:13:59"
+            "time": "2019-08-13T21:13:59+00:00"
         },
         {
             "name": "stack/builder",
@@ -10231,7 +10298,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2019-07-15 12:45:29"
+            "time": "2019-07-15T12:45:29+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -10403,7 +10470,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-10 12:39:06"
+            "time": "2018-10-10T12:39:06+00:00"
         },
         {
             "name": "doctrine/instantiator",

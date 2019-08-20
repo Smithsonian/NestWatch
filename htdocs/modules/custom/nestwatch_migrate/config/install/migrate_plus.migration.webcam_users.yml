@@ -1,0 +1,53 @@
+id: webcam_users
+label: Importing webcam users. 
+migration_group: nestwatch
+migration_tags:
+  - nestwatch migrate webcam users
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  include_raw_data: true
+  track_changes: false
+  urls:
+    - 'public://import/webcam_users.json'
+  item_selector: 0
+  fields:
+    -
+      name: userId
+      label: 'userId'
+      selector: userId
+    -
+      name: project
+      label: 'project'
+      selector: project
+    -
+      name: email
+      label: 'email'
+      selector: email
+    -
+      name: password
+      label: 'Password'
+      selector: password
+ 
+  ids:
+    userId:
+      type: string
+  
+  constants:
+    roles: authenticated
+
+destination:
+  plugin: 'entity:user'
+  md5_passwords: true
+
+process:
+  name: userId
+  mail: email
+  roles: constants/roles
+  password: password
+        
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate

@@ -33,6 +33,7 @@
     "drupal/entity_browser": "^2.1",
     "drupal/fast_404": "^1.0@alpha",
     "drupal/features": "^3.8",
+    "drupal/fences": "^2.0",
     "drupal/field_group": "3.x-dev",
     "drupal/geolocation": "^3.0",
     "drupal/google_tag": "^1.1",

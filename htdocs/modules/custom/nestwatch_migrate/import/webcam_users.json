@@ -1,0 +1,389 @@
+[
+  {
+    "userId": "test",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "testexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "kevin",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "kevinexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "tim",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "timexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "becca",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "beccaexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "brian",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "brianexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "pete",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "peteexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "scott",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "scottexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "greg",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "gregexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "amy",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "amyexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "mike",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "mikeexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "denisse",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "denisseexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "susan",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "susanexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "suzanne",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "suzanneexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "esther",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "estherexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "mo",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "moexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "stacy",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "stacyexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "tucker",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "tuckerexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "charlie",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "charlieexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "erika",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "erikaexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "lerman",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "lermanexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "joek",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "joekexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "bob",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "bobexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "jim",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "jimexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "cawooda",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "cawoodaexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "seth",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "sethexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "birdhouseliz",
+    "password": "migr8Tion!",
+    "project": "feederCam",
+    "email": "birdhouselizexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "birdhousecathy",
+    "password": "k1Wi!",
+    "project": "feederCam",
+    "email": "birdhousecathyexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "birdhousesara",
+    "password": "kor1Bustard!",
+    "project": "feederCam",
+    "email": "birdhousesaraexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "enovak",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "enovakexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "birdhouse",
+    "password": "flam1nGos!",
+    "project": "feederCam",
+    "email": "birdhouseexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "helloworld",
+    "password": "good",
+    "project": "Neighborhood Nestwatch",
+    "email": "helloworldtest@test.com",
+    "email_updates": "FALSE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "marc.j.stern@gmail.com",
+    "password": "smithsonian",
+    "project": "Project feederCam",
+    "email": "marc.j.stern@gmail.commarc.j.stern@gmail.com",
+    "email_updates": "FALSE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "smithx",
+    "password": "Passw0rd!",
+    "project": "Project feederCam",
+    "email": "smithxsmithx@email.com",
+    "email_updates": "FALSE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "petemarra",
+    "password": "cats",
+    "project": "Project feederCam",
+    "email": "petemarramarrap@si.edu",
+    "email_updates": "TRUE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "emilycohen",
+    "password": "W3bCam",
+    "project": "Project feederCam",
+    "email": "emilycohenCohenE@si.edu",
+    "email_updates": "TRUE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "bennetre",
+    "password": "reb81002",
+    "project": "Project feederCam",
+    "email": "bennetrebennetre@gmail.com",
+    "email_updates": "FALSE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "bennetre",
+    "password": "reb81002",
+    "project": "Project feederCam",
+    "email": "bennetrebennetre@gmail.com",
+    "email_updates": "FALSE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "justinebowe",
+    "password": "Iloveb!rds1",
+    "project": "Project feederCam",
+    "email": "justinebowebowej@si.edu",
+    "email_updates": "FALSE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "bigbird",
+    "password": "Tik@022712",
+    "project": "Project feederCam",
+    "email": "bigbirdrydert@si.edu",
+    "email_updates": "TRUE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "quetzal1",
+    "password": "FChamaruba1!",
+    "project": "Project feederCam",
+    "email": "quetzal1deinleinml@gmail.com",
+    "email_updates": "TRUE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "callie",
+    "password": "cam5546",
+    "project": "Project feederCam",
+    "email": "calliecallie@umd.edu",
+    "email_updates": "TRUE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "1stltaman",
+    "password": "sm8432bc*",
+    "project": "Project feederCam",
+    "email": "1stltaman1stltaman@gmail.com",
+    "email_updates": "TRUE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "shawnsmith",
+    "password": "shawnhsmith2015@gmail.com",
+    "project": "Project feederCam",
+    "email": "shawnsmithshawnhsmith2015@gmail.com",
+    "email_updates": "FALSE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "egoodyear",
+    "password": "Gail1987",
+    "project": "Neighborhood Nestwatch",
+    "email": "egoodyeargoodyeare@si.edu",
+    "email_updates": "FALSE",
+    "nnUserRequest": "neighbor"
+  },
+  {
+    "userId": "eliseb",
+    "password": "2Kitties*",
+    "project": "Project feederCam",
+    "email": "elisebelisebernardoni@gmail.com",
+    "email_updates": "FALSE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "novake",
+    "password": "Bird$",
+    "project": "Project feederCam",
+    "email": "novakenovake@si.edu",
+    "email_updates": "FALSE",
+    "nnUserRequest": "current"
+  },
+  {
+    "userId": "squirrelbert",
+    "password": "n1ghtHawks!",
+    "project": "Project feederCam",
+    "email": "squirrelbertHurlbert@bio.unc.edu",
+    "email_updates": "false"
+  },
+  {
+    "userId": "zoe",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "zoeexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "anthony",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "anthonyabonil12@masonlive.gmu.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "johnny",
+    "password": "n1ghtHawks!",
+    "project": "feederCam",
+    "email": "johnnyexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "skaplan",
+    "password": "tudge",
+    "project": "feederCam",
+    "email": "skaplanexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "trial",
+    "password": "example",
+    "project": "feederCam",
+    "email": "trialexample@si.edu",
+    "email_updates": "FALSE"
+  },
+  {
+    "userId": "lazyExplorer",
+    "password": "n1ghtHawks!",
+    "project": "Project feederCam",
+    "email": "lazyExplorerexample@si.edu",
+    "email_updates": "false"
+  }
+]

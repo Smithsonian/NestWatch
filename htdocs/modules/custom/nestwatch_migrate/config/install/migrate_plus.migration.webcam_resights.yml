@@ -14,9 +14,13 @@ source:
   item_selector: 0
   fields:
     -
-      name: sessionId
-      label: 'sessionId'
-      selector: sessionId
+      name: userId
+      label: 'User ID'
+      selector: userId
+    -
+      name: resightId
+      label: 'resightId'
+      selector: resightId
     -
       name: dateTime
       label: 'Date and time'
@@ -31,7 +35,7 @@ source:
       selector: comment
   
   ids:
-    sessionId:
+    resightId:
       type: string
 
 destination:
@@ -39,7 +43,7 @@ destination:
   default_bundle: webcam_resight
 
 process:
-  title: sessionId
+  title: resightId
 
   'body/value': comment
 
@@ -58,10 +62,17 @@ process:
     created: dateTime
 
   changed: '@created'
-      
   
+  uid: 
+    plugin: entity_lookup
+    source: userId
+    value_key: name
+    entity_type: user
+    ignore_case: true  
+
 
 dependencies:
   enforced:
     module:
       - nestwatch_migrate
+
