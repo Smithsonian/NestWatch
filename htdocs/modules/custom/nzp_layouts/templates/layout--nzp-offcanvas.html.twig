@@ -15,10 +15,8 @@
 #}
 
 {% if content %}
-{{ kint(settings) }}
     <div{{attributes}}>
         <div class="c-offcanvas-content-wrap" role="main">
-            {{ kint(settings) }}
             <button class="c-button js-offcanvas-trigger" data-offcanvas-trigger="oc-{{ settings.uuid }}" href="#">{{settings.oc_label}}</button>
 
 

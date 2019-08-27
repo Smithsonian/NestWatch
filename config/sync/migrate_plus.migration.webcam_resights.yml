@@ -24,9 +24,13 @@ source:
   item_selector: 0
   fields:
     -
-      name: sessionId
-      label: sessionId
-      selector: sessionId
+      name: userId
+      label: 'User ID'
+      selector: userId
+    -
+      name: resightId
+      label: resightId
+      selector: resightId
     -
       name: dateTime
       label: 'Date and time'
@@ -40,10 +44,10 @@ source:
       label: Comment
       selector: comment
   ids:
-    sessionId:
+    resightId:
       type: string
 process:
-  title: sessionId
+  title: resightId
   body/value: comment
   field_resight_bird:
     plugin: entity_lookup
@@ -53,10 +57,17 @@ process:
     entity_type: node
     ignore_case: true
   created:
-    -
-      plugin: format_date
-      from_format: 'Y-m-d G:i:s'
-      to_format: 'Y-m-d\TH:i:s'
+    plugin: callback
+    source: dateTime
+    callable: strtotime
+    created: dateTime
+  changed: '@created'
+  uid:
+    plugin: entity_lookup
+    source: userId
+    value_key: name
+    entity_type: user
+    ignore_case: true
 destination:
   plugin: 'entity:node'
   default_bundle: webcam_resight

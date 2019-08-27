@@ -1,0 +1,14 @@
+uuid: e6d806a6-0a35-4431-9184-b97a74d7a1b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.webcam_user
+  module:
+    - user
+id: user_remove_role_action.webcam_user
+label: 'Remove the Webcam User role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: webcam_user

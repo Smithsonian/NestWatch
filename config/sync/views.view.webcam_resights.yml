@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
   module:
-    - blazy
     - node
     - user
 id: webcam_resights
@@ -235,12 +234,11 @@ display:
         row: false
       title: Resights
       style:
-        type: blazy
+        type: default
         options:
-          style: column
-          grid: 2
-          grid_medium: 1
-          grid_small: 1
+          row_class: ''
+          default_row_class: false
+          uses_fields: true
       row:
         type: 'entity:node'
         options:

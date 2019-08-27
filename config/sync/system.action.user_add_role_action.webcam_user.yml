@@ -1,0 +1,14 @@
+uuid: 32a4882b-464a-453a-b327-94eb004704ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.webcam_user
+  module:
+    - user
+id: user_add_role_action.webcam_user
+label: 'Add the Webcam User role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: webcam_user

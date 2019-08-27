@@ -1,5 +1,5 @@
 {% if content %}
-<section{{ attributes }} >
+<div {{ attributes }} >
 <details>
 <summary class="accordion--summary">
     {{ content.summary }}
@@ -8,5 +8,5 @@
     {{ content.content }}
   </div>
 </details>
-</section>
+</div>
 {% endif %}

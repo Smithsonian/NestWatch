@@ -1,0 +1,55 @@
+uuid: 39a266d9-13e7-49ff-9ccc-6aed79224d5d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - nestwatch_migrate
+id: webcam_users
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'nestwatch migrate webcam users'
+migration_group: nestwatch
+label: 'Importing webcam users.'
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  include_raw_data: true
+  track_changes: false
+  urls:
+    - 'public://import/webcam_users.json'
+  item_selector: 0
+  fields:
+    -
+      name: userId
+      label: userId
+      selector: userId
+    -
+      name: project
+      label: project
+      selector: project
+    -
+      name: email
+      label: email
+      selector: email
+    -
+      name: password
+      label: Password
+      selector: password
+  ids:
+    userId:
+      type: string
+  constants:
+    roles: authenticated
+process:
+  name: userId
+  mail: email
+  roles: constants/roles
+  password: password
+destination:
+  plugin: 'entity:user'
+  md5_passwords: true
+migration_dependencies: null

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.webcam_resight.body
     - field.field.node.webcam_resight.field_resight_bird
+    - field.field.node.webcam_resight.field_resight_user
     - node.type.webcam_resight
   module:
     - content_moderation
@@ -44,6 +45,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_resight_user:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   moderation_state:
     type: moderation_state_default

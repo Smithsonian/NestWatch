@@ -9,7 +9,9 @@ use Drupal\Core\Plugin\PluginFormInterface;
 
 /**
  * Credit goes to npinos at https://github.com/npinos/drupal8-layouts.
-s */
+ * 
+ */
+
 class nzpOneColLayouts extends LayoutDefault implements PluginFormInterface {
 
 

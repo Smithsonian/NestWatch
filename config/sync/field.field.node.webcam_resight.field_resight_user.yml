@@ -1,0 +1,19 @@
+uuid: d250403a-eeb6-4b99-a725-a5a9c337270f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resight_user
+    - node.type.webcam_resight
+id: node.webcam_resight.field_resight_user
+field_name: field_resight_user
+entity_type: node
+bundle: webcam_resight
+label: 'resight user'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
