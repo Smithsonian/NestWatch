@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8db2255dba089377f4f07224d08bdd28",
+    "content-hash": "ea183fadd9b8c4284542c6b97babf35e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2331,7 +2331,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/authorization"
             },
-            "time": "2018-09-18 18:07:38"
+            "time": "2018-09-18T18:07:38+00:00"
         },
         {
             "name": "drupal/auto_entitylabel",
@@ -4435,7 +4435,54 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group"
             },
-            "time": "2019-05-23 21:31:25"
+            "time": "2019-05-23T21:31:25+00:00"
+        },
+        {
+            "name": "drupal/fullcalendar_view",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fullcalendar_view.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fullcalendar_view-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "ea40aff1bf39c4044db81d580903875aaac42d07"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1553734981",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mingsong",
+                    "homepage": "https://www.drupal.org/user/2986445"
+                }
+            ],
+            "description": "A view plugin to present contents in FullCalendar view",
+            "homepage": "https://www.drupal.org/project/fullcalendar_view",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fullcalendar_view"
+            }
         },
         {
             "name": "drupal/geolocation",
@@ -4807,7 +4854,7 @@
                 "source": "http://cgit.drupalcode.org/layout_builder_modal",
                 "issues": "https://www.drupal.org/project/issues/layout_builder_modal"
             },
-            "time": "2019-07-31 13:49:00"
+            "time": "2019-07-31T13:49:00+00:00"
         },
         {
             "name": "drupal/ldap",
@@ -5955,7 +6002,7 @@
                 "source": "http://cgit.drupalcode.org/selective_better_exposed_filters",
                 "issues": "https://www.drupal.org/project/issues/selective_better_exposed_filters"
             },
-            "time": "2019-08-09 15:34:27"
+            "time": "2019-08-09T15:34:27+00:00"
         },
         {
             "name": "drupal/slick",
@@ -7936,7 +7983,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_admintheme/tree/master",
                 "issues": "https://github.com/Smithsonian/si_d8_admintheme/issues"
             },
-            "time": "2019-08-07 18:23:21"
+            "time": "2019-08-07T18:23:21+00:00"
         },
         {
             "name": "smithsonian/si_basetheme",
@@ -7958,7 +8005,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_basetheme/tree/2.21",
                 "issues": "https://github.com/Smithsonian/si_d8_basetheme/issues"
             },
-            "time": "2019-08-12 21:39:32"
+            "time": "2019-08-12T21:39:32+00:00"
         },
         {
             "name": "smithsonian/si_content",
@@ -7980,7 +8027,7 @@
                 "source": "https://github.com/Smithsonian/si_d8_content/tree/2.13",
                 "issues": "https://github.com/Smithsonian/si_d8_content/issues"
             },
-            "time": "2019-08-13 21:13:59"
+            "time": "2019-08-13T21:13:59+00:00"
         },
         {
             "name": "stack/builder",
@@ -10293,7 +10340,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2019-07-15 12:45:29"
+            "time": "2019-07-15T12:45:29+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -10465,7 +10512,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-10 12:39:06"
+            "time": "2018-10-10T12:39:06+00:00"
         },
         {
             "name": "doctrine/instantiator",

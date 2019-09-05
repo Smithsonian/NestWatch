@@ -35,6 +35,7 @@
     "drupal/features": "^3.8",
     "drupal/fences": "^2.0",
     "drupal/field_group": "3.x-dev",
+    "drupal/fullcalendar_view": "^2.2",
     "drupal/geolocation": "^3.0",
     "drupal/google_tag": "^1.1",
     "drupal/image_widget_crop": "^2.2",
@@ -146,7 +147,8 @@
     "patches": {
       "drupal/core" : {
         "fixes issue with Layout Builder Override not returning default region when instantiating": "https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch",
-        "adds validation check for #summary_attributes": "https://www.drupal.org/files/issues/2018-12-17/core-undefined-index-summary_attributes-2998194-9.patch"
+        "adds validation check for #summary_attributes": "https://www.drupal.org/files/issues/2018-12-17/core-undefined-index-summary_attributes-2998194-9.patch",
+        "Allow field blocks to display the configuration label when set in Layout Builder" : "https://www.drupal.org/files/issues/2019-04-12/allow_field_blocks_to_display_configuration_label-3039185-7-PASS.patch"
       },
       "drupal/paragraphs": {
         "Fix support for field_group module in combination with field_layout module patch": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch",

@@ -13,8 +13,8 @@ dependencies:
     - field.field.node.bird.field_top_right_band
     - node.type.bird
   module:
+    - ctools
     - layout_builder
-    - layout_discovery
     - manage_display
     - nzp_layouts
     - options
@@ -27,16 +27,16 @@ third_party_settings:
         layout_id: layout_nzp_two_col
         layout_settings:
           region_classes:
-            one_col: gs3
-            two_col: gs9
+            one_col: gs9
+            two_col: gs3
           container_classes: container-fuid
           html_container_elements: div
           html_region_elements:
             one_col: div
             two_col: div
         components:
-          4f2e1445-02ea-4d7d-9561-2c6b5ef4b5df:
-            uuid: 4f2e1445-02ea-4d7d-9561-2c6b5ef4b5df
+          9ace3acc-ef0a-4157-90ea-7152e25b2543:
+            uuid: 9ace3acc-ef0a-4157-90ea-7152e25b2543
             region: one_col
             configuration:
               id: 'field_block:node:bird:field_bird_species'
@@ -45,9 +45,9 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: hidden
-                type: entity_reference_entity_view
+                type: entity_reference_label
                 settings:
-                  view_mode: image_only
+                  link: false
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
@@ -71,10 +71,10 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 6
-          9ace3acc-ef0a-4157-90ea-7152e25b2543:
-            uuid: 9ace3acc-ef0a-4157-90ea-7152e25b2543
-            region: two_col
+            weight: 7
+          4f2e1445-02ea-4d7d-9561-2c6b5ef4b5df:
+            uuid: 4f2e1445-02ea-4d7d-9561-2c6b5ef4b5df
+            region: one_col
             configuration:
               id: 'field_block:node:bird:field_bird_species'
               label: 'Bird Species'
@@ -82,55 +82,19 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: hidden
-                type: entity_reference_label
+                type: entity_reference_entity_view
                 settings:
-                  link: false
+                  view_mode: image_only
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 5
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_fourcol_section
         layout_settings: {  }
         components:
-          34f48c7d-abf5-4bfd-85df-8177a4f0e1da:
-            uuid: 34f48c7d-abf5-4bfd-85df-8177a4f0e1da
-            region: first
-            configuration:
-              id: 'field_block:node:bird:field_bottom_left_band'
-              label: 'Bottom Left Band'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: swatch_only
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
-          1730bd41-52ef-47f3-ac8b-d38084c85098:
-            uuid: 1730bd41-52ef-47f3-ac8b-d38084c85098
-            region: second
-            configuration:
-              id: 'field_block:node:bird:field_top_left_band'
-              label: 'Top Left Band'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: swatch_only
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
           107deb1f-81f7-4864-a25d-b5306367796e:
             uuid: 107deb1f-81f7-4864-a25d-b5306367796e
             region: fourth
@@ -140,7 +104,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: hidden
+                label: above
                 type: entity_reference_entity_view
                 settings:
                   view_mode: swatch_only
@@ -158,7 +122,43 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: hidden
+                label: above
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          34f48c7d-abf5-4bfd-85df-8177a4f0e1da:
+            uuid: 34f48c7d-abf5-4bfd-85df-8177a4f0e1da
+            region: second
+            configuration:
+              id: 'field_block:node:bird:field_bottom_left_band'
+              label: 'Bottom Left Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: swatch_only
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          1730bd41-52ef-47f3-ac8b-d38084c85098:
+            uuid: 1730bd41-52ef-47f3-ac8b-d38084c85098
+            region: first
+            configuration:
+              id: 'field_block:node:bird:field_top_left_band'
+              label: 'Top Left Band'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
                 type: entity_reference_entity_view
                 settings:
                   view_mode: swatch_only
@@ -169,9 +169,25 @@ third_party_settings:
             weight: 0
         third_party_settings: {  }
       -
-        layout_id: layout_onecol
-        layout_settings: {  }
-        components: {  }
+        layout_id: layout_flyout
+        layout_settings:
+          oc_label: 'Submit a Resight'
+          oc_position: bottom
+          uuid: 4cc7dc57-0863-482b-81c0-7b3157f8a01b
+        components:
+          3767d8b1-d32e-49e3-9851-f2ceeed46e3b:
+            uuid: 3767d8b1-d32e-49e3-9851-f2ceeed46e3b
+            region: content
+            configuration:
+              id: 'entity_view:node'
+              label: 'Entity view (Content)'
+              provider: ctools
+              label_display: '0'
+              view_mode: default
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
 id: node.bird.data_row
 targetEntityType: node

@@ -1,0 +1,27 @@
+.form-checkboxes.form-composite  {
+    display: flex;
+    float:none !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+    & > div {
+        width: 50px;
+        overflow: hidden;
+        padding: 0;
+        height: 50px;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: green;
+
+        input {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            pointer-events: none;
+        }
+     }
+
+}

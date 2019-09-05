@@ -3,10 +3,116 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.base_field_override.node.bird.title
     - core.entity_view_mode.node.teaser
+    - field.field.node.bird.field_bird_sex
+    - field.field.node.bird.field_bird_species
+    - field.field.node.bird.field_bottom_left_band
+    - field.field.node.bird.field_bottom_right_band
+    - field.field.node.bird.field_top_left_band
+    - field.field.node.bird.field_top_right_band
     - node.type.bird
+    - views.view.webcam_resights
   module:
+    - layout_builder
     - manage_display
+    - nzp_layouts
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_nzp_two_col
+        layout_settings:
+          region_classes:
+            one_col: gs6
+            two_col: gs6
+          container_classes: container
+          html_container_elements: div
+          html_region_elements:
+            one_col: div
+            two_col: div
+        components:
+          f8316651-1eea-4a6f-bc24-58ccdad99fa4:
+            uuid: f8316651-1eea-4a6f-bc24-58ccdad99fa4
+            region: one_col
+            configuration:
+              id: 'field_block:node:bird:field_bird_species'
+              label: 'Bird Species'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: teaser
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          3144f909-935e-41bf-9db3-b14d677627d0:
+            uuid: 3144f909-935e-41bf-9db3-b14d677627d0
+            region: two_col
+            configuration:
+              id: 'field_block:node:bird:title'
+              label: 'Band Number'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h2
+                  linked: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          7cc76724-fac8-45ff-b245-67b7ef0c98c9:
+            uuid: 7cc76724-fac8-45ff-b245-67b7ef0c98c9
+            region: two_col
+            configuration:
+              id: 'field_block:node:bird:field_bird_sex'
+              label: Sex
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: list_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          wrappers:
+            content: div
+          wrapper_classes: ''
+          region_wrapper_classes:
+            content: container
+        components:
+          cf13d7c8-c4a3-4dc9-86eb-643a2c8c17fa:
+            uuid: cf13d7c8-c4a3-4dc9-86eb-643a2c8c17fa
+            region: content
+            configuration:
+              id: 'views_block:webcam_resights-block_2'
+              label: Resights
+              provider: views
+              label_display: '0'
+              views_label: Resights
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: node.bird.teaser
 targetEntityType: node
 bundle: bird
@@ -33,4 +139,10 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_bird_sex: true
+  field_bird_species: true
+  field_bottom_left_band: true
+  field_bottom_right_band: true
+  field_top_left_band: true
+  field_top_right_band: true
   uid: true

@@ -14,7 +14,6 @@ dependencies:
     - views.view.webcam_resights
   module:
     - layout_builder
-    - layout_discovery
     - manage_display
     - nzp_layouts
     - options
@@ -70,6 +69,23 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 1
+          0cd71243-d3a2-4824-8f5f-6551fa05cc21:
+            uuid: 0cd71243-d3a2-4824-8f5f-6551fa05cc21
+            region: content
+            configuration:
+              id: 'field_block:node:bird:field_bird_sex'
+              label: Sex
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: list_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_nzp_two_col
@@ -157,18 +173,23 @@ third_party_settings:
             weight: 4
         third_party_settings: {  }
       -
-        layout_id: layout_onecol
-        layout_settings: {  }
+        layout_id: layout_nzp_one_col
+        layout_settings:
+          wrappers:
+            content: div
+          wrapper_classes: ''
+          region_wrapper_classes:
+            content: container
         components:
-          919aaf4c-a492-4c4e-82aa-1e2681140472:
-            uuid: 919aaf4c-a492-4c4e-82aa-1e2681140472
+          830ae542-86e4-43df-8bf7-c4b6e069d6bb:
+            uuid: 830ae542-86e4-43df-8bf7-c4b6e069d6bb
             region: content
             configuration:
               id: 'views_block:webcam_resights-block_2'
-              label: Resights
+              label: ''
               provider: views
               label_display: '0'
-              views_label: Resights
+              views_label: ''
               items_per_page: none
               context_mapping: {  }
             additional: {  }

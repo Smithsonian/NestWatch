@@ -64,8 +64,8 @@ public function getFormId() {
 
         $ocPositionOptions = [
           'left' => 'Left',
-          'down' => 'Down',
-          'up' => 'Up',
+          'top' => 'Top',
+          'bottom' => 'Bottom',
           'right' => 'Right',        
         ];
 
