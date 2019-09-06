@@ -89,6 +89,43 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 1
+          64f6caf9-49fc-4f78-84db-39fe76dd15cf:
+            uuid: 64f6caf9-49fc-4f78-84db-39fe76dd15cf
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:bird:title'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h2
+                  linked: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          6fd141a0-61e4-41a9-be7b-83935350c277:
+            uuid: 6fd141a0-61e4-41a9-be7b-83935350c277
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:bird:links'
+            additional: {  }
+            weight: 1
+          fcd1b3b0-62f4-4903-9d43-ac7e27f235a5:
+            uuid: fcd1b3b0-62f4-4903-9d43-ac7e27f235a5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:bird:node_link'
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_nzp_one_col
@@ -109,7 +146,8 @@ third_party_settings:
               label_display: '0'
               views_label: Resights
               items_per_page: none
-              context_mapping: {  }
+              context_mapping:
+                nid: layout_builder.entity
             additional: {  }
             weight: 0
         third_party_settings: {  }

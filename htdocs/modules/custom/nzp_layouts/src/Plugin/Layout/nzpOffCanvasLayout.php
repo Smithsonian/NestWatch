@@ -104,7 +104,7 @@ public function getFormId() {
 
     //generate a unique id for this tabs instance
     $uuid_service = \Drupal::service('uuid');
-    $uuid = $uuid_service->generate();
+    $uuid = rand(100000, 1000000);
     $this->configuration['uuid'] = $uuid;
 
 

@@ -173,7 +173,7 @@ third_party_settings:
         layout_settings:
           oc_label: 'Submit a Resight'
           oc_position: bottom
-          uuid: 4cc7dc57-0863-482b-81c0-7b3157f8a01b
+          uuid: 155658
         components:
           3767d8b1-d32e-49e3-9851-f2ceeed46e3b:
             uuid: 3767d8b1-d32e-49e3-9851-f2ceeed46e3b

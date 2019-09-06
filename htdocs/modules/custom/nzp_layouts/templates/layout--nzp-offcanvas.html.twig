@@ -14,11 +14,12 @@
  */
 #}
 
+{% set id = random(10000, 10000000)  %}
 {% if content %}
     <div{{attributes}}>
-        <button class="c-button js-offcanvas-trigger" data-offcanvas-trigger="oc-{{ settings.uuid }}">{{settings.oc_label}}</button>
+        <button class="c-button js-offcanvas-trigger" data-offcanvas-trigger="oc-{{ id }}">{{settings.oc_label}}</button>
 
-        <aside aria-hidden="false" class="js-offcanvas" data-offcanvas-options='{"modifiers":"{{settings.oc_position}},overlay"}' id="oc-{{ settings.uuid }}">
+        <aside aria-hidden="false" class="js-offcanvas" data-offcanvas-options='{"modifiers":"{{settings.oc_position}},overlay"}' id="oc-{{ id }}">
             <div class="l-wrapper" style="padding:2em;">
                 {{ content.content }}
             </div>
