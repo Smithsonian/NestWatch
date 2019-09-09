@@ -148,7 +148,8 @@
       "drupal/core" : {
         "fixes issue with Layout Builder Override not returning default region when instantiating": "https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch",
         "adds validation check for #summary_attributes": "https://www.drupal.org/files/issues/2018-12-17/core-undefined-index-summary_attributes-2998194-9.patch",
-        "Allow field blocks to display the configuration label when set in Layout Builder" : "https://www.drupal.org/files/issues/2019-04-12/allow_field_blocks_to_display_configuration_label-3039185-7-PASS.patch"
+        "Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode" : "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch",
+        "Fixes issue when attempting to save layouts with exposed forms": "https://www.drupal.org/files/issues/2019-08-01/drupal-layout_builder_unable_to_save-3045171-77.patch"
       },
       "drupal/paragraphs": {
         "Fix support for field_group module in combination with field_layout module patch": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch",

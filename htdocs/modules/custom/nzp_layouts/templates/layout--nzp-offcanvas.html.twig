@@ -14,12 +14,14 @@
  */
 #}
 
-{% set id = random(10000, 10000000)  %}
+{% set oc_id = settings.oc_id_toggle ? settings.oc_custom_id : random(10000, 10000000) %}
 {% if content %}
-    <div{{attributes}}>
-        <button class="c-button js-offcanvas-trigger" data-offcanvas-trigger="oc-{{ id }}">{{settings.oc_label}}</button>
+    <div{{attributes}}> 
 
-        <aside aria-hidden="false" class="js-offcanvas" data-offcanvas-options='{"modifiers":"{{settings.oc_position}},overlay"}' id="oc-{{ id }}">
+    {% if settings.oc_id_toggle == false %}
+        <button class="c-button js-offcanvas-trigger" data-offcanvas-trigger="oc-{{ oc_id }}">{{settings.oc_label}}</button>
+    {% endif %}
+        <aside aria-hidden="false" class="js-offcanvas" data-offcanvas-options='{"modifiers":"{{settings.oc_position}},overlay"}' id="oc-{{ oc_id }}">
             <div class="l-wrapper" style="padding:2em;">
                 {{ content.content }}
             </div>

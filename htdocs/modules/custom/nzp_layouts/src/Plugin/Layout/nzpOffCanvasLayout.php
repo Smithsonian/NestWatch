@@ -39,7 +39,8 @@ use Drupal\Component\Uuid;
     return parent::defaultConfiguration() + [
             'oc_label' => '',
             'oc_position' => '',
-             'uuid' => '',
+            'oc_custom_id' => '',
+            'oc_id_toggle' => 0,
       ];
 }
 
@@ -77,11 +78,40 @@ public function getFormId() {
           '#default_value' => !empty($configuration['oc_position']) ? $configuration['oc_position'] : '',
         ];      
 
+        $form['oc_id_toggle']= [
+          '#type' => 'checkbox',
+          '#default_value' => FALSE,
+          '#title' => t('Hide Label and use a Custom ID?'),
+          '#default_value' => !empty($configuration['oc_id_toggle']) ? TRUE : FALSE,
+          '#description' => t('Only check this if useful if you intend to use a custom trigger button rendered elsewhere'),
+        ];
+
           $form['oc_label']= [
             '#type' => 'textfield',
             '#title' => t('oc Label'),
             '#description' => t('Enter the offCanvas label'),
             '#default_value' => !empty($configuration['oc_label']) ? $configuration['oc_label'] : '',
+            '#states' => [
+                'invisible' => [
+                  ':input[name="layout_settings[oc_id_toggle]"]' => ['checked' => TRUE],
+                ],
+                'required' => [
+                  ':input[name="layout_settings[oc_id_toggle]"]' => ['checked' => FALSE],
+
+                ]
+              ],
+          ];
+
+          $form['oc_custom_id']= [
+            '#type' => 'textfield',
+            '#title' => t('enter a custom Element ID.'),
+            '#description' => t('DO NOT USE SPACES OR SPECIAL CHARACTERS.'),
+            '#default_value' => !empty($configuration['oc_custom_id']) ? $configuration['oc_custom_id'] : '',
+            '#states' => [
+              'visible' => [
+                ':input[name="layout_settings[oc_id_toggle]"]' => ['checked' => TRUE],
+              ],
+            ],
           ];      
 
           return $form;
@@ -100,14 +130,8 @@ public function getFormId() {
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
     $this->configuration['oc_label'] = $form_state->getValue('oc_label');
     $this->configuration['oc_position'] = $form_state->getValue('oc_position');
-    
-
-    //generate a unique id for this tabs instance
-    $uuid_service = \Drupal::service('uuid');
-    $uuid = rand(100000, 1000000);
-    $this->configuration['uuid'] = $uuid;
-
-
+    $this->configuration['oc_custom_id'] = $form_state->getValue('oc_custom_id');
+    $this->configuration['oc_id_toggle'] = $form_state->getValue('oc_id_toggle');
   }
 
 }
