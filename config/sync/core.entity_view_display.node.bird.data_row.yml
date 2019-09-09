@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.bird.field_top_right_band
     - node.type.bird
   module:
-    - ctools
     - layout_builder
     - manage_display
     - nzp_layouts
@@ -53,25 +52,6 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 0
-          fce4106c-ba0a-4a64-b82d-3643a6b0d54f:
-            uuid: fce4106c-ba0a-4a64-b82d-3643a6b0d54f
-            region: two_col
-            configuration:
-              id: 'field_block:node:bird:title'
-              label: 'Band Number'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: title
-                settings:
-                  tag: h5
-                  linked: false
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 7
           4f2e1445-02ea-4d7d-9561-2c6b5ef4b5df:
             uuid: 4f2e1445-02ea-4d7d-9561-2c6b5ef4b5df
             region: one_col
@@ -90,6 +70,25 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 1
+          fce4106c-ba0a-4a64-b82d-3643a6b0d54f:
+            uuid: fce4106c-ba0a-4a64-b82d-3643a6b0d54f
+            region: one_col
+            configuration:
+              id: 'field_block:node:bird:title'
+              label: 'Band Number'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h5
+                  linked: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_fourcol_section
@@ -163,27 +162,6 @@ third_party_settings:
                 settings:
                   view_mode: swatch_only
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: layout_flyout
-        layout_settings:
-          oc_label: 'Submit a Resight'
-          oc_position: bottom
-          uuid: 155658
-        components:
-          3767d8b1-d32e-49e3-9851-f2ceeed46e3b:
-            uuid: 3767d8b1-d32e-49e3-9851-f2ceeed46e3b
-            region: content
-            configuration:
-              id: 'entity_view:node'
-              label: 'Entity view (Content)'
-              provider: ctools
-              label_display: '0'
-              view_mode: default
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
