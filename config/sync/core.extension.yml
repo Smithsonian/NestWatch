@@ -58,6 +58,7 @@ module:
   imce: 0
   inline_entity_form: 0
   inline_form_errors: 0
+  jsonapi: 0
   kint: 0
   layout_builder: 0
   layout_builder_modal: 0
@@ -91,8 +92,10 @@ module:
   rdf: 0
   responsive_bg_image_formatter: 0
   responsive_image: 0
+  rest: 0
   search: 0
   selective_better_exposed_filters: 0
+  serialization: 0
   si_content: 0
   slick: 0
   slick_entityreference: 0

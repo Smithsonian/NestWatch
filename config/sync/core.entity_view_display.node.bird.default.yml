@@ -181,9 +181,48 @@ third_party_settings:
           region_wrapper_classes:
             content: container
         components:
-          830ae542-86e4-43df-8bf7-c4b6e069d6bb:
-            uuid: 830ae542-86e4-43df-8bf7-c4b6e069d6bb
+          97705487-86d9-44e9-bfb8-00ba1063fe3d:
+            uuid: 97705487-86d9-44e9-bfb8-00ba1063fe3d
             region: content
+            configuration:
+              id: 'views_block:webcam_resights-block_4'
+              label: Resights
+              provider: views
+              label_display: visible
+              views_label: Resights
+              items_per_page: none
+              context_mapping:
+                field_resight_bird_target_id: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_nzp_tab
+        layout_settings:
+          tab_title:
+            tab:
+              - 'By Calendar'
+              - 'By Table'
+          num_tabs: 2
+          uuid: f74faf96-d7a8-41e5-ba0a-af216e439178
+        components:
+          172fd7d3-e55e-499d-a5f6-696088398cc9:
+            uuid: 172fd7d3-e55e-499d-a5f6-696088398cc9
+            region: tab_content_0
+            configuration:
+              id: 'views_block:webcam_resights-block_3'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping:
+                field_resight_bird_target_id: layout_builder.entity
+            additional: {  }
+            weight: 0
+          3a6c4509-bdd0-41ca-88a5-ddebe4ab45bf:
+            uuid: 3a6c4509-bdd0-41ca-88a5-ddebe4ab45bf
+            region: tab_content_1
             configuration:
               id: 'views_block:webcam_resights-block_2'
               label: ''
@@ -192,7 +231,7 @@ third_party_settings:
               views_label: ''
               items_per_page: none
               context_mapping:
-                nid: layout_builder.entity
+                field_resight_bird_target_id: layout_builder.entity
             additional: {  }
             weight: 0
         third_party_settings: {  }

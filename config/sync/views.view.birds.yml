@@ -225,10 +225,10 @@ display:
           group_type: group
           admin_label: 'resights button'
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
-            text: "<a href=\"#\"  class=\" btn btn-default c-button js-offcanvas-trigger\" data-offcanvas-trigger=\"oc-resights\">View Resights</a>\r\n"
+            text: "<a href=\"#\"  class=\" btn btn-default c-button js-offcanvas-trigger\" data-offcanvas-trigger=\"oc-resights\" data-nid=\"{{ nid }}\">View Resights</a>\r\n"
             make_link: false
             path: ''
             absolute: false

@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.bird.field_top_right_band
     - node.type.bird
   module:
+    - ctools
     - layout_builder
     - manage_display
     - nzp_layouts
@@ -162,6 +163,28 @@ third_party_settings:
                 settings:
                   view_mode: swatch_only
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_flyout
+        layout_settings:
+          oc_label: 'View Resights'
+          oc_position: bottom
+          oc_custom_id: ''
+          oc_id_toggle: 0
+        components:
+          fd67c7fc-9123-4b5d-902b-14283dd92fa8:
+            uuid: fd67c7fc-9123-4b5d-902b-14283dd92fa8
+            region: content
+            configuration:
+              id: 'entity_view:node'
+              label: 'Entity view (Content)'
+              provider: ctools
+              label_display: '0'
+              view_mode: default
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
