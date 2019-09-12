@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea183fadd9b8c4284542c6b97babf35e",
+    "content-hash": "1b11e37afa645c338d068db364c5647c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3627,7 +3627,9 @@
                 },
                 "patches_applied": {
                     "fixes issue with Layout Builder Override not returning default region when instantiating": "https://www.drupal.org/files/issues/2019-05-10/more_strict_check-3053906-1.patch",
-                    "adds validation check for #summary_attributes": "https://www.drupal.org/files/issues/2018-12-17/core-undefined-index-summary_attributes-2998194-9.patch"
+                    "adds validation check for #summary_attributes": "https://www.drupal.org/files/issues/2018-12-17/core-undefined-index-summary_attributes-2998194-9.patch",
+                    "Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2019-06-20/3008924-5.patch",
+                    "Fixes issue when attempting to save layouts with exposed forms": "https://www.drupal.org/files/issues/2019-08-01/drupal-layout_builder_unable_to_save-3045171-77.patch"
                 }
             },
             "autoload": {
@@ -4439,17 +4441,11 @@
         },
         {
             "name": "drupal/fullcalendar_view",
-            "version": "2.2.0",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/fullcalendar_view.git",
-                "reference": "8.x-2.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fullcalendar_view-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "ea40aff1bf39c4044db81d580903875aaac42d07"
+                "reference": "36007b8bbd595bd7a4df42549e2d107c57245b7a"
             },
             "require": {
                 "drupal/core": "*"
@@ -4460,12 +4456,15 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1553734981",
+                    "version": "8.x-2.2+5-dev",
+                    "datestamp": "1555306685",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "load multiple Calendars per view": "https://www.drupal.org/files/issues/2019-06-11/fullcalendar_multi.4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4482,7 +4481,8 @@
             "homepage": "https://www.drupal.org/project/fullcalendar_view",
             "support": {
                 "source": "https://git.drupalcode.org/project/fullcalendar_view"
-            }
+            },
+            "time": "2019-06-10T12:36:02+00:00"
         },
         {
             "name": "drupal/geolocation",
@@ -12526,6 +12526,7 @@
         "drupal/conditional_fields": 15,
         "drupal/fast_404": 15,
         "drupal/field_group": 20,
+        "drupal/fullcalendar_view": 20,
         "drupal/inline_entity_form": 5,
         "drupal/layout_builder_modal": 20,
         "drupal/ldap": 10,

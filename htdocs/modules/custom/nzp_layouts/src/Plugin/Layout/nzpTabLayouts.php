@@ -39,7 +39,6 @@ use Drupal\Component\Uuid;
     return parent::defaultConfiguration() + [
             'tab_title' => [],
              'num_tabs' =>  '',
-             'uuid' => '',
       ];
 }
 
@@ -144,12 +143,6 @@ public function getFormId() {
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state) {
     $this->configuration['tab_title'] = $form_state->getValue(array('tabs_fieldset'));
     $this->configuration['num_tabs'] = $form_state->get('num_tabs');
-
-    //generate a unique id for this tabs instance
-    $uuid_service = \Drupal::service('uuid');
-    $uuid = $uuid_service->generate();
-    $this->configuration['uuid'] = $uuid;
-
 
   }
 

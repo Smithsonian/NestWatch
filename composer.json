@@ -35,7 +35,7 @@
     "drupal/features": "^3.8",
     "drupal/fences": "^2.0",
     "drupal/field_group": "3.x-dev",
-    "drupal/fullcalendar_view": "^2.2",
+    "drupal/fullcalendar_view": "2.x-dev",
     "drupal/geolocation": "^3.0",
     "drupal/google_tag": "^1.1",
     "drupal/image_widget_crop": "^2.2",
@@ -154,6 +154,9 @@
       "drupal/paragraphs": {
         "Fix support for field_group module in combination with field_layout module patch": "https://www.drupal.org/files/issues/2907094_7_field_group_support.patch",
         "Fix Support for Lang Code when using Paragraphs in Entity Browser and Layout Builder": "https://www.drupal.org/files/issues/2019-03-22/2901390-n24.patch"
+      },
+      "drupal/fullcalendar_view": {
+        "load multiple Calendars per view": "https://www.drupal.org/files/issues/2019-06-11/fullcalendar_multi.4.patch"
       }
     }
   },

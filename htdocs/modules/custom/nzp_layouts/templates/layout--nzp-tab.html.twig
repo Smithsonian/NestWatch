@@ -15,21 +15,23 @@
 #}
 {% set tabIndex = settings.num_tabs %}
 
+{% set tab_id = random(10000, 10000000) %}
+
 {% if content %}
 <section{{ attributes }} >
 <div class="tab-wrapper">
- <ul data-tabs="{{settings.uuid}}">
+ <ul data-tabs="{{tab_id}}">
             <li>
-                <a data-tabby-default href="#tab-{{settings.uuid}}-0">{{ settings.tab_title.tab[0]}}</a>
+                <a data-tabby-default href="#tab-{{tab_id}}-0">{{ settings.tab_title.tab[0]}}</a>
             </li>
     {% for index in range(1, tabIndex-1) %}
             <li>
-                <a href="#tab-{{settings.uuid}}-{{index}}">{{ settings.tab_title.tab[index]}}</a>
+                <a href="#tab-{{tab_id}}-{{index}}">{{ settings.tab_title.tab[index]}}</a>
             </li>
    {% endfor %}
      </ul>
      {% for index in range(0, tabIndex-1) %}
-        <div {{attribute(region_attributes, 'tab_content_' ~index)}} id="tab-{{settings.uuid}}-{{index}}">
+        <div {{attribute(region_attributes, 'tab_content_' ~index)}} id="tab-{{tab_id}}-{{index}}">
             {{ attribute(content, 'tab_content_' ~ index) }}
         </div>
     {% endfor %}
