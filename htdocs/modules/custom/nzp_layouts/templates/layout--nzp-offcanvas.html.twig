@@ -19,7 +19,7 @@
     <div{{attributes}}> 
 
     {% if settings.oc_id_toggle == false %}
-        <button class="c-button js-offcanvas-trigger" data-offcanvas-trigger="oc-{{ oc_id }}">{{settings.oc_label}}</button>
+        <button class="c-button btn js-offcanvas-trigger" data-offcanvas-trigger="oc-{{ oc_id }}">{{settings.oc_label}}</button>
     {% endif %}
         <aside aria-hidden="false" class="js-offcanvas" data-offcanvas-options='{"modifiers":"{{settings.oc_position}},overlay"}' id="oc-{{ oc_id }}">
             <div class="l-wrapper" style="padding:2em;">
