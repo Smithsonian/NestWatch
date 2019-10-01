@@ -6,12 +6,12 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - node.type.webcam_resight
   module:
-    - charts
-    - charts_google
     - fullcalendar_view
     - node
     - selective_better_exposed_filters
+    - tracker
     - user
+    - views_date_format_sql
 id: webcam_resights
 label: 'Webcam Resights'
 module: views
@@ -679,6 +679,77 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: field
+        created_1:
+          id: created_1
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: count
+          admin_label: ''
+          label: 'Authored on'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          click_sort_column: value
+          type: timestamp
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          field_api_classes: false
+          entity_type: node
+          entity_field: created
+          plugin_id: field
       header: {  }
       group_by: true
       relationships: {  }
@@ -1192,53 +1263,47 @@ display:
         exposed_form: false
         header: false
         query: false
+        group_by: false
       display_description: ''
       style:
-        type: chart
+        type: table
         options:
           grouping: {  }
-          allow_advanced_rendering: 0
-          library: google
-          type: calendar
-          label_field: created_1
-          fields:
-            table: ''
-          data_fields:
-            created_1: 0
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            created_1: created_1
             created: created
-          field_colors:
-            created_1: '#2f7ed8'
-            created: '#0d233a'
-          title: ''
-          title_position: out
-          tooltips: ''
-          data_labels: ''
-          data_markers: 'FALSE'
-          legend_position: right
-          background: ''
-          three_dimensional: 0
-          polar: 0
-          width: ''
-          width_units: '%'
-          height: ''
-          height_units: px
-          max: '100'
-          min: '0'
-          green_from: '85'
-          green_to: '100'
-          yellow_from: '50'
-          yellow_to: '85'
-          red_from: '0'
-          red_to: '50'
-          xaxis_title: ''
-          xaxis_labels_rotation: '0'
-          yaxis_title: ''
-          yaxis_min: ''
-          yaxis_max: ''
-          yaxis_prefix: ''
-          yaxis_suffix: ''
-          yaxis_decimal_count: ''
-          yaxis_labels_rotation: '0'
+            field_charts_fields_scatter: field_charts_fields_scatter
+          info:
+            created_1:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            created:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_charts_fields_scatter:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
       row:
         type: fields
         options:
@@ -1298,11 +1363,12 @@ display:
           click_sort_column: value
           type: timestamp
           settings:
-            date_format: html_year
+            date_format: html_month
             custom_date_format: ''
             timezone: ''
           group_column: value
-          group_columns: {  }
+          group_columns:
+            value: value
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1311,6 +1377,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          format_date_sql: 1
           set_precision: false
           precision: 0
           decimal: .
@@ -1321,14 +1388,14 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: field
-        created:
-          id: created
-          table: node_field_data
-          field: created
+        nid:
+          id: nid
+          table: tracker_node
+          field: nid
           relationship: none
-          group_type: count
+          group_type: group
           admin_label: ''
-          label: ''
+          label: Nid
           exclude: false
           alter:
             alter_text: false
@@ -1361,7 +1428,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -1369,32 +1436,8 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          set_precision: false
-          precision: 0
-          decimal: .
-          separator: ''
-          format_plural: 0
-          format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: value
-          type: timestamp
-          settings:
-            date_format: html_year
-            custom_date_format: ''
-            timezone: ''
-          group_column: null
-          group_columns: null
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          field_api_classes: false
-          entity_type: node
-          entity_field: created
-          plugin_id: field
+          link_to_node: false
+          plugin_id: node
       filters:
         status:
           value: '1'
@@ -1412,7 +1455,7 @@ display:
           table: node_field_data
           field: type
           relationship: none
-          group_type: group
+          group_type: count
           admin_label: ''
           operator: in
           value:
@@ -1516,11 +1559,12 @@ display:
       query:
         type: views_query
         options:
-          disable_sql_rewrite: false
-          distinct: false
+          disable_sql_rewrite: true
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
+      group_by: true
     cache_metadata:
       max-age: -1
       contexts:

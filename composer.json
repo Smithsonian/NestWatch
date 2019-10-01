@@ -65,6 +65,7 @@
     "drupal/superfish": "^1.2",
     "drupal/transliterate_filenames": "^1.2",
     "drupal/video_embed_field": "^2.0",
+    "drupal/views_date_format_sql": "^3.0",
     "drupal/viewsreference": "^1.2",
     "drupal/webform": "^5.3",
     "drush/drush": "^9.0.0",
