@@ -1,0 +1,5 @@
+name: 'calendarcharts'
+type: module
+description: 'A views style plugin for creating Google Calendar Charts'
+core: 8.x
+package: 'Custom'

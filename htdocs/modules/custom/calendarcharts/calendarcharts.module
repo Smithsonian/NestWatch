@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains calendarcharts.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function calendarcharts_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the calendarcharts module.
+    case 'help.page.calendarcharts':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A views style plugin for creating Google Calendar Charts') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function calendarcharts_theme() {
+  return [
+    'calendarcharts' => [
+      'render element' => 'children',
+    ],
+  ];
+}
