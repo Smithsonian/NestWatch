@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+\Drupal::moduleHandler()->loadInclude('calendarcharts', 'inc', 'calendarcharts.theme');
 
 /**
  * Implements hook_help().
@@ -29,7 +30,7 @@ function calendarcharts_help($route_name, RouteMatchInterface $route_match) {
 function calendarcharts_theme() {
   return [
     'calendarcharts' => [
-      'render element' => 'children',
+      'file' => 'calendarcharts.theme.inc',
     ],
   ];
 }

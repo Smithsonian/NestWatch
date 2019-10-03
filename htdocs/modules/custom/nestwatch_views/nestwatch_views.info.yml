@@ -1,5 +1,0 @@
-name: 'nestwatch_views'
-type: module
-description: 'Additional Views settings for Nestwatch'
-core: 8.x
-package: 'Custom'
