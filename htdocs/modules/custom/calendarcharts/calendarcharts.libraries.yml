@@ -1,0 +1,8 @@
+calendarcharts:
+  js:
+    js/calendarcharts.js: {}
+    https://www.gstatic.com/charts/loader.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal.dialog.ajax
