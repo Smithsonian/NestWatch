@@ -21,9 +21,7 @@
 
             //pulls in the data from the view rows
             let data = settings.calendarCharts[index].data;
-            //converts each of the data items into JS Dates//
-            let dates = data.map(item => new Date(item));
-            let dateCounts = dates.reduce(reducer, {});
+            let dateCounts = data.reduce(reducer, {});
             let chartData = Object.entries(dateCounts).map(([key, value]) => [new Date(key), value]);
             function drawChart() { 
             let dataTable = new google.visualization.DataTable();
