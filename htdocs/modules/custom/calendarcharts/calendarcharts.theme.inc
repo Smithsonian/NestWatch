@@ -4,6 +4,10 @@
  * @file
  * Theme for CalendarChart views.
  */
+
+use Drupal\Core\Datetime\DrupalDateTime;
+use Drupal\Component\Utility\NestedArray;
+
 function template_preprocess_views_view_calendarcharts(&$variables) {
   // View options set by user.
   $view = $variables['view'];
@@ -14,14 +18,16 @@ function template_preprocess_views_view_calendarcharts(&$variables) {
   $rows = $variables['rows'];
 
   //grab the selected field and let's output it's results
+
   $field = $options['dateField'];
 
-
   foreach( $rows as $row ) {
-    $date_field[] = array_values($row->_entity->get($field)->getValue());
+    $a = $row->_entity->get($field)->getValue();
+    $b = $a[0]['value'];
+    $c = date('Y-m-d', $b);
+    $date_field[] = $c;
   }
 
-  
   $variables['dates'] = $date_field;
 
   static $view_count = -1;
@@ -35,7 +41,7 @@ function template_preprocess_views_view_calendarcharts(&$variables) {
   ];
 
 
-  
+
 }
 
 

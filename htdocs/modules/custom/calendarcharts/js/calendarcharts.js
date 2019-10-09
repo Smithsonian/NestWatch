@@ -6,32 +6,30 @@
 (function($, Drupal) {
   Drupal.behaviors.calendarCharts = {
     attach: function(context, settings) {
+
+        const reducer = function(obj, b) {
+            obj[b] = ++obj[b] || 1;
+            console.log(obj);
+            return obj;
+          };
+
       $("#calendar_basic")
         .once()
         .each(function(index) {
             google.charts.load("current", { packages: ["calendar"] });
             google.charts.setOnLoadCallback(drawChart);
+
+            //pulls in the data from the view rows
             let data = settings.calendarCharts[index].data;
-          function drawChart() {
+            //converts each of the data items into JS Dates//
+            let dates = data.map(item => new Date(item));
+            let dateCounts = dates.reduce(reducer, {});
+            let chartData = Object.entries(dateCounts).map(([key, value]) => [new Date(key), value]);
+            function drawChart() { 
             let dataTable = new google.visualization.DataTable();
             dataTable.addColumn({ type: "date", id: "Date" });
             dataTable.addColumn({ type: "number", id: "Won/Loss" });
-            dataTable.addRows([
-              [new Date(2012, 3, 13), 37032],
-              [new Date(2012, 3, 14), 38024],
-              [new Date(2012, 3, 15), 38024],
-              [new Date(2012, 3, 16), 38108],
-              [new Date(2012, 3, 17), 38229],
-              // Many rows omitted for brevity.
-              [new Date(2013, 9, 4), 38177],
-              [new Date(2013, 9, 5), 38705],
-              [new Date(2013, 9, 12), 38210],
-              [new Date(2013, 9, 13), 38029],
-              [new Date(2013, 9, 19), 38823],
-              [new Date(2013, 9, 23), 38345],
-              [new Date(2013, 9, 24), 38436],
-              [new Date(2013, 9, 30), 38447]
-            ]);
+            dataTable.addRows(chartData);
 
             var chart = new google.visualization.Calendar(document.getElementById('calendar_basic'));
             var options = {
