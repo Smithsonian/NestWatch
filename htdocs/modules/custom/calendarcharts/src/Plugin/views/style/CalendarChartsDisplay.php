@@ -28,18 +28,13 @@ class CalendarChartsDisplay extends StylePluginBase {
   protected function defineOptions() {
     $options = parent::defineOptions();
     $options['canvasHeight'] = ['default' => '350'];
-    $options['backgroundColor'] = ['default' => '#76a7fa'];
+    $options['backgroundColor'] = ['default' => '#efefef'];
     $options['dateField'] = ['default' => ''];
-    $options['cellOptions'] = [
-      'default' => 
-        [
-          'cellColor' => 'red',
-          'cellSize' => '10',
-          'strokeWidth' =>  0.5,
-          'strokeOpacity' => 1,
-        ],
-    ];
+    $options['cellColor'] = ['default' => '#09b'];
+    $options['cellSize'] = ['default' => 10 ];
+    $options['strokeOpacity'] = ['default' => 1];
 
+  
     return $options;
   }
 
@@ -51,11 +46,6 @@ class CalendarChartsDisplay extends StylePluginBase {
     // All selected fields.
     $field_names = $this->displayHandler->getFieldLabels();
     $entity_type = $this->view->getBaseEntityType()->id();
-    $cell_colors = [  
-        '#09b' => t('cyan'),
-        '#09c' => t('green'),
-        '#09d' => t('yellow'),
-      ];
 
     $form['dateField'] = [
       '#title' => $this->t('Select Date Field'),
@@ -79,14 +69,13 @@ class CalendarChartsDisplay extends StylePluginBase {
       '#title' => t('Cell Display Options'),
       '#description' => t('Cell Display Options'),
     ];
-
     $form['cellColor'] = [
-      '#type' => 'select',
       '#title' => 'Select a cell color',
+      '#type' => 'color',
       '#fieldset' => 'cellOptions',
-      '#options' => $cell_colors, 
-      '#default_value' => (!empty($this->options['cellColor'])) ? $this->options['cellColor'] : '',
-      ];
+      '#default_value' => (!empty($this->options['cellColor'])) ? $this->options['cellColor'] : '#09b',
+    ];
+
 
     $form['cellSize'] = [
       '#type' => 'textfield',
@@ -105,7 +94,7 @@ class CalendarChartsDisplay extends StylePluginBase {
         '#attributes' => [
           ' type' => 'number', // insert space before attribute name :)
         ],
-        '#default_value' => (!empty($this->options['cellStroke'])) ? $this->options['cellSize'] : '',
+        '#default_value' => (!empty($this->options['cellStroke'])) ? $this->options['cellStroke'] : '',
         ];
 
 
