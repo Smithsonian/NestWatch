@@ -195,6 +195,20 @@ third_party_settings:
                 field_resight_bird_target_id: layout_builder.entity
             additional: {  }
             weight: 0
+          fdce3aa5-c7a5-46c2-baa0-1f091029a119:
+            uuid: fdce3aa5-c7a5-46c2-baa0-1f091029a119
+            region: content
+            configuration:
+              id: 'views_block:webcam_resights-block_5'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping:
+                field_resight_bird_target_id: layout_builder.entity
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_nzp_tab
@@ -207,20 +221,6 @@ third_party_settings:
           num_tabs: 3
           uuid: f74faf96-d7a8-41e5-ba0a-af216e439178
         components:
-          172fd7d3-e55e-499d-a5f6-696088398cc9:
-            uuid: 172fd7d3-e55e-499d-a5f6-696088398cc9
-            region: tab_content_0
-            configuration:
-              id: 'views_block:webcam_resights-block_3'
-              label: ''
-              provider: views
-              label_display: '0'
-              views_label: ''
-              items_per_page: none
-              context_mapping:
-                field_resight_bird_target_id: layout_builder.entity
-            additional: {  }
-            weight: 0
           3a6c4509-bdd0-41ca-88a5-ddebe4ab45bf:
             uuid: 3a6c4509-bdd0-41ca-88a5-ddebe4ab45bf
             region: tab_content_1
@@ -229,20 +229,6 @@ third_party_settings:
               label: ''
               provider: views
               label_display: '0'
-              views_label: ''
-              items_per_page: none
-              context_mapping:
-                field_resight_bird_target_id: layout_builder.entity
-            additional: {  }
-            weight: 0
-          fdce3aa5-c7a5-46c2-baa0-1f091029a119:
-            uuid: fdce3aa5-c7a5-46c2-baa0-1f091029a119
-            region: tab_content_2
-            configuration:
-              id: 'views_block:webcam_resights-block_5'
-              label: ''
-              provider: views
-              label_display: visible
               views_label: ''
               items_per_page: none
               context_mapping:

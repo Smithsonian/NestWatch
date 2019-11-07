@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f24eaec8aebaf25006dd1517dec4285c",
+    "content-hash": "6cb74eaa3a2b5c66457872dab88bcd7c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2915,17 +2915,17 @@
         },
         {
             "name": "drupal/charts",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/charts.git",
-                "reference": "8.x-3.0"
+                "reference": "8.x-3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/charts-8.x-3.0.zip",
-                "reference": "8.x-3.0",
-                "shasum": "b47983d76dd2d2bdb33e491fec76bb446616da54"
+                "url": "https://ftp.drupal.org/files/projects/charts-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "b68d303173b2dd761cd9ffa9926ab537e88d7ac0"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2936,8 +2936,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1566965190",
+                    "version": "8.x-3.1",
+                    "datestamp": "1570850584",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7207,6 +7207,96 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "highcharts/3d",
+            "version": "6.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/6.1.0/highcharts-3d.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_3d"
+            }
+        },
+        {
+            "name": "highcharts/accessibility",
+            "version": "6.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/6.1.0/modules/accessibility.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_accessibility"
+            }
+        },
+        {
+            "name": "highcharts/export-data",
+            "version": "6.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/6.1.0/modules/export-data.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_export-data"
+            }
+        },
+        {
+            "name": "highcharts/exporting",
+            "version": "6.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/6.1.0/modules/exporting.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_exporting"
+            }
+        },
+        {
+            "name": "highcharts/highcharts",
+            "version": "6.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/6.1.0/highcharts.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts"
+            }
+        },
+        {
+            "name": "highcharts/more",
+            "version": "6.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/6.1.0/highcharts-more.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_more"
+            }
         },
         {
             "name": "jakub-onderka/php-console-color",

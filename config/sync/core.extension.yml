@@ -16,8 +16,10 @@ module:
   block_class: 0
   block_content: 0
   breakpoint: 0
+  calendarcharts: 0
   charts: 0
   charts_google: 0
+  charts_highcharts: 0
   ckeditor: 0
   color_field: 0
   comment: 0

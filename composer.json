@@ -23,7 +23,7 @@
     "drupal/bg_image_formatter": "^1.5",
     "drupal/block_class": "^1.0",
     "drupal/captcha": "^1.0@beta",
-    "drupal/charts": "^3.0",
+    "drupal/charts": "^3.1",
     "drupal/color_field": "^2.0",
     "drupal/conditional_fields": "^1.0@alpha",
     "drupal/config_inspector": "^1.0",
@@ -70,6 +70,12 @@
     "drupal/webform": "^5.3",
     "drush/drush": "^9.0.0",
     "google/charts": "45",
+    "highcharts/3d": "6.1.0",
+    "highcharts/accessibility": "6.1.0",
+    "highcharts/export-data": "6.1.0",
+    "highcharts/exporting": "6.1.0",
+    "highcharts/highcharts": "6.1.0",
+    "highcharts/more": "6.1.0",
     "smithsonian/si_admin": "dev-master",
     "smithsonian/si_basetheme": "dev-master",
     "smithsonian/si_content": "dev-master",
@@ -201,7 +207,115 @@
           "composer/installers": "~1.0"
         }
       }
-    }
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "highcharts/highcharts",
+          "version": "6.1.0",
+          "type": "drupal-library",
+          "extra": {
+              "installer-name": "highcharts"
+          },
+          "dist": {
+              "url": "https://code.highcharts.com/6.1.0/highcharts.js",
+              "type": "file"
+          },
+          "require": {
+              "composer/installers": "~1.0"
+          }
+      }
+  },
+  {
+      "type": "package",
+      "package": {
+          "name": "highcharts/more",
+          "version": "6.1.0",
+          "type": "drupal-library",
+          "extra": {
+              "installer-name": "highcharts_more"
+          },
+          "dist": {
+              "url": "https://code.highcharts.com/6.1.0/highcharts-more.js",
+              "type": "file"
+          },
+          "require": {
+              "composer/installers": "~1.0"
+          }
+      }
+  },
+  {
+      "type": "package",
+      "package": {
+          "name": "highcharts/exporting",
+          "version": "6.1.0",
+          "type": "drupal-library",
+          "extra": {
+              "installer-name": "highcharts_exporting"
+          },
+          "dist": {
+              "url": "https://code.highcharts.com/6.1.0/modules/exporting.js",
+              "type": "file"
+          },
+          "require": {
+              "composer/installers": "~1.0"
+          }
+      }
+  },
+  {
+      "type": "package",
+      "package": {
+          "name": "highcharts/export-data",
+          "version": "6.1.0",
+          "type": "drupal-library",
+          "extra": {
+              "installer-name": "highcharts_export-data"
+          },
+          "dist": {
+              "url": "https://code.highcharts.com/6.1.0/modules/export-data.js",
+              "type": "file"
+          },
+          "require": {
+              "composer/installers": "~1.0"
+          }
+      }
+  },
+  {
+      "type": "package",
+      "package": {
+          "name": "highcharts/accessibility",
+          "version": "6.1.0",
+          "type": "drupal-library",
+          "extra": {
+              "installer-name": "highcharts_accessibility"
+          },
+          "dist": {
+              "url": "https://code.highcharts.com/6.1.0/modules/accessibility.js",
+              "type": "file"
+          },
+          "require": {
+              "composer/installers": "~1.0"
+          }
+      }
+  },
+  {
+      "type": "package",
+          "package": {
+          "name": "highcharts/3d",
+          "version": "6.1.0",
+          "type": "drupal-library",
+          "extra": {
+              "installer-name": "highcharts_3d"
+          },
+          "dist": {
+              "url": "https://code.highcharts.com/6.1.0/highcharts-3d.js",
+              "type": "file"
+          },
+          "require": {
+              "composer/installers": "~1.0"
+          }
+      }
+  }
   ]
   
 }

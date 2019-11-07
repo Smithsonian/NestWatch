@@ -38,14 +38,14 @@
                 backgroundColor: '#efefef',
                 color: '#efefef'
               },
-              calendar: {
-                cellSize: chartOptions.cellSize,
-                cellColor: {
-                    stroke: chartOptions.cellColor,
-                    strokeOpacity: chartOptions.strokeOpacity,
-                    strokeWidth: chartOptions.cellStroke,
-                }
-            }
+            //   calendar: {
+            //     cellSize: chartOptions.cellSize,
+            //     cellColor: {
+            //         stroke: chartOptions.cellColor,
+            //         strokeOpacity: chartOptions.strokeOpacity,
+            //         strokeWidth: chartOptions.cellStroke,
+            //     }
+            // }
             };
 
             chart.draw(dataTable, options);
