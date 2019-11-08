@@ -528,7 +528,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: api/webcam_resights
+      path: api/resights
       row:
         type: data_field
         options:
@@ -557,6 +557,11 @@ display:
       defaults:
         group_by: false
       display_description: ''
+      style:
+        type: serializer
+        options:
+          formats:
+            json: json
     cache_metadata:
       max-age: -1
       contexts:
