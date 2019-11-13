@@ -7,21 +7,21 @@ dependencies:
     - node.type.webcam_resight
     - taxonomy.vocabulary.aou_codes
   content:
-    - 'taxonomy_term:aou_codes:3cf97a73-adad-4c55-b3c5-08fecd5d155f'
-    - 'taxonomy_term:aou_codes:4b941f09-a0fc-4309-a25e-5cad2961a19c'
-    - 'taxonomy_term:aou_codes:4d1f4fb7-138e-4abf-acee-bbb4a473091f'
-    - 'taxonomy_term:aou_codes:5c495135-c56b-432a-8510-f4c90b7992c6'
-    - 'taxonomy_term:aou_codes:6260b548-b804-4aaa-9338-4005a86d6593'
-    - 'taxonomy_term:aou_codes:682d1839-60dd-4709-a045-250ccaee8ecf'
-    - 'taxonomy_term:aou_codes:761be534-9a84-46d6-a793-82f6df921371'
-    - 'taxonomy_term:aou_codes:81342ce8-a5b9-4ab0-9aac-a00aa59fee9e'
-    - 'taxonomy_term:aou_codes:9a649075-4073-4a65-a780-dcd714058e2d'
-    - 'taxonomy_term:aou_codes:a228a2fe-b24d-4174-9b5f-ecd730618a7f'
-    - 'taxonomy_term:aou_codes:c66b03c6-c468-45d5-a7e0-1755e03e1d51'
-    - 'taxonomy_term:aou_codes:d112c576-2a0d-4053-bb77-6a2e74b55181'
-    - 'taxonomy_term:aou_codes:d5e24436-5957-43db-b8e8-abff4f066a6c'
-    - 'taxonomy_term:aou_codes:deb46ccd-3e17-4b3f-b4d2-77422f9337b5'
-    - 'taxonomy_term:aou_codes:e0c21cb4-2521-4352-aaa0-9f6126a0d34f'
+    - 'taxonomy_term:aou_codes:074b7a1b-a537-4175-b9c0-e932f1ce125a'
+    - 'taxonomy_term:aou_codes:134870ac-f004-49f2-b2d5-822cf4bc77f9'
+    - 'taxonomy_term:aou_codes:146e90db-0043-4b1f-913e-d239cef4e6c2'
+    - 'taxonomy_term:aou_codes:1ad63608-7b9f-4198-8d09-40a79ca6fdc1'
+    - 'taxonomy_term:aou_codes:1b98629d-3e20-44ce-9c9c-aff80e125017'
+    - 'taxonomy_term:aou_codes:2e805699-586e-4bbd-9759-d329f10381f3'
+    - 'taxonomy_term:aou_codes:5ba93576-5014-49d7-b4ea-c532eea7ad1a'
+    - 'taxonomy_term:aou_codes:5f8b8948-8c18-45b9-a3bb-9e78169c0056'
+    - 'taxonomy_term:aou_codes:825feea5-c499-44bd-babc-83585402b9df'
+    - 'taxonomy_term:aou_codes:86437ee3-59b8-4c96-96ab-6337db99a794'
+    - 'taxonomy_term:aou_codes:9ebd2c13-e1ab-4398-a630-b0554176872f'
+    - 'taxonomy_term:aou_codes:aeef692d-00bd-47d6-8e60-b1d67041b8ba'
+    - 'taxonomy_term:aou_codes:b63fef4c-39bf-454f-b6f6-abb5fa3a413a'
+    - 'taxonomy_term:aou_codes:d44f4daf-ebba-4260-b3d8-9d2e670728d1'
+    - 'taxonomy_term:aou_codes:dd8b28da-bdec-47de-89e6-f8a1aa1e3334'
   module:
     - charts
     - charts_highcharts
@@ -2712,3 +2712,549 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 3
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      display_description: 'Gauge Chart by Top Resights'
+      style:
+        type: chart
+        options:
+          grouping: {  }
+          allow_advanced_rendering: 1
+          library: highcharts
+          type: column
+          label_field: created_1
+          fields:
+            table: ''
+          data_fields:
+            created_1: 0
+            created: created
+            field_bird_species: 0
+          field_colors:
+            created_1: '#2f7ed8'
+            created: '#3586ff'
+            field_bird_species: '#8bbc21'
+          title: Resights
+          title_position: ''
+          tooltips: 'TRUE'
+          data_labels: 'TRUE'
+          data_markers: 'TRUE'
+          legend_position: ''
+          background: ''
+          three_dimensional: 0
+          polar: 0
+          width: ''
+          width_units: '%'
+          height: ''
+          height_units: px
+          max: '100'
+          min: '0'
+          green_from: '85'
+          green_to: '100'
+          yellow_from: '50'
+          yellow_to: '85'
+          red_from: '0'
+          red_to: '50'
+          xaxis_title: 'Month and Year'
+          xaxis_labels_rotation: '30'
+          yaxis_title: 'Number of Sightings'
+          yaxis_min: ''
+          yaxis_max: ''
+          yaxis_prefix: ''
+          yaxis_suffix: ''
+          yaxis_decimal_count: '0'
+          yaxis_labels_rotation: '0'
+      defaults:
+        style: false
+        row: false
+        fields: false
+        relationships: false
+        filters: false
+        filter_groups: false
+        exposed_form: false
+        sorts: false
+        arguments: false
+        title: false
+        use_ajax: false
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
+      fields:
+        created_1:
+          id: created_1
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Authored on'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: false
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: month_and_year
+            custom_date_format: ''
+            timezone: ''
+          group_column: null
+          group_columns: null
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          field_api_classes: 0
+          format_date_sql: 1
+          entity_type: node
+          entity_field: created
+          plugin_id: views_date_format_sql_field
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: count
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: true
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: month_and_year
+            custom_date_format: ''
+            timezone: ''
+          group_column: null
+          group_columns: null
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          field_api_classes: 0
+          format_date_sql: 0
+          entity_type: node
+          entity_field: created
+          plugin_id: views_date_format_sql_field
+        field_bird_species:
+          id: field_bird_species
+          table: node__field_bird_species
+          field: field_bird_species
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+      relationships:
+        field_resight_bird:
+          id: field_resight_bird
+          table: node__field_resight_bird
+          field: field_resight_bird
+          relationship: none
+          group_type: group
+          admin_label: 'field_resight_bird: Content'
+          required: false
+          plugin_id: standard
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            webcam_resight: webcam_resight
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_bird_species_target_id:
+          id: field_bird_species_target_id
+          table: node__field_bird_species
+          field: field_bird_species_target_id
+          relationship: field_resight_bird
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            544: 544
+            309: 309
+            14: 14
+            730: 730
+            838: 838
+            890: 890
+            589: 589
+            596: 596
+            598: 598
+            796: 796
+            804: 804
+            241: 241
+            1131: 1131
+            28: 28
+            33: 33
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_bird_species_target_id_op
+            label: 'Select a Species'
+            description: ''
+            use_operator: false
+            operator: field_bird_species_target_id_op
+            identifier: field_bird_species_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              webcam_user: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: aou_codes
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: created_op
+            label: 'Authored on'
+            description: null
+            use_operator: false
+            operator: created_op
+            identifier: created
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+            min_placeholder: null
+            max_placeholder: null
+          is_grouped: true
+          group_info:
+            label: 'By Time Frame'
+            description: ''
+            identifier: created
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Last Week'
+                operator: '>='
+                value:
+                  type: offset
+                  value: '-1 week'
+                  min: ''
+                  max: ''
+              2:
+                title: 'Last Month'
+                operator: '>='
+                value:
+                  type: offset
+                  value: '-1 month'
+                  min: ''
+                  max: ''
+              3:
+                title: 'Last Year'
+                operator: '>='
+                value:
+                  type: offset
+                  value: '-12 month'
+                  min: ''
+                  max: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          input_required: false
+          text_input_required: 'Select any filter and click on Apply to see results'
+          bef:
+            general:
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_hide: false
+            field_bird_species_target_id:
+              bef_format: default
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: ''
+                bef_show_only_used: 0
+          text_input_required_format: basic_html
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: min
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          granularity: month
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+      arguments: {  }
+      title: 'Sightings by Month'
+      path: dashboard/page
+      use_ajax: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_bird_species'
